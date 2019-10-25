@@ -1,0 +1,6 @@
+C:\Users\ISIS\source\repos\CapaDiseno\CapaLogica-ComisionyPoliza\bin\Debug\CapaLogica-ComisionyPoliza.dll
+C:\Users\ISIS\source\repos\CapaDiseno\CapaLogica-ComisionyPoliza\bin\Debug\CapaLogica-ComisionyPoliza.pdb
+C:\Users\ISIS\source\repos\CapaDiseno\CapaLogica-ComisionyPoliza\obj\Debug\CapaLogica-ComisionyPoliza.csprojAssemblyReference.cache
+C:\Users\ISIS\source\repos\CapaDiseno\CapaLogica-ComisionyPoliza\obj\Debug\CapaLogica-ComisionyPoliza.csproj.CoreCompileInputs.cache
+C:\Users\ISIS\source\repos\CapaDiseno\CapaLogica-ComisionyPoliza\obj\Debug\CapaLogica-ComisionyPoliza.dll
+C:\Users\ISIS\source\repos\CapaDiseno\CapaLogica-ComisionyPoliza\obj\Debug\CapaLogica-ComisionyPoliza.pdb

@@ -1,0 +1,8 @@
+C:\Users\ISIS\source\repos\CapaDiseno\CapaDisenoComision\bin\Debug\CapaDisenoComision.dll
+C:\Users\ISIS\source\repos\CapaDiseno\CapaDisenoComision\bin\Debug\CapaDisenoComision.pdb
+C:\Users\ISIS\source\repos\CapaDiseno\CapaDisenoComision\obj\Debug\CapaDisenoComision.csprojAssemblyReference.cache
+C:\Users\ISIS\source\repos\CapaDiseno\CapaDisenoComision\obj\Debug\CapaDisenoComision.Comision.resources
+C:\Users\ISIS\source\repos\CapaDiseno\CapaDisenoComision\obj\Debug\CapaDisenoComision.csproj.GenerateResource.cache
+C:\Users\ISIS\source\repos\CapaDiseno\CapaDisenoComision\obj\Debug\CapaDisenoComision.csproj.CoreCompileInputs.cache
+C:\Users\ISIS\source\repos\CapaDiseno\CapaDisenoComision\obj\Debug\CapaDisenoComision.dll
+C:\Users\ISIS\source\repos\CapaDiseno\CapaDisenoComision\obj\Debug\CapaDisenoComision.pdb

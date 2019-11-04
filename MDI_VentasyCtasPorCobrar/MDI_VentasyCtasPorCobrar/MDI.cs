@@ -106,5 +106,10 @@ namespace MDI_VentasyCtasPorCobrar
             form_descuentos.MdiParent = this;
             form_descuentos.Show();
         }
+
+        private void CuentasPorCobrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

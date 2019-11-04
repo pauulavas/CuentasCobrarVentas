@@ -34,8 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CapaDeDiseno">
-      <HintPath>..\..\..\..\Navegador\CapaDeDiseno\bin\Debug\CapaDeDiseno.dll</HintPath>
+    <Reference Include="CapaDeDiseno, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLLS\CapaDeDiseno.dll</HintPath>
     </Reference>
     <Reference Include="Facturacion">
       <HintPath>..\..\Facturacion\Facturacion\bin\Debug\Facturacion.dll</HintPath>

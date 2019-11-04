@@ -26,7 +26,7 @@ namespace MDI_VentasyCtasPorCobrar
 
             navegador1.asignarTabla("tbl_serie");
             navegador1.asignarNombreForm("Serie");
-            navegador1.asignarComboConTabla("tbl_folios", "KidFolio");
+            navegador1.asignarComboConTabla("tbl_folios", "KidFolio",1);
         }
 
         private void Serie_Load(object sender, EventArgs e)

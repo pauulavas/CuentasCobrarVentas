@@ -28,24 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.navegador1 = new CapaDeDiseno.Navegador();
             this.SuspendLayout();
-            // 
-            // navegador1
-            // 
-            this.navegador1.BackColor = System.Drawing.Color.White;
-            this.navegador1.Location = new System.Drawing.Point(13, 13);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1571, 809);
-            this.navegador1.TabIndex = 0;
             // 
             // Tipo_Factura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1169, 584);
-            this.Controls.Add(this.navegador1);
+            this.ClientSize = new System.Drawing.Size(1121, 677);
             this.Name = "Tipo_Factura";
             this.Text = "Tipo_Factura";
             this.Load += new System.EventHandler(this.Tipo_Factura_Load);

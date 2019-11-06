@@ -111,5 +111,10 @@ namespace MDI_VentasyCtasPorCobrar
         {
 
         }
+
+        private void MantenimientoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

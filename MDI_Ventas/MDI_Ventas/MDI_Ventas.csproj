@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BB7D59EB-38E7-4F41-AB64-0BDC6B7DBF32}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MDI_Ventas</RootNamespace>
+    <AssemblyName>MDI_Ventas</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CapaDeDiseno">
+      <HintPath>..\..\..\..\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\Datos\DLLS\CapaDeDiseno.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comisiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comisiones.Designer.cs">
+      <DependentUpon>Comisiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Folio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Folio.Designer.cs">
+      <DependentUpon>Folio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Serie.Designer.cs">
+      <DependentUpon>Serie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tipo_Descuentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tipo_Descuentos.Designer.cs">
+      <DependentUpon>Tipo_Descuentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tipo_Factura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tipo_Factura.Designer.cs">
+      <DependentUpon>Tipo_Factura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tipo_Impuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tipo_Impuesto.Designer.cs">
+      <DependentUpon>Tipo_Impuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tipo_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tipo_Clientes.Designer.cs">
+      <DependentUpon>Tipo_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tipo_lista_de_precios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tipo_lista_de_precios.Designer.cs">
+      <DependentUpon>Tipo_lista_de_precios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tipo_Pagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tipo_Pagos.Designer.cs">
+      <DependentUpon>Tipo_Pagos.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comisiones.resx">
+      <DependentUpon>Comisiones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Folio.resx">
+      <DependentUpon>Folio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Serie.resx">
+      <DependentUpon>Serie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tipo_Descuentos.resx">
+      <DependentUpon>Tipo_Descuentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tipo_Factura.resx">
+      <DependentUpon>Tipo_Factura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tipo_Impuesto.resx">
+      <DependentUpon>Tipo_Impuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tipo_Clientes.resx">
+      <DependentUpon>Tipo_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tipo_lista_de_precios.resx">
+      <DependentUpon>Tipo_lista_de_precios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tipo_Pagos.resx">
+      <DependentUpon>Tipo_Pagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -20,9 +20,9 @@ namespace MDI_Ventas
             string[] alias = { "Codigo", "Nombre",  "estado" };
             navegador1.asignarAlias(alias);
             navegador1.asignarSalida(this);
-            navegador1.asignarColorFondo(Color.White);
+            navegador1.asignarColorFondo(ColorTranslator.FromHtml("#16235A"));
             navegador1.asignarColorFuente(Color.Black);
-            navegador1.asignarAyuda("1");
+            navegador1.asignarAyuda("10");
             navegador1.asignarTabla("tbl_tipofactura");
             navegador1.asignarNombreForm("Tipos Facturas");
         }

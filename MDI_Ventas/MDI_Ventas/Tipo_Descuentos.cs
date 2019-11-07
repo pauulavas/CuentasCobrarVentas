@@ -20,9 +20,9 @@ namespace MDI_Ventas
             string[] alias = { "Codigo", "Codigo Producto","Nombre","Porcentaje","Fecha Inicio","Fecha Final", "estado" };
             navegador1.asignarAlias(alias);
             navegador1.asignarSalida(this);
-            navegador1.asignarColorFondo(Color.White);
+            navegador1.asignarColorFondo(ColorTranslator.FromHtml("#16235A"));
             navegador1.asignarColorFuente(Color.Black);
-            navegador1.asignarAyuda("1");
+            navegador1.asignarAyuda("9");
             navegador1.asignarTabla("tbl_descuentos");
             navegador1.asignarNombreForm("Tipos Facturas");
             navegador1.asignarComboConTabla("tbl_producto", "KidProducto", 1);

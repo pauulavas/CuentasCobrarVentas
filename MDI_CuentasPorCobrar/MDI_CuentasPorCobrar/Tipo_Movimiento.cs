@@ -20,7 +20,7 @@ namespace MDI_CuentasPorCobrar
             string[] alias = { "Codigo", "Nombre", "Detalle", "estado" };
             navegador1.asignarAlias(alias);
             navegador1.asignarSalida(this);
-            navegador1.asignarColorFondo(Color.White);
+            navegador1.asignarColorFondo(ColorTranslator.FromHtml("#16235A"));
             navegador1.asignarColorFuente(Color.Black);
             navegador1.asignarAyuda("15");
             navegador1.asignarTabla("tbl_tiposcomprobantes");

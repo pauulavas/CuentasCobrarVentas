@@ -21,9 +21,9 @@ namespace MDI_Ventas
             string[] alias = { "Codigo", "Nombre", "Descripcion", "Porcentaje","estado" };
             navegador1.asignarAlias(alias);
             navegador1.asignarSalida(this);
-            navegador1.asignarColorFondo(Color.White);
+            navegador1.asignarColorFondo(ColorTranslator.FromHtml("#16235A"));
             navegador1.asignarColorFuente(Color.Black);
-            navegador1.asignarAyuda("1");
+            navegador1.asignarAyuda("11");
             navegador1.asignarTabla("tbl_impuesto");
             navegador1.asignarNombreForm("Tipos de Impuestos");
         }

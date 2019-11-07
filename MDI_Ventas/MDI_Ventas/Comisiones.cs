@@ -17,12 +17,12 @@ namespace MDI_Ventas
         {
             InitializeComponent();
             //usuario = user;
-            string[] alias = { "Codigo", "Codigo_Producto", "Fecha", "Descripcion","Monto","estado" };
+            string[] alias = { "Codigo", "Codigo Producto", "Fecha", "Descripcion","Monto","estado" };
             navegador1.asignarAlias(alias);
             navegador1.asignarSalida(this);
-            navegador1.asignarColorFondo(Color.White);
+            navegador1.asignarColorFondo(ColorTranslator.FromHtml("#16235A"));
             navegador1.asignarColorFuente(Color.Black);
-            navegador1.asignarAyuda("1");
+            navegador1.asignarAyuda("4");
             navegador1.asignarTabla("tbl_comisiones");
             navegador1.asignarNombreForm("Tipos Comisiones");
             navegador1.asignarComboConTabla("tbl_producto", "KidProducto", 1);

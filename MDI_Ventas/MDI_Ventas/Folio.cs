@@ -17,12 +17,12 @@ namespace MDI_Ventas
         {
             InitializeComponent();
             //usuario = user;
-            string[] alias = { "Codigo", "Codigo Cliente", "Fecha", "estado" };
+            string[] alias = { "Codigo", "Fecha", "estado" };
             navegador1.asignarAlias(alias);
             navegador1.asignarSalida(this);
-            navegador1.asignarColorFondo(Color.White);
+            navegador1.asignarColorFondo(ColorTranslator.FromHtml("#16235A"));
             navegador1.asignarColorFuente(Color.Black);
-            navegador1.asignarAyuda("1");
+            navegador1.asignarAyuda("5");
             navegador1.asignarTabla("tbl_folios");
             navegador1.asignarNombreForm("Folio");
             navegador1.asignarComboConTabla("tbl_clientes", "KidCliente", 1);

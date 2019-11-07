@@ -42,6 +42,8 @@
             this.Btn_remGrid = new System.Windows.Forms.Button();
             this.Btn_agregar = new System.Windows.Forms.Button();
             this.Gpb_venta = new System.Windows.Forms.GroupBox();
+            this.Txt_registros = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
             this.Txt_total = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.Txt_iva = new System.Windows.Forms.TextBox();
@@ -95,13 +97,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Txt_nombres = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.Txt_registros = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
             this.Gpb_fechas = new System.Windows.Forms.GroupBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.Dtp_actual = new System.Windows.Forms.DateTimePicker();
             this.label22 = new System.Windows.Forms.Label();
             this.Dtp_final = new System.Windows.Forms.DateTimePicker();
+            this.label21 = new System.Windows.Forms.Label();
+            this.Dtp_actual = new System.Windows.Forms.DateTimePicker();
             this.groupBox19.SuspendLayout();
             this.Gpb_acciones.SuspendLayout();
             this.Gpb_venta.SuspendLayout();
@@ -275,6 +275,25 @@
             this.Gpb_venta.TabIndex = 32;
             this.Gpb_venta.TabStop = false;
             this.Gpb_venta.Text = "Venta";
+            // 
+            // Txt_registros
+            // 
+            this.Txt_registros.Enabled = false;
+            this.Txt_registros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_registros.Location = new System.Drawing.Point(576, 40);
+            this.Txt_registros.Name = "Txt_registros";
+            this.Txt_registros.Size = new System.Drawing.Size(169, 26);
+            this.Txt_registros.TabIndex = 24;
+            this.Txt_registros.Text = "0";
+            // 
+            // label20
+            // 
+            this.label20.Location = new System.Drawing.Point(576, 21);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(56, 16);
+            this.label20.TabIndex = 23;
+            this.label20.Text = "Registros:";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Txt_total
             // 
@@ -806,25 +825,6 @@
             this.label1.Text = "Nombres:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Txt_registros
-            // 
-            this.Txt_registros.Enabled = false;
-            this.Txt_registros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_registros.Location = new System.Drawing.Point(576, 40);
-            this.Txt_registros.Name = "Txt_registros";
-            this.Txt_registros.Size = new System.Drawing.Size(169, 26);
-            this.Txt_registros.TabIndex = 24;
-            this.Txt_registros.Text = "0";
-            // 
-            // label20
-            // 
-            this.label20.Location = new System.Drawing.Point(576, 21);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(56, 16);
-            this.label20.TabIndex = 23;
-            this.label20.Text = "Registros:";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // Gpb_fechas
             // 
             this.Gpb_fechas.Controls.Add(this.label22);
@@ -837,6 +837,22 @@
             this.Gpb_fechas.TabIndex = 35;
             this.Gpb_fechas.TabStop = false;
             this.Gpb_fechas.Text = "Fecha-Validez";
+            // 
+            // label22
+            // 
+            this.label22.Location = new System.Drawing.Point(55, 49);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(76, 20);
+            this.label22.TabIndex = 9;
+            this.label22.Text = "Fecha Valida:";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Dtp_final
+            // 
+            this.Dtp_final.Location = new System.Drawing.Point(141, 49);
+            this.Dtp_final.Name = "Dtp_final";
+            this.Dtp_final.Size = new System.Drawing.Size(200, 20);
+            this.Dtp_final.TabIndex = 8;
             // 
             // label21
             // 
@@ -854,22 +870,6 @@
             this.Dtp_actual.Name = "Dtp_actual";
             this.Dtp_actual.Size = new System.Drawing.Size(200, 20);
             this.Dtp_actual.TabIndex = 6;
-            // 
-            // label22
-            // 
-            this.label22.Location = new System.Drawing.Point(55, 49);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(76, 20);
-            this.label22.TabIndex = 9;
-            this.label22.Text = "Fecha Valida:";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Dtp_final
-            // 
-            this.Dtp_final.Location = new System.Drawing.Point(141, 49);
-            this.Dtp_final.Name = "Dtp_final";
-            this.Dtp_final.Size = new System.Drawing.Size(200, 20);
-            this.Dtp_final.TabIndex = 8;
             // 
             // CU_Pedido
             // 

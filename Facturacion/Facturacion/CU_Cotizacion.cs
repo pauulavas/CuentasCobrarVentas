@@ -42,6 +42,8 @@ namespace Facturacion
         {
             double subtotal = 0;
             double total = 0;
+            int cantidad = 0;
+
             subtotal = Double.Parse(Txt_precioProducto.Text) * Double.Parse(Nup_cantidad.Value.ToString());
 
             Dgv_factura.Rows.Add(
@@ -59,12 +61,13 @@ namespace Facturacion
                 for (int i = 0; i < Dgv_factura.Rows.Count - 1; i++)
                 {
                     subtotal += Double.Parse(Dgv_factura.Rows[i].Cells[4].Value.ToString());
+                    cantidad += Int32.Parse(Dgv_factura.Rows[i].Cells[1].Value.ToString());
                 }
             }
 
             Txt_subtotalGeneral.Text = "Q. " + String.Format("{0:0.00}", subtotal);
             Txt_total.Text = "Q. " + String.Format("{0:0.00}", subtotal);
-            int registros = Dgv_factura.Rows.Count - 1;
+            int registros = cantidad;
             Txt_registros.Text = registros.ToString();
         }
 
@@ -83,6 +86,8 @@ namespace Facturacion
         private void Btn_remGrid_Click(object sender, EventArgs e)
         {
             double subtotal = 0;
+            int cantidad = 0;
+
             if (Dgv_factura.Rows.Count - 1 > 0)
             {
                 Dgv_factura.Rows.RemoveAt(seleccionado);
@@ -90,16 +95,17 @@ namespace Facturacion
                 for (int i = 0; i < Dgv_factura.Rows.Count - 1; i++)
                 {
                     subtotal += Double.Parse(Dgv_factura.Rows[i].Cells[4].Value.ToString());
+                    cantidad += Int32.Parse(Dgv_factura.Rows[i].Cells[1].Value.ToString());
                 }
 
                 Txt_subtotalGeneral.Text = "Q. " + String.Format("{0:0.00}", subtotal);
                 Txt_total.Text = "Q. " + String.Format("{0:0.00}", subtotal);
-                int registros = Dgv_factura.Rows.Count - 1;
+                int registros = cantidad;
                 Txt_registros.Text = registros.ToString();
             }
             else
             {
-                MessageBox.Show("Hoy hay datos en el grid");
+                MessageBox.Show("No hay datos en el grid");
             }
         }
 

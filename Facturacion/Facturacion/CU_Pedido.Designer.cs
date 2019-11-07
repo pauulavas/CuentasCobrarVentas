@@ -29,14 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox19 = new System.Windows.Forms.GroupBox();
-            this.textBox50 = new System.Windows.Forms.TextBox();
-            this.label62 = new System.Windows.Forms.Label();
-            this.textBox49 = new System.Windows.Forms.TextBox();
+            this.Txt_cotizacion = new System.Windows.Forms.TextBox();
             this.label61 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.Btn_consultarCot = new System.Windows.Forms.Button();
+            this.Txt_codigoCot = new System.Windows.Forms.TextBox();
             this.label60 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.Cbo_opcion = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.button6 = new System.Windows.Forms.Button();
@@ -81,21 +79,19 @@
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox51 = new System.Windows.Forms.TextBox();
+            this.Txt_vendedor = new System.Windows.Forms.TextBox();
             this.label63 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.Txt_correlativo = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.Encabezado = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.Btn_consultarCliente = new System.Windows.Forms.Button();
+            this.Txt_nit = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.Txt_codigo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Txt_apellidos = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Txt_nombres = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox19.SuspendLayout();
             this.groupBox8.SuspendLayout();
@@ -112,14 +108,12 @@
             // 
             // groupBox19
             // 
-            this.groupBox19.Controls.Add(this.textBox50);
-            this.groupBox19.Controls.Add(this.label62);
-            this.groupBox19.Controls.Add(this.textBox49);
+            this.groupBox19.Controls.Add(this.Txt_cotizacion);
             this.groupBox19.Controls.Add(this.label61);
-            this.groupBox19.Controls.Add(this.button2);
-            this.groupBox19.Controls.Add(this.textBox5);
+            this.groupBox19.Controls.Add(this.Btn_consultarCot);
+            this.groupBox19.Controls.Add(this.Txt_codigoCot);
             this.groupBox19.Controls.Add(this.label60);
-            this.groupBox19.Controls.Add(this.comboBox3);
+            this.groupBox19.Controls.Add(this.Cbo_opcion);
             this.groupBox19.Controls.Add(this.label7);
             this.groupBox19.Location = new System.Drawing.Point(13, 13);
             this.groupBox19.Name = "groupBox19";
@@ -128,60 +122,43 @@
             this.groupBox19.TabStop = false;
             this.groupBox19.Text = "Cotizacion-Pedido";
             // 
-            // textBox50
+            // Txt_cotizacion
             // 
-            this.textBox50.Enabled = false;
-            this.textBox50.Location = new System.Drawing.Point(778, 52);
-            this.textBox50.Name = "textBox50";
-            this.textBox50.Size = new System.Drawing.Size(189, 20);
-            this.textBox50.TabIndex = 20;
-            // 
-            // label62
-            // 
-            this.label62.Location = new System.Drawing.Point(713, 51);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(55, 20);
-            this.label62.TabIndex = 19;
-            this.label62.Text = "Pedido:";
-            this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox49
-            // 
-            this.textBox49.Enabled = false;
-            this.textBox49.Location = new System.Drawing.Point(778, 26);
-            this.textBox49.Name = "textBox49";
-            this.textBox49.Size = new System.Drawing.Size(189, 20);
-            this.textBox49.TabIndex = 18;
+            this.Txt_cotizacion.Enabled = false;
+            this.Txt_cotizacion.Location = new System.Drawing.Point(781, 35);
+            this.Txt_cotizacion.Name = "Txt_cotizacion";
+            this.Txt_cotizacion.Size = new System.Drawing.Size(189, 20);
+            this.Txt_cotizacion.TabIndex = 18;
             // 
             // label61
             // 
-            this.label61.Location = new System.Drawing.Point(699, 26);
+            this.label61.Location = new System.Drawing.Point(702, 35);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(69, 20);
             this.label61.TabIndex = 17;
             this.label61.Text = "Cotizacion:";
             this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button2
+            // Btn_consultarCot
             // 
-            this.button2.Image = global::Facturacion.Properties.Resources.search;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(614, 19);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.button2.Size = new System.Drawing.Size(69, 54);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Consultar";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = true;
+            this.Btn_consultarCot.Image = global::Facturacion.Properties.Resources.search;
+            this.Btn_consultarCot.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_consultarCot.Location = new System.Drawing.Point(614, 19);
+            this.Btn_consultarCot.Name = "Btn_consultarCot";
+            this.Btn_consultarCot.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.Btn_consultarCot.Size = new System.Drawing.Size(69, 54);
+            this.Btn_consultarCot.TabIndex = 16;
+            this.Btn_consultarCot.Text = "Consultar";
+            this.Btn_consultarCot.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_consultarCot.UseVisualStyleBackColor = true;
+            this.Btn_consultarCot.Click += new System.EventHandler(this.Btn_consultarCot_Click);
             // 
-            // textBox5
+            // Txt_codigoCot
             // 
-            this.textBox5.Enabled = false;
-            this.textBox5.Location = new System.Drawing.Point(402, 35);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(189, 20);
-            this.textBox5.TabIndex = 15;
+            this.Txt_codigoCot.Location = new System.Drawing.Point(402, 35);
+            this.Txt_codigoCot.Name = "Txt_codigoCot";
+            this.Txt_codigoCot.Size = new System.Drawing.Size(189, 20);
+            this.Txt_codigoCot.TabIndex = 15;
             // 
             // label60
             // 
@@ -192,13 +169,17 @@
             this.label60.Text = "Codigo:";
             this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox3
+            // Cbo_opcion
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(155, 35);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(174, 21);
-            this.comboBox3.TabIndex = 11;
+            this.Cbo_opcion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cbo_opcion.FormattingEnabled = true;
+            this.Cbo_opcion.Items.AddRange(new object[] {
+            "-",
+            "Cotizacion"});
+            this.Cbo_opcion.Location = new System.Drawing.Point(155, 35);
+            this.Cbo_opcion.Name = "Cbo_opcion";
+            this.Cbo_opcion.Size = new System.Drawing.Size(174, 21);
+            this.Cbo_opcion.TabIndex = 11;
             // 
             // label7
             // 
@@ -621,12 +602,10 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox51);
+            this.groupBox2.Controls.Add(this.Txt_vendedor);
             this.groupBox2.Controls.Add(this.label63);
-            this.groupBox2.Controls.Add(this.textBox6);
+            this.groupBox2.Controls.Add(this.Txt_correlativo);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.comboBox1);
-            this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Location = new System.Drawing.Point(526, 19);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(315, 134);
@@ -634,67 +613,50 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Documento";
             // 
-            // textBox51
+            // Txt_vendedor
             // 
-            this.textBox51.Enabled = false;
-            this.textBox51.Location = new System.Drawing.Point(107, 91);
-            this.textBox51.Name = "textBox51";
-            this.textBox51.Size = new System.Drawing.Size(174, 20);
-            this.textBox51.TabIndex = 11;
+            this.Txt_vendedor.Enabled = false;
+            this.Txt_vendedor.Location = new System.Drawing.Point(107, 79);
+            this.Txt_vendedor.Name = "Txt_vendedor";
+            this.Txt_vendedor.Size = new System.Drawing.Size(174, 20);
+            this.Txt_vendedor.TabIndex = 11;
             // 
             // label63
             // 
-            this.label63.Location = new System.Drawing.Point(34, 91);
+            this.label63.Location = new System.Drawing.Point(34, 79);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(65, 20);
             this.label63.TabIndex = 10;
             this.label63.Text = "Vendedor:";
             this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox6
+            // Txt_correlativo
             // 
-            this.textBox6.Enabled = false;
-            this.textBox6.Location = new System.Drawing.Point(107, 59);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(174, 20);
-            this.textBox6.TabIndex = 9;
+            this.Txt_correlativo.Enabled = false;
+            this.Txt_correlativo.Location = new System.Drawing.Point(107, 47);
+            this.Txt_correlativo.Name = "Txt_correlativo";
+            this.Txt_correlativo.Size = new System.Drawing.Size(174, 20);
+            this.Txt_correlativo.TabIndex = 9;
             // 
             // label8
             // 
-            this.label8.Location = new System.Drawing.Point(34, 59);
+            this.label8.Location = new System.Drawing.Point(34, 47);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(65, 20);
             this.label8.TabIndex = 8;
             this.label8.Text = "Correlativo:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(107, 29);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(174, 21);
-            this.comboBox1.TabIndex = 7;
-            // 
-            // label5
-            // 
-            this.label5.Location = new System.Drawing.Point(65, 30);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(36, 17);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Serie:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Encabezado
             // 
-            this.Encabezado.Controls.Add(this.button1);
-            this.Encabezado.Controls.Add(this.textBox4);
+            this.Encabezado.Controls.Add(this.Btn_consultarCliente);
+            this.Encabezado.Controls.Add(this.Txt_nit);
             this.Encabezado.Controls.Add(this.label4);
-            this.Encabezado.Controls.Add(this.textBox3);
+            this.Encabezado.Controls.Add(this.Txt_codigo);
             this.Encabezado.Controls.Add(this.label3);
-            this.Encabezado.Controls.Add(this.textBox2);
+            this.Encabezado.Controls.Add(this.Txt_apellidos);
             this.Encabezado.Controls.Add(this.label2);
-            this.Encabezado.Controls.Add(this.textBox1);
+            this.Encabezado.Controls.Add(this.Txt_nombres);
             this.Encabezado.Controls.Add(this.label1);
             this.Encabezado.Location = new System.Drawing.Point(9, 19);
             this.Encabezado.Name = "Encabezado";
@@ -703,26 +665,26 @@
             this.Encabezado.TabStop = false;
             this.Encabezado.Text = "Cliente";
             // 
-            // button1
+            // Btn_consultarCliente
             // 
-            this.button1.Image = global::Facturacion.Properties.Resources.search;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(420, 47);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.button1.Size = new System.Drawing.Size(69, 54);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Consultar";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = true;
+            this.Btn_consultarCliente.Image = global::Facturacion.Properties.Resources.search;
+            this.Btn_consultarCliente.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_consultarCliente.Location = new System.Drawing.Point(420, 47);
+            this.Btn_consultarCliente.Name = "Btn_consultarCliente";
+            this.Btn_consultarCliente.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.Btn_consultarCliente.Size = new System.Drawing.Size(69, 54);
+            this.Btn_consultarCliente.TabIndex = 6;
+            this.Btn_consultarCliente.Text = "Consultar";
+            this.Btn_consultarCliente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_consultarCliente.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // Txt_nit
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(79, 100);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(306, 20);
-            this.textBox4.TabIndex = 7;
+            this.Txt_nit.Enabled = false;
+            this.Txt_nit.Location = new System.Drawing.Point(79, 100);
+            this.Txt_nit.Name = "Txt_nit";
+            this.Txt_nit.Size = new System.Drawing.Size(306, 20);
+            this.Txt_nit.TabIndex = 7;
             // 
             // label4
             // 
@@ -733,13 +695,13 @@
             this.label4.Text = "Nit:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox3
+            // Txt_codigo
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(79, 22);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(306, 20);
-            this.textBox3.TabIndex = 5;
+            this.Txt_codigo.Enabled = false;
+            this.Txt_codigo.Location = new System.Drawing.Point(79, 22);
+            this.Txt_codigo.Name = "Txt_codigo";
+            this.Txt_codigo.Size = new System.Drawing.Size(306, 20);
+            this.Txt_codigo.TabIndex = 5;
             // 
             // label3
             // 
@@ -750,13 +712,13 @@
             this.label3.Text = "Codigo:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox2
+            // Txt_apellidos
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(79, 74);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(306, 20);
-            this.textBox2.TabIndex = 3;
+            this.Txt_apellidos.Enabled = false;
+            this.Txt_apellidos.Location = new System.Drawing.Point(79, 74);
+            this.Txt_apellidos.Name = "Txt_apellidos";
+            this.Txt_apellidos.Size = new System.Drawing.Size(306, 20);
+            this.Txt_apellidos.TabIndex = 3;
             // 
             // label2
             // 
@@ -767,13 +729,13 @@
             this.label2.Text = "Apellidos:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // Txt_nombres
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(79, 48);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(306, 20);
-            this.textBox1.TabIndex = 1;
+            this.Txt_nombres.Enabled = false;
+            this.Txt_nombres.Location = new System.Drawing.Point(79, 48);
+            this.Txt_nombres.Name = "Txt_nombres";
+            this.Txt_nombres.Size = new System.Drawing.Size(306, 20);
+            this.Txt_nombres.TabIndex = 1;
             // 
             // label1
             // 
@@ -798,6 +760,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "CU_Pedido";
             this.Size = new System.Drawing.Size(1080, 685);
+            this.Load += new System.EventHandler(this.CU_Pedido_Load);
             this.groupBox19.ResumeLayout(false);
             this.groupBox19.PerformLayout();
             this.groupBox8.ResumeLayout(false);
@@ -821,14 +784,12 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox19;
-        private System.Windows.Forms.TextBox textBox50;
-        private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.TextBox textBox49;
+        private System.Windows.Forms.TextBox Txt_cotizacion;
         private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Button Btn_consultarCot;
+        private System.Windows.Forms.TextBox Txt_codigoCot;
         private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox Cbo_opcion;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Button button6;
@@ -873,21 +834,19 @@
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox51;
+        private System.Windows.Forms.TextBox Txt_vendedor;
         private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox Txt_correlativo;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox Encabezado;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button Btn_consultarCliente;
+        private System.Windows.Forms.TextBox Txt_nit;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox Txt_codigo;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Txt_apellidos;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Txt_nombres;
         private System.Windows.Forms.Label label1;
     }
 }

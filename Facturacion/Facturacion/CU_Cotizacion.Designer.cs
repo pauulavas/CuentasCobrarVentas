@@ -32,6 +32,8 @@
             this.Btn_remGrid = new System.Windows.Forms.Button();
             this.Btn_vender = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.Txt_registros = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
             this.Txt_total = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.Txt_iva = new System.Windows.Forms.TextBox();
@@ -90,8 +92,6 @@
             this.Dtp_final = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.Dtp_actual = new System.Windows.Forms.DateTimePicker();
-            this.Txt_registros = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
             this.acciones.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -160,6 +160,25 @@
             this.groupBox3.TabIndex = 32;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Venta";
+            // 
+            // Txt_registros
+            // 
+            this.Txt_registros.Enabled = false;
+            this.Txt_registros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_registros.Location = new System.Drawing.Point(573, 40);
+            this.Txt_registros.Name = "Txt_registros";
+            this.Txt_registros.Size = new System.Drawing.Size(169, 26);
+            this.Txt_registros.TabIndex = 20;
+            this.Txt_registros.Text = "0";
+            // 
+            // label20
+            // 
+            this.label20.Location = new System.Drawing.Point(573, 21);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(56, 16);
+            this.label20.TabIndex = 19;
+            this.label20.Text = "Registros:";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Txt_total
             // 
@@ -492,6 +511,7 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(26, 121);
             this.comboBox2.Name = "comboBox2";
@@ -509,6 +529,7 @@
             // 
             // comboBox5
             // 
+            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Location = new System.Drawing.Point(26, 77);
             this.comboBox5.Name = "comboBox5";
@@ -526,6 +547,7 @@
             // 
             // comboBox4
             // 
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(27, 33);
             this.comboBox4.Name = "comboBox4";
@@ -734,25 +756,6 @@
             this.Dtp_actual.Name = "Dtp_actual";
             this.Dtp_actual.Size = new System.Drawing.Size(200, 20);
             this.Dtp_actual.TabIndex = 0;
-            // 
-            // Txt_registros
-            // 
-            this.Txt_registros.Enabled = false;
-            this.Txt_registros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_registros.Location = new System.Drawing.Point(573, 40);
-            this.Txt_registros.Name = "Txt_registros";
-            this.Txt_registros.Size = new System.Drawing.Size(169, 26);
-            this.Txt_registros.TabIndex = 20;
-            this.Txt_registros.Text = "0";
-            // 
-            // label20
-            // 
-            this.label20.Location = new System.Drawing.Point(573, 21);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(56, 16);
-            this.label20.TabIndex = 19;
-            this.label20.Text = "Registros:";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // CU_Cotizacion
             // 

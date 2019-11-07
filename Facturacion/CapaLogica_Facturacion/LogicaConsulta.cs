@@ -158,7 +158,38 @@ namespace CapaLogica_Facturacion
             Sentencias sentencias = new Sentencias();
             OdbcCommand command = sentencias.insertarCotizacionD(idProducto, idCotizacion, cantidad, monto);
             command.ExecuteNonQuery();
-            //MessageBox.Show("Cotizacion Registrada!", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        public void comprobarCotizacion(string idCotizacion, TextBox cotizacion)
+        {
+            Sentencias sentencias = new Sentencias();
+            OdbcDataAdapter datos = sentencias.comprobarCotizacion(idCotizacion);
+            DataTable dtDatos = new DataTable();
+            datos.Fill(dtDatos);
+
+            int contador = 0;
+
+            if (dtDatos.Rows.Count > 0)
+            {
+                DataRow row;
+                for (int i = 0; i < dtDatos.Rows.Count; i++)
+                {
+                    row = dtDatos.Rows[i];
+                    contador = Int32.Parse(row["id"].ToString());
+                }
+                if (contador > 0)
+                {
+                    cotizacion.Text = "COTIZACION VIGENTE";
+                }
+                else
+                {
+                    cotizacion.Text = "COTIZACION INEXISTENTE";
+                }
+            }
+            else
+            {
+                MessageBox.Show("Error al Obtener Id Cotizacion", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

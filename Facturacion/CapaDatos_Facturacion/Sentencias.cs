@@ -101,5 +101,14 @@ namespace CapaDatos_Facturacion
              "," + idProducto + "," + idCotizacion + "," + cantidad + "," + monto + ")";
             return command;
         }
+
+        public OdbcDataAdapter comprobarCotizacion(string idCotizacion)
+        {
+            Conexion conexion = new Conexion();
+            conexion.Conectar();
+            string sConsulta = "SELECT COUNT(*) AS id FROM tbl_cotizacionencabezado WHERE KidCotizacionEncabezado = " + idCotizacion;
+            OdbcDataAdapter data = new OdbcDataAdapter(sConsulta, conexion.Conectar());
+            return data;
+        }
     }
 }

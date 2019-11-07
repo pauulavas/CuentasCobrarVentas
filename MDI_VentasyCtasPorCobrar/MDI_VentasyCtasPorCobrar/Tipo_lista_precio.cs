@@ -17,7 +17,7 @@ namespace MDI_VentasyCtasPorCobrar
         {
             InitializeComponent();
             //usuario = user;
-            string[] alias = { "Codigo", "Nombre", "Comision", "estado" };
+            string[] alias = { "Codigo", "Nombre", "Descuento", "estado" };
             navegador1.asignarAlias(alias);
             navegador1.asignarSalida(this);
             navegador1.asignarColorFondo(Color.White);
@@ -25,7 +25,7 @@ namespace MDI_VentasyCtasPorCobrar
             navegador1.asignarAyuda("1");
             navegador1.asignarTabla("tbl_tipo_lista_precios");
             navegador1.asignarNombreForm("Lista de Precios");
-            navegador1.asignarComboConTabla("tbl_comisiones", "KidComisiones");
+            navegador1.asignarComboConTabla("tbl_comisiones", "KidComisiones",1);
         }
 
         private void Lista_Precios_Detalle_Load(object sender, EventArgs e)

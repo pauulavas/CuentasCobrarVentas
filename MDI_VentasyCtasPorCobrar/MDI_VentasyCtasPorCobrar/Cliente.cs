@@ -26,7 +26,7 @@ namespace MDI_VentasyCtasPorCobrar
            
             navegador1.asignarTabla("tbl_clientes");
             navegador1.asignarNombreForm("Clientes");
-            navegador1.asignarComboConTabla("tbl_tipocliente", "kidtipocliente");
+            navegador1.asignarComboConTabla("tbl_tipocliente", "kidtipocliente",1);
         }
 
         private void Cliente_Load(object sender, EventArgs e)

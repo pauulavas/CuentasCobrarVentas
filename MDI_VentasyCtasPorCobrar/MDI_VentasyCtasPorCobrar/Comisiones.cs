@@ -17,13 +17,14 @@ namespace MDI_VentasyCtasPorCobrar
         {
             InitializeComponent();
             //usuario = user;
-            string[] alias = { "Codigo", "Fecha", "Nombre", "Monto", "estado" };
+            string[] alias = { "Codigo","Tipo Producto", "Fecha", "Nombre", "Monto", "estado" };
             navegador1.asignarAlias(alias);
             navegador1.asignarSalida(this);
             navegador1.asignarColorFondo(Color.White);
             navegador1.asignarColorFuente(Color.Black);
             navegador1.asignarAyuda("1");
             navegador1.asignarTabla("tbl_comisiones");
+            navegador1.asignarComboConTabla("tbl_tipoproducto", "KidTipoProducto", 1);
             navegador1.asignarNombreForm("Comisiones");
         }
 

@@ -50,15 +50,8 @@ C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ven
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_VentasyCtasPorCobrar\MDI_VentasyCtasPorCobrar\bin\Debug\Facturacion.dll
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_VentasyCtasPorCobrar\MDI_VentasyCtasPorCobrar\bin\Debug\CapaDeLogica.dll
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_VentasyCtasPorCobrar\MDI_VentasyCtasPorCobrar\bin\Debug\CapaDatos.dll
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_VentasyCtasPorCobrar\MDI_VentasyCtasPorCobrar\bin\Debug\ConsultasInteligentes.dll
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_VentasyCtasPorCobrar\MDI_VentasyCtasPorCobrar\bin\Debug\CapaDeDatos.dll
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_VentasyCtasPorCobrar\MDI_VentasyCtasPorCobrar\bin\Debug\CapaLogica.dll
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_VentasyCtasPorCobrar\MDI_VentasyCtasPorCobrar\bin\Debug\CapaDeDiseno.pdb
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_VentasyCtasPorCobrar\MDI_VentasyCtasPorCobrar\bin\Debug\Facturacion.pdb
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_VentasyCtasPorCobrar\MDI_VentasyCtasPorCobrar\bin\Debug\CapaDeLogica.pdb
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_VentasyCtasPorCobrar\MDI_VentasyCtasPorCobrar\bin\Debug\ConsultasInteligentes.pdb
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_VentasyCtasPorCobrar\MDI_VentasyCtasPorCobrar\bin\Debug\CapaDeDatos.pdb
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_VentasyCtasPorCobrar\MDI_VentasyCtasPorCobrar\bin\Debug\CapaLogica.pdb
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_VentasyCtasPorCobrar\MDI_VentasyCtasPorCobrar\obj\Debug\MDI_VentasyCtasPorCobrar.csprojAssemblyReference.cache
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_VentasyCtasPorCobrar\MDI_VentasyCtasPorCobrar\obj\Debug\MDI_VentasyCtasPorCobrar.Cliente.resources
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_VentasyCtasPorCobrar\MDI_VentasyCtasPorCobrar\obj\Debug\MDI_VentasyCtasPorCobrar.Comisiones.resources

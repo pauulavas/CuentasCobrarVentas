@@ -1,0 +1,49 @@
+C:\Users\Paula V\source\repos\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.csprojAssemblyReference.cache
+C:\Users\Paula V\source\repos\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Clientes.resources
+C:\Users\Paula V\source\repos\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Form1.resources
+C:\Users\Paula V\source\repos\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Properties.Resources.resources
+C:\Users\Paula V\source\repos\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Tipo_Clientes.resources
+C:\Users\Paula V\source\repos\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.csproj.GenerateResource.cache
+C:\Users\Paula V\source\repos\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.csproj.CoreCompileInputs.cache
+C:\Users\Paula V\source\repos\MDI_Ventas\MDI_Ventas\bin\Debug\MDI_Ventas.exe.config
+C:\Users\Paula V\source\repos\MDI_Ventas\MDI_Ventas\bin\Debug\MDI_Ventas.exe
+C:\Users\Paula V\source\repos\MDI_Ventas\MDI_Ventas\bin\Debug\MDI_Ventas.pdb
+C:\Users\Paula V\source\repos\MDI_Ventas\MDI_Ventas\bin\Debug\CapaDeDiseno.dll
+C:\Users\Paula V\source\repos\MDI_Ventas\MDI_Ventas\bin\Debug\CapaDeLogica.dll
+C:\Users\Paula V\source\repos\MDI_Ventas\MDI_Ventas\bin\Debug\CapaDatos.dll
+C:\Users\Paula V\source\repos\MDI_Ventas\MDI_Ventas\bin\Debug\CapaDeDatos.dll
+C:\Users\Paula V\source\repos\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.csproj.CopyComplete
+C:\Users\Paula V\source\repos\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.exe
+C:\Users\Paula V\source\repos\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.pdb
+C:\Users\Paula V\source\repos\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Tipo_Impuesto.resources
+C:\Users\Paula V\source\repos\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Tipo_Pagos.resources
+C:\Users\Paula V\source\repos\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Comisiones.resources
+C:\Users\Paula V\source\repos\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Tipo_Factura.resources
+C:\Users\Paula V\source\repos\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Folio.resources
+C:\Users\Paula V\source\repos\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Serie.resources
+C:\Users\Paula V\source\repos\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Tipo_Descuentos.resources
+C:\Users\Paula V\source\repos\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Tipo_lista_de_precios.resources
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\MDI_Ventas.exe.config
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\MDI_Ventas.exe
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\MDI_Ventas.pdb
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\CapaDeLogica.dll
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\CapaDatos.dll
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\CapaDeDatos.dll
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.csprojAssemblyReference.cache
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Clientes.resources
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Comisiones.resources
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Folio.resources
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Form1.resources
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Properties.Resources.resources
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Serie.resources
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Tipo_Descuentos.resources
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Tipo_Factura.resources
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Tipo_Impuesto.resources
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Tipo_Clientes.resources
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Tipo_lista_de_precios.resources
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Tipo_Pagos.resources
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.csproj.GenerateResource.cache
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.csproj.CoreCompileInputs.cache
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.csproj.CopyComplete
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.exe
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.pdb

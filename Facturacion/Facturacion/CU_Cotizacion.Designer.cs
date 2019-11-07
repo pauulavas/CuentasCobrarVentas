@@ -156,7 +156,7 @@
             this.groupBox3.Controls.Add(this.label15);
             this.groupBox3.Location = new System.Drawing.Point(13, 571);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(824, 83);
+            this.groupBox3.Size = new System.Drawing.Size(958, 83);
             this.groupBox3.TabIndex = 32;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Venta";

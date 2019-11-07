@@ -25,9 +25,15 @@ namespace Facturacion
 
         private void Btn_consultaCliente_Click(object sender, EventArgs e)
         {
-            bcliente = logicaConsulta.consultarCliente(Txt_codigo.Text, Txt_nombres, Txt_apellidos, Txt_nit);
+            if (!String.IsNullOrEmpty(Txt_codigo.Text))
+            {
+                bcliente = logicaConsulta.consultarCliente(Txt_codigo.Text, Txt_nombres, Txt_apellidos, Txt_nit);
+            }
+            else
+            {
+                MessageBox.Show("Campo Vacio!", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
-
         private void CU_Cotizacion_Load(object sender, EventArgs e)
         {
             logicaConsulta.obtenerIdCotizacion(Txt_correlativo);
@@ -35,7 +41,14 @@ namespace Facturacion
 
         private void Btn_consultarProducto_Click(object sender, EventArgs e)
         {
-            bproducto = logicaConsulta.obtenerProducto(Txt_codigoProducto.Text, Txt_nombreProducto, Txt_descProducto);
+            if (!String.IsNullOrEmpty(Txt_codigoProducto.Text))
+            {
+                bproducto = logicaConsulta.obtenerProducto(Txt_codigoProducto.Text, Txt_nombreProducto, Txt_descProducto);
+            }
+            else
+            {
+                MessageBox.Show("Campo Vacio!", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void Txt_addGrid_Click(object sender, EventArgs e)
@@ -111,7 +124,7 @@ namespace Facturacion
 
         private void Btn_vender_Click(object sender, EventArgs e)
         {
-            if (Dgv_factura.Rows.Count - 1 > 0 && bcliente == true && bproducto == true)
+            if (Dgv_factura.Rows.Count - 1 > 0 && bcliente == true)
             {
                 logicaConsulta.agregarCotizacionE(Txt_correlativo.Text,
                 Txt_codigo.Text,

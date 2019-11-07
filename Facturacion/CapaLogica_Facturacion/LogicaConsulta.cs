@@ -217,5 +217,47 @@ namespace CapaLogica_Facturacion
                 MessageBox.Show("Error al Obtener el Encabezado de Cotizacion", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        public void obtenerCotizacionD(string idCotizacion, DataGridView tablaFactura)
+        {
+            Sentencias sentencias = new Sentencias();
+            OdbcDataAdapter datos = sentencias.obtenerCotizacionD(idCotizacion);
+            DataTable dtDatos = new DataTable();
+            datos.Fill(dtDatos);
+            if (dtDatos.Rows.Count > 0)
+            {
+                tablaFactura.Rows.Clear();
+                for (int i = 0; i < dtDatos.Rows.Count; i++)
+                {
+                    DataRow row = dtDatos.Rows[i];
+                    tablaFactura.Rows.Add(
+                        row["KidProducto"].ToString(),
+                        row["cantidad_cotizacionDetalle"].ToString(),
+                        row["descripcion"].ToString(),
+                        row["precio"].ToString(),
+                        row["monto_cotizacionDetalle"].ToString(),
+                        "-"
+                        );
+                }
+            }
+            else
+            {
+                MessageBox.Show("Error al Obtener el Encabezado de Cotizacion", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void agregarPedidoE(string id, string idCotizacion, string idCliente, DateTime fechaI, DateTime fechaF)
+        {
+            Sentencias sentencias = new Sentencias();
+            OdbcCommand command = sentencias.insertarPedidoE(id, idCliente, idCotizacion, fechaI, fechaF);
+            command.ExecuteNonQuery();
+        }
+
+        public void agregarPedidoD(string idProducto, string idPedido, string cantidad, string monto)
+        {
+            Sentencias sentencias = new Sentencias();
+            OdbcCommand command = sentencias.insertarPedidoD(idProducto, idPedido, cantidad, monto);
+            command.ExecuteNonQuery();
+        }
     }
 }

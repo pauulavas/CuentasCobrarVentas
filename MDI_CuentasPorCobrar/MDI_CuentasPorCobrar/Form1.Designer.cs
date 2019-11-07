@@ -34,11 +34,14 @@
             this.tipoClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vendedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipoPagosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tipoPagosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.movimientoDeClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cuentasPorCobrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.polizasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,8 +99,19 @@
             this.vendedoresToolStripMenuItem.Text = "Tipo Movimiento";
             this.vendedoresToolStripMenuItem.Click += new System.EventHandler(this.VendedoresToolStripMenuItem_Click);
             // 
+            // tipoPagosToolStripMenuItem
+            // 
+            this.tipoPagosToolStripMenuItem.Name = "tipoPagosToolStripMenuItem";
+            this.tipoPagosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.tipoPagosToolStripMenuItem.Text = "Tipo Pagos";
+            this.tipoPagosToolStripMenuItem.Click += new System.EventHandler(this.TipoPagosToolStripMenuItem_Click);
+            // 
             // procesosToolStripMenuItem
             // 
+            this.procesosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.movimientoDeClientesToolStripMenuItem,
+            this.cuentasPorCobrarToolStripMenuItem,
+            this.polizasToolStripMenuItem});
             this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
             this.procesosToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
             this.procesosToolStripMenuItem.Text = "Procesos";
@@ -120,12 +134,23 @@
             this.ayudasToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
             this.ayudasToolStripMenuItem.Text = "Ayudas";
             // 
-            // tipoPagosToolStripMenuItem
+            // movimientoDeClientesToolStripMenuItem
             // 
-            this.tipoPagosToolStripMenuItem.Name = "tipoPagosToolStripMenuItem";
-            this.tipoPagosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.tipoPagosToolStripMenuItem.Text = "Tipo Pagos";
-            this.tipoPagosToolStripMenuItem.Click += new System.EventHandler(this.TipoPagosToolStripMenuItem_Click);
+            this.movimientoDeClientesToolStripMenuItem.Name = "movimientoDeClientesToolStripMenuItem";
+            this.movimientoDeClientesToolStripMenuItem.Size = new System.Drawing.Size(249, 26);
+            this.movimientoDeClientesToolStripMenuItem.Text = "Movimiento de Clientes";
+            // 
+            // cuentasPorCobrarToolStripMenuItem
+            // 
+            this.cuentasPorCobrarToolStripMenuItem.Name = "cuentasPorCobrarToolStripMenuItem";
+            this.cuentasPorCobrarToolStripMenuItem.Size = new System.Drawing.Size(249, 26);
+            this.cuentasPorCobrarToolStripMenuItem.Text = "Cuentas por Cobrar";
+            // 
+            // polizasToolStripMenuItem
+            // 
+            this.polizasToolStripMenuItem.Name = "polizasToolStripMenuItem";
+            this.polizasToolStripMenuItem.Size = new System.Drawing.Size(249, 26);
+            this.polizasToolStripMenuItem.Text = "Polizas";
             // 
             // Form1
             // 
@@ -157,6 +182,9 @@
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vendedoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tipoPagosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem movimientoDeClientesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cuentasPorCobrarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem polizasToolStripMenuItem;
     }
 }
 

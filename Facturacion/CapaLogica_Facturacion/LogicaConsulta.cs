@@ -160,8 +160,9 @@ namespace CapaLogica_Facturacion
             command.ExecuteNonQuery();
         }
 
-        public void comprobarCotizacion(string idCotizacion, TextBox cotizacion)
+        public bool comprobarCotizacion(string idCotizacion, TextBox cotizacion)
         {
+            bool encontrado = false;
             Sentencias sentencias = new Sentencias();
             OdbcDataAdapter datos = sentencias.comprobarCotizacion(idCotizacion);
             DataTable dtDatos = new DataTable();
@@ -180,15 +181,40 @@ namespace CapaLogica_Facturacion
                 if (contador > 0)
                 {
                     cotizacion.Text = "COTIZACION VIGENTE";
+                    encontrado = true;
                 }
                 else
                 {
                     cotizacion.Text = "COTIZACION INEXISTENTE";
+                    encontrado = false;
                 }
             }
             else
             {
                 MessageBox.Show("Error al Obtener Id Cotizacion", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                encontrado = false;
+            }
+            return encontrado;
+        }
+
+        public void obtenerCotizacionE(string idCotizacion, TextBox idCliente, TextBox fecha)
+        {
+            Sentencias sentencias = new Sentencias();
+            OdbcDataAdapter datos = sentencias.obtenerCotizacionE(idCotizacion);
+            DataTable dtDatos = new DataTable();
+            datos.Fill(dtDatos);
+            if (dtDatos.Rows.Count > 0)
+            {
+                for (int i = 0; i < dtDatos.Rows.Count; i++)
+                {
+                    DataRow row = dtDatos.Rows[i];
+                    idCliente.Text = row["KidCliente"].ToString();
+                    fecha.Text = row["vencimiento_cotizacionEncabezado"].ToString();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Error al Obtener el Encabezado de Cotizacion", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

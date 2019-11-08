@@ -58,11 +58,23 @@
     <Compile Include="CU_Devoluciones.Designer.cs">
       <DependentUpon>CU_Devoluciones.cs</DependentUpon>
     </Compile>
+    <Compile Include="CU_DevolucionesConsulta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CU_DevolucionesConsulta.Designer.cs">
+      <DependentUpon>CU_DevolucionesConsulta.cs</DependentUpon>
+    </Compile>
     <Compile Include="CU_Facturacion.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="CU_Facturacion.Designer.cs">
       <DependentUpon>CU_Facturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CU_FacturacionGeneral.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CU_FacturacionGeneral.Designer.cs">
+      <DependentUpon>CU_FacturacionGeneral.cs</DependentUpon>
     </Compile>
     <Compile Include="CU_Pedido.cs">
       <SubType>UserControl</SubType>
@@ -84,8 +96,14 @@
     <EmbeddedResource Include="CU_Devoluciones.resx">
       <DependentUpon>CU_Devoluciones.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CU_DevolucionesConsulta.resx">
+      <DependentUpon>CU_DevolucionesConsulta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CU_Facturacion.resx">
       <DependentUpon>CU_Facturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CU_FacturacionGeneral.resx">
+      <DependentUpon>CU_FacturacionGeneral.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CU_Pedido.resx">
       <DependentUpon>CU_Pedido.cs</DependentUpon>
@@ -121,6 +139,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\clipboard1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checked.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

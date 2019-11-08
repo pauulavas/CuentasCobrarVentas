@@ -28,16 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox19 = new System.Windows.Forms.GroupBox();
             this.Txt_fecha = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.Txt_cotizacion = new System.Windows.Forms.TextBox();
             this.label61 = new System.Windows.Forms.Label();
+            this.Btn_consultarCot = new System.Windows.Forms.Button();
             this.Txt_codigoCot = new System.Windows.Forms.TextBox();
             this.label60 = new System.Windows.Forms.Label();
             this.Cbo_opcion = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.Gpb_acciones = new System.Windows.Forms.GroupBox();
+            this.Btn_remGrid = new System.Windows.Forms.Button();
+            this.Btn_agregar = new System.Windows.Forms.Button();
             this.Gpb_venta = new System.Windows.Forms.GroupBox();
             this.Txt_registros = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
@@ -58,9 +62,12 @@
             this.Gpb_producto = new System.Windows.Forms.GroupBox();
             this.Txt_nombreProducto = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.Txt_addGrid = new System.Windows.Forms.Button();
             this.Txt_precioProducto = new System.Windows.Forms.TextBox();
+            this.button7 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.Nup_cantidad = new System.Windows.Forms.NumericUpDown();
+            this.Btn_consultarProducto = new System.Windows.Forms.Button();
             this.Txt_subtotal = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -82,6 +89,7 @@
             this.Txt_correlativo = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.Encabezado = new System.Windows.Forms.GroupBox();
+            this.Btn_consultarCliente = new System.Windows.Forms.Button();
             this.Txt_nit = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.Txt_codigo = new System.Windows.Forms.TextBox();
@@ -95,13 +103,6 @@
             this.Dtp_final = new System.Windows.Forms.DateTimePicker();
             this.label21 = new System.Windows.Forms.Label();
             this.Dtp_actual = new System.Windows.Forms.DateTimePicker();
-            this.Btn_consultarCot = new System.Windows.Forms.Button();
-            this.Btn_remGrid = new System.Windows.Forms.Button();
-            this.Btn_agregar = new System.Windows.Forms.Button();
-            this.Txt_addGrid = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.Btn_consultarProducto = new System.Windows.Forms.Button();
-            this.Btn_consultarCliente = new System.Windows.Forms.Button();
             this.groupBox19.SuspendLayout();
             this.Gpb_acciones.SuspendLayout();
             this.Gpb_venta.SuspendLayout();
@@ -169,6 +170,21 @@
             this.label61.Text = "Cotizacion:";
             this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // Btn_consultarCot
+            // 
+            this.Btn_consultarCot.ForeColor = System.Drawing.Color.Black;
+            this.Btn_consultarCot.Image = global::Facturacion.Properties.Resources.search;
+            this.Btn_consultarCot.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_consultarCot.Location = new System.Drawing.Point(284, 20);
+            this.Btn_consultarCot.Name = "Btn_consultarCot";
+            this.Btn_consultarCot.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.Btn_consultarCot.Size = new System.Drawing.Size(69, 54);
+            this.Btn_consultarCot.TabIndex = 16;
+            this.Btn_consultarCot.Text = "Consultar";
+            this.Btn_consultarCot.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_consultarCot.UseVisualStyleBackColor = true;
+            this.Btn_consultarCot.Click += new System.EventHandler(this.Btn_consultarCot_Click);
+            // 
             // Txt_codigoCot
             // 
             this.Txt_codigoCot.Location = new System.Drawing.Point(78, 53);
@@ -218,6 +234,36 @@
             this.Gpb_acciones.TabIndex = 33;
             this.Gpb_acciones.TabStop = false;
             this.Gpb_acciones.Text = "Acciones";
+            // 
+            // Btn_remGrid
+            // 
+            this.Btn_remGrid.ForeColor = System.Drawing.Color.Black;
+            this.Btn_remGrid.Image = global::Facturacion.Properties.Resources.close;
+            this.Btn_remGrid.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_remGrid.Location = new System.Drawing.Point(11, 39);
+            this.Btn_remGrid.Name = "Btn_remGrid";
+            this.Btn_remGrid.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.Btn_remGrid.Size = new System.Drawing.Size(69, 54);
+            this.Btn_remGrid.TabIndex = 16;
+            this.Btn_remGrid.Text = "Remover";
+            this.Btn_remGrid.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_remGrid.UseVisualStyleBackColor = true;
+            this.Btn_remGrid.Click += new System.EventHandler(this.Btn_remGrid_Click);
+            // 
+            // Btn_agregar
+            // 
+            this.Btn_agregar.ForeColor = System.Drawing.Color.Black;
+            this.Btn_agregar.Image = global::Facturacion.Properties.Resources.cart;
+            this.Btn_agregar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_agregar.Location = new System.Drawing.Point(11, 101);
+            this.Btn_agregar.Name = "Btn_agregar";
+            this.Btn_agregar.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.Btn_agregar.Size = new System.Drawing.Size(69, 54);
+            this.Btn_agregar.TabIndex = 19;
+            this.Btn_agregar.Text = "Vender";
+            this.Btn_agregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_agregar.UseVisualStyleBackColor = true;
+            this.Btn_agregar.Click += new System.EventHandler(this.Btn_agregar_Click);
             // 
             // Gpb_venta
             // 
@@ -316,7 +362,7 @@
             // Gpb_detalle
             // 
             this.Gpb_detalle.Controls.Add(this.Dgv_factura);
-            this.Gpb_detalle.ForeColor = System.Drawing.Color.White;
+            this.Gpb_detalle.ForeColor = System.Drawing.Color.Black;
             this.Gpb_detalle.Location = new System.Drawing.Point(13, 393);
             this.Gpb_detalle.Name = "Gpb_detalle";
             this.Gpb_detalle.Size = new System.Drawing.Size(958, 191);
@@ -334,8 +380,16 @@
             this.Precio,
             this.SubTotal,
             this.Inventario});
-            this.Dgv_factura.Location = new System.Drawing.Point(7, 19);
+            this.Dgv_factura.Location = new System.Drawing.Point(6, 19);
             this.Dgv_factura.Name = "Dgv_factura";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Maroon;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dgv_factura.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.Dgv_factura.Size = new System.Drawing.Size(945, 159);
             this.Dgv_factura.TabIndex = 0;
             this.Dgv_factura.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_factura_CellClick);
@@ -423,6 +477,21 @@
             this.label11.Text = "Nombre:";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // Txt_addGrid
+            // 
+            this.Txt_addGrid.ForeColor = System.Drawing.Color.Black;
+            this.Txt_addGrid.Image = global::Facturacion.Properties.Resources.add;
+            this.Txt_addGrid.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Txt_addGrid.Location = new System.Drawing.Point(821, 33);
+            this.Txt_addGrid.Name = "Txt_addGrid";
+            this.Txt_addGrid.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.Txt_addGrid.Size = new System.Drawing.Size(69, 54);
+            this.Txt_addGrid.TabIndex = 18;
+            this.Txt_addGrid.Text = "Añadir";
+            this.Txt_addGrid.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Txt_addGrid.UseVisualStyleBackColor = true;
+            this.Txt_addGrid.Click += new System.EventHandler(this.Txt_addGrid_Click);
+            // 
             // Txt_precioProducto
             // 
             this.Txt_precioProducto.Enabled = false;
@@ -431,6 +500,21 @@
             this.Txt_precioProducto.Size = new System.Drawing.Size(137, 20);
             this.Txt_precioProducto.TabIndex = 9;
             this.Txt_precioProducto.Text = "7.55";
+            // 
+            // button7
+            // 
+            this.button7.Enabled = false;
+            this.button7.ForeColor = System.Drawing.Color.Black;
+            this.button7.Image = global::Facturacion.Properties.Resources.share;
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button7.Location = new System.Drawing.Point(905, 33);
+            this.button7.Name = "button7";
+            this.button7.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.button7.Size = new System.Drawing.Size(69, 54);
+            this.button7.TabIndex = 17;
+            this.button7.Text = "Solicitar";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button7.UseVisualStyleBackColor = true;
             // 
             // label14
             // 
@@ -458,6 +542,21 @@
             0,
             0});
             this.Nup_cantidad.ValueChanged += new System.EventHandler(this.Nup_cantidad_ValueChanged);
+            // 
+            // Btn_consultarProducto
+            // 
+            this.Btn_consultarProducto.ForeColor = System.Drawing.Color.Black;
+            this.Btn_consultarProducto.Image = global::Facturacion.Properties.Resources.search;
+            this.Btn_consultarProducto.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_consultarProducto.Location = new System.Drawing.Point(492, 34);
+            this.Btn_consultarProducto.Name = "Btn_consultarProducto";
+            this.Btn_consultarProducto.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.Btn_consultarProducto.Size = new System.Drawing.Size(69, 54);
+            this.Btn_consultarProducto.TabIndex = 12;
+            this.Btn_consultarProducto.Text = "Consultar";
+            this.Btn_consultarProducto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_consultarProducto.UseVisualStyleBackColor = true;
+            this.Btn_consultarProducto.Click += new System.EventHandler(this.Btn_consultarProducto_Click);
             // 
             // Txt_subtotal
             // 
@@ -669,6 +768,21 @@
             this.Encabezado.TabStop = false;
             this.Encabezado.Text = "Cliente";
             // 
+            // Btn_consultarCliente
+            // 
+            this.Btn_consultarCliente.ForeColor = System.Drawing.Color.Black;
+            this.Btn_consultarCliente.Image = global::Facturacion.Properties.Resources.search;
+            this.Btn_consultarCliente.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_consultarCliente.Location = new System.Drawing.Point(412, 46);
+            this.Btn_consultarCliente.Name = "Btn_consultarCliente";
+            this.Btn_consultarCliente.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.Btn_consultarCliente.Size = new System.Drawing.Size(69, 54);
+            this.Btn_consultarCliente.TabIndex = 6;
+            this.Btn_consultarCliente.Text = "Consultar";
+            this.Btn_consultarCliente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_consultarCliente.UseVisualStyleBackColor = true;
+            this.Btn_consultarCliente.Click += new System.EventHandler(this.Btn_consultarCliente_Click);
+            // 
             // Txt_nit
             // 
             this.Txt_nit.Enabled = false;
@@ -782,111 +896,6 @@
             this.Dtp_actual.Name = "Dtp_actual";
             this.Dtp_actual.Size = new System.Drawing.Size(200, 20);
             this.Dtp_actual.TabIndex = 6;
-            // 
-            // Btn_consultarCot
-            // 
-            this.Btn_consultarCot.ForeColor = System.Drawing.Color.Black;
-            this.Btn_consultarCot.Image = global::Facturacion.Properties.Resources.search;
-            this.Btn_consultarCot.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_consultarCot.Location = new System.Drawing.Point(284, 20);
-            this.Btn_consultarCot.Name = "Btn_consultarCot";
-            this.Btn_consultarCot.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.Btn_consultarCot.Size = new System.Drawing.Size(69, 54);
-            this.Btn_consultarCot.TabIndex = 16;
-            this.Btn_consultarCot.Text = "Consultar";
-            this.Btn_consultarCot.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_consultarCot.UseVisualStyleBackColor = true;
-            this.Btn_consultarCot.Click += new System.EventHandler(this.Btn_consultarCot_Click);
-            // 
-            // Btn_remGrid
-            // 
-            this.Btn_remGrid.ForeColor = System.Drawing.Color.Black;
-            this.Btn_remGrid.Image = global::Facturacion.Properties.Resources.close;
-            this.Btn_remGrid.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_remGrid.Location = new System.Drawing.Point(11, 39);
-            this.Btn_remGrid.Name = "Btn_remGrid";
-            this.Btn_remGrid.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.Btn_remGrid.Size = new System.Drawing.Size(69, 54);
-            this.Btn_remGrid.TabIndex = 16;
-            this.Btn_remGrid.Text = "Remover";
-            this.Btn_remGrid.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_remGrid.UseVisualStyleBackColor = true;
-            this.Btn_remGrid.Click += new System.EventHandler(this.Btn_remGrid_Click);
-            // 
-            // Btn_agregar
-            // 
-            this.Btn_agregar.ForeColor = System.Drawing.Color.Black;
-            this.Btn_agregar.Image = global::Facturacion.Properties.Resources.cart;
-            this.Btn_agregar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_agregar.Location = new System.Drawing.Point(11, 101);
-            this.Btn_agregar.Name = "Btn_agregar";
-            this.Btn_agregar.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.Btn_agregar.Size = new System.Drawing.Size(69, 54);
-            this.Btn_agregar.TabIndex = 19;
-            this.Btn_agregar.Text = "Vender";
-            this.Btn_agregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_agregar.UseVisualStyleBackColor = true;
-            this.Btn_agregar.Click += new System.EventHandler(this.Btn_agregar_Click);
-            // 
-            // Txt_addGrid
-            // 
-            this.Txt_addGrid.ForeColor = System.Drawing.Color.Black;
-            this.Txt_addGrid.Image = global::Facturacion.Properties.Resources.add;
-            this.Txt_addGrid.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Txt_addGrid.Location = new System.Drawing.Point(821, 33);
-            this.Txt_addGrid.Name = "Txt_addGrid";
-            this.Txt_addGrid.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.Txt_addGrid.Size = new System.Drawing.Size(69, 54);
-            this.Txt_addGrid.TabIndex = 18;
-            this.Txt_addGrid.Text = "Añadir";
-            this.Txt_addGrid.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Txt_addGrid.UseVisualStyleBackColor = true;
-            this.Txt_addGrid.Click += new System.EventHandler(this.Txt_addGrid_Click);
-            // 
-            // button7
-            // 
-            this.button7.Enabled = false;
-            this.button7.ForeColor = System.Drawing.Color.Black;
-            this.button7.Image = global::Facturacion.Properties.Resources.share;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button7.Location = new System.Drawing.Point(905, 33);
-            this.button7.Name = "button7";
-            this.button7.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.button7.Size = new System.Drawing.Size(69, 54);
-            this.button7.TabIndex = 17;
-            this.button7.Text = "Solicitar";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // Btn_consultarProducto
-            // 
-            this.Btn_consultarProducto.ForeColor = System.Drawing.Color.Black;
-            this.Btn_consultarProducto.Image = global::Facturacion.Properties.Resources.search;
-            this.Btn_consultarProducto.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_consultarProducto.Location = new System.Drawing.Point(492, 34);
-            this.Btn_consultarProducto.Name = "Btn_consultarProducto";
-            this.Btn_consultarProducto.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.Btn_consultarProducto.Size = new System.Drawing.Size(69, 54);
-            this.Btn_consultarProducto.TabIndex = 12;
-            this.Btn_consultarProducto.Text = "Consultar";
-            this.Btn_consultarProducto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_consultarProducto.UseVisualStyleBackColor = true;
-            this.Btn_consultarProducto.Click += new System.EventHandler(this.Btn_consultarProducto_Click);
-            // 
-            // Btn_consultarCliente
-            // 
-            this.Btn_consultarCliente.ForeColor = System.Drawing.Color.Black;
-            this.Btn_consultarCliente.Image = global::Facturacion.Properties.Resources.search;
-            this.Btn_consultarCliente.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_consultarCliente.Location = new System.Drawing.Point(412, 46);
-            this.Btn_consultarCliente.Name = "Btn_consultarCliente";
-            this.Btn_consultarCliente.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.Btn_consultarCliente.Size = new System.Drawing.Size(69, 54);
-            this.Btn_consultarCliente.TabIndex = 6;
-            this.Btn_consultarCliente.Text = "Consultar";
-            this.Btn_consultarCliente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_consultarCliente.UseVisualStyleBackColor = true;
-            this.Btn_consultarCliente.Click += new System.EventHandler(this.Btn_consultarCliente_Click);
             // 
             // CU_Pedido
             // 

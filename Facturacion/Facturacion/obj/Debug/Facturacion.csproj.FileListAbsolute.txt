@@ -9,9 +9,7 @@ C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hot
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas\Facturacion\Facturacion\obj\Debug\Facturacion.csproj.GenerateResource.cache
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\Facturacion\bin\Debug\Facturacion.dll
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\Facturacion\bin\Debug\Facturacion.pdb
-C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\Facturacion\obj\Debug\Facturacion.csprojAssemblyReference.cache
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\Facturacion\obj\Debug\Facturacion.CU_Cotizacion.resources
-C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\Facturacion\obj\Debug\Facturacion.CU_Facturacion.resources
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\Facturacion\obj\Debug\Facturacion.Properties.Resources.resources
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\Facturacion\obj\Debug\Facturacion.csproj.GenerateResource.cache
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\Facturacion\obj\Debug\Facturacion.csproj.CoreCompileInputs.cache
@@ -23,3 +21,8 @@ C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hot
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\Facturacion\bin\Debug\CapaDatos_Facturacion.pdb
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\Facturacion\obj\Debug\Facturacion.CU_Pedido.resources
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\Facturacion\obj\Debug\Facturacion.csproj.CopyComplete
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\Facturacion\obj\Debug\Facturacion.CU_Devoluciones.resources
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\Facturacion\obj\Debug\Facturacion.CU_DevolucionesConsulta.resources
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\Facturacion\obj\Debug\Facturacion.CU_FacturacionGeneral.resources
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\Facturacion\obj\Debug\Facturacion.CU_Facturacion.resources
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\Facturacion\obj\Debug\Facturacion.csprojAssemblyReference.cache

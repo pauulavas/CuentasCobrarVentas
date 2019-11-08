@@ -80,7 +80,7 @@ namespace Facturacion
 
             Txt_subtotalGeneral.Text = "Q. " + String.Format("{0:0.00}", subtotal);
             Txt_total.Text = "Q. " + String.Format("{0:0.00}", subtotal);
-            int registros = cantidad;
+            int registros = Dgv_factura.Rows.Count - 1;
             Txt_registros.Text = registros.ToString();
         }
 
@@ -113,7 +113,7 @@ namespace Facturacion
 
                 Txt_subtotalGeneral.Text = "Q. " + String.Format("{0:0.00}", subtotal);
                 Txt_total.Text = "Q. " + String.Format("{0:0.00}", subtotal);
-                int registros = cantidad;
+                int registros = Dgv_factura.Rows.Count - 1;
                 Txt_registros.Text = registros.ToString();
             }
             else

@@ -39,19 +39,19 @@
             this.Cbo_documento = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.button6 = new System.Windows.Forms.Button();
+            this.Btn_remGrid = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.Txt_registros = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.Txt_total = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.Txt_iva = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.Txt_subtotalGeneral = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Dgv_factura = new System.Windows.Forms.DataGridView();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descripsion = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,20 +59,20 @@
             this.SubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Inventario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.textBox48 = new System.Windows.Forms.TextBox();
+            this.Txt_nombreProducto = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.Btn_addGrid = new System.Windows.Forms.Button();
+            this.Txt_precioProducto = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.Nup_cantidad = new System.Windows.Forms.NumericUpDown();
+            this.Btn_consultarProducto = new System.Windows.Forms.Button();
+            this.Txt_subtotal = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.Txt_descProducto = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.Txt_codigoProducto = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -83,9 +83,9 @@
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox51 = new System.Windows.Forms.TextBox();
+            this.Txt_vendedor = new System.Windows.Forms.TextBox();
             this.label63 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.Txt_correlativo = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.Cbo_serie = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -103,9 +103,9 @@
             this.groupBox8.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_factura)).BeginInit();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Nup_cantidad)).BeginInit();
             this.groupBox7.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -219,7 +219,7 @@
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.button6);
+            this.groupBox8.Controls.Add(this.Btn_remGrid);
             this.groupBox8.Controls.Add(this.button9);
             this.groupBox8.ForeColor = System.Drawing.Color.White;
             this.groupBox8.Location = new System.Drawing.Point(977, 401);
@@ -229,19 +229,20 @@
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Acciones";
             // 
-            // button6
+            // Btn_remGrid
             // 
-            this.button6.ForeColor = System.Drawing.Color.Black;
-            this.button6.Image = global::Facturacion.Properties.Resources.close;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button6.Location = new System.Drawing.Point(11, 19);
-            this.button6.Name = "button6";
-            this.button6.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.button6.Size = new System.Drawing.Size(69, 54);
-            this.button6.TabIndex = 16;
-            this.button6.Text = "Remover";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button6.UseVisualStyleBackColor = true;
+            this.Btn_remGrid.ForeColor = System.Drawing.Color.Black;
+            this.Btn_remGrid.Image = global::Facturacion.Properties.Resources.close;
+            this.Btn_remGrid.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_remGrid.Location = new System.Drawing.Point(11, 19);
+            this.Btn_remGrid.Name = "Btn_remGrid";
+            this.Btn_remGrid.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.Btn_remGrid.Size = new System.Drawing.Size(69, 54);
+            this.Btn_remGrid.TabIndex = 16;
+            this.Btn_remGrid.Text = "Remover";
+            this.Btn_remGrid.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_remGrid.UseVisualStyleBackColor = true;
+            this.Btn_remGrid.Click += new System.EventHandler(this.Btn_remGrid_Click);
             // 
             // button9
             // 
@@ -261,11 +262,11 @@
             // 
             this.groupBox3.Controls.Add(this.Txt_registros);
             this.groupBox3.Controls.Add(this.label20);
-            this.groupBox3.Controls.Add(this.textBox13);
+            this.groupBox3.Controls.Add(this.Txt_total);
             this.groupBox3.Controls.Add(this.label17);
-            this.groupBox3.Controls.Add(this.textBox12);
+            this.groupBox3.Controls.Add(this.Txt_iva);
             this.groupBox3.Controls.Add(this.label16);
-            this.groupBox3.Controls.Add(this.textBox11);
+            this.groupBox3.Controls.Add(this.Txt_subtotalGeneral);
             this.groupBox3.Controls.Add(this.label15);
             this.groupBox3.ForeColor = System.Drawing.Color.White;
             this.groupBox3.Location = new System.Drawing.Point(13, 597);
@@ -294,15 +295,15 @@
             this.label20.Text = "Registros:";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox13
+            // Txt_total
             // 
-            this.textBox13.Enabled = false;
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(389, 40);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(169, 26);
-            this.textBox13.TabIndex = 18;
-            this.textBox13.Text = "Q. 20.00";
+            this.Txt_total.Enabled = false;
+            this.Txt_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_total.Location = new System.Drawing.Point(389, 40);
+            this.Txt_total.Name = "Txt_total";
+            this.Txt_total.Size = new System.Drawing.Size(169, 26);
+            this.Txt_total.TabIndex = 18;
+            this.Txt_total.Text = "-";
             // 
             // label17
             // 
@@ -313,15 +314,15 @@
             this.label17.Text = "Total:";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox12
+            // Txt_iva
             // 
-            this.textBox12.Enabled = false;
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(203, 40);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(169, 26);
-            this.textBox12.TabIndex = 18;
-            this.textBox12.Text = "Q. 10.00";
+            this.Txt_iva.Enabled = false;
+            this.Txt_iva.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_iva.Location = new System.Drawing.Point(203, 40);
+            this.Txt_iva.Name = "Txt_iva";
+            this.Txt_iva.Size = new System.Drawing.Size(169, 26);
+            this.Txt_iva.TabIndex = 18;
+            this.Txt_iva.Text = "-";
             // 
             // label16
             // 
@@ -332,15 +333,15 @@
             this.label16.Text = "IVA:";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox11
+            // Txt_subtotalGeneral
             // 
-            this.textBox11.Enabled = false;
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(16, 40);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(169, 26);
-            this.textBox11.TabIndex = 16;
-            this.textBox11.Text = "Q. 10.00";
+            this.Txt_subtotalGeneral.Enabled = false;
+            this.Txt_subtotalGeneral.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_subtotalGeneral.Location = new System.Drawing.Point(16, 40);
+            this.Txt_subtotalGeneral.Name = "Txt_subtotalGeneral";
+            this.Txt_subtotalGeneral.Size = new System.Drawing.Size(169, 26);
+            this.Txt_subtotalGeneral.TabIndex = 16;
+            this.Txt_subtotalGeneral.Text = "-";
             // 
             // label15
             // 
@@ -353,7 +354,7 @@
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.dataGridView1);
+            this.groupBox6.Controls.Add(this.Dgv_factura);
             this.groupBox6.Location = new System.Drawing.Point(13, 401);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(958, 191);
@@ -361,20 +362,21 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Detalle-Venta";
             // 
-            // dataGridView1
+            // Dgv_factura
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Dgv_factura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_factura.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Codigo,
             this.Cantidad,
             this.Descripsion,
             this.Precio,
             this.SubTotal,
             this.Inventario});
-            this.dataGridView1.Location = new System.Drawing.Point(7, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(945, 159);
-            this.dataGridView1.TabIndex = 0;
+            this.Dgv_factura.Location = new System.Drawing.Point(7, 19);
+            this.Dgv_factura.Name = "Dgv_factura";
+            this.Dgv_factura.Size = new System.Drawing.Size(945, 159);
+            this.Dgv_factura.TabIndex = 0;
+            this.Dgv_factura.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_factura_CellClick);
             // 
             // Codigo
             // 
@@ -419,20 +421,20 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.textBox48);
+            this.groupBox4.Controls.Add(this.Txt_nombreProducto);
             this.groupBox4.Controls.Add(this.label11);
-            this.groupBox4.Controls.Add(this.button8);
-            this.groupBox4.Controls.Add(this.textBox10);
+            this.groupBox4.Controls.Add(this.Btn_addGrid);
+            this.groupBox4.Controls.Add(this.Txt_precioProducto);
             this.groupBox4.Controls.Add(this.button7);
             this.groupBox4.Controls.Add(this.label14);
-            this.groupBox4.Controls.Add(this.numericUpDown1);
-            this.groupBox4.Controls.Add(this.button4);
-            this.groupBox4.Controls.Add(this.textBox9);
+            this.groupBox4.Controls.Add(this.Nup_cantidad);
+            this.groupBox4.Controls.Add(this.Btn_consultarProducto);
+            this.groupBox4.Controls.Add(this.Txt_subtotal);
             this.groupBox4.Controls.Add(this.label12);
             this.groupBox4.Controls.Add(this.label13);
-            this.groupBox4.Controls.Add(this.textBox8);
+            this.groupBox4.Controls.Add(this.Txt_descProducto);
             this.groupBox4.Controls.Add(this.label10);
-            this.groupBox4.Controls.Add(this.textBox7);
+            this.groupBox4.Controls.Add(this.Txt_codigoProducto);
             this.groupBox4.Controls.Add(this.label9);
             this.groupBox4.ForeColor = System.Drawing.Color.White;
             this.groupBox4.Location = new System.Drawing.Point(13, 284);
@@ -442,12 +444,13 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Producto-Servicio";
             // 
-            // textBox48
+            // Txt_nombreProducto
             // 
-            this.textBox48.Location = new System.Drawing.Point(138, 78);
-            this.textBox48.Name = "textBox48";
-            this.textBox48.Size = new System.Drawing.Size(137, 20);
-            this.textBox48.TabIndex = 20;
+            this.Txt_nombreProducto.Enabled = false;
+            this.Txt_nombreProducto.Location = new System.Drawing.Point(138, 78);
+            this.Txt_nombreProducto.Name = "Txt_nombreProducto";
+            this.Txt_nombreProducto.Size = new System.Drawing.Size(137, 20);
+            this.Txt_nombreProducto.TabIndex = 20;
             // 
             // label11
             // 
@@ -458,29 +461,33 @@
             this.label11.Text = "Nombre:";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button8
+            // Btn_addGrid
             // 
-            this.button8.ForeColor = System.Drawing.Color.Black;
-            this.button8.Image = global::Facturacion.Properties.Resources.add;
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button8.Location = new System.Drawing.Point(821, 33);
-            this.button8.Name = "button8";
-            this.button8.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.button8.Size = new System.Drawing.Size(69, 54);
-            this.button8.TabIndex = 18;
-            this.button8.Text = "Añadir";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button8.UseVisualStyleBackColor = true;
+            this.Btn_addGrid.ForeColor = System.Drawing.Color.Black;
+            this.Btn_addGrid.Image = global::Facturacion.Properties.Resources.add;
+            this.Btn_addGrid.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_addGrid.Location = new System.Drawing.Point(821, 33);
+            this.Btn_addGrid.Name = "Btn_addGrid";
+            this.Btn_addGrid.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.Btn_addGrid.Size = new System.Drawing.Size(69, 54);
+            this.Btn_addGrid.TabIndex = 18;
+            this.Btn_addGrid.Text = "Añadir";
+            this.Btn_addGrid.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_addGrid.UseVisualStyleBackColor = true;
+            this.Btn_addGrid.Click += new System.EventHandler(this.Btn_addGrid_Click);
             // 
-            // textBox10
+            // Txt_precioProducto
             // 
-            this.textBox10.Location = new System.Drawing.Point(331, 78);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(137, 20);
-            this.textBox10.TabIndex = 9;
+            this.Txt_precioProducto.Enabled = false;
+            this.Txt_precioProducto.Location = new System.Drawing.Point(331, 78);
+            this.Txt_precioProducto.Name = "Txt_precioProducto";
+            this.Txt_precioProducto.Size = new System.Drawing.Size(137, 20);
+            this.Txt_precioProducto.TabIndex = 9;
+            this.Txt_precioProducto.Text = "4.25";
             // 
             // button7
             // 
+            this.button7.Enabled = false;
             this.button7.ForeColor = System.Drawing.Color.Black;
             this.button7.Image = global::Facturacion.Properties.Resources.share;
             this.button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -502,35 +509,47 @@
             this.label14.Text = "Precio:";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // numericUpDown1
+            // Nup_cantidad
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(648, 35);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(150, 20);
-            this.numericUpDown1.TabIndex = 15;
+            this.Nup_cantidad.Location = new System.Drawing.Point(648, 35);
+            this.Nup_cantidad.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.Nup_cantidad.Name = "Nup_cantidad";
+            this.Nup_cantidad.Size = new System.Drawing.Size(150, 20);
+            this.Nup_cantidad.TabIndex = 15;
+            this.Nup_cantidad.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.Nup_cantidad.ValueChanged += new System.EventHandler(this.Nup_cantidad_ValueChanged);
             // 
-            // button4
+            // Btn_consultarProducto
             // 
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Image = global::Facturacion.Properties.Resources.search;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button4.Location = new System.Drawing.Point(492, 34);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.button4.Size = new System.Drawing.Size(69, 54);
-            this.button4.TabIndex = 12;
-            this.button4.Text = "Consultar";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.UseVisualStyleBackColor = true;
+            this.Btn_consultarProducto.ForeColor = System.Drawing.Color.Black;
+            this.Btn_consultarProducto.Image = global::Facturacion.Properties.Resources.search;
+            this.Btn_consultarProducto.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_consultarProducto.Location = new System.Drawing.Point(492, 34);
+            this.Btn_consultarProducto.Name = "Btn_consultarProducto";
+            this.Btn_consultarProducto.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.Btn_consultarProducto.Size = new System.Drawing.Size(69, 54);
+            this.Btn_consultarProducto.TabIndex = 12;
+            this.Btn_consultarProducto.Text = "Consultar";
+            this.Btn_consultarProducto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_consultarProducto.UseVisualStyleBackColor = true;
+            this.Btn_consultarProducto.Click += new System.EventHandler(this.Btn_consultarProducto_Click);
             // 
-            // textBox9
+            // Txt_subtotal
             // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(648, 63);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(150, 26);
-            this.textBox9.TabIndex = 14;
-            this.textBox9.Text = "Q. 1.00";
+            this.Txt_subtotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_subtotal.Location = new System.Drawing.Point(648, 63);
+            this.Txt_subtotal.Name = "Txt_subtotal";
+            this.Txt_subtotal.Size = new System.Drawing.Size(150, 26);
+            this.Txt_subtotal.TabIndex = 14;
+            this.Txt_subtotal.Text = "Q. 1.00";
             // 
             // label12
             // 
@@ -550,12 +569,13 @@
             this.label13.Text = "Cantidad:";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox8
+            // Txt_descProducto
             // 
-            this.textBox8.Location = new System.Drawing.Point(138, 51);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(330, 20);
-            this.textBox8.TabIndex = 10;
+            this.Txt_descProducto.Enabled = false;
+            this.Txt_descProducto.Location = new System.Drawing.Point(138, 51);
+            this.Txt_descProducto.Name = "Txt_descProducto";
+            this.Txt_descProducto.Size = new System.Drawing.Size(330, 20);
+            this.Txt_descProducto.TabIndex = 10;
             // 
             // label10
             // 
@@ -566,12 +586,12 @@
             this.label10.Text = "Descripsion:";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox7
+            // Txt_codigoProducto
             // 
-            this.textBox7.Location = new System.Drawing.Point(138, 25);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(330, 20);
-            this.textBox7.TabIndex = 7;
+            this.Txt_codigoProducto.Location = new System.Drawing.Point(138, 25);
+            this.Txt_codigoProducto.Name = "Txt_codigoProducto";
+            this.Txt_codigoProducto.Size = new System.Drawing.Size(330, 20);
+            this.Txt_codigoProducto.TabIndex = 7;
             // 
             // label9
             // 
@@ -666,9 +686,9 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox51);
+            this.groupBox2.Controls.Add(this.Txt_vendedor);
             this.groupBox2.Controls.Add(this.label63);
-            this.groupBox2.Controls.Add(this.textBox6);
+            this.groupBox2.Controls.Add(this.Txt_correlativo);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.Cbo_serie);
             this.groupBox2.Controls.Add(this.label5);
@@ -680,13 +700,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Documento";
             // 
-            // textBox51
+            // Txt_vendedor
             // 
-            this.textBox51.Enabled = false;
-            this.textBox51.Location = new System.Drawing.Point(107, 91);
-            this.textBox51.Name = "textBox51";
-            this.textBox51.Size = new System.Drawing.Size(174, 20);
-            this.textBox51.TabIndex = 11;
+            this.Txt_vendedor.Enabled = false;
+            this.Txt_vendedor.Location = new System.Drawing.Point(107, 91);
+            this.Txt_vendedor.Name = "Txt_vendedor";
+            this.Txt_vendedor.Size = new System.Drawing.Size(174, 20);
+            this.Txt_vendedor.TabIndex = 11;
             // 
             // label63
             // 
@@ -697,17 +717,17 @@
             this.label63.Text = "Vendedor:";
             this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox6
+            // Txt_correlativo
             // 
-            this.textBox6.Enabled = false;
-            this.textBox6.Location = new System.Drawing.Point(107, 59);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(174, 20);
-            this.textBox6.TabIndex = 9;
+            this.Txt_correlativo.Enabled = false;
+            this.Txt_correlativo.Location = new System.Drawing.Point(107, 60);
+            this.Txt_correlativo.Name = "Txt_correlativo";
+            this.Txt_correlativo.Size = new System.Drawing.Size(174, 20);
+            this.Txt_correlativo.TabIndex = 9;
             // 
             // label8
             // 
-            this.label8.Location = new System.Drawing.Point(34, 59);
+            this.label8.Location = new System.Drawing.Point(34, 60);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(65, 20);
             this.label8.TabIndex = 8;
@@ -722,6 +742,7 @@
             this.Cbo_serie.Name = "Cbo_serie";
             this.Cbo_serie.Size = new System.Drawing.Size(174, 21);
             this.Cbo_serie.TabIndex = 7;
+            this.Cbo_serie.SelectedIndexChanged += new System.EventHandler(this.Cbo_serie_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -854,10 +875,10 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_factura)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Nup_cantidad)).EndInit();
             this.groupBox7.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -881,17 +902,17 @@
         private System.Windows.Forms.ComboBox Cbo_documento;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button Btn_remGrid;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox Txt_total;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox Txt_iva;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox Txt_subtotalGeneral;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView Dgv_factura;
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descripsion;
@@ -899,20 +920,20 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SubTotal;
         private System.Windows.Forms.DataGridViewTextBoxColumn Inventario;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox textBox48;
+        private System.Windows.Forms.TextBox Txt_nombreProducto;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Button Btn_addGrid;
+        private System.Windows.Forms.TextBox Txt_precioProducto;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.NumericUpDown Nup_cantidad;
+        private System.Windows.Forms.Button Btn_consultarProducto;
+        private System.Windows.Forms.TextBox Txt_subtotal;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox Txt_descProducto;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox Txt_codigoProducto;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Label label6;
@@ -923,9 +944,9 @@
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox51;
+        private System.Windows.Forms.TextBox Txt_vendedor;
         private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox Txt_correlativo;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox Cbo_serie;
         private System.Windows.Forms.Label label5;

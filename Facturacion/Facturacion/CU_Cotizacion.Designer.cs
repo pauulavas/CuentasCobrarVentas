@@ -51,7 +51,7 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.Txt_nombreProducto = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.Txt_addGrid = new System.Windows.Forms.Button();
+            this.Btn_addGrid = new System.Windows.Forms.Button();
             this.Txt_precioProducto = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
@@ -313,7 +313,7 @@
             // 
             this.groupBox4.Controls.Add(this.Txt_nombreProducto);
             this.groupBox4.Controls.Add(this.label11);
-            this.groupBox4.Controls.Add(this.Txt_addGrid);
+            this.groupBox4.Controls.Add(this.Btn_addGrid);
             this.groupBox4.Controls.Add(this.Txt_precioProducto);
             this.groupBox4.Controls.Add(this.button7);
             this.groupBox4.Controls.Add(this.label14);
@@ -351,20 +351,20 @@
             this.label11.Text = "Nombre:";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Txt_addGrid
+            // Btn_addGrid
             // 
-            this.Txt_addGrid.ForeColor = System.Drawing.Color.Black;
-            this.Txt_addGrid.Image = global::Facturacion.Properties.Resources.add;
-            this.Txt_addGrid.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Txt_addGrid.Location = new System.Drawing.Point(821, 33);
-            this.Txt_addGrid.Name = "Txt_addGrid";
-            this.Txt_addGrid.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.Txt_addGrid.Size = new System.Drawing.Size(69, 54);
-            this.Txt_addGrid.TabIndex = 18;
-            this.Txt_addGrid.Text = "Añadir";
-            this.Txt_addGrid.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Txt_addGrid.UseVisualStyleBackColor = true;
-            this.Txt_addGrid.Click += new System.EventHandler(this.Txt_addGrid_Click);
+            this.Btn_addGrid.ForeColor = System.Drawing.Color.Black;
+            this.Btn_addGrid.Image = global::Facturacion.Properties.Resources.add;
+            this.Btn_addGrid.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_addGrid.Location = new System.Drawing.Point(821, 33);
+            this.Btn_addGrid.Name = "Btn_addGrid";
+            this.Btn_addGrid.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.Btn_addGrid.Size = new System.Drawing.Size(69, 54);
+            this.Btn_addGrid.TabIndex = 18;
+            this.Btn_addGrid.Text = "Añadir";
+            this.Btn_addGrid.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_addGrid.UseVisualStyleBackColor = true;
+            this.Btn_addGrid.Click += new System.EventHandler(this.Txt_addGrid_Click);
             // 
             // Txt_precioProducto
             // 
@@ -828,7 +828,7 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.TextBox Txt_nombreProducto;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button Txt_addGrid;
+        private System.Windows.Forms.Button Btn_addGrid;
         private System.Windows.Forms.TextBox Txt_precioProducto;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label14;

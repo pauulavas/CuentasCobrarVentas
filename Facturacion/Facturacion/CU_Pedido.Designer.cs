@@ -33,14 +33,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.Txt_cotizacion = new System.Windows.Forms.TextBox();
             this.label61 = new System.Windows.Forms.Label();
-            this.Btn_consultarCot = new System.Windows.Forms.Button();
             this.Txt_codigoCot = new System.Windows.Forms.TextBox();
             this.label60 = new System.Windows.Forms.Label();
             this.Cbo_opcion = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.Gpb_acciones = new System.Windows.Forms.GroupBox();
-            this.Btn_remGrid = new System.Windows.Forms.Button();
-            this.Btn_agregar = new System.Windows.Forms.Button();
             this.Gpb_venta = new System.Windows.Forms.GroupBox();
             this.Txt_registros = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
@@ -61,12 +58,9 @@
             this.Gpb_producto = new System.Windows.Forms.GroupBox();
             this.Txt_nombreProducto = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.Txt_addGrid = new System.Windows.Forms.Button();
             this.Txt_precioProducto = new System.Windows.Forms.TextBox();
-            this.button7 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.Nup_cantidad = new System.Windows.Forms.NumericUpDown();
-            this.Btn_consultarProducto = new System.Windows.Forms.Button();
             this.Txt_subtotal = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -88,7 +82,6 @@
             this.Txt_correlativo = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.Encabezado = new System.Windows.Forms.GroupBox();
-            this.Btn_consultarCliente = new System.Windows.Forms.Button();
             this.Txt_nit = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.Txt_codigo = new System.Windows.Forms.TextBox();
@@ -102,6 +95,13 @@
             this.Dtp_final = new System.Windows.Forms.DateTimePicker();
             this.label21 = new System.Windows.Forms.Label();
             this.Dtp_actual = new System.Windows.Forms.DateTimePicker();
+            this.Btn_consultarCot = new System.Windows.Forms.Button();
+            this.Btn_remGrid = new System.Windows.Forms.Button();
+            this.Btn_agregar = new System.Windows.Forms.Button();
+            this.Txt_addGrid = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.Btn_consultarProducto = new System.Windows.Forms.Button();
+            this.Btn_consultarCliente = new System.Windows.Forms.Button();
             this.groupBox19.SuspendLayout();
             this.Gpb_acciones.SuspendLayout();
             this.Gpb_venta.SuspendLayout();
@@ -127,6 +127,7 @@
             this.groupBox19.Controls.Add(this.label60);
             this.groupBox19.Controls.Add(this.Cbo_opcion);
             this.groupBox19.Controls.Add(this.label7);
+            this.groupBox19.ForeColor = System.Drawing.Color.White;
             this.groupBox19.Location = new System.Drawing.Point(13, 13);
             this.groupBox19.Name = "groupBox19";
             this.groupBox19.Size = new System.Drawing.Size(654, 89);
@@ -167,20 +168,6 @@
             this.label61.TabIndex = 17;
             this.label61.Text = "Cotizacion:";
             this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Btn_consultarCot
-            // 
-            this.Btn_consultarCot.Image = global::Facturacion.Properties.Resources.search;
-            this.Btn_consultarCot.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_consultarCot.Location = new System.Drawing.Point(284, 20);
-            this.Btn_consultarCot.Name = "Btn_consultarCot";
-            this.Btn_consultarCot.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.Btn_consultarCot.Size = new System.Drawing.Size(69, 54);
-            this.Btn_consultarCot.TabIndex = 16;
-            this.Btn_consultarCot.Text = "Consultar";
-            this.Btn_consultarCot.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_consultarCot.UseVisualStyleBackColor = true;
-            this.Btn_consultarCot.Click += new System.EventHandler(this.Btn_consultarCot_Click);
             // 
             // Txt_codigoCot
             // 
@@ -224,40 +211,13 @@
             // 
             this.Gpb_acciones.Controls.Add(this.Btn_remGrid);
             this.Gpb_acciones.Controls.Add(this.Btn_agregar);
+            this.Gpb_acciones.ForeColor = System.Drawing.Color.White;
             this.Gpb_acciones.Location = new System.Drawing.Point(977, 393);
             this.Gpb_acciones.Name = "Gpb_acciones";
             this.Gpb_acciones.Size = new System.Drawing.Size(90, 191);
             this.Gpb_acciones.TabIndex = 33;
             this.Gpb_acciones.TabStop = false;
             this.Gpb_acciones.Text = "Acciones";
-            // 
-            // Btn_remGrid
-            // 
-            this.Btn_remGrid.Image = global::Facturacion.Properties.Resources.close;
-            this.Btn_remGrid.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_remGrid.Location = new System.Drawing.Point(11, 39);
-            this.Btn_remGrid.Name = "Btn_remGrid";
-            this.Btn_remGrid.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.Btn_remGrid.Size = new System.Drawing.Size(69, 54);
-            this.Btn_remGrid.TabIndex = 16;
-            this.Btn_remGrid.Text = "Remover";
-            this.Btn_remGrid.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_remGrid.UseVisualStyleBackColor = true;
-            this.Btn_remGrid.Click += new System.EventHandler(this.Btn_remGrid_Click);
-            // 
-            // Btn_agregar
-            // 
-            this.Btn_agregar.Image = global::Facturacion.Properties.Resources.cart;
-            this.Btn_agregar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_agregar.Location = new System.Drawing.Point(11, 101);
-            this.Btn_agregar.Name = "Btn_agregar";
-            this.Btn_agregar.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.Btn_agregar.Size = new System.Drawing.Size(69, 54);
-            this.Btn_agregar.TabIndex = 19;
-            this.Btn_agregar.Text = "Vender";
-            this.Btn_agregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_agregar.UseVisualStyleBackColor = true;
-            this.Btn_agregar.Click += new System.EventHandler(this.Btn_agregar_Click);
             // 
             // Gpb_venta
             // 
@@ -269,6 +229,7 @@
             this.Gpb_venta.Controls.Add(this.label16);
             this.Gpb_venta.Controls.Add(this.Txt_subtotalGeneral);
             this.Gpb_venta.Controls.Add(this.label15);
+            this.Gpb_venta.ForeColor = System.Drawing.Color.White;
             this.Gpb_venta.Location = new System.Drawing.Point(13, 589);
             this.Gpb_venta.Name = "Gpb_venta";
             this.Gpb_venta.Size = new System.Drawing.Size(958, 83);
@@ -355,6 +316,7 @@
             // Gpb_detalle
             // 
             this.Gpb_detalle.Controls.Add(this.Dgv_factura);
+            this.Gpb_detalle.ForeColor = System.Drawing.Color.White;
             this.Gpb_detalle.Location = new System.Drawing.Point(13, 393);
             this.Gpb_detalle.Name = "Gpb_detalle";
             this.Gpb_detalle.Size = new System.Drawing.Size(958, 191);
@@ -436,6 +398,7 @@
             this.Gpb_producto.Controls.Add(this.label10);
             this.Gpb_producto.Controls.Add(this.Txt_codigoProducto);
             this.Gpb_producto.Controls.Add(this.label9);
+            this.Gpb_producto.ForeColor = System.Drawing.Color.White;
             this.Gpb_producto.Location = new System.Drawing.Point(13, 276);
             this.Gpb_producto.Name = "Gpb_producto";
             this.Gpb_producto.Size = new System.Drawing.Size(1054, 111);
@@ -460,20 +423,6 @@
             this.label11.Text = "Nombre:";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Txt_addGrid
-            // 
-            this.Txt_addGrid.Image = global::Facturacion.Properties.Resources.add;
-            this.Txt_addGrid.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Txt_addGrid.Location = new System.Drawing.Point(821, 33);
-            this.Txt_addGrid.Name = "Txt_addGrid";
-            this.Txt_addGrid.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.Txt_addGrid.Size = new System.Drawing.Size(69, 54);
-            this.Txt_addGrid.TabIndex = 18;
-            this.Txt_addGrid.Text = "Añadir";
-            this.Txt_addGrid.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Txt_addGrid.UseVisualStyleBackColor = true;
-            this.Txt_addGrid.Click += new System.EventHandler(this.Txt_addGrid_Click);
-            // 
             // Txt_precioProducto
             // 
             this.Txt_precioProducto.Enabled = false;
@@ -482,20 +431,6 @@
             this.Txt_precioProducto.Size = new System.Drawing.Size(137, 20);
             this.Txt_precioProducto.TabIndex = 9;
             this.Txt_precioProducto.Text = "7.55";
-            // 
-            // button7
-            // 
-            this.button7.Enabled = false;
-            this.button7.Image = global::Facturacion.Properties.Resources.share;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button7.Location = new System.Drawing.Point(905, 33);
-            this.button7.Name = "button7";
-            this.button7.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.button7.Size = new System.Drawing.Size(69, 54);
-            this.button7.TabIndex = 17;
-            this.button7.Text = "Solicitar";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button7.UseVisualStyleBackColor = true;
             // 
             // label14
             // 
@@ -523,20 +458,6 @@
             0,
             0});
             this.Nup_cantidad.ValueChanged += new System.EventHandler(this.Nup_cantidad_ValueChanged);
-            // 
-            // Btn_consultarProducto
-            // 
-            this.Btn_consultarProducto.Image = global::Facturacion.Properties.Resources.search;
-            this.Btn_consultarProducto.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_consultarProducto.Location = new System.Drawing.Point(492, 34);
-            this.Btn_consultarProducto.Name = "Btn_consultarProducto";
-            this.Btn_consultarProducto.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.Btn_consultarProducto.Size = new System.Drawing.Size(69, 54);
-            this.Btn_consultarProducto.TabIndex = 12;
-            this.Btn_consultarProducto.Text = "Consultar";
-            this.Btn_consultarProducto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_consultarProducto.UseVisualStyleBackColor = true;
-            this.Btn_consultarProducto.Click += new System.EventHandler(this.Btn_consultarProducto_Click);
             // 
             // Txt_subtotal
             // 
@@ -607,6 +528,7 @@
             this.Gpb_configuracion.Controls.Add(this.Cbo_IVA);
             this.Gpb_configuracion.Controls.Add(this.label18);
             this.Gpb_configuracion.Controls.Add(this.Cbo_moneda);
+            this.Gpb_configuracion.ForeColor = System.Drawing.Color.White;
             this.Gpb_configuracion.Location = new System.Drawing.Point(870, 108);
             this.Gpb_configuracion.Name = "Gpb_configuracion";
             this.Gpb_configuracion.Size = new System.Drawing.Size(197, 162);
@@ -663,7 +585,7 @@
             // 
             this.Cbo_moneda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cbo_moneda.FormattingEnabled = true;
-            this.Cbo_moneda.Location = new System.Drawing.Point(27, 33);
+            this.Cbo_moneda.Location = new System.Drawing.Point(26, 33);
             this.Cbo_moneda.Name = "Cbo_moneda";
             this.Cbo_moneda.Size = new System.Drawing.Size(155, 21);
             this.Cbo_moneda.TabIndex = 8;
@@ -672,6 +594,7 @@
             // 
             this.Gpb_encabezado.Controls.Add(this.groupBox2);
             this.Gpb_encabezado.Controls.Add(this.Encabezado);
+            this.Gpb_encabezado.ForeColor = System.Drawing.Color.White;
             this.Gpb_encabezado.Location = new System.Drawing.Point(13, 108);
             this.Gpb_encabezado.Name = "Gpb_encabezado";
             this.Gpb_encabezado.Size = new System.Drawing.Size(851, 162);
@@ -685,6 +608,7 @@
             this.groupBox2.Controls.Add(this.label63);
             this.groupBox2.Controls.Add(this.Txt_correlativo);
             this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.ForeColor = System.Drawing.Color.White;
             this.groupBox2.Location = new System.Drawing.Point(526, 19);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(315, 134);
@@ -695,14 +619,14 @@
             // Txt_vendedor
             // 
             this.Txt_vendedor.Enabled = false;
-            this.Txt_vendedor.Location = new System.Drawing.Point(107, 79);
+            this.Txt_vendedor.Location = new System.Drawing.Point(105, 79);
             this.Txt_vendedor.Name = "Txt_vendedor";
             this.Txt_vendedor.Size = new System.Drawing.Size(174, 20);
             this.Txt_vendedor.TabIndex = 11;
             // 
             // label63
             // 
-            this.label63.Location = new System.Drawing.Point(34, 79);
+            this.label63.Location = new System.Drawing.Point(32, 79);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(65, 20);
             this.label63.TabIndex = 10;
@@ -712,14 +636,14 @@
             // Txt_correlativo
             // 
             this.Txt_correlativo.Enabled = false;
-            this.Txt_correlativo.Location = new System.Drawing.Point(107, 47);
+            this.Txt_correlativo.Location = new System.Drawing.Point(105, 47);
             this.Txt_correlativo.Name = "Txt_correlativo";
             this.Txt_correlativo.Size = new System.Drawing.Size(174, 20);
             this.Txt_correlativo.TabIndex = 9;
             // 
             // label8
             // 
-            this.label8.Location = new System.Drawing.Point(34, 47);
+            this.label8.Location = new System.Drawing.Point(32, 47);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(65, 20);
             this.label8.TabIndex = 8;
@@ -737,26 +661,13 @@
             this.Encabezado.Controls.Add(this.label2);
             this.Encabezado.Controls.Add(this.Txt_nombres);
             this.Encabezado.Controls.Add(this.label1);
+            this.Encabezado.ForeColor = System.Drawing.Color.White;
             this.Encabezado.Location = new System.Drawing.Point(9, 19);
             this.Encabezado.Name = "Encabezado";
             this.Encabezado.Size = new System.Drawing.Size(511, 134);
             this.Encabezado.TabIndex = 0;
             this.Encabezado.TabStop = false;
             this.Encabezado.Text = "Cliente";
-            // 
-            // Btn_consultarCliente
-            // 
-            this.Btn_consultarCliente.Image = global::Facturacion.Properties.Resources.search;
-            this.Btn_consultarCliente.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_consultarCliente.Location = new System.Drawing.Point(420, 47);
-            this.Btn_consultarCliente.Name = "Btn_consultarCliente";
-            this.Btn_consultarCliente.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.Btn_consultarCliente.Size = new System.Drawing.Size(69, 54);
-            this.Btn_consultarCliente.TabIndex = 6;
-            this.Btn_consultarCliente.Text = "Consultar";
-            this.Btn_consultarCliente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_consultarCliente.UseVisualStyleBackColor = true;
-            this.Btn_consultarCliente.Click += new System.EventHandler(this.Btn_consultarCliente_Click);
             // 
             // Txt_nit
             // 
@@ -831,6 +742,7 @@
             this.Gpb_fechas.Controls.Add(this.Dtp_final);
             this.Gpb_fechas.Controls.Add(this.label21);
             this.Gpb_fechas.Controls.Add(this.Dtp_actual);
+            this.Gpb_fechas.ForeColor = System.Drawing.Color.White;
             this.Gpb_fechas.Location = new System.Drawing.Point(673, 13);
             this.Gpb_fechas.Name = "Gpb_fechas";
             this.Gpb_fechas.Size = new System.Drawing.Size(394, 89);
@@ -871,11 +783,116 @@
             this.Dtp_actual.Size = new System.Drawing.Size(200, 20);
             this.Dtp_actual.TabIndex = 6;
             // 
+            // Btn_consultarCot
+            // 
+            this.Btn_consultarCot.ForeColor = System.Drawing.Color.Black;
+            this.Btn_consultarCot.Image = global::Facturacion.Properties.Resources.search;
+            this.Btn_consultarCot.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_consultarCot.Location = new System.Drawing.Point(284, 20);
+            this.Btn_consultarCot.Name = "Btn_consultarCot";
+            this.Btn_consultarCot.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.Btn_consultarCot.Size = new System.Drawing.Size(69, 54);
+            this.Btn_consultarCot.TabIndex = 16;
+            this.Btn_consultarCot.Text = "Consultar";
+            this.Btn_consultarCot.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_consultarCot.UseVisualStyleBackColor = true;
+            this.Btn_consultarCot.Click += new System.EventHandler(this.Btn_consultarCot_Click);
+            // 
+            // Btn_remGrid
+            // 
+            this.Btn_remGrid.ForeColor = System.Drawing.Color.Black;
+            this.Btn_remGrid.Image = global::Facturacion.Properties.Resources.close;
+            this.Btn_remGrid.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_remGrid.Location = new System.Drawing.Point(11, 39);
+            this.Btn_remGrid.Name = "Btn_remGrid";
+            this.Btn_remGrid.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.Btn_remGrid.Size = new System.Drawing.Size(69, 54);
+            this.Btn_remGrid.TabIndex = 16;
+            this.Btn_remGrid.Text = "Remover";
+            this.Btn_remGrid.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_remGrid.UseVisualStyleBackColor = true;
+            this.Btn_remGrid.Click += new System.EventHandler(this.Btn_remGrid_Click);
+            // 
+            // Btn_agregar
+            // 
+            this.Btn_agregar.ForeColor = System.Drawing.Color.Black;
+            this.Btn_agregar.Image = global::Facturacion.Properties.Resources.cart;
+            this.Btn_agregar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_agregar.Location = new System.Drawing.Point(11, 101);
+            this.Btn_agregar.Name = "Btn_agregar";
+            this.Btn_agregar.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.Btn_agregar.Size = new System.Drawing.Size(69, 54);
+            this.Btn_agregar.TabIndex = 19;
+            this.Btn_agregar.Text = "Vender";
+            this.Btn_agregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_agregar.UseVisualStyleBackColor = true;
+            this.Btn_agregar.Click += new System.EventHandler(this.Btn_agregar_Click);
+            // 
+            // Txt_addGrid
+            // 
+            this.Txt_addGrid.ForeColor = System.Drawing.Color.Black;
+            this.Txt_addGrid.Image = global::Facturacion.Properties.Resources.add;
+            this.Txt_addGrid.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Txt_addGrid.Location = new System.Drawing.Point(821, 33);
+            this.Txt_addGrid.Name = "Txt_addGrid";
+            this.Txt_addGrid.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.Txt_addGrid.Size = new System.Drawing.Size(69, 54);
+            this.Txt_addGrid.TabIndex = 18;
+            this.Txt_addGrid.Text = "Añadir";
+            this.Txt_addGrid.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Txt_addGrid.UseVisualStyleBackColor = true;
+            this.Txt_addGrid.Click += new System.EventHandler(this.Txt_addGrid_Click);
+            // 
+            // button7
+            // 
+            this.button7.Enabled = false;
+            this.button7.ForeColor = System.Drawing.Color.Black;
+            this.button7.Image = global::Facturacion.Properties.Resources.share;
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button7.Location = new System.Drawing.Point(905, 33);
+            this.button7.Name = "button7";
+            this.button7.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.button7.Size = new System.Drawing.Size(69, 54);
+            this.button7.TabIndex = 17;
+            this.button7.Text = "Solicitar";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // Btn_consultarProducto
+            // 
+            this.Btn_consultarProducto.ForeColor = System.Drawing.Color.Black;
+            this.Btn_consultarProducto.Image = global::Facturacion.Properties.Resources.search;
+            this.Btn_consultarProducto.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_consultarProducto.Location = new System.Drawing.Point(492, 34);
+            this.Btn_consultarProducto.Name = "Btn_consultarProducto";
+            this.Btn_consultarProducto.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.Btn_consultarProducto.Size = new System.Drawing.Size(69, 54);
+            this.Btn_consultarProducto.TabIndex = 12;
+            this.Btn_consultarProducto.Text = "Consultar";
+            this.Btn_consultarProducto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_consultarProducto.UseVisualStyleBackColor = true;
+            this.Btn_consultarProducto.Click += new System.EventHandler(this.Btn_consultarProducto_Click);
+            // 
+            // Btn_consultarCliente
+            // 
+            this.Btn_consultarCliente.ForeColor = System.Drawing.Color.Black;
+            this.Btn_consultarCliente.Image = global::Facturacion.Properties.Resources.search;
+            this.Btn_consultarCliente.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_consultarCliente.Location = new System.Drawing.Point(412, 46);
+            this.Btn_consultarCliente.Name = "Btn_consultarCliente";
+            this.Btn_consultarCliente.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.Btn_consultarCliente.Size = new System.Drawing.Size(69, 54);
+            this.Btn_consultarCliente.TabIndex = 6;
+            this.Btn_consultarCliente.Text = "Consultar";
+            this.Btn_consultarCliente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_consultarCliente.UseVisualStyleBackColor = true;
+            this.Btn_consultarCliente.Click += new System.EventHandler(this.Btn_consultarCliente_Click);
+            // 
             // CU_Pedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
             this.Controls.Add(this.Gpb_fechas);
             this.Controls.Add(this.groupBox19);
             this.Controls.Add(this.Gpb_acciones);

@@ -81,6 +81,9 @@
     <EmbeddedResource Include="CU_Cotizacion.resx">
       <DependentUpon>CU_Cotizacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CU_Devoluciones.resx">
+      <DependentUpon>CU_Devoluciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CU_Facturacion.resx">
       <DependentUpon>CU_Facturacion.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,6 +115,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -56,9 +56,9 @@
             this.Gpb_costolista = new System.Windows.Forms.GroupBox();
             this.Gpb_accion2 = new System.Windows.Forms.GroupBox();
             this.Gpb_accion = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.Gpb_producto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_producto)).BeginInit();
             this.Gpb_lista.SuspendLayout();
@@ -146,6 +146,7 @@
             this.Gpb_producto.Controls.Add(this.Btn_agregarproducto);
             this.Gpb_producto.Controls.Add(this.Txt_nombreproducto);
             this.Gpb_producto.Controls.Add(this.Cbo_codigoproducto);
+            this.Gpb_producto.ForeColor = System.Drawing.Color.White;
             this.Gpb_producto.Location = new System.Drawing.Point(31, 225);
             this.Gpb_producto.Name = "Gpb_producto";
             this.Gpb_producto.Size = new System.Drawing.Size(895, 317);
@@ -289,6 +290,7 @@
             this.Gpb_lista.Controls.Add(this.Dtp_fechainicio);
             this.Gpb_lista.Controls.Add(this.Txt_nombrelista);
             this.Gpb_lista.Controls.Add(this.Cbo_tipolista);
+            this.Gpb_lista.ForeColor = System.Drawing.Color.White;
             this.Gpb_lista.Location = new System.Drawing.Point(446, 9);
             this.Gpb_lista.Name = "Gpb_lista";
             this.Gpb_lista.Size = new System.Drawing.Size(480, 206);
@@ -304,6 +306,7 @@
             this.Gpb_costolista.Controls.Add(this.Txt_total);
             this.Gpb_costolista.Controls.Add(this.Txt_descuento);
             this.Gpb_costolista.Controls.Add(this.Txt_subtotal);
+            this.Gpb_costolista.ForeColor = System.Drawing.Color.White;
             this.Gpb_costolista.Location = new System.Drawing.Point(33, 556);
             this.Gpb_costolista.Name = "Gpb_costolista";
             this.Gpb_costolista.Size = new System.Drawing.Size(468, 154);
@@ -315,6 +318,7 @@
             // 
             this.Gpb_accion2.Controls.Add(this.Btn_cancelarlista);
             this.Gpb_accion2.Controls.Add(this.Btn_aceptarlista);
+            this.Gpb_accion2.ForeColor = System.Drawing.Color.White;
             this.Gpb_accion2.Location = new System.Drawing.Point(519, 561);
             this.Gpb_accion2.Name = "Gpb_accion2";
             this.Gpb_accion2.Size = new System.Drawing.Size(407, 148);
@@ -328,6 +332,7 @@
             this.Gpb_accion.Controls.Add(this.button3);
             this.Gpb_accion.Controls.Add(this.button2);
             this.Gpb_accion.Controls.Add(this.button1);
+            this.Gpb_accion.ForeColor = System.Drawing.Color.White;
             this.Gpb_accion.Location = new System.Drawing.Point(33, 9);
             this.Gpb_accion.Name = "Gpb_accion";
             this.Gpb_accion.Size = new System.Drawing.Size(389, 206);
@@ -335,15 +340,15 @@
             this.Gpb_accion.TabStop = false;
             this.Gpb_accion.Text = "Acciones";
             // 
-            // button1
+            // button3
             // 
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(114, 90);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(128, 35);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Consultar Lista";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button3.ForeColor = System.Drawing.Color.Black;
+            this.button3.Location = new System.Drawing.Point(114, 29);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(128, 35);
+            this.button3.TabIndex = 21;
+            this.button3.Text = "Crear Lista";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -355,15 +360,15 @@
             this.button2.Text = "Modificar Lista";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // button1
             // 
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(114, 29);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(128, 35);
-            this.button3.TabIndex = 21;
-            this.button3.Text = "Crear Lista";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(114, 90);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(128, 35);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Consultar Lista";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Lista_Precios
             // 

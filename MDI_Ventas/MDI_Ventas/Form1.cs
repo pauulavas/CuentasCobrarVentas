@@ -86,5 +86,12 @@ namespace MDI_Ventas
             form_descuentos.MdiParent = this;
             form_descuentos.Show();
         }
+
+        private void ListaDePreciosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Lista_Precios form_lista_precios = new Lista_Precios();
+            form_lista_precios.MdiParent = this;
+            form_lista_precios.Show();
+        }
     }
 }

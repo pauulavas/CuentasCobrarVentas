@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox19 = new System.Windows.Forms.GroupBox();
-            this.textBox50 = new System.Windows.Forms.TextBox();
+            this.Txt_pedido = new System.Windows.Forms.TextBox();
             this.label62 = new System.Windows.Forms.Label();
-            this.textBox49 = new System.Windows.Forms.TextBox();
+            this.Txt_cotizacion = new System.Windows.Forms.TextBox();
             this.label61 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.Btn_consultaDoc = new System.Windows.Forms.Button();
+            this.Txt_codigoDoc = new System.Windows.Forms.TextBox();
             this.label60 = new System.Windows.Forms.Label();
             this.Cbo_documento = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -81,7 +81,7 @@
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Gpb_encabezado = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.Txt_vendedor = new System.Windows.Forms.TextBox();
             this.label63 = new System.Windows.Forms.Label();
@@ -99,6 +99,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Txt_nombres = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.Txt_fechaPed = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.Txt_fechaCot = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
             this.groupBox19.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -107,19 +111,23 @@
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Nup_cantidad)).BeginInit();
             this.groupBox7.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.Gpb_encabezado.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.Encabezado.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox19
             // 
-            this.groupBox19.Controls.Add(this.textBox50);
+            this.groupBox19.Controls.Add(this.Txt_fechaPed);
+            this.groupBox19.Controls.Add(this.label21);
+            this.groupBox19.Controls.Add(this.Txt_fechaCot);
+            this.groupBox19.Controls.Add(this.label22);
+            this.groupBox19.Controls.Add(this.Txt_pedido);
             this.groupBox19.Controls.Add(this.label62);
-            this.groupBox19.Controls.Add(this.textBox49);
+            this.groupBox19.Controls.Add(this.Txt_cotizacion);
             this.groupBox19.Controls.Add(this.label61);
-            this.groupBox19.Controls.Add(this.button2);
-            this.groupBox19.Controls.Add(this.textBox5);
+            this.groupBox19.Controls.Add(this.Btn_consultaDoc);
+            this.groupBox19.Controls.Add(this.Txt_codigoDoc);
             this.groupBox19.Controls.Add(this.label60);
             this.groupBox19.Controls.Add(this.Cbo_documento);
             this.groupBox19.Controls.Add(this.label7);
@@ -131,69 +139,70 @@
             this.groupBox19.TabStop = false;
             this.groupBox19.Text = "Cotizacion-Pedido";
             // 
-            // textBox50
+            // Txt_pedido
             // 
-            this.textBox50.Enabled = false;
-            this.textBox50.Location = new System.Drawing.Point(778, 52);
-            this.textBox50.Name = "textBox50";
-            this.textBox50.Size = new System.Drawing.Size(189, 20);
-            this.textBox50.TabIndex = 20;
+            this.Txt_pedido.Enabled = false;
+            this.Txt_pedido.Location = new System.Drawing.Point(513, 50);
+            this.Txt_pedido.Name = "Txt_pedido";
+            this.Txt_pedido.Size = new System.Drawing.Size(189, 20);
+            this.Txt_pedido.TabIndex = 20;
             // 
             // label62
             // 
-            this.label62.Location = new System.Drawing.Point(713, 51);
+            this.label62.Location = new System.Drawing.Point(448, 49);
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(55, 20);
             this.label62.TabIndex = 19;
             this.label62.Text = "Pedido:";
             this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox49
+            // Txt_cotizacion
             // 
-            this.textBox49.Enabled = false;
-            this.textBox49.Location = new System.Drawing.Point(778, 26);
-            this.textBox49.Name = "textBox49";
-            this.textBox49.Size = new System.Drawing.Size(189, 20);
-            this.textBox49.TabIndex = 18;
+            this.Txt_cotizacion.Enabled = false;
+            this.Txt_cotizacion.Location = new System.Drawing.Point(513, 24);
+            this.Txt_cotizacion.Name = "Txt_cotizacion";
+            this.Txt_cotizacion.Size = new System.Drawing.Size(189, 20);
+            this.Txt_cotizacion.TabIndex = 18;
             // 
             // label61
             // 
-            this.label61.Location = new System.Drawing.Point(699, 26);
+            this.label61.Location = new System.Drawing.Point(434, 24);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(69, 20);
             this.label61.TabIndex = 17;
             this.label61.Text = "Cotizacion:";
             this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button2
+            // Btn_consultaDoc
             // 
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Image = global::Facturacion.Properties.Resources.search;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(614, 19);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.button2.Size = new System.Drawing.Size(69, 54);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Consultar";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = true;
+            this.Btn_consultaDoc.ForeColor = System.Drawing.Color.Black;
+            this.Btn_consultaDoc.Image = global::Facturacion.Properties.Resources.search;
+            this.Btn_consultaDoc.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_consultaDoc.Location = new System.Drawing.Point(331, 19);
+            this.Btn_consultaDoc.Name = "Btn_consultaDoc";
+            this.Btn_consultaDoc.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.Btn_consultaDoc.Size = new System.Drawing.Size(69, 54);
+            this.Btn_consultaDoc.TabIndex = 16;
+            this.Btn_consultaDoc.Text = "Consultar";
+            this.Btn_consultaDoc.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_consultaDoc.UseVisualStyleBackColor = true;
+            this.Btn_consultaDoc.Click += new System.EventHandler(this.Btn_consultaDoc_Click);
             // 
-            // textBox5
+            // Txt_codigoDoc
             // 
-            this.textBox5.Location = new System.Drawing.Point(402, 35);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(189, 20);
-            this.textBox5.TabIndex = 15;
+            this.Txt_codigoDoc.Location = new System.Drawing.Point(97, 52);
+            this.Txt_codigoDoc.Name = "Txt_codigoDoc";
+            this.Txt_codigoDoc.Size = new System.Drawing.Size(189, 20);
+            this.Txt_codigoDoc.TabIndex = 15;
             // 
             // label60
             // 
-            this.label60.Location = new System.Drawing.Point(346, 35);
+            this.label60.Location = new System.Drawing.Point(41, 52);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(50, 20);
             this.label60.TabIndex = 14;
             this.label60.Text = "Codigo:";
-            this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Cbo_documento
             // 
@@ -203,19 +212,20 @@
             "-",
             "Cotizacion",
             "Pedido"});
-            this.Cbo_documento.Location = new System.Drawing.Point(155, 35);
+            this.Cbo_documento.Location = new System.Drawing.Point(97, 25);
             this.Cbo_documento.Name = "Cbo_documento";
-            this.Cbo_documento.Size = new System.Drawing.Size(174, 21);
+            this.Cbo_documento.Size = new System.Drawing.Size(189, 21);
             this.Cbo_documento.TabIndex = 11;
+            this.Cbo_documento.SelectedIndexChanged += new System.EventHandler(this.Cbo_documento_SelectedIndexChanged);
             // 
             // label7
             // 
-            this.label7.Location = new System.Drawing.Point(96, 34);
+            this.label7.Location = new System.Drawing.Point(38, 26);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(53, 20);
             this.label7.TabIndex = 10;
             this.label7.Text = "Adjuntar:";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // groupBox8
             // 
@@ -544,12 +554,13 @@
             // 
             // Txt_subtotal
             // 
+            this.Txt_subtotal.Enabled = false;
             this.Txt_subtotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_subtotal.Location = new System.Drawing.Point(648, 63);
             this.Txt_subtotal.Name = "Txt_subtotal";
             this.Txt_subtotal.Size = new System.Drawing.Size(150, 26);
             this.Txt_subtotal.TabIndex = 14;
-            this.Txt_subtotal.Text = "Q. 1.00";
+            this.Txt_subtotal.Text = "-";
             // 
             // label12
             // 
@@ -672,17 +683,17 @@
             this.comboBox4.Size = new System.Drawing.Size(155, 21);
             this.comboBox4.TabIndex = 8;
             // 
-            // groupBox1
+            // Gpb_encabezado
             // 
-            this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.Encabezado);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(13, 116);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(851, 162);
-            this.groupBox1.TabIndex = 28;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Encabezado";
+            this.Gpb_encabezado.Controls.Add(this.groupBox2);
+            this.Gpb_encabezado.Controls.Add(this.Encabezado);
+            this.Gpb_encabezado.ForeColor = System.Drawing.Color.White;
+            this.Gpb_encabezado.Location = new System.Drawing.Point(13, 116);
+            this.Gpb_encabezado.Name = "Gpb_encabezado";
+            this.Gpb_encabezado.Size = new System.Drawing.Size(851, 162);
+            this.Gpb_encabezado.TabIndex = 28;
+            this.Gpb_encabezado.TabStop = false;
+            this.Gpb_encabezado.Text = "Encabezado";
             // 
             // groupBox2
             // 
@@ -854,6 +865,40 @@
             this.label1.Text = "Nombres:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // Txt_fechaPed
+            // 
+            this.Txt_fechaPed.Enabled = false;
+            this.Txt_fechaPed.Location = new System.Drawing.Point(805, 50);
+            this.Txt_fechaPed.Name = "Txt_fechaPed";
+            this.Txt_fechaPed.Size = new System.Drawing.Size(189, 20);
+            this.Txt_fechaPed.TabIndex = 24;
+            // 
+            // label21
+            // 
+            this.label21.Location = new System.Drawing.Point(746, 49);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(49, 20);
+            this.label21.TabIndex = 23;
+            this.label21.Text = "Fecha:";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // Txt_fechaCot
+            // 
+            this.Txt_fechaCot.Enabled = false;
+            this.Txt_fechaCot.Location = new System.Drawing.Point(805, 24);
+            this.Txt_fechaCot.Name = "Txt_fechaCot";
+            this.Txt_fechaCot.Size = new System.Drawing.Size(189, 20);
+            this.Txt_fechaCot.TabIndex = 22;
+            // 
+            // label22
+            // 
+            this.label22.Location = new System.Drawing.Point(743, 24);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(52, 20);
+            this.label22.TabIndex = 21;
+            this.label22.Text = "Fecha:";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // CU_Facturacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -865,7 +910,7 @@
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox7);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.Gpb_encabezado);
             this.Name = "CU_Facturacion";
             this.Size = new System.Drawing.Size(1080, 700);
             this.Load += new System.EventHandler(this.CU_Facturacion_Load);
@@ -880,7 +925,7 @@
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Nup_cantidad)).EndInit();
             this.groupBox7.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
+            this.Gpb_encabezado.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.Encabezado.ResumeLayout(false);
@@ -892,12 +937,12 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox19;
-        private System.Windows.Forms.TextBox textBox50;
+        private System.Windows.Forms.TextBox Txt_pedido;
         private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.TextBox textBox49;
+        private System.Windows.Forms.TextBox Txt_cotizacion;
         private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Button Btn_consultaDoc;
+        private System.Windows.Forms.TextBox Txt_codigoDoc;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.ComboBox Cbo_documento;
         private System.Windows.Forms.Label label7;
@@ -942,7 +987,7 @@
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox Gpb_encabezado;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox Txt_vendedor;
         private System.Windows.Forms.Label label63;
@@ -962,5 +1007,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox Txt_registros;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox Txt_fechaPed;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox Txt_fechaCot;
+        private System.Windows.Forms.Label label22;
     }
 }

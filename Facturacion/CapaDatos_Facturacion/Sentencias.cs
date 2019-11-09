@@ -166,5 +166,24 @@ namespace CapaDatos_Facturacion
              "," + idProducto + "," + idPedido + "," + cantidad + "," + monto + ")";
             return command;
         }
+
+        public OdbcDataAdapter comprobarPedido(string idCotizacion)
+        {
+            Conexion conexion = new Conexion();
+            conexion.Conectar();
+            string sConsulta = "SELECT COUNT(*) AS id FROM tbl_encabezadopedido WHERE KidEncabezadoPedido = " + idCotizacion;
+            OdbcDataAdapter data = new OdbcDataAdapter(sConsulta, conexion.Conectar());
+            return data;
+        }
+
+        public OdbcDataAdapter obtenerPedidoE(string idCotizacion)
+        {
+            Conexion conexion = new Conexion();
+            conexion.Conectar();
+            string sConsulta = "SELECT KidCotizacionEncabezado,KidCliente,fecha_encabezadopedido,vencimiento_encabezadopedido FROM tbl_encabezadopedido WHERE KidCotizacionEncabezado <> NULL AND KidEncabezadoPedido = " + idCotizacion;
+            OdbcDataAdapter data = new OdbcDataAdapter(sConsulta, conexion.Conectar());
+            return data;
+        }
+
     }
 }

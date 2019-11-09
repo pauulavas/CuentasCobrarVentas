@@ -6,7 +6,6 @@ C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hot
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas\Facturacion\CapaDatos_Facturacion\obj\Debug\CapaDatos_Facturacion.pdb
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\CapaDatos_Facturacion\bin\Debug\CapaDatos_Facturacion.dll
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\CapaDatos_Facturacion\bin\Debug\CapaDatos_Facturacion.pdb
-C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\CapaDatos_Facturacion\obj\Debug\CapaDatos_Facturacion.csprojAssemblyReference.cache
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\CapaDatos_Facturacion\obj\Debug\CapaDatos_Facturacion.csproj.CoreCompileInputs.cache
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\CapaDatos_Facturacion\obj\Debug\CapaDatos_Facturacion.dll
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\CapaDatos_Facturacion\obj\Debug\CapaDatos_Facturacion.pdb

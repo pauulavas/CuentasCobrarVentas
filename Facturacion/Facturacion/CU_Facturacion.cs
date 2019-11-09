@@ -18,6 +18,7 @@ namespace Facturacion
         bool bproducto = false;
         bool bcliente = false;
         List<int> listaserie = new List<int>();
+        bool encontradoCot = false;
         public CU_Facturacion()
         {
             InitializeComponent();
@@ -78,6 +79,7 @@ namespace Facturacion
 
         private void Dgv_factura_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            seleccionado = 0;
             seleccionado = e.RowIndex;
         }
 
@@ -137,6 +139,84 @@ namespace Facturacion
             else
             {
                 MessageBox.Show("No hay datos en el grid");
+            }
+        }
+
+        private void Btn_consultaDoc_Click(object sender, EventArgs e)
+        {
+            switch (Cbo_documento.SelectedIndex)
+            {
+                case 0:
+                    break;
+
+                case 1:
+                    encontradoCot = logicaConsulta.comprobarCotizacion(Txt_codigoDoc.Text, Txt_cotizacion);
+
+                    if (encontradoCot == true)
+                    {
+                        bcliente = true;
+                        logicaConsulta.obtenerCotizacionE(Txt_codigoDoc.Text, Txt_codigo, Txt_fechaCot);
+                        logicaConsulta.consultarCliente(Txt_codigo.Text, Txt_nombres, Txt_apellidos, Txt_nit);
+                        logicaConsulta.obtenerCotizacionD(Txt_codigoDoc.Text, Dgv_factura);
+
+                        double subtotal = 0;
+                        int cantidad = 0;
+
+                        if (Dgv_factura.Rows.Count - 1 > 0)
+                        {
+                            for (int i = 0; i < Dgv_factura.Rows.Count - 1; i++)
+                            {
+                                subtotal += Double.Parse(Dgv_factura.Rows[i].Cells[4].Value.ToString());
+                                cantidad += Int32.Parse(Dgv_factura.Rows[i].Cells[1].Value.ToString());
+                            }
+
+                            Txt_subtotalGeneral.Text = "Q. " + String.Format("{0:0.00}", subtotal);
+                            Txt_total.Text = "Q. " + String.Format("{0:0.00}", subtotal);
+                            int registros = Dgv_factura.Rows.Count - 1;
+                            Txt_registros.Text = registros.ToString();
+                        }
+                    }
+                    break;
+
+                case 2:
+                    break;
+            }
+        }
+
+        private void Cbo_documento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (Cbo_documento.SelectedIndex)
+            {
+                case 0:
+                    Gpb_encabezado.Enabled = true;
+                    Txt_codigoDoc.Text = "";
+                    Txt_cotizacion.Text = "";
+                    Txt_pedido.Text = "";
+                    Txt_codigoDoc.Enabled = false;
+                    Btn_consultaDoc.Enabled = false;
+                    Dgv_factura.Rows.Clear();
+                    /*Gpb_configuracion.Enabled = true;
+                    Gpb_producto.Enabled = true;
+                    Gpb_acciones.Enabled = true;*/
+                    break;
+
+                case 1:
+                    Gpb_encabezado.Enabled = false;
+                    Txt_codigoDoc.Enabled = true;
+                    Btn_consultaDoc.Enabled = true;
+                    /*Gpb_configuracion.Enabled = false;
+                    Gpb_producto.Enabled = false;
+                    Gpb_acciones.Enabled = false;*/
+                    break;
+
+                case 2:
+                    Gpb_encabezado.Enabled = false;
+                    Txt_codigoDoc.Enabled = true;
+                    Btn_consultaDoc.Enabled = true;
+                    /*Gpb_configuracion.Enabled = false;
+                    Gpb_producto.Enabled = false;
+                    Gpb_acciones.Enabled = false;*/
+                    break;
             }
         }
     }

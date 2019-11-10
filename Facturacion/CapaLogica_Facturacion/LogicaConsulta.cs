@@ -56,11 +56,55 @@ namespace CapaLogica_Facturacion
             }
             else
             {
-                MessageBox.Show("Cliente Inexistente!", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("NO HAY SERIES!", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        public void obtenerIdFactura(TextBox correlativo, string idserie)
+        public void obtenerMoneda(ComboBox comboBox)
+        {
+            Sentencias sentencias = new Sentencias();
+            OdbcDataAdapter datos = sentencias.cargarMonedas();
+            DataTable dtDatos = new DataTable();
+            datos.Fill(dtDatos);
+            comboBox.Items.Add("Q");
+
+            if (dtDatos.Rows.Count > 0)
+            {
+                for (int i = 0; i < dtDatos.Rows.Count; i++)
+                {
+                    DataRow row = dtDatos.Rows[i];
+                    comboBox.Items.Add(row["nombre_moneda"].ToString());
+                }
+            }
+            else
+            {
+                MessageBox.Show("NO HAY MONEDAS!", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void obtenerImpuesto(ComboBox comboBox)
+        {
+            Sentencias sentencias = new Sentencias();
+            OdbcDataAdapter datos = sentencias.cargarImpuestos();
+            DataTable dtDatos = new DataTable();
+            datos.Fill(dtDatos);
+            comboBox.Items.Add("Sin Impuesto");
+
+            if (dtDatos.Rows.Count > 0)
+            {
+                for (int i = 0; i < dtDatos.Rows.Count; i++)
+                {
+                    DataRow row = dtDatos.Rows[i];
+                    comboBox.Items.Add(row["nombre_impuesto"].ToString());
+                }
+            }
+            else
+            {
+                MessageBox.Show("NO HAY IMPUESTOS!", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void obtenerIdFactura(TextBox correlativo, string idserie, string idd)
         {
             Sentencias sentencias = new Sentencias();
             OdbcDataAdapter datos = sentencias.obtenerIdFactura(idserie);
@@ -71,7 +115,8 @@ namespace CapaLogica_Facturacion
                 for (int i = 0; i < dtDatos.Rows.Count; i++)
                 {
                     DataRow row = dtDatos.Rows[i];
-                    correlativo.Text = row["id"].ToString() + "-" + idserie;
+                    idd = row["id"].ToString();
+                    correlativo.Text = idserie + "-" + idd;
                 }
             }
             else
@@ -260,11 +305,11 @@ namespace CapaLogica_Facturacion
             command.ExecuteNonQuery();
         }
 
-        public bool comprobarPedido(string idCotizacion, TextBox cotizacion, TextBox pedido)
+        public bool comprobarPedido(string idPedido, TextBox pedido)
         {
             bool encontrado = false;
             Sentencias sentencias = new Sentencias();
-            OdbcDataAdapter datos = sentencias.comprobarPedido(idCotizacion);
+            OdbcDataAdapter datos = sentencias.comprobarPedido(idPedido);
             DataTable dtDatos = new DataTable();
             datos.Fill(dtDatos);
 
@@ -280,12 +325,12 @@ namespace CapaLogica_Facturacion
                 }
                 if (contador > 0)
                 {
-                    cotizacion.Text = "PEDIDO VIGENTE";
+                    pedido.Text = "PEDIDO VIGENTE";
                     encontrado = true;
                 }
                 else
                 {
-                    cotizacion.Text = "PEDIDO INEXISTENTE";
+                    pedido.Text = "PEDIDO INEXISTENTE";
                     encontrado = false;
                 }
             }
@@ -297,5 +342,83 @@ namespace CapaLogica_Facturacion
             return encontrado;
         }
 
+        public void obtenerPedidoE(string idCotizacion, TextBox idCliente, TextBox fechaC, TextBox cotizacion, TextBox fechaP)
+        {
+            Sentencias sentencias = new Sentencias();
+            OdbcDataAdapter datos = sentencias.obtenerPedidoE(idCotizacion);
+            DataTable dtDatos = new DataTable();
+            datos.Fill(dtDatos);
+            string cot;
+            TextBox aux = new TextBox();
+            if (dtDatos.Rows.Count > 0)
+            {
+                for (int i = 0; i < dtDatos.Rows.Count; i++)
+                {
+                    DataRow row = dtDatos.Rows[i];
+                    idCliente.Text = row["KidCliente"].ToString();
+                    fechaP.Text = row["vencimiento_encabezadopedido"].ToString();
+                    cot = row["KidCotizacionEncabezado"].ToString();
+
+                    if (String.IsNullOrEmpty(cot))
+                    {
+                        cotizacion.Text = "-";
+                    }
+                    else
+                    {
+                        cotizacion.Text = cot;
+                        obtenerCotizacionE(idCotizacion, aux, fechaC);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Error al Obtener el Encabezado de Cotizacion", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void obtenerPedidoD(string idCotizacion, DataGridView tablaFactura)
+        {
+            Sentencias sentencias = new Sentencias();
+            OdbcDataAdapter datos = sentencias.obtenerPedidoD(idCotizacion);
+            DataTable dtDatos = new DataTable();
+            datos.Fill(dtDatos);
+            if (dtDatos.Rows.Count > 0)
+            {
+                tablaFactura.Rows.Clear();
+                for (int i = 0; i < dtDatos.Rows.Count; i++)
+                {
+                    DataRow row = dtDatos.Rows[i];
+                    tablaFactura.Rows.Add(
+                        row["KidProducto"].ToString(),
+                        row["cantidad_Detallepedido"].ToString(),
+                        row["descripcion"].ToString(),
+                        row["precio"].ToString(),
+                        row["monto_Detallepedido"].ToString(),
+                        "-"
+                        );
+                }
+            }
+            else
+            {
+                MessageBox.Show("Error al Obtener el Encabezado de Cotizacion", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void agregarFacturaE(string id, string idCliente, string idCotizacion, string idPedido, string idLista, DateTime fecha, string desc, string idSerie, string idImpuesto, string idMoneda, string idDescuentos, string impuesto, string total)
+        {
+            Sentencias sentencias = new Sentencias();
+            OdbcCommand command = sentencias.insertarFacturaE(id,
+                idCliente, idCotizacion, idPedido, idLista,
+                fecha, desc, idSerie, idImpuesto, idMoneda, 
+                idDescuentos, impuesto, total);
+            command.ExecuteNonQuery();
+        }
+        //hOLA
+        public void agregarFacturaD(string idProducto, string idFactura, string cantidad, string monto, string idSerie)
+        {
+            Sentencias sentencias = new Sentencias();
+            OdbcCommand command = sentencias.insertarFacturaD(idProducto, idFactura, cantidad, monto, idSerie);
+            command.ExecuteNonQuery();
+        }
     }
 }

@@ -28,6 +28,24 @@ namespace CapaDatos_Facturacion
             return data;
         }
 
+        public OdbcDataAdapter cargarImpuestos()
+        {
+            Conexion conexion = new Conexion();
+            conexion.Conectar();
+            string sConsulta = "SELECT KidImpuesto,nombre_impuesto FROM tbl_impuesto WHERE estado = 1";
+            OdbcDataAdapter data = new OdbcDataAdapter(sConsulta, conexion.Conectar());
+            return data;
+        }
+
+        public OdbcDataAdapter cargarMonedas()
+        {
+            Conexion conexion = new Conexion();
+            conexion.Conectar();
+            string sConsulta = "SELECT KidMoneda,nombre_moneda FROM tbl_moneda WHERE estado = 1";
+            OdbcDataAdapter data = new OdbcDataAdapter(sConsulta, conexion.Conectar());
+            return data;
+        }
+
         public OdbcDataAdapter obtenerIdFactura(string sSerie)
         {
             Conexion conexion = new Conexion();
@@ -180,10 +198,60 @@ namespace CapaDatos_Facturacion
         {
             Conexion conexion = new Conexion();
             conexion.Conectar();
-            string sConsulta = "SELECT KidCotizacionEncabezado,KidCliente,fecha_encabezadopedido,vencimiento_encabezadopedido FROM tbl_encabezadopedido WHERE KidCotizacionEncabezado <> NULL AND KidEncabezadoPedido = " + idCotizacion;
+            string sConsulta = "SELECT KidCotizacionEncabezado,KidCliente,fecha_encabezadopedido,vencimiento_encabezadopedido FROM tbl_encabezadopedido WHERE KidEncabezadoPedido = " + idCotizacion;
             OdbcDataAdapter data = new OdbcDataAdapter(sConsulta, conexion.Conectar());
             return data;
         }
 
+        public OdbcDataAdapter obtenerPedidoD(string idPedido)
+        {
+            Conexion conexion = new Conexion();
+            conexion.Conectar();
+            string sConsulta = "SELECT KidProducto,(SELECT descripcion_producto FROM tbl_producto WHERE KidProducto = tbl_detallepedido.KidProducto) AS descripcion,(monto_Detallepedido / cantidad_Detallepedido) AS precio,cantidad_Detallepedido,monto_Detallepedido FROM tbl_detallepedido WHERE KidEncabezadoPedido = " + idPedido;
+            OdbcDataAdapter data = new OdbcDataAdapter(sConsulta, conexion.Conectar());
+            return data;
+        }
+
+        public OdbcCommand insertarFacturaE(string id, string idCliente, string idCotizacion,string idPedido, string idLista, DateTime fechaI, string desc, string idSerie, string idImpuesto, string idMoneda, string idDescuentos, string impuesto, string total)
+        {
+            Conexion conexion = new Conexion();
+            OdbcCommand command = new OdbcCommand();
+            command.Connection = conexion.Conectar();
+
+            command.CommandText = "INSERT INTO tbl_facturaencabezado " +
+             "VALUES (" + id + "," + idLista +
+             "," + idPedido + "," + idCotizacion + ",'" + 
+             fechaI.ToString("yyyy-MM-dd") + "','" + desc + "'," + 
+             idSerie + "," + idCliente + "," + idImpuesto + "," + idMoneda + 
+             "," + idDescuentos + "," + impuesto + "," + total + ", 1)";
+            return command;
+            //hOLA
+        }
+
+        public OdbcCommand insertarFacturaD(string idProducto, string idFactura, string cantidad, string monto, string idSerie)
+        {
+            Conexion conexion = new Conexion();
+            OdbcCommand command = new OdbcCommand();
+            command.Connection = conexion.Conectar();
+            command.CommandText = "SELECT COUNT(*)+1 AS id FROM tbl_facturadetalle";
+            command.Connection = conexion.Conectar();
+
+            OdbcDataAdapter mySqlDataAdapter = new OdbcDataAdapter(command);
+            DataTable dataTable = new DataTable();
+            mySqlDataAdapter.Fill(dataTable);
+
+            int iConteo = 0;
+
+            if (dataTable.Rows.Count > 0)
+            {
+                DataRow row = dataTable.Rows[0];
+                iConteo = Convert.ToInt32(row["id"]);
+            }
+
+            command.CommandText = "INSERT INTO tbl_facturadetalle " +
+             "VALUES (" + iConteo +
+             "," + cantidad + "," + monto + "," + idProducto + "," + idFactura + "," + idSerie +")";
+            return command;
+        }
     }
 }

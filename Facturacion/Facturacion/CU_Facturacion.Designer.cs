@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox19 = new System.Windows.Forms.GroupBox();
+            this.Txt_fechaPed = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.Txt_fechaCot = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
             this.Txt_pedido = new System.Windows.Forms.TextBox();
             this.label62 = new System.Windows.Forms.Label();
             this.Txt_cotizacion = new System.Windows.Forms.TextBox();
@@ -40,7 +44,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.Btn_remGrid = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.Btn_vender = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.Txt_registros = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
@@ -76,11 +80,11 @@
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.Cbo_listaPrecios = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.Cbo_impuestos = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.Cbo_moneda = new System.Windows.Forms.ComboBox();
             this.Gpb_encabezado = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.Txt_vendedor = new System.Windows.Forms.TextBox();
@@ -99,10 +103,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Txt_nombres = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.Txt_fechaPed = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.Txt_fechaCot = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
             this.groupBox19.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -138,6 +138,40 @@
             this.groupBox19.TabIndex = 34;
             this.groupBox19.TabStop = false;
             this.groupBox19.Text = "Cotizacion-Pedido";
+            // 
+            // Txt_fechaPed
+            // 
+            this.Txt_fechaPed.Enabled = false;
+            this.Txt_fechaPed.Location = new System.Drawing.Point(805, 50);
+            this.Txt_fechaPed.Name = "Txt_fechaPed";
+            this.Txt_fechaPed.Size = new System.Drawing.Size(189, 20);
+            this.Txt_fechaPed.TabIndex = 24;
+            // 
+            // label21
+            // 
+            this.label21.Location = new System.Drawing.Point(746, 49);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(49, 20);
+            this.label21.TabIndex = 23;
+            this.label21.Text = "Fecha:";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // Txt_fechaCot
+            // 
+            this.Txt_fechaCot.Enabled = false;
+            this.Txt_fechaCot.Location = new System.Drawing.Point(805, 24);
+            this.Txt_fechaCot.Name = "Txt_fechaCot";
+            this.Txt_fechaCot.Size = new System.Drawing.Size(189, 20);
+            this.Txt_fechaCot.TabIndex = 22;
+            // 
+            // label22
+            // 
+            this.label22.Location = new System.Drawing.Point(743, 24);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(52, 20);
+            this.label22.TabIndex = 21;
+            this.label22.Text = "Fecha:";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Txt_pedido
             // 
@@ -230,7 +264,7 @@
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.Btn_remGrid);
-            this.groupBox8.Controls.Add(this.button9);
+            this.groupBox8.Controls.Add(this.Btn_vender);
             this.groupBox8.ForeColor = System.Drawing.Color.White;
             this.groupBox8.Location = new System.Drawing.Point(977, 401);
             this.groupBox8.Name = "groupBox8";
@@ -254,19 +288,20 @@
             this.Btn_remGrid.UseVisualStyleBackColor = true;
             this.Btn_remGrid.Click += new System.EventHandler(this.Btn_remGrid_Click);
             // 
-            // button9
+            // Btn_vender
             // 
-            this.button9.ForeColor = System.Drawing.Color.Black;
-            this.button9.Image = global::Facturacion.Properties.Resources.cart;
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button9.Location = new System.Drawing.Point(11, 81);
-            this.button9.Name = "button9";
-            this.button9.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.button9.Size = new System.Drawing.Size(69, 54);
-            this.button9.TabIndex = 19;
-            this.button9.Text = "Vender";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button9.UseVisualStyleBackColor = true;
+            this.Btn_vender.ForeColor = System.Drawing.Color.Black;
+            this.Btn_vender.Image = global::Facturacion.Properties.Resources.cart;
+            this.Btn_vender.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_vender.Location = new System.Drawing.Point(11, 81);
+            this.Btn_vender.Name = "Btn_vender";
+            this.Btn_vender.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.Btn_vender.Size = new System.Drawing.Size(69, 54);
+            this.Btn_vender.TabIndex = 19;
+            this.Btn_vender.Text = "Vender";
+            this.Btn_vender.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_vender.UseVisualStyleBackColor = true;
+            this.Btn_vender.Click += new System.EventHandler(this.Btn_vender_Click);
             // 
             // groupBox3
             // 
@@ -332,7 +367,7 @@
             this.Txt_iva.Name = "Txt_iva";
             this.Txt_iva.Size = new System.Drawing.Size(169, 26);
             this.Txt_iva.TabIndex = 18;
-            this.Txt_iva.Text = "-";
+            this.Txt_iva.Text = "0.00";
             // 
             // label16
             // 
@@ -616,11 +651,11 @@
             // groupBox7
             // 
             this.groupBox7.Controls.Add(this.label6);
-            this.groupBox7.Controls.Add(this.comboBox2);
+            this.groupBox7.Controls.Add(this.Cbo_listaPrecios);
             this.groupBox7.Controls.Add(this.label19);
-            this.groupBox7.Controls.Add(this.comboBox5);
+            this.groupBox7.Controls.Add(this.Cbo_impuestos);
             this.groupBox7.Controls.Add(this.label18);
-            this.groupBox7.Controls.Add(this.comboBox4);
+            this.groupBox7.Controls.Add(this.Cbo_moneda);
             this.groupBox7.ForeColor = System.Drawing.Color.White;
             this.groupBox7.Location = new System.Drawing.Point(870, 116);
             this.groupBox7.Name = "groupBox7";
@@ -638,14 +673,14 @@
             this.label6.Text = "Lista de Precios:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox2
+            // Cbo_listaPrecios
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(26, 121);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(155, 21);
-            this.comboBox2.TabIndex = 19;
+            this.Cbo_listaPrecios.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cbo_listaPrecios.FormattingEnabled = true;
+            this.Cbo_listaPrecios.Location = new System.Drawing.Point(26, 121);
+            this.Cbo_listaPrecios.Name = "Cbo_listaPrecios";
+            this.Cbo_listaPrecios.Size = new System.Drawing.Size(155, 21);
+            this.Cbo_listaPrecios.TabIndex = 19;
             // 
             // label19
             // 
@@ -653,17 +688,17 @@
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(56, 16);
             this.label19.TabIndex = 18;
-            this.label19.Text = "IVA:";
+            this.label19.Text = "Impuestos:";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox5
+            // Cbo_impuestos
             // 
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(26, 77);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(155, 21);
-            this.comboBox5.TabIndex = 17;
+            this.Cbo_impuestos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cbo_impuestos.FormattingEnabled = true;
+            this.Cbo_impuestos.Location = new System.Drawing.Point(26, 77);
+            this.Cbo_impuestos.Name = "Cbo_impuestos";
+            this.Cbo_impuestos.Size = new System.Drawing.Size(155, 21);
+            this.Cbo_impuestos.TabIndex = 17;
             // 
             // label18
             // 
@@ -674,14 +709,14 @@
             this.label18.Text = "Moneda:";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBox4
+            // Cbo_moneda
             // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(27, 33);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(155, 21);
-            this.comboBox4.TabIndex = 8;
+            this.Cbo_moneda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cbo_moneda.FormattingEnabled = true;
+            this.Cbo_moneda.Location = new System.Drawing.Point(27, 33);
+            this.Cbo_moneda.Name = "Cbo_moneda";
+            this.Cbo_moneda.Size = new System.Drawing.Size(155, 21);
+            this.Cbo_moneda.TabIndex = 8;
             // 
             // Gpb_encabezado
             // 
@@ -865,40 +900,6 @@
             this.label1.Text = "Nombres:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Txt_fechaPed
-            // 
-            this.Txt_fechaPed.Enabled = false;
-            this.Txt_fechaPed.Location = new System.Drawing.Point(805, 50);
-            this.Txt_fechaPed.Name = "Txt_fechaPed";
-            this.Txt_fechaPed.Size = new System.Drawing.Size(189, 20);
-            this.Txt_fechaPed.TabIndex = 24;
-            // 
-            // label21
-            // 
-            this.label21.Location = new System.Drawing.Point(746, 49);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(49, 20);
-            this.label21.TabIndex = 23;
-            this.label21.Text = "Fecha:";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // Txt_fechaCot
-            // 
-            this.Txt_fechaCot.Enabled = false;
-            this.Txt_fechaCot.Location = new System.Drawing.Point(805, 24);
-            this.Txt_fechaCot.Name = "Txt_fechaCot";
-            this.Txt_fechaCot.Size = new System.Drawing.Size(189, 20);
-            this.Txt_fechaCot.TabIndex = 22;
-            // 
-            // label22
-            // 
-            this.label22.Location = new System.Drawing.Point(743, 24);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(52, 20);
-            this.label22.TabIndex = 21;
-            this.label22.Text = "Fecha:";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // CU_Facturacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -948,7 +949,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Button Btn_remGrid;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button Btn_vender;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox Txt_total;
         private System.Windows.Forms.Label label17;
@@ -982,11 +983,11 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox Cbo_listaPrecios;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox Cbo_impuestos;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox Cbo_moneda;
         private System.Windows.Forms.GroupBox Gpb_encabezado;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox Txt_vendedor;

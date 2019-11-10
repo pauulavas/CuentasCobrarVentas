@@ -19,6 +19,12 @@ namespace Facturacion
         bool bcliente = false;
         List<int> listaserie = new List<int>();
         bool encontradoCot = false;
+        bool encontradoPed = false;
+        string iddFactura;
+        string iddPedido = "NULL";
+        string iddCotizacion = "NULL";
+        double subtotal = 0;
+        int cantidad = 0;
         public CU_Facturacion()
         {
             InitializeComponent();
@@ -29,11 +35,21 @@ namespace Facturacion
         {
             Cbo_documento.SelectedIndex = 0;
             logicaConsulta.obtenerSerie(Cbo_serie,listaserie);
+            logicaConsulta.obtenerImpuesto(Cbo_impuestos);
+            logicaConsulta.obtenerMoneda(Cbo_moneda);
             if (Cbo_serie.Items.Count > 0)
             {
                 Cbo_serie.SelectedIndex = 0;
             }
-            logicaConsulta.obtenerIdFactura(Txt_correlativo, listaserie.ElementAt(Cbo_serie.SelectedIndex).ToString());
+            if (Cbo_impuestos.Items.Count > 0)
+            {
+                Cbo_impuestos.SelectedIndex = 0;
+            }
+            if (Cbo_moneda.Items.Count > 0)
+            {
+                Cbo_moneda.SelectedIndex = 0;
+            }
+            logicaConsulta.obtenerIdFactura(Txt_correlativo, listaserie.ElementAt(Cbo_serie.SelectedIndex).ToString(), iddFactura);
         }
 
         private void Btn_consultaCliente_Click(object sender, EventArgs e)
@@ -50,7 +66,7 @@ namespace Facturacion
 
         private void Cbo_serie_SelectedIndexChanged(object sender, EventArgs e)
         {
-            logicaConsulta.obtenerIdFactura(Txt_correlativo, listaserie.ElementAt(Cbo_serie.SelectedIndex).ToString());
+            logicaConsulta.obtenerIdFactura(Txt_correlativo, listaserie.ElementAt(Cbo_serie.SelectedIndex).ToString(), iddFactura);
         }
 
         private void Btn_consultarProducto_Click(object sender, EventArgs e)
@@ -67,14 +83,9 @@ namespace Facturacion
 
         private void Nup_cantidad_ValueChanged(object sender, EventArgs e)
         {
-            double subtotal = 0;
-            subtotal = Double.Parse(Txt_precioProducto.Text) * Double.Parse(Nup_cantidad.Value.ToString());
-            Txt_subtotal.Text = String.Format("{0:0.00}", subtotal);
-        }
-
-        private void Button8_Click(object sender, EventArgs e)
-        {
-
+            double subTotal = 0;
+            subTotal = Double.Parse(Txt_precioProducto.Text) * Double.Parse(Nup_cantidad.Value.ToString());
+            Txt_subtotal.Text = String.Format("{0:0.00}", subTotal);
         }
 
         private void Dgv_factura_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -85,9 +96,9 @@ namespace Facturacion
 
         private void Btn_addGrid_Click(object sender, EventArgs e)
         {
-            double subtotal = 0;
+            subtotal = 0;
             double total = 0;
-            int cantidad = 0;
+            cantidad = 0;
 
             subtotal = Double.Parse(Txt_precioProducto.Text) * Double.Parse(Nup_cantidad.Value.ToString());
 
@@ -118,8 +129,8 @@ namespace Facturacion
 
         private void Btn_remGrid_Click(object sender, EventArgs e)
         {
-            double subtotal = 0;
-            int cantidad = 0;
+            subtotal = 0;
+            cantidad = 0;
 
             if (Dgv_factura.Rows.Count - 1 > 0)
             {
@@ -152,15 +163,18 @@ namespace Facturacion
                 case 1:
                     encontradoCot = logicaConsulta.comprobarCotizacion(Txt_codigoDoc.Text, Txt_cotizacion);
 
+                    Txt_pedido.Text = null;
+                    Txt_fechaPed.Text = null;
                     if (encontradoCot == true)
                     {
+                        iddCotizacion = Txt_codigoDoc.Text;
                         bcliente = true;
                         logicaConsulta.obtenerCotizacionE(Txt_codigoDoc.Text, Txt_codigo, Txt_fechaCot);
                         logicaConsulta.consultarCliente(Txt_codigo.Text, Txt_nombres, Txt_apellidos, Txt_nit);
                         logicaConsulta.obtenerCotizacionD(Txt_codigoDoc.Text, Dgv_factura);
 
-                        double subtotal = 0;
-                        int cantidad = 0;
+                        subtotal = 0;
+                        cantidad = 0;
 
                         if (Dgv_factura.Rows.Count - 1 > 0)
                         {
@@ -179,6 +193,33 @@ namespace Facturacion
                     break;
 
                 case 2:
+                    encontradoPed = logicaConsulta.comprobarPedido(Txt_codigoDoc.Text, Txt_pedido);
+                    if (encontradoPed == true)
+                    {
+                        iddPedido = Txt_codigoDoc.Text;
+                        bcliente = true;
+                        logicaConsulta.obtenerPedidoE(Txt_codigoDoc.Text, Txt_codigo, Txt_fechaCot, Txt_cotizacion, Txt_fechaPed);
+                        iddCotizacion = Txt_cotizacion.Text;
+                        logicaConsulta.consultarCliente(Txt_codigo.Text, Txt_nombres, Txt_apellidos, Txt_nit);
+                        logicaConsulta.obtenerPedidoD(Txt_codigoDoc.Text, Dgv_factura);
+
+                        subtotal = 0;
+                        cantidad = 0;
+
+                        if (Dgv_factura.Rows.Count - 1 > 0)
+                        {
+                            for (int i = 0; i < Dgv_factura.Rows.Count - 1; i++)
+                            {
+                                subtotal += Double.Parse(Dgv_factura.Rows[i].Cells[4].Value.ToString());
+                                cantidad += Int32.Parse(Dgv_factura.Rows[i].Cells[1].Value.ToString());
+                            }
+
+                            Txt_subtotalGeneral.Text = "Q. " + String.Format("{0:0.00}", subtotal);
+                            Txt_total.Text = "Q. " + String.Format("{0:0.00}", subtotal);
+                            int registros = Dgv_factura.Rows.Count - 1;
+                            Txt_registros.Text = registros.ToString();
+                        }
+                    }
                     break;
             }
         }
@@ -219,5 +260,73 @@ namespace Facturacion
                     break;
             }
         }
+
+        private void Btn_vender_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (Dgv_factura.Rows.Count - 1 > 0 && bcliente == true)
+                {
+                    string[] separados;
+                    separados = Txt_correlativo.Text.Split('-');
+                    DateTime dataTime = DateTime.Now;
+                    int iimpuesto = Cbo_serie.SelectedIndex + 1;
+                    int imoneda = Cbo_moneda.SelectedIndex + 1;
+                    logicaConsulta.agregarFacturaE(separados[1],
+                        Txt_codigo.Text,
+                        iddCotizacion,
+                        iddPedido,
+                        "NULL",
+                        dataTime,
+                        "Factura" + Cbo_serie.SelectedItem.ToString(),
+                        listaserie.ElementAt(Cbo_serie.SelectedIndex).ToString(),
+                        iimpuesto.ToString(),
+                        imoneda.ToString(),
+                        "NULL",
+                        Txt_iva.Text,
+                        subtotal.ToString()
+                    );
+
+
+                    for (int i = 0; i < Dgv_factura.Rows.Count - 1; i++)
+                    {
+                        logicaConsulta.agregarFacturaD(
+                            Dgv_factura.Rows[i].Cells[0].Value.ToString(),
+                            separados[1],
+                            Dgv_factura.Rows[i].Cells[1].Value.ToString(),
+                            Dgv_factura.Rows[i].Cells[4].Value.ToString(),
+                            listaserie.ElementAt(Cbo_serie.SelectedIndex).ToString()
+                        );
+                    }
+                    MessageBox.Show("Factura Registrada Correctamente!", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    iddPedido = "";
+                    iddCotizacion = "";
+                    Txt_codigo.Text = "";
+                    Txt_nombres.Text = "";
+                    Txt_apellidos.Text = "";
+                    Txt_nit.Text = "";
+                    Txt_codigoProducto.Text = "";
+                    Txt_nombreProducto.Text = "";
+                    Txt_descProducto.Text = "";
+                    Txt_subtotal.Text = "0.00";
+                    Txt_subtotalGeneral.Text = "Q. 0.00";
+                    Txt_total.Text = "Q. 0.00";
+                    Txt_registros.Text = "0";
+
+                    bcliente = false;
+                    bproducto = false;
+
+                    Nup_cantidad.Value = 1;
+                    Dgv_factura.Rows.Clear();
+                    logicaConsulta.obtenerIdPedido(Txt_correlativo);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Fallo al Registrar Factura!", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
+//Diego Torres

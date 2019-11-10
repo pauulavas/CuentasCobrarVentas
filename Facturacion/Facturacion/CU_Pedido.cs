@@ -122,35 +122,42 @@ namespace Facturacion
 
         private void Txt_addGrid_Click(object sender, EventArgs e)
         {
-            double subtotal = 0;
-            double total = 0;
-            int cantidad = 0;
-
-            subtotal = Double.Parse(Txt_precioProducto.Text) * Double.Parse(Nup_cantidad.Value.ToString());
-
-            Dgv_factura.Rows.Add(
-                Txt_codigoProducto.Text,
-                Nup_cantidad.Value.ToString(),
-                Txt_descProducto.Text,
-                Txt_precioProducto.Text,
-                String.Format("{0:0.00}", subtotal),
-                "-"
-                );
-            subtotal = 0;
-
-            if (Dgv_factura.Rows.Count - 1 > 0)
+            if (!String.IsNullOrEmpty(Txt_codigoProducto.Text) && !String.IsNullOrEmpty(Txt_descProducto.Text) && !String.IsNullOrEmpty(Txt_precioProducto.Text))
             {
-                for (int i = 0; i < Dgv_factura.Rows.Count - 1; i++)
-                {
-                    subtotal += Double.Parse(Dgv_factura.Rows[i].Cells[4].Value.ToString());
-                    cantidad += Int32.Parse(Dgv_factura.Rows[i].Cells[1].Value.ToString());
-                }
-            }
+                double subtotal = 0;
+                double total = 0;
+                int cantidad = 0;
 
-            Txt_subtotalGeneral.Text = "Q. " + String.Format("{0:0.00}", subtotal);
-            Txt_total.Text = "Q. " + String.Format("{0:0.00}", subtotal);
-            int registros = cantidad;
-            Txt_registros.Text = registros.ToString();
+                subtotal = Double.Parse(Txt_precioProducto.Text) * Double.Parse(Nup_cantidad.Value.ToString());
+
+                Dgv_factura.Rows.Add(
+                    Txt_codigoProducto.Text,
+                    Nup_cantidad.Value.ToString(),
+                    Txt_descProducto.Text,
+                    Txt_precioProducto.Text,
+                    String.Format("{0:0.00}", subtotal),
+                    "-"
+                    );
+                subtotal = 0;
+
+                if (Dgv_factura.Rows.Count - 1 > 0)
+                {
+                    for (int i = 0; i < Dgv_factura.Rows.Count - 1; i++)
+                    {
+                        subtotal += Double.Parse(Dgv_factura.Rows[i].Cells[4].Value.ToString());
+                        cantidad += Int32.Parse(Dgv_factura.Rows[i].Cells[1].Value.ToString());
+                    }
+                }
+
+                Txt_subtotalGeneral.Text = "Q. " + String.Format("{0:0.00}", subtotal);
+                Txt_total.Text = "Q. " + String.Format("{0:0.00}", subtotal);
+                int registros = cantidad;
+                Txt_registros.Text = registros.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Hay Campos Vacios!", "Pedido", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void Dgv_factura_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -180,52 +187,55 @@ namespace Facturacion
             }
             else
             {
-                MessageBox.Show("No hay Datos en la Factura!", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("No hay Datos en la Tabla!", "Pedido", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void Btn_agregar_Click(object sender, EventArgs e)
         {
-            if (Dgv_factura.Rows.Count - 1 > 0 && bcliente == true)
+            try
             {
-                logicaConsulta.agregarPedidoE(Txt_correlativo.Text,
-                    Txt_codigoCot.Text,
-                    Txt_codigo.Text,
-                    Dtp_actual.Value.Date,
-                    Dtp_final.Value.Date
-                );
-
-                for (int i = 0; i < Dgv_factura.Rows.Count - 1; i++)
+                if (Dgv_factura.Rows.Count - 1 > 0 && bcliente == true)
                 {
-                    logicaConsulta.agregarPedidoD(
-                        Dgv_factura.Rows[i].Cells[0].Value.ToString(),
-                        Txt_correlativo.Text,
-                        Dgv_factura.Rows[i].Cells[1].Value.ToString(),
-                        Dgv_factura.Rows[i].Cells[4].Value.ToString()
+                    logicaConsulta.agregarPedidoE(Txt_correlativo.Text,
+                        Txt_codigoCot.Text,
+                        Txt_codigo.Text,
+                        Dtp_actual.Value.Date,
+                        Dtp_final.Value.Date
                     );
+
+                    for (int i = 0; i < Dgv_factura.Rows.Count - 1; i++)
+                    {
+                        logicaConsulta.agregarPedidoD(
+                            Dgv_factura.Rows[i].Cells[0].Value.ToString(),
+                            Txt_correlativo.Text,
+                            Dgv_factura.Rows[i].Cells[1].Value.ToString(),
+                            Dgv_factura.Rows[i].Cells[4].Value.ToString()
+                        );
+                    }
+                    MessageBox.Show("Pedido Registrado Correctamente!", "Pedidos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    Txt_codigo.Text = "";
+                    Txt_nombres.Text = "";
+                    Txt_apellidos.Text = "";
+                    Txt_nit.Text = "";
+                    Txt_codigoProducto.Text = "";
+                    Txt_nombreProducto.Text = "";
+                    Txt_descProducto.Text = "";
+                    Txt_subtotal.Text = "0.00";
+                    Txt_subtotalGeneral.Text = "Q. 0.00";
+                    Txt_total.Text = "Q. 0.00";
+                    Txt_registros.Text = "0";
+
+                    bcliente = false;
+                    bproducto = false;
+
+                    Nup_cantidad.Value = 1;
+                    Dgv_factura.Rows.Clear();
+                    logicaConsulta.obtenerIdPedido(Txt_correlativo);
                 }
-                MessageBox.Show("Pedido Registrado Correctamente!", "Pedidos", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                Txt_codigo.Text = "";
-                Txt_nombres.Text = "";
-                Txt_apellidos.Text = "";
-                Txt_nit.Text = "";
-                Txt_codigoProducto.Text = "";
-                Txt_nombreProducto.Text = "";
-                Txt_descProducto.Text = "";
-                Txt_subtotal.Text = "0.00";
-                Txt_subtotalGeneral.Text = "Q. 0.00";
-                Txt_total.Text = "Q. 0.00";
-                Txt_registros.Text = "0";
-
-                bcliente = false;
-                bproducto = false;
-
-                Nup_cantidad.Value = 1;
-                Dgv_factura.Rows.Clear();
-                logicaConsulta.obtenerIdPedido(Txt_correlativo);
             }
-            else
+            catch
             {
                 MessageBox.Show("Fallo al Registrar Pedido!", "Pedidos", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

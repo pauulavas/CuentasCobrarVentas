@@ -33,23 +33,30 @@ namespace Facturacion
 
         private void CU_Facturacion_Load(object sender, EventArgs e)
         {
-            Cbo_documento.SelectedIndex = 0;
-            logicaConsulta.obtenerSerie(Cbo_serie,listaserie);
-            logicaConsulta.obtenerImpuesto(Cbo_impuestos);
-            logicaConsulta.obtenerMoneda(Cbo_moneda);
-            if (Cbo_serie.Items.Count > 0)
+            try
             {
-                Cbo_serie.SelectedIndex = 0;
+                Cbo_documento.SelectedIndex = 0;
+                logicaConsulta.obtenerSerie(Cbo_serie, listaserie);
+                logicaConsulta.obtenerImpuesto(Cbo_impuestos);
+                logicaConsulta.obtenerMoneda(Cbo_moneda);
+                if (Cbo_serie.Items.Count > 0)
+                {
+                    Cbo_serie.SelectedIndex = 0;
+                }
+                if (Cbo_impuestos.Items.Count > 0)
+                {
+                    Cbo_impuestos.SelectedIndex = 0;
+                }
+                if (Cbo_moneda.Items.Count > 0)
+                {
+                    Cbo_moneda.SelectedIndex = 0;
+                }
+                logicaConsulta.obtenerIdFactura(Txt_correlativo, listaserie.ElementAt(Cbo_serie.SelectedIndex).ToString(), iddFactura);
             }
-            if (Cbo_impuestos.Items.Count > 0)
+            catch
             {
-                Cbo_impuestos.SelectedIndex = 0;
+                MessageBox.Show("Fallo al Cargar Datos!", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            if (Cbo_moneda.Items.Count > 0)
-            {
-                Cbo_moneda.SelectedIndex = 0;
-            }
-            logicaConsulta.obtenerIdFactura(Txt_correlativo, listaserie.ElementAt(Cbo_serie.SelectedIndex).ToString(), iddFactura);
         }
 
         private void Btn_consultaCliente_Click(object sender, EventArgs e)
@@ -96,35 +103,42 @@ namespace Facturacion
 
         private void Btn_addGrid_Click(object sender, EventArgs e)
         {
-            subtotal = 0;
-            double total = 0;
-            cantidad = 0;
-
-            subtotal = Double.Parse(Txt_precioProducto.Text) * Double.Parse(Nup_cantidad.Value.ToString());
-
-            Dgv_factura.Rows.Add(
-                Txt_codigoProducto.Text,
-                Nup_cantidad.Value.ToString(),
-                Txt_descProducto.Text,
-                Txt_precioProducto.Text,
-                String.Format("{0:0.00}", subtotal),
-                "-"
-                );
-            subtotal = 0;
-
-            if (Dgv_factura.Rows.Count - 1 > 0)
+            if (!String.IsNullOrEmpty(Txt_codigoProducto.Text) && !String.IsNullOrEmpty(Txt_descProducto.Text) && !String.IsNullOrEmpty(Txt_precioProducto.Text))
             {
-                for (int i = 0; i < Dgv_factura.Rows.Count - 1; i++)
-                {
-                    subtotal += Double.Parse(Dgv_factura.Rows[i].Cells[4].Value.ToString());
-                    cantidad += Int32.Parse(Dgv_factura.Rows[i].Cells[1].Value.ToString());
-                }
-            }
+                subtotal = 0;
+                double total = 0;
+                cantidad = 0;
 
-            Txt_subtotalGeneral.Text = "Q. " + String.Format("{0:0.00}", subtotal);
-            Txt_total.Text = "Q. " + String.Format("{0:0.00}", subtotal);
-            int registros = Dgv_factura.Rows.Count - 1;
-            Txt_registros.Text = registros.ToString();
+                subtotal = Double.Parse(Txt_precioProducto.Text) * Double.Parse(Nup_cantidad.Value.ToString());
+
+                Dgv_factura.Rows.Add(
+                    Txt_codigoProducto.Text,
+                    Nup_cantidad.Value.ToString(),
+                    Txt_descProducto.Text,
+                    Txt_precioProducto.Text,
+                    String.Format("{0:0.00}", subtotal),
+                    "-"
+                    );
+                subtotal = 0;
+
+                if (Dgv_factura.Rows.Count - 1 > 0)
+                {
+                    for (int i = 0; i < Dgv_factura.Rows.Count - 1; i++)
+                    {
+                        subtotal += Double.Parse(Dgv_factura.Rows[i].Cells[4].Value.ToString());
+                        cantidad += Int32.Parse(Dgv_factura.Rows[i].Cells[1].Value.ToString());
+                    }
+                }
+
+                Txt_subtotalGeneral.Text = "Q. " + String.Format("{0:0.00}", subtotal);
+                Txt_total.Text = "Q. " + String.Format("{0:0.00}", subtotal);
+                int registros = Dgv_factura.Rows.Count - 1;
+                Txt_registros.Text = registros.ToString();
+            }
+            else
+            {
+                MessageBox.Show("No hay Datos en la Tabla!", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void Btn_remGrid_Click(object sender, EventArgs e)
@@ -149,7 +163,7 @@ namespace Facturacion
             }
             else
             {
-                MessageBox.Show("No hay datos en el grid");
+                MessageBox.Show("No hay Datos en la Tabla!", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

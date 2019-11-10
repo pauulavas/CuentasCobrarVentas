@@ -225,7 +225,6 @@ namespace CapaDatos_Facturacion
              idSerie + "," + idCliente + "," + idImpuesto + "," + idMoneda + 
              "," + idDescuentos + "," + impuesto + "," + total + ", 1)";
             return command;
-            //hOLA
         }
 
         public OdbcCommand insertarFacturaD(string idProducto, string idFactura, string cantidad, string monto, string idSerie)
@@ -252,6 +251,20 @@ namespace CapaDatos_Facturacion
              "VALUES (" + iConteo +
              "," + cantidad + "," + monto + "," + idProducto + "," + idFactura + "," + idSerie +")";
             return command;
+        }
+
+        public OdbcDataAdapter obtenerFacturaE(string idSerie)
+        {
+            Conexion conexion = new Conexion();
+            conexion.Conectar();
+            string sConsulta = "SELECT CONCAT(KidSerie,'-',KidFacturaEncabezado) As idFactura," +
+                "DATE_FORMAT(fecha_facturaencabezado, '%d/%m/%y') AS fecha_facturaencabezado,descripcion_facturaencabezado," +
+                "(SELECT nombre_moneda FROM tbl_moneda WHERE KidMoneda = tbl_facturaencabezado.KidMoneda) AS moneda," +
+                "(SELECT nombre_impuesto FROM tbl_impuesto WHERE KidImpuesto = tbl_facturaencabezado.KidImpuesto) AS tipo_impuesto," +
+                "FORMAT(impuesto_facturaencabezado,2) AS impuesto,FORMAT(monto_facturaencabezado,2) AS monto" +
+                " FROM tbl_facturaencabezado WHERE estado = 1 AND KidSerie = " + idSerie;
+            OdbcDataAdapter data = new OdbcDataAdapter(sConsulta, conexion.Conectar());
+            return data;
         }
     }
 }

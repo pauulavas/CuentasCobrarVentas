@@ -29,10 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox16 = new System.Windows.Forms.GroupBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.Cbo_serie = new System.Windows.Forms.ComboBox();
+            this.Btn_consultarFacturas = new System.Windows.Forms.Button();
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
@@ -56,28 +54,31 @@
             this.textBox32 = new System.Windows.Forms.TextBox();
             this.label42 = new System.Windows.Forms.Label();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.Dgv_facturas = new System.Windows.Forms.DataGridView();
             this.groupBox17 = new System.Windows.Forms.GroupBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
+            this.Txt_descripcion = new System.Windows.Forms.TextBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.Correlativo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Moneda = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TipoImpuesto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Impuesto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MontoTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox16.SuspendLayout();
             this.groupBox13.SuspendLayout();
             this.groupBox15.SuspendLayout();
             this.groupBox14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_facturas)).BeginInit();
             this.groupBox17.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox16
             // 
-            this.groupBox16.Controls.Add(this.textBox34);
-            this.groupBox16.Controls.Add(this.label43);
-            this.groupBox16.Controls.Add(this.label44);
-            this.groupBox16.Controls.Add(this.comboBox10);
-            this.groupBox16.Controls.Add(this.button10);
+            this.groupBox16.Controls.Add(this.Cbo_serie);
+            this.groupBox16.Controls.Add(this.Btn_consultarFacturas);
             this.groupBox16.Controls.Add(this.label45);
             this.groupBox16.ForeColor = System.Drawing.Color.White;
             this.groupBox16.Location = new System.Drawing.Point(27, 26);
@@ -87,43 +88,33 @@
             this.groupBox16.TabStop = false;
             this.groupBox16.Text = "Documento";
             // 
-            // textBox34
+            // Cbo_serie
             // 
-            this.textBox34.Location = new System.Drawing.Point(212, 53);
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(151, 20);
-            this.textBox34.TabIndex = 25;
+            this.Cbo_serie.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cbo_serie.FormattingEnabled = true;
+            this.Cbo_serie.Location = new System.Drawing.Point(93, 53);
+            this.Cbo_serie.Name = "Cbo_serie";
+            this.Cbo_serie.Size = new System.Drawing.Size(175, 21);
+            this.Cbo_serie.TabIndex = 18;
             // 
-            // label43
+            // Btn_consultarFacturas
             // 
-            this.label43.Location = new System.Drawing.Point(184, 54);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(22, 20);
-            this.label43.TabIndex = 21;
-            this.label43.Text = "-";
-            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label44
-            // 
-            this.label44.Location = new System.Drawing.Point(209, 33);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(25, 17);
-            this.label44.TabIndex = 19;
-            this.label44.Text = "Id:";
-            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // comboBox10
-            // 
-            this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(23, 53);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(155, 21);
-            this.comboBox10.TabIndex = 18;
+            this.Btn_consultarFacturas.ForeColor = System.Drawing.Color.Black;
+            this.Btn_consultarFacturas.Image = global::Facturacion.Properties.Resources.search;
+            this.Btn_consultarFacturas.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_consultarFacturas.Location = new System.Drawing.Point(307, 29);
+            this.Btn_consultarFacturas.Name = "Btn_consultarFacturas";
+            this.Btn_consultarFacturas.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.Btn_consultarFacturas.Size = new System.Drawing.Size(69, 54);
+            this.Btn_consultarFacturas.TabIndex = 14;
+            this.Btn_consultarFacturas.Text = "Consultar";
+            this.Btn_consultarFacturas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_consultarFacturas.UseVisualStyleBackColor = true;
+            this.Btn_consultarFacturas.Click += new System.EventHandler(this.Btn_consultarFacturas_Click);
             // 
             // label45
             // 
-            this.label45.Location = new System.Drawing.Point(20, 29);
+            this.label45.Location = new System.Drawing.Point(90, 29);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(36, 21);
             this.label45.TabIndex = 17;
@@ -161,6 +152,7 @@
             // 
             // textBox24
             // 
+            this.textBox24.Enabled = false;
             this.textBox24.Location = new System.Drawing.Point(91, 124);
             this.textBox24.Name = "textBox24";
             this.textBox24.Size = new System.Drawing.Size(242, 20);
@@ -177,6 +169,7 @@
             // 
             // textBox25
             // 
+            this.textBox25.Enabled = false;
             this.textBox25.Location = new System.Drawing.Point(91, 98);
             this.textBox25.Name = "textBox25";
             this.textBox25.Size = new System.Drawing.Size(242, 20);
@@ -193,6 +186,7 @@
             // 
             // textBox26
             // 
+            this.textBox26.Enabled = false;
             this.textBox26.Location = new System.Drawing.Point(91, 20);
             this.textBox26.Name = "textBox26";
             this.textBox26.Size = new System.Drawing.Size(242, 20);
@@ -209,6 +203,7 @@
             // 
             // textBox27
             // 
+            this.textBox27.Enabled = false;
             this.textBox27.Location = new System.Drawing.Point(91, 72);
             this.textBox27.Name = "textBox27";
             this.textBox27.Size = new System.Drawing.Size(242, 20);
@@ -225,6 +220,7 @@
             // 
             // textBox28
             // 
+            this.textBox28.Enabled = false;
             this.textBox28.Location = new System.Drawing.Point(91, 46);
             this.textBox28.Name = "textBox28";
             this.textBox28.Size = new System.Drawing.Size(242, 20);
@@ -259,6 +255,7 @@
             // 
             // textBox29
             // 
+            this.textBox29.Enabled = false;
             this.textBox29.Location = new System.Drawing.Point(77, 112);
             this.textBox29.Name = "textBox29";
             this.textBox29.Size = new System.Drawing.Size(418, 20);
@@ -275,6 +272,7 @@
             // 
             // textBox30
             // 
+            this.textBox30.Enabled = false;
             this.textBox30.Location = new System.Drawing.Point(77, 33);
             this.textBox30.Name = "textBox30";
             this.textBox30.Size = new System.Drawing.Size(418, 20);
@@ -291,6 +289,7 @@
             // 
             // textBox31
             // 
+            this.textBox31.Enabled = false;
             this.textBox31.Location = new System.Drawing.Point(77, 86);
             this.textBox31.Name = "textBox31";
             this.textBox31.Size = new System.Drawing.Size(418, 20);
@@ -307,6 +306,7 @@
             // 
             // textBox32
             // 
+            this.textBox32.Enabled = false;
             this.textBox32.Location = new System.Drawing.Point(77, 60);
             this.textBox32.Name = "textBox32";
             this.textBox32.Size = new System.Drawing.Size(418, 20);
@@ -323,8 +323,8 @@
             // 
             // groupBox14
             // 
-            this.groupBox14.Controls.Add(this.dataGridView3);
-            this.groupBox14.ForeColor = System.Drawing.Color.White;
+            this.groupBox14.Controls.Add(this.Dgv_facturas);
+            this.groupBox14.ForeColor = System.Drawing.Color.Black;
             this.groupBox14.Location = new System.Drawing.Point(27, 139);
             this.groupBox14.Name = "groupBox14";
             this.groupBox14.Size = new System.Drawing.Size(1026, 204);
@@ -332,17 +332,25 @@
             this.groupBox14.TabStop = false;
             this.groupBox14.Text = "Facturas";
             // 
-            // dataGridView3
+            // Dgv_facturas
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(22, 19);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(987, 169);
-            this.dataGridView3.TabIndex = 19;
+            this.Dgv_facturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_facturas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Correlativo,
+            this.Fecha,
+            this.Descripcion,
+            this.Moneda,
+            this.TipoImpuesto,
+            this.Impuesto,
+            this.MontoTotal});
+            this.Dgv_facturas.Location = new System.Drawing.Point(22, 19);
+            this.Dgv_facturas.Name = "Dgv_facturas";
+            this.Dgv_facturas.Size = new System.Drawing.Size(987, 169);
+            this.Dgv_facturas.TabIndex = 19;
             // 
             // groupBox17
             // 
-            this.groupBox17.Controls.Add(this.textBox33);
+            this.groupBox17.Controls.Add(this.Txt_descripcion);
             this.groupBox17.Controls.Add(this.label46);
             this.groupBox17.ForeColor = System.Drawing.Color.White;
             this.groupBox17.Location = new System.Drawing.Point(512, 26);
@@ -352,14 +360,14 @@
             this.groupBox17.TabStop = false;
             this.groupBox17.Text = "Detalle";
             // 
-            // textBox33
+            // Txt_descripcion
             // 
-            this.textBox33.Location = new System.Drawing.Point(21, 42);
-            this.textBox33.Multiline = true;
-            this.textBox33.Name = "textBox33";
-            this.textBox33.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox33.Size = new System.Drawing.Size(503, 47);
-            this.textBox33.TabIndex = 11;
+            this.Txt_descripcion.Location = new System.Drawing.Point(21, 42);
+            this.Txt_descripcion.Multiline = true;
+            this.Txt_descripcion.Name = "Txt_descripcion";
+            this.Txt_descripcion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.Txt_descripcion.Size = new System.Drawing.Size(503, 47);
+            this.Txt_descripcion.TabIndex = 11;
             // 
             // groupBox8
             // 
@@ -387,19 +395,54 @@
             this.button11.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button11.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // Correlativo
             // 
-            this.button10.ForeColor = System.Drawing.Color.Black;
-            this.button10.Image = global::Facturacion.Properties.Resources.search;
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button10.Location = new System.Drawing.Point(389, 29);
-            this.button10.Name = "button10";
-            this.button10.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.button10.Size = new System.Drawing.Size(69, 54);
-            this.button10.TabIndex = 14;
-            this.button10.Text = "Consultar";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button10.UseVisualStyleBackColor = true;
+            this.Correlativo.HeaderText = "Correlativo";
+            this.Correlativo.Name = "Correlativo";
+            this.Correlativo.ReadOnly = true;
+            this.Correlativo.Width = 150;
+            // 
+            // Fecha
+            // 
+            this.Fecha.HeaderText = "Fecha";
+            this.Fecha.Name = "Fecha";
+            this.Fecha.ReadOnly = true;
+            this.Fecha.Width = 150;
+            // 
+            // Descripcion
+            // 
+            this.Descripcion.HeaderText = "Descripcion";
+            this.Descripcion.Name = "Descripcion";
+            this.Descripcion.ReadOnly = true;
+            this.Descripcion.Width = 173;
+            // 
+            // Moneda
+            // 
+            this.Moneda.HeaderText = "Moneda";
+            this.Moneda.Name = "Moneda";
+            this.Moneda.ReadOnly = true;
+            this.Moneda.Width = 70;
+            // 
+            // TipoImpuesto
+            // 
+            this.TipoImpuesto.HeaderText = "TipoImpuesto";
+            this.TipoImpuesto.Name = "TipoImpuesto";
+            this.TipoImpuesto.ReadOnly = true;
+            this.TipoImpuesto.Width = 150;
+            // 
+            // Impuesto
+            // 
+            this.Impuesto.HeaderText = "Impuesto";
+            this.Impuesto.Name = "Impuesto";
+            this.Impuesto.ReadOnly = true;
+            this.Impuesto.Width = 125;
+            // 
+            // MontoTotal
+            // 
+            this.MontoTotal.HeaderText = "MontoTotal";
+            this.MontoTotal.Name = "MontoTotal";
+            this.MontoTotal.ReadOnly = true;
+            this.MontoTotal.Width = 125;
             // 
             // CU_Devoluciones
             // 
@@ -414,14 +457,14 @@
             this.Controls.Add(this.groupBox17);
             this.Name = "CU_Devoluciones";
             this.Size = new System.Drawing.Size(1080, 550);
+            this.Load += new System.EventHandler(this.CU_Devoluciones_Load);
             this.groupBox16.ResumeLayout(false);
-            this.groupBox16.PerformLayout();
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
             this.groupBox15.ResumeLayout(false);
             this.groupBox15.PerformLayout();
             this.groupBox14.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_facturas)).EndInit();
             this.groupBox17.ResumeLayout(false);
             this.groupBox17.PerformLayout();
             this.groupBox8.ResumeLayout(false);
@@ -432,11 +475,8 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox16;
-        private System.Windows.Forms.TextBox textBox34;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.ComboBox Cbo_serie;
+        private System.Windows.Forms.Button Btn_consultarFacturas;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Button button11;
@@ -461,9 +501,16 @@
         private System.Windows.Forms.TextBox textBox32;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.GroupBox groupBox14;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView Dgv_facturas;
         private System.Windows.Forms.GroupBox groupBox17;
-        private System.Windows.Forms.TextBox textBox33;
+        private System.Windows.Forms.TextBox Txt_descripcion;
         private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Correlativo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Moneda;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TipoImpuesto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Impuesto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MontoTotal;
     }
 }

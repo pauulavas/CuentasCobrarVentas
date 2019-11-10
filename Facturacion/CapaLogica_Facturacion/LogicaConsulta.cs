@@ -413,12 +413,40 @@ namespace CapaLogica_Facturacion
                 idDescuentos, impuesto, total);
             command.ExecuteNonQuery();
         }
-        //hOLA
+
         public void agregarFacturaD(string idProducto, string idFactura, string cantidad, string monto, string idSerie)
         {
             Sentencias sentencias = new Sentencias();
             OdbcCommand command = sentencias.insertarFacturaD(idProducto, idFactura, cantidad, monto, idSerie);
             command.ExecuteNonQuery();
+        }
+        public void obtenerFacturaE(string idSerie, DataGridView tablaFactura)
+        {
+            Sentencias sentencias = new Sentencias();
+            OdbcDataAdapter datos = sentencias.obtenerFacturaE(idSerie);
+            DataTable dtDatos = new DataTable();
+            datos.Fill(dtDatos);
+            tablaFactura.Rows.Clear();
+            if (dtDatos.Rows.Count > 0)
+            {
+                for (int i = 0; i < dtDatos.Rows.Count; i++)
+                {
+                    DataRow row = dtDatos.Rows[i];
+                    tablaFactura.Rows.Add(
+                         row["idFactura"].ToString(),
+                         row["fecha_facturaencabezado"].ToString(),
+                         row["descripcion_facturaencabezado"].ToString(),
+                         row["moneda"].ToString(),
+                         row["tipo_impuesto"].ToString(),
+                         row["impuesto"].ToString(),
+                         row["monto"].ToString()
+                    );
+                }
+            }
+            else
+            {
+                MessageBox.Show("No Se Encontraron Coincidencias", "Devoluciones", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

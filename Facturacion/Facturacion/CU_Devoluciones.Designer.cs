@@ -65,7 +65,7 @@
             this.groupBox17 = new System.Windows.Forms.GroupBox();
             this.Txt_descripcion = new System.Windows.Forms.TextBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.button11 = new System.Windows.Forms.Button();
+            this.Btn_solicitar = new System.Windows.Forms.Button();
             this.groupBox16.SuspendLayout();
             this.groupBox13.SuspendLayout();
             this.groupBox15.SuspendLayout();
@@ -421,7 +421,7 @@
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.button11);
+            this.groupBox8.Controls.Add(this.Btn_solicitar);
             this.groupBox8.ForeColor = System.Drawing.Color.White;
             this.groupBox8.Location = new System.Drawing.Point(921, 349);
             this.groupBox8.Name = "groupBox8";
@@ -430,20 +430,21 @@
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Acciones";
             // 
-            // button11
+            // Btn_solicitar
             // 
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.Black;
-            this.button11.Image = global::Facturacion.Properties.Resources.clipboard;
-            this.button11.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button11.Location = new System.Drawing.Point(27, 47);
-            this.button11.Name = "button11";
-            this.button11.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.button11.Size = new System.Drawing.Size(79, 69);
-            this.button11.TabIndex = 35;
-            this.button11.Text = "Solicitar";
-            this.button11.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button11.UseVisualStyleBackColor = true;
+            this.Btn_solicitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_solicitar.ForeColor = System.Drawing.Color.Black;
+            this.Btn_solicitar.Image = global::Facturacion.Properties.Resources.clipboard;
+            this.Btn_solicitar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_solicitar.Location = new System.Drawing.Point(27, 47);
+            this.Btn_solicitar.Name = "Btn_solicitar";
+            this.Btn_solicitar.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.Btn_solicitar.Size = new System.Drawing.Size(79, 69);
+            this.Btn_solicitar.TabIndex = 35;
+            this.Btn_solicitar.Text = "Solicitar";
+            this.Btn_solicitar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_solicitar.UseVisualStyleBackColor = true;
+            this.Btn_solicitar.Click += new System.EventHandler(this.Btn_solicitar_Click);
             // 
             // CU_Devoluciones
             // 
@@ -480,7 +481,7 @@
         private System.Windows.Forms.Button Btn_consultarFacturas;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button Btn_solicitar;
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.TextBox Txt_fecha;
         private System.Windows.Forms.Label label34;

@@ -59,7 +59,7 @@ namespace Facturacion
 
                     subtotal = Double.Parse(Dgv_facturas.Rows[seleccionado].Cells[6].Value.ToString()) - Double.Parse(Dgv_facturas.Rows[seleccionado].Cells[5].Value.ToString());
 
-                    Txt_correlativo.Text = listaClientes.ElementAt(seleccionado).ToString();
+                    Txt_correlativo.Text = Dgv_facturas.Rows[seleccionado].Cells[0].Value.ToString();
                     logicaConsulta.consultarCliente(listaClientes.ElementAt(seleccionado).ToString(), Txt_nombres, Txt_apellidos, Txt_nit, false);
 
                     Txt_impuesto.Text = Dgv_facturas.Rows[seleccionado].Cells[5].Value.ToString();
@@ -72,6 +72,39 @@ namespace Facturacion
                 {
                     MessageBox.Show("Error Desconocido!", "Devoluciones", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+            }
+        }
+
+        private void Btn_solicitar_Click(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(Txt_descripcion.Text) && !String.IsNullOrEmpty(serie) && !String.IsNullOrEmpty(correlativo))
+            {
+                try
+                {
+                    logicaConsulta.agregarDevolucion(correlativo, serie, Txt_descripcion.Text);
+                    MessageBox.Show("Solicitud Enviada Correctamente!", "Devoluciones", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    serie = null;
+                    correlativo = null;
+                    Dgv_facturas.Rows.Clear();
+                    Txt_correlativo.Text = null;
+                    Txt_nombres.Text = null;
+                    Txt_apellidos.Text = null;
+                    Txt_nit.Text = null;
+                    Txt_impuesto.Text = null;
+                    Txt_total.Text = null;
+                    Txt_subtotal.Text = null;
+                    Txt_fecha.Text = null;
+                    Txt_registros.Text = null;
+                }
+                catch
+                {
+                    MessageBox.Show("Erro al Enviar Solicitud!", "Devoluciones", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Hay Campos Vacios!", "Devoluciones", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
         }
     }

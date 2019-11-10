@@ -275,5 +275,33 @@ namespace CapaDatos_Facturacion
             OdbcDataAdapter data = new OdbcDataAdapter(sConsulta, conexion.Conectar());
             return data;
         }
+
+        public OdbcCommand insertarDevulucion(string idFactura, string idSerie, string descripcion)
+        {
+            Conexion conexion = new Conexion();
+            OdbcCommand command = new OdbcCommand();
+            command.Connection = conexion.Conectar();
+            command.CommandText = "SELECT COUNT(*)+1 AS id FROM tbl_devoluciones";
+            command.Connection = conexion.Conectar();
+
+            OdbcDataAdapter mySqlDataAdapter = new OdbcDataAdapter(command);
+            DataTable dataTable = new DataTable();
+            mySqlDataAdapter.Fill(dataTable);
+
+            int iConteo = 0;
+
+            if (dataTable.Rows.Count > 0)
+            {
+                DataRow row = dataTable.Rows[0];
+                iConteo = Convert.ToInt32(row["id"]);
+            }
+
+            DateTime dateTime = DateTime.Now;
+
+            command.CommandText = "INSERT INTO tbl_devoluciones " +
+             "VALUES (" + iConteo +
+             ",'" + descripcion + "','" + dateTime.ToString("yyyy-MM-dd") + "'," + idFactura + "," + idSerie + ", 1)";
+            return command;
+        }
     }
 }

@@ -471,5 +471,13 @@ namespace CapaLogica_Facturacion
                 MessageBox.Show("Error al Obtener el Encabezado de Cotizacion", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        public void agregarDevolucion(string idFactura, string idSerie, string descripcion)
+        {
+            Sentencias sentencias = new Sentencias();
+            OdbcCommand command = sentencias.insertarDevulucion(idFactura, idSerie, descripcion);
+            command.ExecuteNonQuery();
+        }
+
     }
 }

@@ -38,7 +38,7 @@ namespace Facturacion
             {
                 bcliente = true;
                 logicaConsulta.obtenerCotizacionE(Txt_codigoCot.Text, Txt_codigo, Txt_fecha);
-                logicaConsulta.consultarCliente(Txt_codigo.Text, Txt_nombres, Txt_apellidos, Txt_nit);
+                logicaConsulta.consultarCliente(Txt_codigo.Text, Txt_nombres, Txt_apellidos, Txt_nit, false);
                 logicaConsulta.obtenerCotizacionD(Txt_codigoCot.Text, Dgv_factura);
 
                 double subtotal = 0;
@@ -64,7 +64,7 @@ namespace Facturacion
         {
             if (!String.IsNullOrEmpty(Txt_codigo.Text))
             {
-                bcliente = logicaConsulta.consultarCliente(Txt_codigo.Text, Txt_nombres, Txt_apellidos, Txt_nit);
+                bcliente = logicaConsulta.consultarCliente(Txt_codigo.Text, Txt_nombres, Txt_apellidos, Txt_nit, true);
             }
             else
             {

@@ -27,7 +27,7 @@ namespace Facturacion
         {
             if (!String.IsNullOrEmpty(Txt_codigo.Text))
             {
-                bcliente = logicaConsulta.consultarCliente(Txt_codigo.Text, Txt_nombres, Txt_apellidos, Txt_nit);
+                bcliente = logicaConsulta.consultarCliente(Txt_codigo.Text, Txt_nombres, Txt_apellidos, Txt_nit, true);
             }
             else
             {

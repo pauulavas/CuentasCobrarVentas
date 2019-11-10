@@ -63,7 +63,7 @@ namespace Facturacion
         {
             if (!String.IsNullOrEmpty(Txt_codigo.Text))
             {
-                bcliente = logicaConsulta.consultarCliente(Txt_codigo.Text, Txt_nombres, Txt_apellidos, Txt_nit);
+                bcliente = logicaConsulta.consultarCliente(Txt_codigo.Text, Txt_nombres, Txt_apellidos, Txt_nit, true);
             }
             else
             {
@@ -184,7 +184,7 @@ namespace Facturacion
                         iddCotizacion = Txt_codigoDoc.Text;
                         bcliente = true;
                         logicaConsulta.obtenerCotizacionE(Txt_codigoDoc.Text, Txt_codigo, Txt_fechaCot);
-                        logicaConsulta.consultarCliente(Txt_codigo.Text, Txt_nombres, Txt_apellidos, Txt_nit);
+                        logicaConsulta.consultarCliente(Txt_codigo.Text, Txt_nombres, Txt_apellidos, Txt_nit,false);
                         logicaConsulta.obtenerCotizacionD(Txt_codigoDoc.Text, Dgv_factura);
 
                         subtotal = 0;
@@ -214,7 +214,7 @@ namespace Facturacion
                         bcliente = true;
                         logicaConsulta.obtenerPedidoE(Txt_codigoDoc.Text, Txt_codigo, Txt_fechaCot, Txt_cotizacion, Txt_fechaPed);
                         iddCotizacion = Txt_cotizacion.Text;
-                        logicaConsulta.consultarCliente(Txt_codigo.Text, Txt_nombres, Txt_apellidos, Txt_nit);
+                        logicaConsulta.consultarCliente(Txt_codigo.Text, Txt_nombres, Txt_apellidos, Txt_nit, false);
                         logicaConsulta.obtenerPedidoD(Txt_codigoDoc.Text, Dgv_factura);
 
                         subtotal = 0;

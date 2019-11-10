@@ -12,7 +12,7 @@ namespace CapaLogica_Facturacion
 {
     public class LogicaConsulta
     {
-        public bool consultarCliente(string sidCliente, TextBox nombre, TextBox apellido, TextBox nit)
+        public bool consultarCliente(string sidCliente, TextBox nombre, TextBox apellido, TextBox nit, bool mensaje)
         {
             bool encontrado = false;
             Sentencias sentencias = new Sentencias();
@@ -28,7 +28,10 @@ namespace CapaLogica_Facturacion
                     apellido.Text = row["apellidos_cliente"].ToString();
                     nit.Text = row["nit_cliente"].ToString();
                 }
-                MessageBox.Show("Cliente Encontrado!", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (mensaje)
+                {
+                    MessageBox.Show("Cliente Encontrado!", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
                 encontrado = true;
             }
             else
@@ -420,7 +423,7 @@ namespace CapaLogica_Facturacion
             OdbcCommand command = sentencias.insertarFacturaD(idProducto, idFactura, cantidad, monto, idSerie);
             command.ExecuteNonQuery();
         }
-        public void obtenerFacturaE(string idSerie, DataGridView tablaFactura)
+        public void obtenerFacturaE(string idSerie, DataGridView tablaFactura, List<int> listaClientes)
         {
             Sentencias sentencias = new Sentencias();
             OdbcDataAdapter datos = sentencias.obtenerFacturaE(idSerie);
@@ -441,11 +444,31 @@ namespace CapaLogica_Facturacion
                          row["impuesto"].ToString(),
                          row["monto"].ToString()
                     );
+                    listaClientes.Add(Int32.Parse(row["KidCliente"].ToString()));
                 }
             }
             else
             {
                 MessageBox.Show("No Se Encontraron Coincidencias", "Devoluciones", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public void obtenerNumeroFacturaD(string idFactura, string idSerie, TextBox contador)
+        {
+            Sentencias sentencias = new Sentencias();
+            OdbcDataAdapter datos = sentencias.obtenerNumeroFacturaD(idFactura,idSerie);
+            DataTable dtDatos = new DataTable();
+            datos.Fill(dtDatos);
+            if (dtDatos.Rows.Count > 0)
+            {
+                for (int i = 0; i < dtDatos.Rows.Count; i++)
+                {
+                    DataRow row = dtDatos.Rows[i];
+                    contador.Text = row["conteo"].ToString();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Error al Obtener el Encabezado de Cotizacion", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

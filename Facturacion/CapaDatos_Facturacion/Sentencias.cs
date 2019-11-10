@@ -261,8 +261,17 @@ namespace CapaDatos_Facturacion
                 "DATE_FORMAT(fecha_facturaencabezado, '%d/%m/%y') AS fecha_facturaencabezado,descripcion_facturaencabezado," +
                 "(SELECT nombre_moneda FROM tbl_moneda WHERE KidMoneda = tbl_facturaencabezado.KidMoneda) AS moneda," +
                 "(SELECT nombre_impuesto FROM tbl_impuesto WHERE KidImpuesto = tbl_facturaencabezado.KidImpuesto) AS tipo_impuesto," +
-                "FORMAT(impuesto_facturaencabezado,2) AS impuesto,FORMAT(monto_facturaencabezado,2) AS monto" +
-                " FROM tbl_facturaencabezado WHERE estado = 1 AND KidSerie = " + idSerie;
+                "FORMAT(impuesto_facturaencabezado,2) AS impuesto,FORMAT(monto_facturaencabezado,2) AS monto, KidCliente " +
+                "FROM tbl_facturaencabezado WHERE estado = 1 AND KidSerie = " + idSerie;
+            OdbcDataAdapter data = new OdbcDataAdapter(sConsulta, conexion.Conectar());
+            return data;
+        }
+
+        public OdbcDataAdapter obtenerNumeroFacturaD(string idFactura, string idSerie)
+        {
+            Conexion conexion = new Conexion();
+            conexion.Conectar();
+            string sConsulta = "SELECT COUNT(*) AS conteo FROM tbl_facturadetalle WHERE KidFacturaEncabezado = " + idFactura + " AND KidSerie = " + idSerie;
             OdbcDataAdapter data = new OdbcDataAdapter(sConsulta, conexion.Conectar());
             return data;
         }

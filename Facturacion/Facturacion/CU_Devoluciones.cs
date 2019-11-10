@@ -79,22 +79,31 @@ namespace Facturacion
         {
             if (!String.IsNullOrEmpty(Txt_descripcion.Text) && !String.IsNullOrEmpty(serie) && !String.IsNullOrEmpty(correlativo))
             {
+                int contador = 0;
                 try
                 {
-                    logicaConsulta.agregarDevolucion(correlativo, serie, Txt_descripcion.Text);
-                    MessageBox.Show("Solicitud Enviada Correctamente!", "Devoluciones", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    serie = null;
-                    correlativo = null;
-                    Dgv_facturas.Rows.Clear();
-                    Txt_correlativo.Text = null;
-                    Txt_nombres.Text = null;
-                    Txt_apellidos.Text = null;
-                    Txt_nit.Text = null;
-                    Txt_impuesto.Text = null;
-                    Txt_total.Text = null;
-                    Txt_subtotal.Text = null;
-                    Txt_fecha.Text = null;
-                    Txt_registros.Text = null;
+                    contador = logicaConsulta.comprobarDevolucion(correlativo,serie,contador);
+                    if (contador == 0)
+                    {
+                        logicaConsulta.agregarDevolucion(correlativo, serie, Txt_descripcion.Text);
+                        serie = null;
+                        correlativo = null;
+                        Dgv_facturas.Rows.Clear();
+                        Txt_correlativo.Text = null;
+                        Txt_nombres.Text = null;
+                        Txt_apellidos.Text = null;
+                        Txt_nit.Text = null;
+                        Txt_impuesto.Text = null;
+                        Txt_total.Text = null;
+                        Txt_subtotal.Text = null;
+                        Txt_fecha.Text = null;
+                        Txt_registros.Text = null;
+                    }
+                    else
+                    {
+                        MessageBox.Show("La factura seleccionada ya tiene un proceso!", "Devoluciones", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                   
                 }
                 catch
                 {

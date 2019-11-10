@@ -479,5 +479,27 @@ namespace CapaLogica_Facturacion
             command.ExecuteNonQuery();
         }
 
+        public int comprobarDevolucion(string idFactura, string idSerie, int contador)
+        {
+            Sentencias sentencias = new Sentencias();
+            OdbcDataAdapter datos = sentencias.comprobarDevolucion(idFactura, idSerie);
+            DataTable dtDatos = new DataTable();
+            datos.Fill(dtDatos);
+            if (dtDatos.Rows.Count > 0)
+            {
+                for (int i = 0; i < dtDatos.Rows.Count; i++)
+                {
+                    DataRow row = dtDatos.Rows[i];
+                    contador = Int32.Parse(row["conteo"].ToString());
+                }
+            }
+            else
+            {
+                MessageBox.Show("Error al Obtener el Encabezado de Cotizacion", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return contador;
+        }
+
+
     }
 }

@@ -303,5 +303,14 @@ namespace CapaDatos_Facturacion
              ",'" + descripcion + "','" + dateTime.ToString("yyyy-MM-dd") + "'," + idFactura + "," + idSerie + ", 1)";
             return command;
         }
+
+        public OdbcDataAdapter comprobarDevolucion(string idFactura, string idSerie)
+        {
+            Conexion conexion = new Conexion();
+            conexion.Conectar();
+            string sConsulta = "SELECT IFNULL(COUNT(*),0) AS conteo FROM tbl_devoluciones WHERE KidFacturaEncabezado = " + idFactura + " AND KidSerie = " + idSerie;
+            OdbcDataAdapter data = new OdbcDataAdapter(sConsulta, conexion.Conectar());
+            return data;
+        }
     }
 }

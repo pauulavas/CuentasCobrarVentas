@@ -56,5 +56,11 @@
       <DependentUpon>Comision.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaLogica-PolizaYComision\CapaLogica-PolizaYComision.csproj">
+      <Project>{9562318c-dba7-47e7-ab46-d05efa098a23}</Project>
+      <Name>CapaLogica-PolizaYComision</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

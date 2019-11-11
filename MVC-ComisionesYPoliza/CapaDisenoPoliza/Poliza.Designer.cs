@@ -36,7 +36,6 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
@@ -53,6 +52,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -68,7 +69,7 @@
             this.Column4,
             this.Column5,
             this.Column6});
-            this.dataGridView1.Location = new System.Drawing.Point(41, 386);
+            this.dataGridView1.Location = new System.Drawing.Point(31, 473);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(653, 190);
             this.dataGridView1.TabIndex = 6;
@@ -115,23 +116,12 @@
             this.groupBox2.Controls.Add(this.dateTimePicker3);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.dateTimePicker2);
-            this.groupBox2.Location = new System.Drawing.Point(40, 230);
+            this.groupBox2.Location = new System.Drawing.Point(31, 34);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(649, 138);
+            this.groupBox2.Size = new System.Drawing.Size(735, 138);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Fechas de Ventas";
-            // 
-            // button1
-            // 
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(559, 53);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(61, 58);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "BUSCAR";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -156,7 +146,7 @@
             // 
             this.dateTimePicker3.Location = new System.Drawing.Point(161, 91);
             this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(363, 20);
+            this.dateTimePicker3.Size = new System.Drawing.Size(470, 20);
             this.dateTimePicker3.TabIndex = 8;
             // 
             // label5
@@ -173,7 +163,7 @@
             // 
             this.dateTimePicker2.Location = new System.Drawing.Point(161, 53);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(363, 20);
+            this.dateTimePicker2.Size = new System.Drawing.Size(470, 20);
             this.dateTimePicker2.TabIndex = 6;
             // 
             // groupBox1
@@ -188,16 +178,16 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(40, 46);
+            this.groupBox1.Location = new System.Drawing.Point(31, 195);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(654, 178);
+            this.groupBox1.Size = new System.Drawing.Size(735, 240);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Poliza";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(559, 140);
+            this.textBox3.Location = new System.Drawing.Point(119, 204);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(89, 20);
             this.textBox3.TabIndex = 9;
@@ -206,7 +196,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(509, 143);
+            this.label8.Location = new System.Drawing.Point(24, 204);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(47, 16);
             this.label8.TabIndex = 8;
@@ -216,7 +206,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(509, 12);
+            this.label4.Location = new System.Drawing.Point(26, 29);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 16);
             this.label4.TabIndex = 7;
@@ -225,14 +215,14 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(119, 94);
+            this.comboBox1.Location = new System.Drawing.Point(119, 123);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(362, 21);
+            this.comboBox1.Size = new System.Drawing.Size(512, 21);
             this.comboBox1.TabIndex = 3;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(602, 11);
+            this.textBox2.Location = new System.Drawing.Point(119, 28);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(44, 20);
             this.textBox2.TabIndex = 6;
@@ -241,7 +231,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(25, 54);
+            this.label1.Location = new System.Drawing.Point(25, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 16);
             this.label1.TabIndex = 0;
@@ -249,16 +239,16 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(119, 136);
+            this.textBox1.Location = new System.Drawing.Point(119, 165);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(359, 20);
+            this.textBox1.Size = new System.Drawing.Size(512, 20);
             this.textBox1.TabIndex = 5;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(25, 99);
+            this.label2.Location = new System.Drawing.Point(25, 128);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 16);
             this.label2.TabIndex = 1;
@@ -266,30 +256,55 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(118, 54);
+            this.dateTimePicker1.Location = new System.Drawing.Point(118, 83);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(363, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(513, 20);
             this.dateTimePicker1.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(25, 141);
+            this.label3.Location = new System.Drawing.Point(25, 170);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "CONCEPTO";
             // 
+            // button2
+            // 
+            this.button2.Image = global::CapaDisenoPoliza.Properties.Resources.paper_plane__1_;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button2.Location = new System.Drawing.Point(699, 605);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(61, 58);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "ENVIAR";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Image = global::CapaDisenoPoliza.Properties.Resources.loupe;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(668, 53);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(61, 58);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "BUSCAR";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Poliza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Poliza";
-            this.Size = new System.Drawing.Size(743, 615);
+            this.Size = new System.Drawing.Size(793, 714);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -326,5 +341,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button2;
     }
 }

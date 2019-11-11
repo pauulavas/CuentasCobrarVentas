@@ -8,7 +8,6 @@ C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Cue
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_CuentasPorCobrar\MDI_CuentasPorCobrar\bin\Debug\MDI_CuentasPorCobrar.exe.config
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_CuentasPorCobrar\MDI_CuentasPorCobrar\bin\Debug\MDI_CuentasPorCobrar.exe
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_CuentasPorCobrar\MDI_CuentasPorCobrar\bin\Debug\MDI_CuentasPorCobrar.pdb
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_CuentasPorCobrar\MDI_CuentasPorCobrar\bin\Debug\CapaDeDiseno.dll
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_CuentasPorCobrar\MDI_CuentasPorCobrar\bin\Debug\CapaDeLogica.dll
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_CuentasPorCobrar\MDI_CuentasPorCobrar\bin\Debug\CapaDatos.dll
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_CuentasPorCobrar\MDI_CuentasPorCobrar\bin\Debug\CapaDeDatos.dll
@@ -17,6 +16,7 @@ C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Cue
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_CuentasPorCobrar\MDI_CuentasPorCobrar\obj\Debug\MDI_CuentasPorCobrar.pdb
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_CuentasPorCobrar\MDI_CuentasPorCobrar\obj\Debug\MDI_CuentasPorCobrar.Tipo_Movimiento.resources
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_CuentasPorCobrar\MDI_CuentasPorCobrar\obj\Debug\MDI_CuentasPorCobrar.Tipo_Pagos.resources
+<<<<<<< HEAD
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_CuentasPorCobrar\MDI_CuentasPorCobrar\bin\Debug\MDI_CuentasPorCobrar.exe.config
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_CuentasPorCobrar\MDI_CuentasPorCobrar\bin\Debug\MDI_CuentasPorCobrar.exe
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_CuentasPorCobrar\MDI_CuentasPorCobrar\bin\Debug\MDI_CuentasPorCobrar.pdb
@@ -35,3 +35,7 @@ C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hot
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_CuentasPorCobrar\MDI_CuentasPorCobrar\obj\Debug\MDI_CuentasPorCobrar.csproj.CopyComplete
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_CuentasPorCobrar\MDI_CuentasPorCobrar\obj\Debug\MDI_CuentasPorCobrar.exe
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_CuentasPorCobrar\MDI_CuentasPorCobrar\obj\Debug\MDI_CuentasPorCobrar.pdb
+=======
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_CuentasPorCobrar\MDI_CuentasPorCobrar\bin\Debug\CapaDiseno.dll
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_CuentasPorCobrar\MDI_CuentasPorCobrar\bin\Debug\CapaLogica.dll
+>>>>>>> 881123ba3598b0968263c3792332e44f7c94df1a

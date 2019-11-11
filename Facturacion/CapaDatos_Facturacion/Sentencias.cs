@@ -353,6 +353,6 @@ namespace CapaDatos_Facturacion
             command.CommandText = "UPDATE tbl_facturaencabezado SET estado = 0 WHERE KidFacturaEncabezado = " + idFactura + " AND KidSerie = " + idSerie;
             return command;
         }
-
+        //Actualizando MVC
     }
 }

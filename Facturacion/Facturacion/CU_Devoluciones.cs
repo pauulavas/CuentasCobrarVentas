@@ -11,6 +11,7 @@ using CapaLogica_Facturacion;
 
 namespace Facturacion
 {
+    //Actualizando MVC
     public partial class CU_Devoluciones : UserControl
     {
         LogicaConsulta logicaConsulta;

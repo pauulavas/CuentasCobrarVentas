@@ -34,8 +34,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CapaDatos, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CapaDatos.dll</HintPath>
+    </Reference>
     <Reference Include="CapaDeDiseno">
       <HintPath>..\..\..\..\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\Datos\DLLS\CapaDeDiseno.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaDiseno, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CapaDiseno.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaLogica">
+      <HintPath>..\..\CapaLogica.dll</HintPath>
     </Reference>
     <Reference Include="Capa_Diseño_VentasyCtasporCobrar_lp">
       <HintPath>..\..\MVC_VentasyCtasporCobrar_Lista_Precios\Capa_Diseño_VentasyCtasporCobrar_lp\bin\Debug\Capa_Diseño_VentasyCtasporCobrar_lp.dll</HintPath>
@@ -58,12 +69,6 @@
     </Compile>
     <Compile Include="Clientes.Designer.cs">
       <DependentUpon>Clientes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Comisiones.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Comisiones.Designer.cs">
-      <DependentUpon>Comisiones.cs</DependentUpon>
     </Compile>
     <Compile Include="Folio.cs">
       <SubType>Form</SubType>
@@ -129,9 +134,6 @@
     </Compile>
     <EmbeddedResource Include="Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Comisiones.resx">
-      <DependentUpon>Comisiones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Folio.resx">
       <DependentUpon>Folio.cs</DependentUpon>

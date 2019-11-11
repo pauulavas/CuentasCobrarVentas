@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaDiseno;
+using CapaDatos;
+using CapaLogica;
 
 namespace MDI_CuentasPorCobrar
 {
     public partial class Form1 : Form
     {
+        string sIdUsuario;
         public Form1()
         {
             InitializeComponent();
@@ -43,6 +47,30 @@ namespace MDI_CuentasPorCobrar
             Tipo_Pagos form_tipo_pagos = new Tipo_Pagos();
             form_tipo_pagos.MdiParent = this;
             form_tipo_pagos.Show();
+        }
+
+        private void MovimientoDeClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CuentasPorCobrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PolizasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            frm_login login = new frm_login();
+            login.ShowDialog();
+            sIdUsuario = login.obtenerNombreUsuario();
+            lbl_id_usuario.Text = sIdUsuario;
+
         }
     }
 }

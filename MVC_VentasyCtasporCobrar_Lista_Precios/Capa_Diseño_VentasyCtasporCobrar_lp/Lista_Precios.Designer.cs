@@ -74,6 +74,7 @@
             this.Cbo_tipolista.Name = "Cbo_tipolista";
             this.Cbo_tipolista.Size = new System.Drawing.Size(178, 24);
             this.Cbo_tipolista.TabIndex = 0;
+            this.Cbo_tipolista.SelectedIndexChanged += new System.EventHandler(this.Cbo_tipolista_SelectedIndexChanged);
             // 
             // Txt_nombrelista
             // 
@@ -284,6 +285,7 @@
             // 
             this.Gpb_lista.Controls.Add(this.Lbl_fechamodificacion);
             this.Gpb_lista.Controls.Add(this.Lbl_fechainicio);
+            this.Gpb_lista.Controls.Add(this.button1);
             this.Gpb_lista.Controls.Add(this.Lbl_nombrelista);
             this.Gpb_lista.Controls.Add(this.Lbl_tipolista);
             this.Gpb_lista.Controls.Add(this.Dtp_fechamodificacion);
@@ -291,9 +293,9 @@
             this.Gpb_lista.Controls.Add(this.Txt_nombrelista);
             this.Gpb_lista.Controls.Add(this.Cbo_tipolista);
             this.Gpb_lista.ForeColor = System.Drawing.Color.White;
-            this.Gpb_lista.Location = new System.Drawing.Point(446, 9);
+            this.Gpb_lista.Location = new System.Drawing.Point(256, 9);
             this.Gpb_lista.Name = "Gpb_lista";
-            this.Gpb_lista.Size = new System.Drawing.Size(480, 206);
+            this.Gpb_lista.Size = new System.Drawing.Size(670, 206);
             this.Gpb_lista.TabIndex = 21;
             this.Gpb_lista.TabStop = false;
             this.Gpb_lista.Text = "Lista";
@@ -331,11 +333,10 @@
             this.Gpb_accion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Gpb_accion.Controls.Add(this.button3);
             this.Gpb_accion.Controls.Add(this.button2);
-            this.Gpb_accion.Controls.Add(this.button1);
             this.Gpb_accion.ForeColor = System.Drawing.Color.White;
             this.Gpb_accion.Location = new System.Drawing.Point(33, 9);
             this.Gpb_accion.Name = "Gpb_accion";
-            this.Gpb_accion.Size = new System.Drawing.Size(389, 206);
+            this.Gpb_accion.Size = new System.Drawing.Size(193, 206);
             this.Gpb_accion.TabIndex = 24;
             this.Gpb_accion.TabStop = false;
             this.Gpb_accion.Text = "Acciones";
@@ -343,27 +344,29 @@
             // button3
             // 
             this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(114, 29);
+            this.button3.Location = new System.Drawing.Point(29, 58);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(128, 35);
             this.button3.TabIndex = 21;
             this.button3.Text = "Crear Lista";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // button2
             // 
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(114, 143);
+            this.button2.Location = new System.Drawing.Point(29, 114);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(128, 35);
             this.button2.TabIndex = 20;
             this.button2.Text = "Modificar Lista";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // button1
             // 
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(114, 90);
+            this.button1.Location = new System.Drawing.Point(405, 21);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(128, 35);
             this.button1.TabIndex = 19;

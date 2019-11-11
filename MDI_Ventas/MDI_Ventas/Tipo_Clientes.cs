@@ -22,7 +22,7 @@ namespace MDI_Ventas
             navegador1.asignarAlias(alias);
             navegador1.asignarSalida(this);
             navegador1.asignarColorFondo(ColorTranslator.FromHtml("#16235A"));
-            navegador1.asignarColorFuente(Color.Black);
+            navegador1.asignarColorFuente(Color.White);
             navegador1.asignarAyuda("7");
             navegador1.asignarTabla("tbl_tipocliente");
             navegador1.asignarNombreForm("Tipos Clientes");

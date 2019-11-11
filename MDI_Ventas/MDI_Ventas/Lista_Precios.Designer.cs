@@ -35,7 +35,7 @@
             // 
             this.lista_Precios1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
             this.lista_Precios1.ForeColor = System.Drawing.Color.White;
-            this.lista_Precios1.Location = new System.Drawing.Point(3, 2);
+            this.lista_Precios1.Location = new System.Drawing.Point(12, 12);
             this.lista_Precios1.Name = "lista_Precios1";
             this.lista_Precios1.Size = new System.Drawing.Size(964, 730);
             this.lista_Precios1.TabIndex = 0;
@@ -44,9 +44,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lista_Precios1);
             this.Name = "Lista_Precios";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lista_Precios";
             this.ResumeLayout(false);
 

@@ -495,11 +495,59 @@ namespace CapaLogica_Facturacion
             }
             else
             {
-                MessageBox.Show("Error al Obtener el Encabezado de Cotizacion", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error al Obtener Devolucion!", "Devoluciones", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             return contador;
         }
 
+        public void obtenerDevoluciones(DataGridView tablaDevoluciones)
+        {
+            Sentencias sentencias = new Sentencias();
+            OdbcDataAdapter datos = sentencias.obtenerDevoluciones();
+            DataTable dtDatos = new DataTable();
+            datos.Fill(dtDatos);
+            if (dtDatos.Rows.Count > 0)
+            {
+                tablaDevoluciones.Rows.Clear();
+                for (int i = 0; i < dtDatos.Rows.Count; i++)
+                {
+                    DataRow row = dtDatos.Rows[i];
+                    tablaDevoluciones.Rows.Add(
+                        row["kidDevoluciones"].ToString(),
+                        row["motivo_devoluciones"].ToString(),
+                        row["fecha_devoluciones"].ToString(),
+                        row["idFactura"].ToString()
+                        );
+                }
+            }
+            else
+            {
+                MessageBox.Show("Error al Obtener Devoluciones!", "Devoluciones", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void obtenerDatosFactura(string idFactura, string idSerie, TextBox correlativo, TextBox impuesto, TextBox total, TextBox fecha)
+        {
+            Sentencias sentencias = new Sentencias();
+            OdbcDataAdapter datos = sentencias.obtenerDatosFactura(idFactura, idSerie);
+            DataTable dtDatos = new DataTable();
+            datos.Fill(dtDatos);
+            if (dtDatos.Rows.Count > 0)
+            {
+                for (int i = 0; i < dtDatos.Rows.Count; i++)
+                {
+                    DataRow row = dtDatos.Rows[i];
+                    correlativo.Text = row["KidCliente"].ToString();
+                    impuesto.Text = row["impuesto"].ToString();
+                    total.Text = row["monto"].ToString();
+                    fecha.Text = row["fecha_facturaencabezado"].ToString();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Error al Obtener Factura!", "Devoluciones", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
     }
 }

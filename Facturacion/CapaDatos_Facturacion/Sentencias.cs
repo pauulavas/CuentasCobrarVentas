@@ -312,5 +312,30 @@ namespace CapaDatos_Facturacion
             OdbcDataAdapter data = new OdbcDataAdapter(sConsulta, conexion.Conectar());
             return data;
         }
+
+        public OdbcDataAdapter obtenerDevoluciones()
+        {
+            Conexion conexion = new Conexion();
+            conexion.Conectar();
+            string sConsulta = "SELECT kidDevoluciones,motivo_devoluciones," +
+                "DATE_FORMAT(fecha_devoluciones,'%d/%m/%y') AS fecha_devoluciones," +
+                "CONCAT(KidSerie,'-',KidFacturaEncabezado) AS idFactura " +
+                "FROM tbl_devoluciones WHERE estado = 1 ORDER BY fecha_devoluciones DESC";
+            OdbcDataAdapter data = new OdbcDataAdapter(sConsulta, conexion.Conectar());
+            return data;
+        }
+
+        public OdbcDataAdapter obtenerDatosFactura(string idFactura, string idSerie)
+        {
+            Conexion conexion = new Conexion();
+            conexion.Conectar();
+            string sConsulta = "SELECT KidCliente,FORMAT(impuesto_facturaencabezado,2) AS impuesto," +
+                "FORMAT(monto_facturaencabezado,2) AS monto," +
+                "DATE_FORMAT(fecha_facturaencabezado, '%d/%m/%y') AS fecha_facturaencabezado " +
+                "FROM tbl_facturaencabezado WHERE KidFacturaEncabezado = " + idFactura + " AND KidSerie = " + idSerie;
+            OdbcDataAdapter data = new OdbcDataAdapter(sConsulta, conexion.Conectar());
+            return data;
+        }
+
     }
 }

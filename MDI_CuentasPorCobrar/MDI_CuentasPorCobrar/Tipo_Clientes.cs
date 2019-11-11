@@ -12,12 +12,12 @@ namespace MDI_CuentasPorCobrar
 {
     public partial class Tipo_Clientes : Form
     {
-        //string usuario = "";
-        public Tipo_Clientes()
+        string usuario = "";
+        public Tipo_Clientes(string user)
         {
 
             InitializeComponent();
-            //usuario = user;
+            usuario = user;
             string[] alias = { "Codigo", "Nombre", "Descripcion", "estado" };
             navegador1.asignarAlias(alias);
             navegador1.asignarSalida(this);
@@ -33,8 +33,8 @@ namespace MDI_CuentasPorCobrar
         private void Tipo_Clientes_Load(object sender, EventArgs e)
         {
             string aplicacionActiva = "1";
-            navegador1.ObtenerIdUsuario("admin");
-            navegador1.botonesYPermisosInicial("admin", aplicacionActiva);
+            navegador1.ObtenerIdUsuario(usuario);
+            navegador1.botonesYPermisosInicial(usuario, aplicacionActiva);
             navegador1.ObtenerIdAplicacion(aplicacionActiva);
 
         }

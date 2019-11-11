@@ -12,11 +12,11 @@ namespace MDI_CuentasPorCobrar
 {
     public partial class Tipo_Movimiento : Form
     {
-        //string usuario = "";
-        public Tipo_Movimiento()
+        string usuario = "";
+        public Tipo_Movimiento(string user)
         {
             InitializeComponent();
-            //usuario = user;
+            usuario = user;
             string[] alias = { "Codigo", "Nombre", "Detalle", "estado" };
             navegador1.asignarAlias(alias);
             navegador1.asignarSalida(this);
@@ -30,8 +30,8 @@ namespace MDI_CuentasPorCobrar
         private void Tipo_Movimiento_Load(object sender, EventArgs e)
         {
             string aplicacionActiva = "1";
-            navegador1.ObtenerIdUsuario("admin");
-            navegador1.botonesYPermisosInicial("admin", aplicacionActiva);
+            navegador1.ObtenerIdUsuario(usuario);
+            navegador1.botonesYPermisosInicial(usuario, aplicacionActiva);
             navegador1.ObtenerIdAplicacion(aplicacionActiva);
         }
     }

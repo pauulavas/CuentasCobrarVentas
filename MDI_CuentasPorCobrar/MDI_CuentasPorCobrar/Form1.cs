@@ -23,28 +23,28 @@ namespace MDI_CuentasPorCobrar
 
         private void ClientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Clientes form_clientes = new Clientes();
+            Clientes form_clientes = new Clientes(sIdUsuario);
             form_clientes.MdiParent = this;
             form_clientes.Show();
         }
 
         private void TipoClientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Tipo_Clientes form_tipo_clientes = new Tipo_Clientes();
+            Tipo_Clientes form_tipo_clientes = new Tipo_Clientes(sIdUsuario);
             form_tipo_clientes.MdiParent = this;
             form_tipo_clientes.Show();
         }
 
         private void VendedoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Tipo_Movimiento form_tipo_movimiento = new Tipo_Movimiento();
+            Tipo_Movimiento form_tipo_movimiento = new Tipo_Movimiento(sIdUsuario);
             form_tipo_movimiento.MdiParent = this;
             form_tipo_movimiento.Show();
         }
 
         private void TipoPagosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Tipo_Pagos form_tipo_pagos = new Tipo_Pagos();
+            Tipo_Pagos form_tipo_pagos = new Tipo_Pagos(sIdUsuario);
             form_tipo_pagos.MdiParent = this;
             form_tipo_pagos.Show();
         }

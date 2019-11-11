@@ -13,11 +13,11 @@ namespace MDI_Ventas
     public partial class Tipo_Impuesto : Form
     {
 
-        //string usuario = "";
-        public Tipo_Impuesto()
+        string usuario = "";
+        public Tipo_Impuesto(string user)
         {
             InitializeComponent();
-            //usuario = user;
+            usuario = user;
             string[] alias = { "Codigo", "Nombre", "Descripcion", "Porcentaje","estado" };
             navegador1.asignarAlias(alias);
             navegador1.asignarSalida(this);
@@ -31,8 +31,8 @@ namespace MDI_Ventas
         private void Tipo_Impuesto_Load(object sender, EventArgs e)
         {
             string aplicacionActiva = "1";
-            navegador1.ObtenerIdUsuario("admin");
-            navegador1.botonesYPermisosInicial("admin", aplicacionActiva);
+            navegador1.ObtenerIdUsuario(usuario);
+            navegador1.botonesYPermisosInicial(usuario, aplicacionActiva);
             navegador1.ObtenerIdAplicacion(aplicacionActiva);
 
         }

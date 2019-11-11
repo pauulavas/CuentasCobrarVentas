@@ -44,9 +44,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1570, 827);
             this.Controls.Add(this.navegador1);
             this.Name = "Serie";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Serie";
             this.Load += new System.EventHandler(this.Serie_Load);
             this.ResumeLayout(false);

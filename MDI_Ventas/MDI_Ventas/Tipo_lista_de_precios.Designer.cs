@@ -44,9 +44,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1570, 827);
             this.Controls.Add(this.navegador1);
             this.Name = "Tipo_lista_de_precios";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tipo_lista_de_precios";
             this.Load += new System.EventHandler(this.Tipo_lista_de_precios_Load);
             this.ResumeLayout(false);

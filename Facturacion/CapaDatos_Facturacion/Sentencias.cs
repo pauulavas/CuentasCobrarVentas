@@ -233,7 +233,6 @@ namespace CapaDatos_Facturacion
             OdbcCommand command = new OdbcCommand();
             command.Connection = conexion.Conectar();
             command.CommandText = "SELECT COUNT(*)+1 AS id FROM tbl_facturadetalle";
-            command.Connection = conexion.Conectar();
 
             OdbcDataAdapter mySqlDataAdapter = new OdbcDataAdapter(command);
             DataTable dataTable = new DataTable();
@@ -308,7 +307,7 @@ namespace CapaDatos_Facturacion
         {
             Conexion conexion = new Conexion();
             conexion.Conectar();
-            string sConsulta = "SELECT IFNULL(COUNT(*),0) AS conteo FROM tbl_devoluciones WHERE KidFacturaEncabezado = " + idFactura + " AND KidSerie = " + idSerie;
+            string sConsulta = "SELECT IFNULL(COUNT(*),0) AS conteo FROM tbl_devoluciones WHERE estado = 1 AND KidFacturaEncabezado = " + idFactura + " AND KidSerie = " + idSerie;
             OdbcDataAdapter data = new OdbcDataAdapter(sConsulta, conexion.Conectar());
             return data;
         }
@@ -335,6 +334,24 @@ namespace CapaDatos_Facturacion
                 "FROM tbl_facturaencabezado WHERE KidFacturaEncabezado = " + idFactura + " AND KidSerie = " + idSerie;
             OdbcDataAdapter data = new OdbcDataAdapter(sConsulta, conexion.Conectar());
             return data;
+        }
+
+        public OdbcCommand validarSolicitud(string correlativo)
+        {
+            Conexion conexion = new Conexion();
+            OdbcCommand command = new OdbcCommand();
+            command.Connection = conexion.Conectar();
+            command.CommandText = "UPDATE tbl_devoluciones SET estado = 0 WHERE kidDevoluciones = " + correlativo;
+            return command;
+        }
+
+        public OdbcCommand anularFactura(string idFactura, string idSerie)
+        {
+            Conexion conexion = new Conexion();
+            OdbcCommand command = new OdbcCommand();
+            command.Connection = conexion.Conectar();
+            command.CommandText = "UPDATE tbl_facturaencabezado SET estado = 0 WHERE KidFacturaEncabezado = " + idFactura + " AND KidSerie = " + idSerie;
+            return command;
         }
 
     }

@@ -91,6 +91,7 @@ namespace Facturacion
                         Dgv_facturas.Rows.Clear();
                         Txt_correlativo.Text = null;
                         Txt_nombres.Text = null;
+                        Txt_descripcion.Text = null;
                         Txt_apellidos.Text = null;
                         Txt_nit.Text = null;
                         Txt_impuesto.Text = null;

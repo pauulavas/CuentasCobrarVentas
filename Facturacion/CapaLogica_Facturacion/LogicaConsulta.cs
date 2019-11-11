@@ -412,7 +412,7 @@ namespace CapaLogica_Facturacion
             Sentencias sentencias = new Sentencias();
             OdbcCommand command = sentencias.insertarFacturaE(id,
                 idCliente, idCotizacion, idPedido, idLista,
-                fecha, desc, idSerie, idImpuesto, idMoneda, 
+                fecha, desc, idSerie, idImpuesto, idMoneda,
                 idDescuentos, impuesto, total);
             command.ExecuteNonQuery();
         }
@@ -455,7 +455,7 @@ namespace CapaLogica_Facturacion
         public void obtenerNumeroFacturaD(string idFactura, string idSerie, TextBox contador)
         {
             Sentencias sentencias = new Sentencias();
-            OdbcDataAdapter datos = sentencias.obtenerNumeroFacturaD(idFactura,idSerie);
+            OdbcDataAdapter datos = sentencias.obtenerNumeroFacturaD(idFactura, idSerie);
             DataTable dtDatos = new DataTable();
             datos.Fill(dtDatos);
             if (dtDatos.Rows.Count > 0)
@@ -500,15 +500,15 @@ namespace CapaLogica_Facturacion
             return contador;
         }
 
-        public void obtenerDevoluciones(DataGridView tablaDevoluciones)
+        public void obtenerDevoluciones(DataGridView tablaDevoluciones, bool validado)
         {
             Sentencias sentencias = new Sentencias();
             OdbcDataAdapter datos = sentencias.obtenerDevoluciones();
             DataTable dtDatos = new DataTable();
             datos.Fill(dtDatos);
+            tablaDevoluciones.Rows.Clear();
             if (dtDatos.Rows.Count > 0)
             {
-                tablaDevoluciones.Rows.Clear();
                 for (int i = 0; i < dtDatos.Rows.Count; i++)
                 {
                     DataRow row = dtDatos.Rows[i];
@@ -522,7 +522,10 @@ namespace CapaLogica_Facturacion
             }
             else
             {
-                MessageBox.Show("Error al Obtener Devoluciones!", "Devoluciones", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (validado)
+                {
+                    MessageBox.Show("No hay Devoluciones!", "Devoluciones", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -549,5 +552,18 @@ namespace CapaLogica_Facturacion
             }
         }
 
+        public void validarDevolucion(string correlativo)
+        {
+            Sentencias sentencias = new Sentencias();
+            OdbcCommand command = sentencias.validarSolicitud(correlativo);
+            command.ExecuteNonQuery();
+        }
+
+        public void anularFactura(string idFactura, string idSerie)
+        {
+            Sentencias sentencias = new Sentencias();
+            OdbcCommand command = sentencias.anularFactura(idFactura, idSerie);
+            command.ExecuteNonQuery();
+        }
     }
 }

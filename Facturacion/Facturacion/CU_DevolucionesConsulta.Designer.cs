@@ -29,13 +29,15 @@
         private void InitializeComponent()
         {
             this.groupBox18 = new System.Windows.Forms.GroupBox();
-            this.textBox47 = new System.Windows.Forms.TextBox();
+            this.Btn_rechazar = new System.Windows.Forms.Button();
+            this.Txt_fechaDev = new System.Windows.Forms.TextBox();
+            this.Btn_aprobar = new System.Windows.Forms.Button();
             this.label50 = new System.Windows.Forms.Label();
-            this.textBox46 = new System.Windows.Forms.TextBox();
+            this.Txt_factura = new System.Windows.Forms.TextBox();
             this.label49 = new System.Windows.Forms.Label();
             this.Txt_solicitud = new System.Windows.Forms.TextBox();
             this.label48 = new System.Windows.Forms.Label();
-            this.textBox35 = new System.Windows.Forms.TextBox();
+            this.Txt_desc = new System.Windows.Forms.TextBox();
             this.label47 = new System.Windows.Forms.Label();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
             this.Txt_fecha = new System.Windows.Forms.TextBox();
@@ -50,6 +52,10 @@
             this.label55 = new System.Windows.Forms.Label();
             this.groupBox21 = new System.Windows.Forms.GroupBox();
             this.Dgv_solicitudes = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Factura = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox22 = new System.Windows.Forms.GroupBox();
             this.Txt_nit = new System.Windows.Forms.TextBox();
             this.label56 = new System.Windows.Forms.Label();
@@ -59,12 +65,6 @@
             this.label58 = new System.Windows.Forms.Label();
             this.Txt_nombres = new System.Windows.Forms.TextBox();
             this.label59 = new System.Windows.Forms.Label();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Factura = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Btn_rechazar = new System.Windows.Forms.Button();
-            this.Btn_aprobar = new System.Windows.Forms.Button();
             this.groupBox18.SuspendLayout();
             this.groupBox20.SuspendLayout();
             this.groupBox21.SuspendLayout();
@@ -75,14 +75,14 @@
             // groupBox18
             // 
             this.groupBox18.Controls.Add(this.Btn_rechazar);
-            this.groupBox18.Controls.Add(this.textBox47);
+            this.groupBox18.Controls.Add(this.Txt_fechaDev);
             this.groupBox18.Controls.Add(this.Btn_aprobar);
             this.groupBox18.Controls.Add(this.label50);
-            this.groupBox18.Controls.Add(this.textBox46);
+            this.groupBox18.Controls.Add(this.Txt_factura);
             this.groupBox18.Controls.Add(this.label49);
             this.groupBox18.Controls.Add(this.Txt_solicitud);
             this.groupBox18.Controls.Add(this.label48);
-            this.groupBox18.Controls.Add(this.textBox35);
+            this.groupBox18.Controls.Add(this.Txt_desc);
             this.groupBox18.Controls.Add(this.label47);
             this.groupBox18.ForeColor = System.Drawing.Color.White;
             this.groupBox18.Location = new System.Drawing.Point(28, 339);
@@ -92,13 +92,45 @@
             this.groupBox18.TabStop = false;
             this.groupBox18.Text = "Detalle-Solicitud";
             // 
-            // textBox47
+            // Btn_rechazar
             // 
-            this.textBox47.Enabled = false;
-            this.textBox47.Location = new System.Drawing.Point(78, 74);
-            this.textBox47.Name = "textBox47";
-            this.textBox47.Size = new System.Drawing.Size(210, 20);
-            this.textBox47.TabIndex = 19;
+            this.Btn_rechazar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_rechazar.ForeColor = System.Drawing.Color.Black;
+            this.Btn_rechazar.Image = global::Facturacion.Properties.Resources.cancel;
+            this.Btn_rechazar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_rechazar.Location = new System.Drawing.Point(932, 21);
+            this.Btn_rechazar.Name = "Btn_rechazar";
+            this.Btn_rechazar.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.Btn_rechazar.Size = new System.Drawing.Size(77, 67);
+            this.Btn_rechazar.TabIndex = 26;
+            this.Btn_rechazar.Text = "Rechazar";
+            this.Btn_rechazar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_rechazar.UseVisualStyleBackColor = true;
+            this.Btn_rechazar.Click += new System.EventHandler(this.Btn_rechazar_Click);
+            // 
+            // Txt_fechaDev
+            // 
+            this.Txt_fechaDev.Enabled = false;
+            this.Txt_fechaDev.Location = new System.Drawing.Point(78, 74);
+            this.Txt_fechaDev.Name = "Txt_fechaDev";
+            this.Txt_fechaDev.Size = new System.Drawing.Size(210, 20);
+            this.Txt_fechaDev.TabIndex = 19;
+            // 
+            // Btn_aprobar
+            // 
+            this.Btn_aprobar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_aprobar.ForeColor = System.Drawing.Color.Black;
+            this.Btn_aprobar.Image = global::Facturacion.Properties.Resources._checked;
+            this.Btn_aprobar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_aprobar.Location = new System.Drawing.Point(849, 21);
+            this.Btn_aprobar.Name = "Btn_aprobar";
+            this.Btn_aprobar.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.Btn_aprobar.Size = new System.Drawing.Size(77, 67);
+            this.Btn_aprobar.TabIndex = 25;
+            this.Btn_aprobar.Text = "Aprobar";
+            this.Btn_aprobar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_aprobar.UseVisualStyleBackColor = true;
+            this.Btn_aprobar.Click += new System.EventHandler(this.Btn_aprobar_Click);
             // 
             // label50
             // 
@@ -109,13 +141,13 @@
             this.label50.Text = "Fecha:";
             this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox46
+            // Txt_factura
             // 
-            this.textBox46.Enabled = false;
-            this.textBox46.Location = new System.Drawing.Point(78, 47);
-            this.textBox46.Name = "textBox46";
-            this.textBox46.Size = new System.Drawing.Size(210, 20);
-            this.textBox46.TabIndex = 17;
+            this.Txt_factura.Enabled = false;
+            this.Txt_factura.Location = new System.Drawing.Point(78, 47);
+            this.Txt_factura.Name = "Txt_factura";
+            this.Txt_factura.Size = new System.Drawing.Size(210, 20);
+            this.Txt_factura.TabIndex = 17;
             // 
             // label49
             // 
@@ -143,15 +175,15 @@
             this.label48.Text = "Id:";
             this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox35
+            // Txt_desc
             // 
-            this.textBox35.Enabled = false;
-            this.textBox35.Location = new System.Drawing.Point(322, 39);
-            this.textBox35.Multiline = true;
-            this.textBox35.Name = "textBox35";
-            this.textBox35.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox35.Size = new System.Drawing.Size(503, 55);
-            this.textBox35.TabIndex = 13;
+            this.Txt_desc.Enabled = false;
+            this.Txt_desc.Location = new System.Drawing.Point(322, 39);
+            this.Txt_desc.Multiline = true;
+            this.Txt_desc.Name = "Txt_desc";
+            this.Txt_desc.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.Txt_desc.Size = new System.Drawing.Size(503, 55);
+            this.Txt_desc.TabIndex = 13;
             // 
             // label47
             // 
@@ -292,6 +324,34 @@
             this.Dgv_solicitudes.TabIndex = 19;
             this.Dgv_solicitudes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_solicitudes_CellClick);
             // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            this.ID.Width = 150;
+            // 
+            // Descripcion
+            // 
+            this.Descripcion.HeaderText = "Descripcion";
+            this.Descripcion.Name = "Descripcion";
+            this.Descripcion.ReadOnly = true;
+            this.Descripcion.Width = 490;
+            // 
+            // Fecha
+            // 
+            this.Fecha.HeaderText = "Fecha";
+            this.Fecha.Name = "Fecha";
+            this.Fecha.ReadOnly = true;
+            this.Fecha.Width = 150;
+            // 
+            // Factura
+            // 
+            this.Factura.HeaderText = "Factura";
+            this.Factura.Name = "Factura";
+            this.Factura.ReadOnly = true;
+            this.Factura.Width = 150;
+            // 
             // groupBox22
             // 
             this.groupBox22.Controls.Add(this.Txt_nit);
@@ -378,64 +438,6 @@
             this.label59.Text = "Nombres:";
             this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            this.ID.Width = 150;
-            // 
-            // Descripcion
-            // 
-            this.Descripcion.HeaderText = "Descripcion";
-            this.Descripcion.Name = "Descripcion";
-            this.Descripcion.ReadOnly = true;
-            this.Descripcion.Width = 490;
-            // 
-            // Fecha
-            // 
-            this.Fecha.HeaderText = "Fecha";
-            this.Fecha.Name = "Fecha";
-            this.Fecha.ReadOnly = true;
-            this.Fecha.Width = 150;
-            // 
-            // Factura
-            // 
-            this.Factura.HeaderText = "Factura";
-            this.Factura.Name = "Factura";
-            this.Factura.ReadOnly = true;
-            this.Factura.Width = 150;
-            // 
-            // Btn_rechazar
-            // 
-            this.Btn_rechazar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_rechazar.ForeColor = System.Drawing.Color.Black;
-            this.Btn_rechazar.Image = global::Facturacion.Properties.Resources.cancel;
-            this.Btn_rechazar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_rechazar.Location = new System.Drawing.Point(932, 21);
-            this.Btn_rechazar.Name = "Btn_rechazar";
-            this.Btn_rechazar.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.Btn_rechazar.Size = new System.Drawing.Size(77, 67);
-            this.Btn_rechazar.TabIndex = 26;
-            this.Btn_rechazar.Text = "Rechazar";
-            this.Btn_rechazar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_rechazar.UseVisualStyleBackColor = true;
-            // 
-            // Btn_aprobar
-            // 
-            this.Btn_aprobar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_aprobar.ForeColor = System.Drawing.Color.Black;
-            this.Btn_aprobar.Image = global::Facturacion.Properties.Resources._checked;
-            this.Btn_aprobar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_aprobar.Location = new System.Drawing.Point(849, 21);
-            this.Btn_aprobar.Name = "Btn_aprobar";
-            this.Btn_aprobar.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.Btn_aprobar.Size = new System.Drawing.Size(77, 67);
-            this.Btn_aprobar.TabIndex = 25;
-            this.Btn_aprobar.Text = "Aprobar";
-            this.Btn_aprobar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_aprobar.UseVisualStyleBackColor = true;
-            // 
             // CU_DevolucionesConsulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -463,14 +465,14 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox18;
-        private System.Windows.Forms.TextBox textBox47;
+        private System.Windows.Forms.TextBox Txt_fechaDev;
         private System.Windows.Forms.Button Btn_aprobar;
         private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.TextBox textBox46;
+        private System.Windows.Forms.TextBox Txt_factura;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.TextBox Txt_solicitud;
         private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.TextBox textBox35;
+        private System.Windows.Forms.TextBox Txt_desc;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.GroupBox groupBox20;
         private System.Windows.Forms.TextBox Txt_fecha;

@@ -31,7 +31,6 @@ C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ven
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\CapaDeDatos.dll
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.csprojAssemblyReference.cache
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Clientes.resources
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Comisiones.resources
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Folio.resources
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Form1.resources
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Properties.Resources.resources
@@ -47,3 +46,10 @@ C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ven
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.csproj.CopyComplete
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.exe
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.pdb
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\Capa_Diseño_VentasyCtasporCobrar_lp.dll
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\Capa_Diseño_VentasyCtasporCobrar_lp.pdb
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Lista_Precios.resources
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\Capa_Logica_VentasyCtasporCobrar_lp.dll
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\Capa_Logica_VentasyCtasporCobrar_lp.pdb
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\CapaDiseno.dll
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\CapaLogica.dll

@@ -33,6 +33,7 @@
             // 
             // navegador1
             // 
+            this.navegador1.AutoSize = true;
             this.navegador1.BackColor = System.Drawing.Color.White;
             this.navegador1.Location = new System.Drawing.Point(0, -5);
             this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -44,12 +45,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1570, 827);
             this.Controls.Add(this.navegador1);
             this.Name = "Tipo_Pagos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tipo_Pagos";
             this.Load += new System.EventHandler(this.Tipo_Pagos_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaDiseno;
+using CapaDatos;
+using CapaLogica;
 
 namespace MDI_Ventas
 {
     public partial class Form1 : Form
     {
+        string sIdUsuario;
         public Form1()
         {
             InitializeComponent();
@@ -47,9 +51,7 @@ namespace MDI_Ventas
 
         private void ComisionesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Comisiones form_comisiones = new Comisiones();
-            form_comisiones.MdiParent = this;
-            form_comisiones.Show();
+            
         }
 
         private void TipoFacturaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -85,6 +87,72 @@ namespace MDI_Ventas
             Tipo_Descuentos form_descuentos = new Tipo_Descuentos();
             form_descuentos.MdiParent = this;
             form_descuentos.Show();
+        }
+
+        private void ListaDePreciosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Lista_Precios form_lista_precios = new Lista_Precios();
+            form_lista_precios.MdiParent = this;
+            form_lista_precios.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            frm_login login = new frm_login();
+            login.ShowDialog();
+            sIdUsuario = login.obtenerNombreUsuario();
+            lbl_id_usuario.Text = sIdUsuario;
+
+        }
+
+        private void CotizaciónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PedidoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FacturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void IngresoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ConsultaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MovimientoDeClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ComisionesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PolizasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NominasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AyudasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, " AyudasVentas/Ayudas_Ventas.chm", "indexaaaa.html");//Abre el menu de ayuda HTML
         }
     }
 }

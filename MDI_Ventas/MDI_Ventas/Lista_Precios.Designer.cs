@@ -1,6 +1,6 @@
 ﻿namespace MDI_Ventas
 {
-    partial class Comisiones
+    partial class Lista_Precios
     {
         /// <summary>
         /// Required designer variable.
@@ -28,33 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.navegador1 = new CapaDeDiseno.Navegador();
+            this.lista_Precios1 = new Capa_Diseño_VentasyCtasporCobrar_lp.Lista_Precios();
             this.SuspendLayout();
             // 
-            // navegador1
+            // lista_Precios1
             // 
-            this.navegador1.BackColor = System.Drawing.Color.White;
-            this.navegador1.Location = new System.Drawing.Point(-1, -1);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1571, 809);
-            this.navegador1.TabIndex = 0;
+            this.lista_Precios1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
+            this.lista_Precios1.ForeColor = System.Drawing.Color.White;
+            this.lista_Precios1.Location = new System.Drawing.Point(12, 12);
+            this.lista_Precios1.Name = "lista_Precios1";
+            this.lista_Precios1.Size = new System.Drawing.Size(964, 730);
+            this.lista_Precios1.TabIndex = 0;
             // 
-            // Comisiones
+            // Lista_Precios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1570, 827);
-            this.Controls.Add(this.navegador1);
-            this.Name = "Comisiones";
-            this.Text = "Comisiones";
-            this.Load += new System.EventHandler(this.Comisiones_Load);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lista_Precios1);
+            this.Name = "Lista_Precios";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Lista_Precios";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private CapaDeDiseno.Navegador navegador1;
+        private Capa_Diseño_VentasyCtasporCobrar_lp.Lista_Precios lista_Precios1;
     }
 }

@@ -22,7 +22,6 @@ C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hot
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\Facturacion\obj\Debug\Facturacion.csproj.CopyComplete
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\Facturacion\obj\Debug\Facturacion.CU_Devoluciones.resources
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\Facturacion\obj\Debug\Facturacion.CU_DevolucionesConsulta.resources
-C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\Facturacion\obj\Debug\Facturacion.CU_FacturacionGeneral.resources
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\Facturacion\obj\Debug\Facturacion.CU_Facturacion.resources
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\Facturacion\obj\Debug\Facturacion.csprojAssemblyReference.cache
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\Facturacion\bin\Debug\CapaLogica_Facturacion.dll

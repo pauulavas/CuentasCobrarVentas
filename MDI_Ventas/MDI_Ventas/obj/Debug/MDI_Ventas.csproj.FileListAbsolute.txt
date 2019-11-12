@@ -46,7 +46,6 @@ C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ven
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.csproj.CopyComplete
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.exe
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.pdb
-<<<<<<< HEAD
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\MDI_Ventas.exe.config
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\MDI_Ventas.exe
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\MDI_Ventas.pdb
@@ -71,12 +70,21 @@ C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hot
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.csproj.CopyComplete
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.exe
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.pdb
-=======
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\Capa_Diseño_VentasyCtasporCobrar_lp.dll
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\Capa_Diseño_VentasyCtasporCobrar_lp.pdb
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Lista_Precios.resources
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\Capa_Logica_VentasyCtasporCobrar_lp.dll
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\Capa_Logica_VentasyCtasporCobrar_lp.pdb
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\CapaDiseno.dll
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\CapaLogica.dll
->>>>>>> 881123ba3598b0968263c3792332e44f7c94df1a
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CapaDiseno.dll
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CapaLogica.dll
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\Capa_Diseño_VentasyCtasporCobrar_lp.dll
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\Facturacion.dll
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\Capa_Logica_VentasyCtasporCobrar_lp.dll
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CapaLogica_Facturacion.dll
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CapaDatos_Facturacion.dll
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\Capa_Diseño_VentasyCtasporCobrar_lp.pdb
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\Facturacion.pdb
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\Capa_Logica_VentasyCtasporCobrar_lp.pdb
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CapaLogica_Facturacion.pdb
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CapaDatos_Facturacion.pdb
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Cotizaciones.resources
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Lista_Precios.resources
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Facturas.resources
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.IngresoDevoluciones.resources
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Pedidos.resources
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.ConsultaDevoluciones.resources

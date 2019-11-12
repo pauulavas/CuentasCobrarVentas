@@ -51,6 +51,9 @@
     <Reference Include="Capa_Diseño_VentasyCtasporCobrar_lp">
       <HintPath>..\..\MVC_VentasyCtasporCobrar_Lista_Precios\Capa_Diseño_VentasyCtasporCobrar_lp\bin\Debug\Capa_Diseño_VentasyCtasporCobrar_lp.dll</HintPath>
     </Reference>
+    <Reference Include="Facturacion">
+      <HintPath>..\..\Facturacion\Facturacion\bin\Debug\Facturacion.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -70,6 +73,24 @@
     <Compile Include="Clientes.Designer.cs">
       <DependentUpon>Clientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultaDevoluciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaDevoluciones.Designer.cs">
+      <DependentUpon>ConsultaDevoluciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cotizaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cotizaciones.Designer.cs">
+      <DependentUpon>Cotizaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturas.Designer.cs">
+      <DependentUpon>Facturas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Folio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,11 +103,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="IngresoDevoluciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresoDevoluciones.Designer.cs">
+      <DependentUpon>IngresoDevoluciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lista_Precios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Lista_Precios.Designer.cs">
       <DependentUpon>Lista_Precios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos.Designer.cs">
+      <DependentUpon>Pedidos.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -135,14 +168,29 @@
     <EmbeddedResource Include="Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaDevoluciones.resx">
+      <DependentUpon>ConsultaDevoluciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cotizaciones.resx">
+      <DependentUpon>Cotizaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturas.resx">
+      <DependentUpon>Facturas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Folio.resx">
       <DependentUpon>Folio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="IngresoDevoluciones.resx">
+      <DependentUpon>IngresoDevoluciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Lista_Precios.resx">
       <DependentUpon>Lista_Precios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos.resx">
+      <DependentUpon>Pedidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

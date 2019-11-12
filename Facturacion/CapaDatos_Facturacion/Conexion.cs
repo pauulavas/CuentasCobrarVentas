@@ -13,7 +13,7 @@ namespace CapaDatos_Facturacion
         private OdbcConnection OdbcConnection;
         public OdbcConnection Conectar()
         {
-            OdbcConnection = new OdbcConnection("Dsn=comp");
+            OdbcConnection = new OdbcConnection("Dsn=HSC");
             try
             {
                 OdbcConnection.Open();

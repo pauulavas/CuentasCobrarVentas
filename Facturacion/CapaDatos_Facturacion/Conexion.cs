@@ -23,6 +23,7 @@ namespace CapaDatos_Facturacion
                 MessageBox.Show("Error en la conexion");
             }
             return OdbcConnection;
+            //Actualizando Clase Conexion
         }
     }
 }

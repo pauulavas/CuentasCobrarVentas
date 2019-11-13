@@ -56,13 +56,11 @@
             this.button7 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.Nup_cantidad = new System.Windows.Forms.NumericUpDown();
-            this.Btn_consultarProducto = new System.Windows.Forms.Button();
             this.Txt_subtotal = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.Txt_descProducto = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.Txt_codigoProducto = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -78,10 +76,8 @@
             this.Txt_correlativo = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.Encabezado = new System.Windows.Forms.GroupBox();
-            this.Btn_consultaCliente = new System.Windows.Forms.Button();
             this.Txt_nit = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.Txt_codigo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.Txt_apellidos = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -92,6 +88,8 @@
             this.Dtp_final = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.Dtp_actual = new System.Windows.Forms.DateTimePicker();
+            this.Cbo_clientes = new System.Windows.Forms.ComboBox();
+            this.Cbo_productos = new System.Windows.Forms.ComboBox();
             this.acciones.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -311,6 +309,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.Cbo_productos);
             this.groupBox4.Controls.Add(this.Txt_nombreProducto);
             this.groupBox4.Controls.Add(this.label11);
             this.groupBox4.Controls.Add(this.Btn_addGrid);
@@ -318,13 +317,11 @@
             this.groupBox4.Controls.Add(this.button7);
             this.groupBox4.Controls.Add(this.label14);
             this.groupBox4.Controls.Add(this.Nup_cantidad);
-            this.groupBox4.Controls.Add(this.Btn_consultarProducto);
             this.groupBox4.Controls.Add(this.Txt_subtotal);
             this.groupBox4.Controls.Add(this.label12);
             this.groupBox4.Controls.Add(this.label13);
             this.groupBox4.Controls.Add(this.Txt_descProducto);
             this.groupBox4.Controls.Add(this.label10);
-            this.groupBox4.Controls.Add(this.Txt_codigoProducto);
             this.groupBox4.Controls.Add(this.label9);
             this.groupBox4.ForeColor = System.Drawing.Color.White;
             this.groupBox4.Location = new System.Drawing.Point(13, 257);
@@ -356,7 +353,7 @@
             this.Btn_addGrid.ForeColor = System.Drawing.Color.Black;
             this.Btn_addGrid.Image = global::Facturacion.Properties.Resources.add;
             this.Btn_addGrid.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_addGrid.Location = new System.Drawing.Point(821, 33);
+            this.Btn_addGrid.Location = new System.Drawing.Point(765, 33);
             this.Btn_addGrid.Name = "Btn_addGrid";
             this.Btn_addGrid.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.Btn_addGrid.Size = new System.Drawing.Size(69, 54);
@@ -381,7 +378,7 @@
             this.button7.ForeColor = System.Drawing.Color.Black;
             this.button7.Image = global::Facturacion.Properties.Resources.share;
             this.button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button7.Location = new System.Drawing.Point(905, 33);
+            this.button7.Location = new System.Drawing.Point(849, 33);
             this.button7.Name = "button7";
             this.button7.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.button7.Size = new System.Drawing.Size(69, 54);
@@ -402,7 +399,7 @@
             // 
             // Nup_cantidad
             // 
-            this.Nup_cantidad.Location = new System.Drawing.Point(648, 35);
+            this.Nup_cantidad.Location = new System.Drawing.Point(592, 35);
             this.Nup_cantidad.Minimum = new decimal(new int[] {
             1,
             0,
@@ -418,26 +415,11 @@
             0});
             this.Nup_cantidad.ValueChanged += new System.EventHandler(this.Nup_cantidad_ValueChanged);
             // 
-            // Btn_consultarProducto
-            // 
-            this.Btn_consultarProducto.ForeColor = System.Drawing.Color.Black;
-            this.Btn_consultarProducto.Image = global::Facturacion.Properties.Resources.search;
-            this.Btn_consultarProducto.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_consultarProducto.Location = new System.Drawing.Point(492, 34);
-            this.Btn_consultarProducto.Name = "Btn_consultarProducto";
-            this.Btn_consultarProducto.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.Btn_consultarProducto.Size = new System.Drawing.Size(69, 54);
-            this.Btn_consultarProducto.TabIndex = 12;
-            this.Btn_consultarProducto.Text = "Consultar";
-            this.Btn_consultarProducto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_consultarProducto.UseVisualStyleBackColor = true;
-            this.Btn_consultarProducto.Click += new System.EventHandler(this.Btn_consultarProducto_Click);
-            // 
             // Txt_subtotal
             // 
             this.Txt_subtotal.Enabled = false;
             this.Txt_subtotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_subtotal.Location = new System.Drawing.Point(648, 63);
+            this.Txt_subtotal.Location = new System.Drawing.Point(592, 63);
             this.Txt_subtotal.Name = "Txt_subtotal";
             this.Txt_subtotal.Size = new System.Drawing.Size(150, 26);
             this.Txt_subtotal.TabIndex = 14;
@@ -445,7 +427,7 @@
             // 
             // label12
             // 
-            this.label12.Location = new System.Drawing.Point(580, 63);
+            this.label12.Location = new System.Drawing.Point(524, 63);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(62, 26);
             this.label12.TabIndex = 13;
@@ -454,7 +436,7 @@
             // 
             // label13
             // 
-            this.label13.Location = new System.Drawing.Point(583, 30);
+            this.label13.Location = new System.Drawing.Point(527, 30);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(59, 26);
             this.label13.TabIndex = 11;
@@ -477,13 +459,6 @@
             this.label10.TabIndex = 9;
             this.label10.Text = "Descripsion:";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Txt_codigoProducto
-            // 
-            this.Txt_codigoProducto.Location = new System.Drawing.Point(138, 25);
-            this.Txt_codigoProducto.Name = "Txt_codigoProducto";
-            this.Txt_codigoProducto.Size = new System.Drawing.Size(330, 20);
-            this.Txt_codigoProducto.TabIndex = 7;
             // 
             // label9
             // 
@@ -626,10 +601,9 @@
             // 
             // Encabezado
             // 
-            this.Encabezado.Controls.Add(this.Btn_consultaCliente);
+            this.Encabezado.Controls.Add(this.Cbo_clientes);
             this.Encabezado.Controls.Add(this.Txt_nit);
             this.Encabezado.Controls.Add(this.label4);
-            this.Encabezado.Controls.Add(this.Txt_codigo);
             this.Encabezado.Controls.Add(this.label3);
             this.Encabezado.Controls.Add(this.Txt_apellidos);
             this.Encabezado.Controls.Add(this.label2);
@@ -643,87 +617,65 @@
             this.Encabezado.TabStop = false;
             this.Encabezado.Text = "Cliente";
             // 
-            // Btn_consultaCliente
-            // 
-            this.Btn_consultaCliente.ForeColor = System.Drawing.Color.Black;
-            this.Btn_consultaCliente.Image = global::Facturacion.Properties.Resources.search;
-            this.Btn_consultaCliente.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_consultaCliente.Location = new System.Drawing.Point(420, 47);
-            this.Btn_consultaCliente.Name = "Btn_consultaCliente";
-            this.Btn_consultaCliente.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.Btn_consultaCliente.Size = new System.Drawing.Size(69, 54);
-            this.Btn_consultaCliente.TabIndex = 6;
-            this.Btn_consultaCliente.Text = "Consultar";
-            this.Btn_consultaCliente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_consultaCliente.UseVisualStyleBackColor = true;
-            this.Btn_consultaCliente.Click += new System.EventHandler(this.Btn_consultaCliente_Click);
-            // 
             // Txt_nit
             // 
             this.Txt_nit.Enabled = false;
-            this.Txt_nit.Location = new System.Drawing.Point(79, 100);
+            this.Txt_nit.Location = new System.Drawing.Point(129, 99);
             this.Txt_nit.Name = "Txt_nit";
             this.Txt_nit.Size = new System.Drawing.Size(306, 20);
             this.Txt_nit.TabIndex = 7;
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(46, 100);
+            this.label4.Location = new System.Drawing.Point(96, 99);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(27, 17);
             this.label4.TabIndex = 6;
             this.label4.Text = "Nit:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Txt_codigo
-            // 
-            this.Txt_codigo.Location = new System.Drawing.Point(79, 22);
-            this.Txt_codigo.Name = "Txt_codigo";
-            this.Txt_codigo.Size = new System.Drawing.Size(306, 20);
-            this.Txt_codigo.TabIndex = 5;
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(20, 22);
+            this.label3.Location = new System.Drawing.Point(70, 18);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 20);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Codigo:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Text = "Cliente:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Txt_apellidos
             // 
             this.Txt_apellidos.Enabled = false;
-            this.Txt_apellidos.Location = new System.Drawing.Point(79, 74);
+            this.Txt_apellidos.Location = new System.Drawing.Point(129, 73);
             this.Txt_apellidos.Name = "Txt_apellidos";
             this.Txt_apellidos.Size = new System.Drawing.Size(306, 20);
             this.Txt_apellidos.TabIndex = 3;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(17, 74);
+            this.label2.Location = new System.Drawing.Point(67, 73);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "Apellidos:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Txt_nombres
             // 
             this.Txt_nombres.Enabled = false;
-            this.Txt_nombres.Location = new System.Drawing.Point(79, 48);
+            this.Txt_nombres.Location = new System.Drawing.Point(129, 47);
             this.Txt_nombres.Name = "Txt_nombres";
             this.Txt_nombres.Size = new System.Drawing.Size(306, 20);
             this.Txt_nombres.TabIndex = 1;
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(17, 48);
+            this.label1.Location = new System.Drawing.Point(67, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombres:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // groupBox19
             // 
@@ -771,6 +723,26 @@
             this.Dtp_actual.Name = "Dtp_actual";
             this.Dtp_actual.Size = new System.Drawing.Size(200, 20);
             this.Dtp_actual.TabIndex = 0;
+            // 
+            // Cbo_clientes
+            // 
+            this.Cbo_clientes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cbo_clientes.FormattingEnabled = true;
+            this.Cbo_clientes.Location = new System.Drawing.Point(129, 19);
+            this.Cbo_clientes.Name = "Cbo_clientes";
+            this.Cbo_clientes.Size = new System.Drawing.Size(306, 21);
+            this.Cbo_clientes.TabIndex = 8;
+            this.Cbo_clientes.SelectedIndexChanged += new System.EventHandler(this.Cbo_clientes_SelectedIndexChanged);
+            // 
+            // Cbo_productos
+            // 
+            this.Cbo_productos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cbo_productos.FormattingEnabled = true;
+            this.Cbo_productos.Location = new System.Drawing.Point(138, 25);
+            this.Cbo_productos.Name = "Cbo_productos";
+            this.Cbo_productos.Size = new System.Drawing.Size(330, 21);
+            this.Cbo_productos.TabIndex = 21;
+            this.Cbo_productos.SelectedIndexChanged += new System.EventHandler(this.Cbo_productos_SelectedIndexChanged);
             // 
             // CU_Cotizacion
             // 
@@ -833,13 +805,11 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.NumericUpDown Nup_cantidad;
-        private System.Windows.Forms.Button Btn_consultarProducto;
         private System.Windows.Forms.TextBox Txt_subtotal;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox Txt_descProducto;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox Txt_codigoProducto;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Label label6;
@@ -855,10 +825,8 @@
         private System.Windows.Forms.TextBox Txt_correlativo;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox Encabezado;
-        private System.Windows.Forms.Button Btn_consultaCliente;
         private System.Windows.Forms.TextBox Txt_nit;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox Txt_codigo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox Txt_apellidos;
         private System.Windows.Forms.Label label2;
@@ -871,5 +839,7 @@
         private System.Windows.Forms.DateTimePicker Dtp_actual;
         private System.Windows.Forms.TextBox Txt_registros;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.ComboBox Cbo_clientes;
+        private System.Windows.Forms.ComboBox Cbo_productos;
     }
 }

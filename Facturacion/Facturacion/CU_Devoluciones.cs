@@ -118,5 +118,10 @@ namespace Facturacion
 
             }
         }
+
+        private void Cbo_serie_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

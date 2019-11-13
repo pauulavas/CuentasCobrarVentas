@@ -96,6 +96,7 @@
             this.Cbo_serie.Name = "Cbo_serie";
             this.Cbo_serie.Size = new System.Drawing.Size(175, 21);
             this.Cbo_serie.TabIndex = 18;
+            this.Cbo_serie.SelectedIndexChanged += new System.EventHandler(this.Cbo_serie_SelectedIndexChanged);
             // 
             // Btn_consultarFacturas
             // 

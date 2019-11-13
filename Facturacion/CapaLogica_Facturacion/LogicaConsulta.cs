@@ -42,6 +42,48 @@ namespace CapaLogica_Facturacion
             return encontrado;
         }
 
+        public void cargarClientes(ComboBox comboBox, List<int> idCliente)
+        {
+            Sentencias sentencias = new Sentencias();
+            OdbcDataAdapter datos = sentencias.obtenerClientes();
+            DataTable dtDatos = new DataTable();
+            datos.Fill(dtDatos);
+            if (dtDatos.Rows.Count > 0)
+            {
+                for (int i = 0; i < dtDatos.Rows.Count; i++)
+                {
+                    DataRow row = dtDatos.Rows[i];
+                    comboBox.Items.Add(row["nombre"].ToString());
+                    idCliente.Add(Int32.Parse(row["KidCliente"].ToString()));
+                }
+            }
+            else
+            {
+                MessageBox.Show("Error al Obtener Clientes!", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void cargarProductos(ComboBox comboBox, List<int> idProductos)
+        {
+            Sentencias sentencias = new Sentencias();
+            OdbcDataAdapter datos = sentencias.cargarProductos();
+            DataTable dtDatos = new DataTable();
+            datos.Fill(dtDatos);
+            if (dtDatos.Rows.Count > 0)
+            {
+                for (int i = 0; i < dtDatos.Rows.Count; i++)
+                {
+                    DataRow row = dtDatos.Rows[i];
+                    comboBox.Items.Add(row["productos"].ToString());
+                    idProductos.Add(Int32.Parse(row["KidProducto"].ToString()));
+                }
+            }
+            else
+            {
+                MessageBox.Show("Error al Obtener Clientes!", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         public void obtenerSerie(ComboBox comboBox, List<int> idSerie)
         {
             Sentencias sentencias = new Sentencias();
@@ -183,9 +225,7 @@ namespace CapaLogica_Facturacion
                     nombre.Text = row["nombre_producto"].ToString();
                     descripcion.Text = row["descripcion_producto"].ToString();
                 }
-                encontrado = true;
-                MessageBox.Show("Producto Encontrado!", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+                encontrado = true;            }
             else
             {
                 MessageBox.Show("Error al Obtener Producto", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);

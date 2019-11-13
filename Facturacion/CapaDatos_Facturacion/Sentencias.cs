@@ -19,6 +19,24 @@ namespace CapaDatos_Facturacion
             return data;
         }
 
+        public OdbcDataAdapter obtenerClientes()
+        {
+            Conexion conexion = new Conexion();
+            conexion.Conectar();
+            string sConsulta = "SELECT KidCliente,CONCAT(KidCliente,' - ',nombres_cliente,' ',apellidos_cliente) AS nombre FROM tbl_clientes WHERE estado = 1";
+            OdbcDataAdapter data = new OdbcDataAdapter(sConsulta, conexion.Conectar());
+            return data;
+        }
+
+        public OdbcDataAdapter cargarProductos()
+        {
+            Conexion conexion = new Conexion();
+            conexion.Conectar();
+            string sConsulta = "SELECT KidProducto,CONCAT(KidProducto,' - ',nombre_producto) AS productos FROM tbl_producto WHERE estado = 1";
+            OdbcDataAdapter data = new OdbcDataAdapter(sConsulta, conexion.Conectar());
+            return data;
+        }
+
         public OdbcDataAdapter cargarSeries()
         {
             Conexion conexion = new Conexion();

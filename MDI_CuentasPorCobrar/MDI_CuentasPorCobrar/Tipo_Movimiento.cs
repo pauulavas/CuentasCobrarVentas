@@ -12,6 +12,7 @@ namespace MDI_CuentasPorCobrar
 {
     public partial class Tipo_Movimiento : Form
     {
+        //formulario movimiento
         string usuario = "";
         public Tipo_Movimiento(string user)
         {

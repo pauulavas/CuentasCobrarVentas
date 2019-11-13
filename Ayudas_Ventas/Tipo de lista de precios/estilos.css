@@ -1,0 +1,35 @@
+
+@font-face{
+    font-family:Ayudas; 
+    src: url(letra.ttf);
+
+}
+header{
+    border: 2px;
+    padding: 5px;
+    background-color: #2e303e;
+    width: 100%;
+    height: 150px;
+    font-family: Ayudas;
+
+    
+}
+
+
+body{
+    background-color: #6c6b74;
+}
+
+article{
+    background-color: #9199be;
+    float: left;
+    width: 100%;
+    font-family: Ayudas;
+}
+
+footer{
+    background-color: #212624;
+    width: 100%;
+    color: white;
+ 
+}

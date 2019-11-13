@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+//prueba
 namespace MDI_Ventas
 {
     public partial class Tipo_Descuentos : Form

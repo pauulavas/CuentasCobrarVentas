@@ -41,15 +41,8 @@ C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ven
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.csproj.CoreCompileInputs.cache
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.csproj.CopyComplete
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.pdb
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\Capa_Diseño_VentasyCtasporCobrar_lp.dll
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\Capa_Diseño_VentasyCtasporCobrar_lp.pdb
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Lista_Precios.resources
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\Capa_Logica_VentasyCtasporCobrar_lp.dll
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\Capa_Logica_VentasyCtasporCobrar_lp.pdb
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\CapaDiseno.dll
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\CapaLogica.dll
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\Capa_Datos_VentasyCtasporCobrar_lp.dll
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\Capa_Datos_VentasyCtasporCobrar_lp.pdb
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\CrystalDecisions.Windows.Forms.dll
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\CrystalDecisions.Shared.dll
@@ -69,6 +62,7 @@ C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ven
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\ShockwaveFlashObjects.dll
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\stdole.dll
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\MDI_Ventas.dll.config
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\MDI_Ventas.dll
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.dll
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\MDI_Ventas.exe.config
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\MDI_Ventas.exe
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\CapaDeDiseno.dll
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.exe

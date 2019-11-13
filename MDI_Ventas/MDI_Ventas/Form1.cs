@@ -86,9 +86,7 @@ namespace MDI_Ventas
 
         private void ListaDePreciosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Lista_Precios form_lista_precios = new Lista_Precios();
-            form_lista_precios.MdiParent = this;
-            form_lista_precios.Show();
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)

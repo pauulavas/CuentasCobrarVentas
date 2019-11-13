@@ -605,5 +605,47 @@ namespace CapaLogica_Facturacion
             OdbcCommand command = sentencias.anularFactura(idFactura, idSerie);
             command.ExecuteNonQuery();
         }
+
+        public void cargarCotizaciones(ComboBox comboBox, List<int> idCotizacion)
+        {
+            Sentencias sentencias = new Sentencias();
+            OdbcDataAdapter datos = sentencias.cargarCotizaciones();
+            DataTable dtDatos = new DataTable();
+            datos.Fill(dtDatos);
+            if (dtDatos.Rows.Count > 0)
+            {
+                for (int i = 0; i < dtDatos.Rows.Count; i++)
+                {
+                    DataRow row = dtDatos.Rows[i];
+                    comboBox.Items.Add(row["nombre"].ToString());
+                    idCotizacion.Add(Int32.Parse(row["KidCotizacionEncabezado"].ToString()));
+                }
+            }
+            else
+            {
+                MessageBox.Show("Error al Obtener Cotizaciones!", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void cargarPedidos(ComboBox comboBox, List<int> idPedido)
+        {
+            Sentencias sentencias = new Sentencias();
+            OdbcDataAdapter datos = sentencias.cargarPedidos();
+            DataTable dtDatos = new DataTable();
+            datos.Fill(dtDatos);
+            if (dtDatos.Rows.Count > 0)
+            {
+                for (int i = 0; i < dtDatos.Rows.Count; i++)
+                {
+                    DataRow row = dtDatos.Rows[i];
+                    comboBox.Items.Add(row["nombre"].ToString());
+                    idPedido.Add(Int32.Parse(row["KidEncabezadoPedido"].ToString()));
+                }
+            }
+            else
+            {
+                MessageBox.Show("Error al Obtener Cotizaciones!", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

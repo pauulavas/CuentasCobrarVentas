@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox19 = new System.Windows.Forms.GroupBox();
+            this.Cbo_doc = new System.Windows.Forms.ComboBox();
             this.Txt_fechaPed = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.Txt_fechaCot = new System.Windows.Forms.TextBox();
@@ -37,8 +38,6 @@
             this.label62 = new System.Windows.Forms.Label();
             this.Txt_cotizacion = new System.Windows.Forms.TextBox();
             this.label61 = new System.Windows.Forms.Label();
-            this.Btn_consultaDoc = new System.Windows.Forms.Button();
-            this.Txt_codigoDoc = new System.Windows.Forms.TextBox();
             this.label60 = new System.Windows.Forms.Label();
             this.Cbo_documento = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -63,6 +62,7 @@
             this.SubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Inventario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.Cbo_prod = new System.Windows.Forms.ComboBox();
             this.Txt_nombreProducto = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.Btn_addGrid = new System.Windows.Forms.Button();
@@ -70,13 +70,11 @@
             this.button7 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.Nup_cantidad = new System.Windows.Forms.NumericUpDown();
-            this.Btn_consultarProducto = new System.Windows.Forms.Button();
             this.Txt_subtotal = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.Txt_descProducto = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.Txt_codigoProducto = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -94,10 +92,9 @@
             this.Cbo_serie = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.Encabezado = new System.Windows.Forms.GroupBox();
-            this.Btn_consultaCliente = new System.Windows.Forms.Button();
+            this.Cbo_cliente = new System.Windows.Forms.ComboBox();
             this.Txt_nit = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.Txt_codigo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.Txt_apellidos = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -118,6 +115,7 @@
             // 
             // groupBox19
             // 
+            this.groupBox19.Controls.Add(this.Cbo_doc);
             this.groupBox19.Controls.Add(this.Txt_fechaPed);
             this.groupBox19.Controls.Add(this.label21);
             this.groupBox19.Controls.Add(this.Txt_fechaCot);
@@ -126,8 +124,6 @@
             this.groupBox19.Controls.Add(this.label62);
             this.groupBox19.Controls.Add(this.Txt_cotizacion);
             this.groupBox19.Controls.Add(this.label61);
-            this.groupBox19.Controls.Add(this.Btn_consultaDoc);
-            this.groupBox19.Controls.Add(this.Txt_codigoDoc);
             this.groupBox19.Controls.Add(this.label60);
             this.groupBox19.Controls.Add(this.Cbo_documento);
             this.groupBox19.Controls.Add(this.label7);
@@ -139,17 +135,27 @@
             this.groupBox19.TabStop = false;
             this.groupBox19.Text = "Cotizacion-Pedido";
             // 
+            // Cbo_doc
+            // 
+            this.Cbo_doc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cbo_doc.FormattingEnabled = true;
+            this.Cbo_doc.Location = new System.Drawing.Point(162, 53);
+            this.Cbo_doc.Name = "Cbo_doc";
+            this.Cbo_doc.Size = new System.Drawing.Size(230, 21);
+            this.Cbo_doc.TabIndex = 25;
+            this.Cbo_doc.SelectedIndexChanged += new System.EventHandler(this.Cbo_doc_SelectedIndexChanged);
+            // 
             // Txt_fechaPed
             // 
             this.Txt_fechaPed.Enabled = false;
-            this.Txt_fechaPed.Location = new System.Drawing.Point(805, 50);
+            this.Txt_fechaPed.Location = new System.Drawing.Point(769, 50);
             this.Txt_fechaPed.Name = "Txt_fechaPed";
             this.Txt_fechaPed.Size = new System.Drawing.Size(189, 20);
             this.Txt_fechaPed.TabIndex = 24;
             // 
             // label21
             // 
-            this.label21.Location = new System.Drawing.Point(746, 49);
+            this.label21.Location = new System.Drawing.Point(710, 49);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(49, 20);
             this.label21.TabIndex = 23;
@@ -159,14 +165,14 @@
             // Txt_fechaCot
             // 
             this.Txt_fechaCot.Enabled = false;
-            this.Txt_fechaCot.Location = new System.Drawing.Point(805, 24);
+            this.Txt_fechaCot.Location = new System.Drawing.Point(769, 24);
             this.Txt_fechaCot.Name = "Txt_fechaCot";
             this.Txt_fechaCot.Size = new System.Drawing.Size(189, 20);
             this.Txt_fechaCot.TabIndex = 22;
             // 
             // label22
             // 
-            this.label22.Location = new System.Drawing.Point(743, 24);
+            this.label22.Location = new System.Drawing.Point(707, 24);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(52, 20);
             this.label22.TabIndex = 21;
@@ -176,14 +182,14 @@
             // Txt_pedido
             // 
             this.Txt_pedido.Enabled = false;
-            this.Txt_pedido.Location = new System.Drawing.Point(513, 50);
+            this.Txt_pedido.Location = new System.Drawing.Point(489, 50);
             this.Txt_pedido.Name = "Txt_pedido";
             this.Txt_pedido.Size = new System.Drawing.Size(189, 20);
             this.Txt_pedido.TabIndex = 20;
             // 
             // label62
             // 
-            this.label62.Location = new System.Drawing.Point(448, 49);
+            this.label62.Location = new System.Drawing.Point(424, 49);
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(55, 20);
             this.label62.TabIndex = 19;
@@ -193,45 +199,23 @@
             // Txt_cotizacion
             // 
             this.Txt_cotizacion.Enabled = false;
-            this.Txt_cotizacion.Location = new System.Drawing.Point(513, 24);
+            this.Txt_cotizacion.Location = new System.Drawing.Point(489, 24);
             this.Txt_cotizacion.Name = "Txt_cotizacion";
             this.Txt_cotizacion.Size = new System.Drawing.Size(189, 20);
             this.Txt_cotizacion.TabIndex = 18;
             // 
             // label61
             // 
-            this.label61.Location = new System.Drawing.Point(434, 24);
+            this.label61.Location = new System.Drawing.Point(410, 24);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(69, 20);
             this.label61.TabIndex = 17;
             this.label61.Text = "Cotizacion:";
             this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Btn_consultaDoc
-            // 
-            this.Btn_consultaDoc.ForeColor = System.Drawing.Color.Black;
-            this.Btn_consultaDoc.Image = global::Facturacion.Properties.Resources.search;
-            this.Btn_consultaDoc.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_consultaDoc.Location = new System.Drawing.Point(331, 19);
-            this.Btn_consultaDoc.Name = "Btn_consultaDoc";
-            this.Btn_consultaDoc.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.Btn_consultaDoc.Size = new System.Drawing.Size(69, 54);
-            this.Btn_consultaDoc.TabIndex = 16;
-            this.Btn_consultaDoc.Text = "Consultar";
-            this.Btn_consultaDoc.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_consultaDoc.UseVisualStyleBackColor = true;
-            this.Btn_consultaDoc.Click += new System.EventHandler(this.Btn_consultaDoc_Click);
-            // 
-            // Txt_codigoDoc
-            // 
-            this.Txt_codigoDoc.Location = new System.Drawing.Point(97, 52);
-            this.Txt_codigoDoc.Name = "Txt_codigoDoc";
-            this.Txt_codigoDoc.Size = new System.Drawing.Size(189, 20);
-            this.Txt_codigoDoc.TabIndex = 15;
-            // 
             // label60
             // 
-            this.label60.Location = new System.Drawing.Point(41, 52);
+            this.label60.Location = new System.Drawing.Point(106, 52);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(50, 20);
             this.label60.TabIndex = 14;
@@ -246,15 +230,15 @@
             "-",
             "Cotizacion",
             "Pedido"});
-            this.Cbo_documento.Location = new System.Drawing.Point(97, 25);
+            this.Cbo_documento.Location = new System.Drawing.Point(162, 25);
             this.Cbo_documento.Name = "Cbo_documento";
-            this.Cbo_documento.Size = new System.Drawing.Size(189, 21);
+            this.Cbo_documento.Size = new System.Drawing.Size(230, 21);
             this.Cbo_documento.TabIndex = 11;
             this.Cbo_documento.SelectedIndexChanged += new System.EventHandler(this.Cbo_documento_SelectedIndexChanged);
             // 
             // label7
             // 
-            this.label7.Location = new System.Drawing.Point(38, 26);
+            this.label7.Location = new System.Drawing.Point(103, 26);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(53, 20);
             this.label7.TabIndex = 10;
@@ -466,6 +450,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.Cbo_prod);
             this.groupBox4.Controls.Add(this.Txt_nombreProducto);
             this.groupBox4.Controls.Add(this.label11);
             this.groupBox4.Controls.Add(this.Btn_addGrid);
@@ -473,13 +458,11 @@
             this.groupBox4.Controls.Add(this.button7);
             this.groupBox4.Controls.Add(this.label14);
             this.groupBox4.Controls.Add(this.Nup_cantidad);
-            this.groupBox4.Controls.Add(this.Btn_consultarProducto);
             this.groupBox4.Controls.Add(this.Txt_subtotal);
             this.groupBox4.Controls.Add(this.label12);
             this.groupBox4.Controls.Add(this.label13);
             this.groupBox4.Controls.Add(this.Txt_descProducto);
             this.groupBox4.Controls.Add(this.label10);
-            this.groupBox4.Controls.Add(this.Txt_codigoProducto);
             this.groupBox4.Controls.Add(this.label9);
             this.groupBox4.ForeColor = System.Drawing.Color.White;
             this.groupBox4.Location = new System.Drawing.Point(13, 284);
@@ -488,6 +471,16 @@
             this.groupBox4.TabIndex = 30;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Producto-Servicio";
+            // 
+            // Cbo_prod
+            // 
+            this.Cbo_prod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cbo_prod.FormattingEnabled = true;
+            this.Cbo_prod.Location = new System.Drawing.Point(138, 25);
+            this.Cbo_prod.Name = "Cbo_prod";
+            this.Cbo_prod.Size = new System.Drawing.Size(330, 21);
+            this.Cbo_prod.TabIndex = 21;
+            this.Cbo_prod.SelectedIndexChanged += new System.EventHandler(this.Cbo_prod_SelectedIndexChanged);
             // 
             // Txt_nombreProducto
             // 
@@ -572,21 +565,6 @@
             0});
             this.Nup_cantidad.ValueChanged += new System.EventHandler(this.Nup_cantidad_ValueChanged);
             // 
-            // Btn_consultarProducto
-            // 
-            this.Btn_consultarProducto.ForeColor = System.Drawing.Color.Black;
-            this.Btn_consultarProducto.Image = global::Facturacion.Properties.Resources.search;
-            this.Btn_consultarProducto.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_consultarProducto.Location = new System.Drawing.Point(492, 34);
-            this.Btn_consultarProducto.Name = "Btn_consultarProducto";
-            this.Btn_consultarProducto.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.Btn_consultarProducto.Size = new System.Drawing.Size(69, 54);
-            this.Btn_consultarProducto.TabIndex = 12;
-            this.Btn_consultarProducto.Text = "Consultar";
-            this.Btn_consultarProducto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_consultarProducto.UseVisualStyleBackColor = true;
-            this.Btn_consultarProducto.Click += new System.EventHandler(this.Btn_consultarProducto_Click);
-            // 
             // Txt_subtotal
             // 
             this.Txt_subtotal.Enabled = false;
@@ -631,13 +609,6 @@
             this.label10.TabIndex = 9;
             this.label10.Text = "Descripsion:";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Txt_codigoProducto
-            // 
-            this.Txt_codigoProducto.Location = new System.Drawing.Point(138, 25);
-            this.Txt_codigoProducto.Name = "Txt_codigoProducto";
-            this.Txt_codigoProducto.Size = new System.Drawing.Size(330, 20);
-            this.Txt_codigoProducto.TabIndex = 7;
             // 
             // label9
             // 
@@ -801,10 +772,9 @@
             // 
             // Encabezado
             // 
-            this.Encabezado.Controls.Add(this.Btn_consultaCliente);
+            this.Encabezado.Controls.Add(this.Cbo_cliente);
             this.Encabezado.Controls.Add(this.Txt_nit);
             this.Encabezado.Controls.Add(this.label4);
-            this.Encabezado.Controls.Add(this.Txt_codigo);
             this.Encabezado.Controls.Add(this.label3);
             this.Encabezado.Controls.Add(this.Txt_apellidos);
             this.Encabezado.Controls.Add(this.label2);
@@ -818,48 +788,36 @@
             this.Encabezado.TabStop = false;
             this.Encabezado.Text = "Cliente";
             // 
-            // Btn_consultaCliente
+            // Cbo_cliente
             // 
-            this.Btn_consultaCliente.ForeColor = System.Drawing.Color.Black;
-            this.Btn_consultaCliente.Image = global::Facturacion.Properties.Resources.search;
-            this.Btn_consultaCliente.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_consultaCliente.Location = new System.Drawing.Point(420, 47);
-            this.Btn_consultaCliente.Name = "Btn_consultaCliente";
-            this.Btn_consultaCliente.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.Btn_consultaCliente.Size = new System.Drawing.Size(69, 54);
-            this.Btn_consultaCliente.TabIndex = 6;
-            this.Btn_consultaCliente.Text = "Consultar";
-            this.Btn_consultaCliente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_consultaCliente.UseVisualStyleBackColor = true;
-            this.Btn_consultaCliente.Click += new System.EventHandler(this.Btn_consultaCliente_Click);
+            this.Cbo_cliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cbo_cliente.FormattingEnabled = true;
+            this.Cbo_cliente.Location = new System.Drawing.Point(126, 20);
+            this.Cbo_cliente.Name = "Cbo_cliente";
+            this.Cbo_cliente.Size = new System.Drawing.Size(306, 21);
+            this.Cbo_cliente.TabIndex = 8;
+            this.Cbo_cliente.SelectedIndexChanged += new System.EventHandler(this.Cbo_cliente_SelectedIndexChanged);
             // 
             // Txt_nit
             // 
             this.Txt_nit.Enabled = false;
-            this.Txt_nit.Location = new System.Drawing.Point(79, 100);
+            this.Txt_nit.Location = new System.Drawing.Point(126, 100);
             this.Txt_nit.Name = "Txt_nit";
             this.Txt_nit.Size = new System.Drawing.Size(306, 20);
             this.Txt_nit.TabIndex = 7;
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(46, 100);
+            this.label4.Location = new System.Drawing.Point(93, 100);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(27, 17);
             this.label4.TabIndex = 6;
             this.label4.Text = "Nit:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Txt_codigo
-            // 
-            this.Txt_codigo.Location = new System.Drawing.Point(79, 22);
-            this.Txt_codigo.Name = "Txt_codigo";
-            this.Txt_codigo.Size = new System.Drawing.Size(306, 20);
-            this.Txt_codigo.TabIndex = 5;
-            // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(20, 22);
+            this.label3.Location = new System.Drawing.Point(67, 19);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 20);
             this.label3.TabIndex = 4;
@@ -869,14 +827,14 @@
             // Txt_apellidos
             // 
             this.Txt_apellidos.Enabled = false;
-            this.Txt_apellidos.Location = new System.Drawing.Point(79, 74);
+            this.Txt_apellidos.Location = new System.Drawing.Point(126, 74);
             this.Txt_apellidos.Name = "Txt_apellidos";
             this.Txt_apellidos.Size = new System.Drawing.Size(306, 20);
             this.Txt_apellidos.TabIndex = 3;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(17, 74);
+            this.label2.Location = new System.Drawing.Point(64, 74);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 17);
             this.label2.TabIndex = 2;
@@ -886,14 +844,14 @@
             // Txt_nombres
             // 
             this.Txt_nombres.Enabled = false;
-            this.Txt_nombres.Location = new System.Drawing.Point(79, 48);
+            this.Txt_nombres.Location = new System.Drawing.Point(126, 48);
             this.Txt_nombres.Name = "Txt_nombres";
             this.Txt_nombres.Size = new System.Drawing.Size(306, 20);
             this.Txt_nombres.TabIndex = 1;
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(17, 48);
+            this.label1.Location = new System.Drawing.Point(64, 48);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 17);
             this.label1.TabIndex = 0;
@@ -942,8 +900,6 @@
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.TextBox Txt_cotizacion;
         private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.Button Btn_consultaDoc;
-        private System.Windows.Forms.TextBox Txt_codigoDoc;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.ComboBox Cbo_documento;
         private System.Windows.Forms.Label label7;
@@ -973,13 +929,11 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.NumericUpDown Nup_cantidad;
-        private System.Windows.Forms.Button Btn_consultarProducto;
         private System.Windows.Forms.TextBox Txt_subtotal;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox Txt_descProducto;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox Txt_codigoProducto;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Label label6;
@@ -997,10 +951,8 @@
         private System.Windows.Forms.ComboBox Cbo_serie;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox Encabezado;
-        private System.Windows.Forms.Button Btn_consultaCliente;
         private System.Windows.Forms.TextBox Txt_nit;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox Txt_codigo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox Txt_apellidos;
         private System.Windows.Forms.Label label2;
@@ -1012,5 +964,8 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox Txt_fechaCot;
         private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.ComboBox Cbo_doc;
+        private System.Windows.Forms.ComboBox Cbo_cliente;
+        private System.Windows.Forms.ComboBox Cbo_prod;
     }
 }

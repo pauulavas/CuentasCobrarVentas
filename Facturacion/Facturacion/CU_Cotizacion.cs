@@ -136,6 +136,7 @@ namespace Facturacion
                 else
                 {
                     Dgv_factura.Rows[seleccionado].Cells[1].Value = cantidad;
+                    Dgv_factura.Rows[seleccionado].Cells[4].Value = cantidad * Double.Parse(Dgv_factura.Rows[seleccionado].Cells[3].Value.ToString());
                 }
 
                 for (int i = 0; i < Dgv_factura.Rows.Count - 1; i++)

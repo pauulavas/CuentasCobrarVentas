@@ -371,6 +371,23 @@ namespace CapaDatos_Facturacion
             command.CommandText = "UPDATE tbl_facturaencabezado SET estado = 0 WHERE KidFacturaEncabezado = " + idFactura + " AND KidSerie = " + idSerie;
             return command;
         }
-        //Actualizando MVC
+
+        public OdbcDataAdapter cargarCotizaciones()
+        {
+            Conexion conexion = new Conexion();
+            conexion.Conectar();
+            string sConsulta = "SELECT KidCotizacionEncabezado,CONCAT(KidCotizacionEncabezado,' - ',vencimiento_cotizacionEncabezado) AS nombre FROM tbl_cotizacionencabezado";
+            OdbcDataAdapter data = new OdbcDataAdapter(sConsulta, conexion.Conectar());
+            return data;
+        }
+
+        public OdbcDataAdapter cargarPedidos()
+        {
+            Conexion conexion = new Conexion();
+            conexion.Conectar();
+            string sConsulta = "SELECT KidEncabezadoPedido,CONCAT(KidEncabezadoPedido,' - ',fecha_encabezadopedido) AS nombre FROM tbl_encabezadopedido";
+            OdbcDataAdapter data = new OdbcDataAdapter(sConsulta, conexion.Conectar());
+            return data;
+        }
     }
 }

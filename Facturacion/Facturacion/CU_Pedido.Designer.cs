@@ -28,14 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox19 = new System.Windows.Forms.GroupBox();
+            this.Cbo_codCot = new System.Windows.Forms.ComboBox();
             this.Txt_fecha = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.Txt_cotizacion = new System.Windows.Forms.TextBox();
             this.label61 = new System.Windows.Forms.Label();
-            this.Btn_consultarCot = new System.Windows.Forms.Button();
-            this.Txt_codigoCot = new System.Windows.Forms.TextBox();
             this.label60 = new System.Windows.Forms.Label();
             this.Cbo_opcion = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -67,13 +66,11 @@
             this.button7 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.Nup_cantidad = new System.Windows.Forms.NumericUpDown();
-            this.Btn_consultarProducto = new System.Windows.Forms.Button();
             this.Txt_subtotal = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.Txt_descProducto = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.Txt_codigoProducto = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.Gpb_configuracion = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -89,10 +86,8 @@
             this.Txt_correlativo = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.Encabezado = new System.Windows.Forms.GroupBox();
-            this.Btn_consultarCliente = new System.Windows.Forms.Button();
             this.Txt_nit = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.Txt_codigo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.Txt_apellidos = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -103,6 +98,8 @@
             this.Dtp_final = new System.Windows.Forms.DateTimePicker();
             this.label21 = new System.Windows.Forms.Label();
             this.Dtp_actual = new System.Windows.Forms.DateTimePicker();
+            this.Cbo_cliente = new System.Windows.Forms.ComboBox();
+            this.Cbo_codProducto = new System.Windows.Forms.ComboBox();
             this.groupBox19.SuspendLayout();
             this.Gpb_acciones.SuspendLayout();
             this.Gpb_venta.SuspendLayout();
@@ -119,12 +116,11 @@
             // 
             // groupBox19
             // 
+            this.groupBox19.Controls.Add(this.Cbo_codCot);
             this.groupBox19.Controls.Add(this.Txt_fecha);
             this.groupBox19.Controls.Add(this.label5);
             this.groupBox19.Controls.Add(this.Txt_cotizacion);
             this.groupBox19.Controls.Add(this.label61);
-            this.groupBox19.Controls.Add(this.Btn_consultarCot);
-            this.groupBox19.Controls.Add(this.Txt_codigoCot);
             this.groupBox19.Controls.Add(this.label60);
             this.groupBox19.Controls.Add(this.Cbo_opcion);
             this.groupBox19.Controls.Add(this.label7);
@@ -135,18 +131,29 @@
             this.groupBox19.TabIndex = 34;
             this.groupBox19.TabStop = false;
             this.groupBox19.Text = "Cotizacion-Pedido";
+            this.groupBox19.Enter += new System.EventHandler(this.GroupBox19_Enter);
+            // 
+            // Cbo_codCot
+            // 
+            this.Cbo_codCot.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cbo_codCot.FormattingEnabled = true;
+            this.Cbo_codCot.Location = new System.Drawing.Point(119, 51);
+            this.Cbo_codCot.Name = "Cbo_codCot";
+            this.Cbo_codCot.Size = new System.Drawing.Size(189, 21);
+            this.Cbo_codCot.TabIndex = 21;
+            this.Cbo_codCot.SelectedIndexChanged += new System.EventHandler(this.Cbo_codCot_SelectedIndexChanged_1);
             // 
             // Txt_fecha
             // 
             this.Txt_fecha.Enabled = false;
-            this.Txt_fecha.Location = new System.Drawing.Point(446, 50);
+            this.Txt_fecha.Location = new System.Drawing.Point(403, 50);
             this.Txt_fecha.Name = "Txt_fecha";
             this.Txt_fecha.Size = new System.Drawing.Size(189, 20);
             this.Txt_fecha.TabIndex = 20;
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(367, 50);
+            this.label5.Location = new System.Drawing.Point(324, 50);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 20);
             this.label5.TabIndex = 19;
@@ -156,45 +163,23 @@
             // Txt_cotizacion
             // 
             this.Txt_cotizacion.Enabled = false;
-            this.Txt_cotizacion.Location = new System.Drawing.Point(446, 24);
+            this.Txt_cotizacion.Location = new System.Drawing.Point(403, 24);
             this.Txt_cotizacion.Name = "Txt_cotizacion";
             this.Txt_cotizacion.Size = new System.Drawing.Size(189, 20);
             this.Txt_cotizacion.TabIndex = 18;
             // 
             // label61
             // 
-            this.label61.Location = new System.Drawing.Point(367, 24);
+            this.label61.Location = new System.Drawing.Point(324, 24);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(69, 20);
             this.label61.TabIndex = 17;
             this.label61.Text = "Cotizacion:";
             this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Btn_consultarCot
-            // 
-            this.Btn_consultarCot.ForeColor = System.Drawing.Color.Black;
-            this.Btn_consultarCot.Image = global::Facturacion.Properties.Resources.search;
-            this.Btn_consultarCot.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_consultarCot.Location = new System.Drawing.Point(284, 20);
-            this.Btn_consultarCot.Name = "Btn_consultarCot";
-            this.Btn_consultarCot.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.Btn_consultarCot.Size = new System.Drawing.Size(69, 54);
-            this.Btn_consultarCot.TabIndex = 16;
-            this.Btn_consultarCot.Text = "Consultar";
-            this.Btn_consultarCot.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_consultarCot.UseVisualStyleBackColor = true;
-            this.Btn_consultarCot.Click += new System.EventHandler(this.Btn_consultarCot_Click);
-            // 
-            // Txt_codigoCot
-            // 
-            this.Txt_codigoCot.Location = new System.Drawing.Point(78, 53);
-            this.Txt_codigoCot.Name = "Txt_codigoCot";
-            this.Txt_codigoCot.Size = new System.Drawing.Size(189, 20);
-            this.Txt_codigoCot.TabIndex = 15;
-            // 
             // label60
             // 
-            this.label60.Location = new System.Drawing.Point(22, 53);
+            this.label60.Location = new System.Drawing.Point(63, 53);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(50, 20);
             this.label60.TabIndex = 14;
@@ -208,7 +193,7 @@
             this.Cbo_opcion.Items.AddRange(new object[] {
             "-",
             "Cotizacion"});
-            this.Cbo_opcion.Location = new System.Drawing.Point(78, 24);
+            this.Cbo_opcion.Location = new System.Drawing.Point(119, 24);
             this.Cbo_opcion.Name = "Cbo_opcion";
             this.Cbo_opcion.Size = new System.Drawing.Size(189, 21);
             this.Cbo_opcion.TabIndex = 11;
@@ -216,7 +201,7 @@
             // 
             // label7
             // 
-            this.label7.Location = new System.Drawing.Point(19, 23);
+            this.label7.Location = new System.Drawing.Point(60, 23);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(53, 20);
             this.label7.TabIndex = 10;
@@ -382,14 +367,14 @@
             this.Inventario});
             this.Dgv_factura.Location = new System.Drawing.Point(6, 19);
             this.Dgv_factura.Name = "Dgv_factura";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Maroon;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Dgv_factura.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Maroon;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dgv_factura.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.Dgv_factura.Size = new System.Drawing.Size(945, 159);
             this.Dgv_factura.TabIndex = 0;
             this.Dgv_factura.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_factura_CellClick);
@@ -437,6 +422,7 @@
             // 
             // Gpb_producto
             // 
+            this.Gpb_producto.Controls.Add(this.Cbo_codProducto);
             this.Gpb_producto.Controls.Add(this.Txt_nombreProducto);
             this.Gpb_producto.Controls.Add(this.label11);
             this.Gpb_producto.Controls.Add(this.Txt_addGrid);
@@ -444,13 +430,11 @@
             this.Gpb_producto.Controls.Add(this.button7);
             this.Gpb_producto.Controls.Add(this.label14);
             this.Gpb_producto.Controls.Add(this.Nup_cantidad);
-            this.Gpb_producto.Controls.Add(this.Btn_consultarProducto);
             this.Gpb_producto.Controls.Add(this.Txt_subtotal);
             this.Gpb_producto.Controls.Add(this.label12);
             this.Gpb_producto.Controls.Add(this.label13);
             this.Gpb_producto.Controls.Add(this.Txt_descProducto);
             this.Gpb_producto.Controls.Add(this.label10);
-            this.Gpb_producto.Controls.Add(this.Txt_codigoProducto);
             this.Gpb_producto.Controls.Add(this.label9);
             this.Gpb_producto.ForeColor = System.Drawing.Color.White;
             this.Gpb_producto.Location = new System.Drawing.Point(13, 276);
@@ -543,21 +527,6 @@
             0});
             this.Nup_cantidad.ValueChanged += new System.EventHandler(this.Nup_cantidad_ValueChanged);
             // 
-            // Btn_consultarProducto
-            // 
-            this.Btn_consultarProducto.ForeColor = System.Drawing.Color.Black;
-            this.Btn_consultarProducto.Image = global::Facturacion.Properties.Resources.search;
-            this.Btn_consultarProducto.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_consultarProducto.Location = new System.Drawing.Point(492, 34);
-            this.Btn_consultarProducto.Name = "Btn_consultarProducto";
-            this.Btn_consultarProducto.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.Btn_consultarProducto.Size = new System.Drawing.Size(69, 54);
-            this.Btn_consultarProducto.TabIndex = 12;
-            this.Btn_consultarProducto.Text = "Consultar";
-            this.Btn_consultarProducto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_consultarProducto.UseVisualStyleBackColor = true;
-            this.Btn_consultarProducto.Click += new System.EventHandler(this.Btn_consultarProducto_Click);
-            // 
             // Txt_subtotal
             // 
             this.Txt_subtotal.Enabled = false;
@@ -566,7 +535,7 @@
             this.Txt_subtotal.Name = "Txt_subtotal";
             this.Txt_subtotal.Size = new System.Drawing.Size(150, 26);
             this.Txt_subtotal.TabIndex = 14;
-            this.Txt_subtotal.Text = "Q. 1.00";
+            this.Txt_subtotal.Text = "0.00";
             // 
             // label12
             // 
@@ -602,13 +571,6 @@
             this.label10.TabIndex = 9;
             this.label10.Text = "Descripsion:";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Txt_codigoProducto
-            // 
-            this.Txt_codigoProducto.Location = new System.Drawing.Point(138, 25);
-            this.Txt_codigoProducto.Name = "Txt_codigoProducto";
-            this.Txt_codigoProducto.Size = new System.Drawing.Size(330, 20);
-            this.Txt_codigoProducto.TabIndex = 7;
             // 
             // label9
             // 
@@ -751,10 +713,9 @@
             // 
             // Encabezado
             // 
-            this.Encabezado.Controls.Add(this.Btn_consultarCliente);
+            this.Encabezado.Controls.Add(this.Cbo_cliente);
             this.Encabezado.Controls.Add(this.Txt_nit);
             this.Encabezado.Controls.Add(this.label4);
-            this.Encabezado.Controls.Add(this.Txt_codigo);
             this.Encabezado.Controls.Add(this.label3);
             this.Encabezado.Controls.Add(this.Txt_apellidos);
             this.Encabezado.Controls.Add(this.label2);
@@ -768,48 +729,26 @@
             this.Encabezado.TabStop = false;
             this.Encabezado.Text = "Cliente";
             // 
-            // Btn_consultarCliente
-            // 
-            this.Btn_consultarCliente.ForeColor = System.Drawing.Color.Black;
-            this.Btn_consultarCliente.Image = global::Facturacion.Properties.Resources.search;
-            this.Btn_consultarCliente.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_consultarCliente.Location = new System.Drawing.Point(412, 46);
-            this.Btn_consultarCliente.Name = "Btn_consultarCliente";
-            this.Btn_consultarCliente.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.Btn_consultarCliente.Size = new System.Drawing.Size(69, 54);
-            this.Btn_consultarCliente.TabIndex = 6;
-            this.Btn_consultarCliente.Text = "Consultar";
-            this.Btn_consultarCliente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_consultarCliente.UseVisualStyleBackColor = true;
-            this.Btn_consultarCliente.Click += new System.EventHandler(this.Btn_consultarCliente_Click);
-            // 
             // Txt_nit
             // 
             this.Txt_nit.Enabled = false;
-            this.Txt_nit.Location = new System.Drawing.Point(79, 100);
+            this.Txt_nit.Location = new System.Drawing.Point(124, 100);
             this.Txt_nit.Name = "Txt_nit";
             this.Txt_nit.Size = new System.Drawing.Size(306, 20);
             this.Txt_nit.TabIndex = 7;
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(46, 100);
+            this.label4.Location = new System.Drawing.Point(91, 100);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(27, 17);
             this.label4.TabIndex = 6;
             this.label4.Text = "Nit:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Txt_codigo
-            // 
-            this.Txt_codigo.Location = new System.Drawing.Point(79, 22);
-            this.Txt_codigo.Name = "Txt_codigo";
-            this.Txt_codigo.Size = new System.Drawing.Size(306, 20);
-            this.Txt_codigo.TabIndex = 5;
-            // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(20, 22);
+            this.label3.Location = new System.Drawing.Point(65, 22);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 20);
             this.label3.TabIndex = 4;
@@ -819,14 +758,14 @@
             // Txt_apellidos
             // 
             this.Txt_apellidos.Enabled = false;
-            this.Txt_apellidos.Location = new System.Drawing.Point(79, 74);
+            this.Txt_apellidos.Location = new System.Drawing.Point(124, 74);
             this.Txt_apellidos.Name = "Txt_apellidos";
             this.Txt_apellidos.Size = new System.Drawing.Size(306, 20);
             this.Txt_apellidos.TabIndex = 3;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(17, 74);
+            this.label2.Location = new System.Drawing.Point(62, 74);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 17);
             this.label2.TabIndex = 2;
@@ -836,14 +775,14 @@
             // Txt_nombres
             // 
             this.Txt_nombres.Enabled = false;
-            this.Txt_nombres.Location = new System.Drawing.Point(79, 48);
+            this.Txt_nombres.Location = new System.Drawing.Point(124, 48);
             this.Txt_nombres.Name = "Txt_nombres";
             this.Txt_nombres.Size = new System.Drawing.Size(306, 20);
             this.Txt_nombres.TabIndex = 1;
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(17, 48);
+            this.label1.Location = new System.Drawing.Point(62, 48);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 17);
             this.label1.TabIndex = 0;
@@ -897,6 +836,26 @@
             this.Dtp_actual.Size = new System.Drawing.Size(200, 20);
             this.Dtp_actual.TabIndex = 6;
             // 
+            // Cbo_cliente
+            // 
+            this.Cbo_cliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cbo_cliente.FormattingEnabled = true;
+            this.Cbo_cliente.Location = new System.Drawing.Point(124, 22);
+            this.Cbo_cliente.Name = "Cbo_cliente";
+            this.Cbo_cliente.Size = new System.Drawing.Size(306, 21);
+            this.Cbo_cliente.TabIndex = 22;
+            this.Cbo_cliente.SelectedIndexChanged += new System.EventHandler(this.Cbo_cliente_SelectedIndexChanged);
+            // 
+            // Cbo_codProducto
+            // 
+            this.Cbo_codProducto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cbo_codProducto.FormattingEnabled = true;
+            this.Cbo_codProducto.Location = new System.Drawing.Point(138, 25);
+            this.Cbo_codProducto.Name = "Cbo_codProducto";
+            this.Cbo_codProducto.Size = new System.Drawing.Size(330, 21);
+            this.Cbo_codProducto.TabIndex = 23;
+            this.Cbo_codProducto.SelectedIndexChanged += new System.EventHandler(this.Cbo_codProducto_SelectedIndexChanged);
+            // 
             // CU_Pedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -939,8 +898,6 @@
         private System.Windows.Forms.GroupBox groupBox19;
         private System.Windows.Forms.TextBox Txt_cotizacion;
         private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.Button Btn_consultarCot;
-        private System.Windows.Forms.TextBox Txt_codigoCot;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.ComboBox Cbo_opcion;
         private System.Windows.Forms.Label label7;
@@ -970,13 +927,11 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.NumericUpDown Nup_cantidad;
-        private System.Windows.Forms.Button Btn_consultarProducto;
         private System.Windows.Forms.TextBox Txt_subtotal;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox Txt_descProducto;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox Txt_codigoProducto;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox Gpb_configuracion;
         private System.Windows.Forms.Label label6;
@@ -992,10 +947,8 @@
         private System.Windows.Forms.TextBox Txt_correlativo;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox Encabezado;
-        private System.Windows.Forms.Button Btn_consultarCliente;
         private System.Windows.Forms.TextBox Txt_nit;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox Txt_codigo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox Txt_apellidos;
         private System.Windows.Forms.Label label2;
@@ -1010,5 +963,8 @@
         private System.Windows.Forms.DateTimePicker Dtp_actual;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.DateTimePicker Dtp_final;
+        private System.Windows.Forms.ComboBox Cbo_codCot;
+        private System.Windows.Forms.ComboBox Cbo_cliente;
+        private System.Windows.Forms.ComboBox Cbo_codProducto;
     }
 }

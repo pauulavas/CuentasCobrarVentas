@@ -28,528 +28,286 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.PRODUCTO = new System.Windows.Forms.CheckBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.CBO_IDCOMISION = new System.Windows.Forms.ComboBox();
+            this.DTG_Muestra = new System.Windows.Forms.DataGridView();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.RD_Linea = new System.Windows.Forms.RadioButton();
+            this.RD_Marca = new System.Windows.Forms.RadioButton();
+            this.RD_Producto = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.CMB_Trabajador = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.groupBox4.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.CMB_Cargo = new System.Windows.Forms.ComboBox();
+            this.Txt_Apellido = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Txt_Nombre = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Btn_Eliminar = new System.Windows.Forms.Button();
+            this.Btn_Modificar = new System.Windows.Forms.Button();
+            this.Btn_Guardar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DTG_Muestra)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.textBox3);
-            this.groupBox4.Controls.Add(this.label3);
-            this.groupBox4.Controls.Add(this.button1);
-            this.groupBox4.Controls.Add(this.textBox2);
-            this.groupBox4.Controls.Add(this.label2);
-            this.groupBox4.Controls.Add(this.textBox1);
-            this.groupBox4.Controls.Add(this.label1);
-            this.groupBox4.Location = new System.Drawing.Point(103, 30);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(873, 115);
-            this.groupBox4.TabIndex = 19;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Información General";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(469, 44);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(162, 20);
-            this.textBox3.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(465, 24);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "APELLIDOS";
-            // 
-            // button1
-            // 
-            this.button1.Image = global::CapaDisenoComision.Properties.Resources.loupe;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(771, 24);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 55);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "BUSCAR";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(275, 44);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(162, 20);
-            this.textBox2.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(271, 24);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "NOMBRE";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(85, 44);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 20);
-            this.textBox1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(81, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ID VENDEDOR";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.Controls.Add(this.button2);
-            this.groupBox3.Controls.Add(this.textBox12);
-            this.groupBox3.Controls.Add(this.textBox11);
-            this.groupBox3.Controls.Add(this.label14);
-            this.groupBox3.Controls.Add(this.textBox10);
-            this.groupBox3.Controls.Add(this.label13);
-            this.groupBox3.Location = new System.Drawing.Point(103, 436);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(873, 107);
-            this.groupBox3.TabIndex = 18;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Descripcion";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(19, 71);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(71, 13);
-            this.label15.TabIndex = 13;
-            this.label15.Text = "Info Adicional";
-            // 
-            // button2
-            // 
-            this.button2.Image = global::CapaDisenoComision.Properties.Resources.paper_plane__1_;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(781, 24);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 51);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "ENVIAR";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(117, 68);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(643, 20);
-            this.textBox12.TabIndex = 12;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(409, 19);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(351, 20);
-            this.textBox11.TabIndex = 11;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(294, 26);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(91, 13);
-            this.label14.TabIndex = 10;
-            this.label14.Text = "Total de Comision";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(114, 24);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(148, 20);
-            this.textBox10.TabIndex = 9;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(19, 31);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(89, 13);
-            this.label13.TabIndex = 8;
-            this.label13.Text = "Numero Comision";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Controls.Add(this.panel3);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.panel2);
-            this.groupBox1.Controls.Add(this.PRODUCTO);
-            this.groupBox1.Controls.Add(this.panel1);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Location = new System.Drawing.Point(103, 153);
+            this.groupBox1.Controls.Add(this.CBO_IDCOMISION);
+            this.groupBox1.Controls.Add(this.DTG_Muestra);
+            this.groupBox1.Controls.Add(this.groupBox2);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(391, 110);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(873, 263);
-            this.groupBox1.TabIndex = 17;
+            this.groupBox1.Size = new System.Drawing.Size(729, 311);
+            this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "COMISION";
             // 
-            // button3
+            // CBO_IDCOMISION
             // 
-            this.button3.Image = global::CapaDisenoComision.Properties.Resources.loupe;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.Location = new System.Drawing.Point(781, 197);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 54);
-            this.button3.TabIndex = 20;
-            this.button3.Text = "BUSCAR";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.UseVisualStyleBackColor = true;
+            this.CBO_IDCOMISION.FormattingEnabled = true;
+            this.CBO_IDCOMISION.Location = new System.Drawing.Point(138, 89);
+            this.CBO_IDCOMISION.Name = "CBO_IDCOMISION";
+            this.CBO_IDCOMISION.Size = new System.Drawing.Size(166, 21);
+            this.CBO_IDCOMISION.TabIndex = 31;
             // 
-            // checkBox3
+            // DTG_Muestra
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(554, 20);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(64, 17);
-            this.checkBox3.TabIndex = 18;
-            this.checkBox3.Text = "MARCA";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.DTG_Muestra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DTG_Muestra.Location = new System.Drawing.Point(53, 128);
+            this.DTG_Muestra.Name = "DTG_Muestra";
+            this.DTG_Muestra.Size = new System.Drawing.Size(660, 150);
+            this.DTG_Muestra.TabIndex = 30;
             // 
-            // panel3
+            // groupBox2
             // 
-            this.panel3.Controls.Add(this.textBox13);
-            this.panel3.Controls.Add(this.label11);
-            this.panel3.Controls.Add(this.textBox14);
-            this.panel3.Controls.Add(this.label12);
-            this.panel3.Controls.Add(this.textBox15);
-            this.panel3.Controls.Add(this.label16);
-            this.panel3.Location = new System.Drawing.Point(554, 42);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(206, 201);
-            this.panel3.TabIndex = 19;
+            this.groupBox2.Controls.Add(this.RD_Linea);
+            this.groupBox2.Controls.Add(this.RD_Marca);
+            this.groupBox2.Controls.Add(this.RD_Producto);
+            this.groupBox2.Location = new System.Drawing.Point(67, 19);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(548, 42);
+            this.groupBox2.TabIndex = 28;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "TIPO";
             // 
-            // textBox13
+            // RD_Linea
             // 
-            this.textBox13.Location = new System.Drawing.Point(50, 161);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(133, 20);
-            this.textBox13.TabIndex = 13;
+            this.RD_Linea.AutoSize = true;
+            this.RD_Linea.Location = new System.Drawing.Point(437, 13);
+            this.RD_Linea.Name = "RD_Linea";
+            this.RD_Linea.Size = new System.Drawing.Size(56, 17);
+            this.RD_Linea.TabIndex = 21;
+            this.RD_Linea.TabStop = true;
+            this.RD_Linea.Text = "LINEA";
+            this.RD_Linea.UseVisualStyleBackColor = true;
             // 
-            // label11
+            // RD_Marca
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(23, 134);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(60, 13);
-            this.label11.TabIndex = 12;
-            this.label11.Text = "COMISION";
+            this.RD_Marca.AutoSize = true;
+            this.RD_Marca.Location = new System.Drawing.Point(242, 13);
+            this.RD_Marca.Name = "RD_Marca";
+            this.RD_Marca.Size = new System.Drawing.Size(63, 17);
+            this.RD_Marca.TabIndex = 20;
+            this.RD_Marca.TabStop = true;
+            this.RD_Marca.Text = "MARCA";
+            this.RD_Marca.UseVisualStyleBackColor = true;
             // 
-            // textBox14
+            // RD_Producto
             // 
-            this.textBox14.Location = new System.Drawing.Point(50, 104);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(133, 20);
-            this.textBox14.TabIndex = 11;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(23, 77);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(54, 13);
-            this.label12.TabIndex = 10;
-            this.label12.Text = "NOMBRE";
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(50, 47);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(133, 20);
-            this.textBox15.TabIndex = 9;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(23, 20);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(59, 13);
-            this.label16.TabIndex = 8;
-            this.label16.Text = "ID MARCA";
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(294, 20);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(57, 17);
-            this.checkBox2.TabIndex = 16;
-            this.checkBox2.Text = "LINEA";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.textBox7);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.textBox8);
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.textBox9);
-            this.panel2.Controls.Add(this.label10);
-            this.panel2.Location = new System.Drawing.Point(294, 43);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(206, 200);
-            this.panel2.TabIndex = 17;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(50, 161);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(133, 20);
-            this.textBox7.TabIndex = 13;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(23, 134);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(60, 13);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "COMISION";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(50, 104);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(133, 20);
-            this.textBox8.TabIndex = 11;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(23, 77);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(54, 13);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "NOMBRE";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(50, 47);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(133, 20);
-            this.textBox9.TabIndex = 9;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(23, 20);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(52, 13);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "ID LINEA";
-            // 
-            // PRODUCTO
-            // 
-            this.PRODUCTO.AutoSize = true;
-            this.PRODUCTO.Location = new System.Drawing.Point(62, 19);
-            this.PRODUCTO.Name = "PRODUCTO";
-            this.PRODUCTO.Size = new System.Drawing.Size(87, 17);
-            this.PRODUCTO.TabIndex = 12;
-            this.PRODUCTO.Text = "PRODUCTO";
-            this.PRODUCTO.UseVisualStyleBackColor = true;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.textBox6);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(62, 42);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(206, 200);
-            this.panel1.TabIndex = 15;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(40, 155);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(133, 20);
-            this.textBox6.TabIndex = 7;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(13, 128);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(60, 13);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "COMISION";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(40, 98);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(133, 20);
-            this.textBox5.TabIndex = 5;
+            this.RD_Producto.AutoSize = true;
+            this.RD_Producto.Location = new System.Drawing.Point(27, 15);
+            this.RD_Producto.Name = "RD_Producto";
+            this.RD_Producto.Size = new System.Drawing.Size(86, 17);
+            this.RD_Producto.TabIndex = 19;
+            this.RD_Producto.TabStop = true;
+            this.RD_Producto.Text = "PRODUCTO";
+            this.RD_Producto.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 71);
+            this.label5.Location = new System.Drawing.Point(99, 92);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "NOMBRE";
+            this.label5.Size = new System.Drawing.Size(18, 13);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "ID";
             // 
-            // textBox4
+            // groupBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(40, 41);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(133, 20);
-            this.textBox4.TabIndex = 3;
+            this.groupBox4.Controls.Add(this.CMB_Trabajador);
+            this.groupBox4.Controls.Add(this.Btn_Eliminar);
+            this.groupBox4.Controls.Add(this.Btn_Modificar);
+            this.groupBox4.Controls.Add(this.Btn_Guardar);
+            this.groupBox4.Controls.Add(this.label4);
+            this.groupBox4.Controls.Add(this.CMB_Cargo);
+            this.groupBox4.Controls.Add(this.Txt_Apellido);
+            this.groupBox4.Controls.Add(this.label3);
+            this.groupBox4.Controls.Add(this.Txt_Nombre);
+            this.groupBox4.Controls.Add(this.label2);
+            this.groupBox4.Controls.Add(this.label1);
+            this.groupBox4.ForeColor = System.Drawing.Color.White;
+            this.groupBox4.Location = new System.Drawing.Point(62, 60);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(310, 416);
+            this.groupBox4.TabIndex = 19;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "INFO. GENERAL";
+            // 
+            // CMB_Trabajador
+            // 
+            this.CMB_Trabajador.FormattingEnabled = true;
+            this.CMB_Trabajador.Location = new System.Drawing.Point(23, 70);
+            this.CMB_Trabajador.Name = "CMB_Trabajador";
+            this.CMB_Trabajador.Size = new System.Drawing.Size(166, 21);
+            this.CMB_Trabajador.TabIndex = 28;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 14);
+            this.label4.Location = new System.Drawing.Point(20, 255);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 13);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "ID PRODUCTO";
+            this.label4.Size = new System.Drawing.Size(45, 13);
+            this.label4.TabIndex = 24;
+            this.label4.Text = "CARGO";
             // 
-            // label7
+            // CMB_Cargo
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 200);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(0, 13);
-            this.label7.TabIndex = 11;
+            this.CMB_Cargo.FormattingEnabled = true;
+            this.CMB_Cargo.Location = new System.Drawing.Point(23, 274);
+            this.CMB_Cargo.Name = "CMB_Cargo";
+            this.CMB_Cargo.Size = new System.Drawing.Size(166, 21);
+            this.CMB_Cargo.TabIndex = 23;
+            // 
+            // Txt_Apellido
+            // 
+            this.Txt_Apellido.Location = new System.Drawing.Point(22, 212);
+            this.Txt_Apellido.Name = "Txt_Apellido";
+            this.Txt_Apellido.Size = new System.Drawing.Size(162, 20);
+            this.Txt_Apellido.TabIndex = 21;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(18, 192);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(66, 13);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "APELLIDOS";
+            // 
+            // Txt_Nombre
+            // 
+            this.Txt_Nombre.Location = new System.Drawing.Point(23, 157);
+            this.Txt_Nombre.Name = "Txt_Nombre";
+            this.Txt_Nombre.Size = new System.Drawing.Size(162, 20);
+            this.Txt_Nombre.TabIndex = 19;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(19, 137);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(54, 13);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "NOMBRE";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(19, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(93, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ID TRABAJADOR";
+            // 
+            // Btn_Eliminar
+            // 
+            this.Btn_Eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Btn_Eliminar.ForeColor = System.Drawing.Color.White;
+            this.Btn_Eliminar.Image = global::CapaDisenoComision.Properties.Resources.clear;
+            this.Btn_Eliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_Eliminar.Location = new System.Drawing.Point(185, 333);
+            this.Btn_Eliminar.Name = "Btn_Eliminar";
+            this.Btn_Eliminar.Size = new System.Drawing.Size(75, 55);
+            this.Btn_Eliminar.TabIndex = 27;
+            this.Btn_Eliminar.Text = "ELIMINAR";
+            this.Btn_Eliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_Eliminar.UseVisualStyleBackColor = true;
+            // 
+            // Btn_Modificar
+            // 
+            this.Btn_Modificar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Btn_Modificar.ForeColor = System.Drawing.Color.White;
+            this.Btn_Modificar.Image = global::CapaDisenoComision.Properties.Resources.edit;
+            this.Btn_Modificar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_Modificar.Location = new System.Drawing.Point(104, 333);
+            this.Btn_Modificar.Name = "Btn_Modificar";
+            this.Btn_Modificar.Size = new System.Drawing.Size(75, 55);
+            this.Btn_Modificar.TabIndex = 26;
+            this.Btn_Modificar.Text = "MODIFICAR";
+            this.Btn_Modificar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_Modificar.UseVisualStyleBackColor = true;
+            // 
+            // Btn_Guardar
+            // 
+            this.Btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Btn_Guardar.ForeColor = System.Drawing.Color.White;
+            this.Btn_Guardar.Image = global::CapaDisenoComision.Properties.Resources.save;
+            this.Btn_Guardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_Guardar.Location = new System.Drawing.Point(23, 333);
+            this.Btn_Guardar.Name = "Btn_Guardar";
+            this.Btn_Guardar.Size = new System.Drawing.Size(75, 55);
+            this.Btn_Guardar.TabIndex = 25;
+            this.Btn_Guardar.Text = "GUARDAR";
+            this.Btn_Guardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_Guardar.UseVisualStyleBackColor = true;
             // 
             // Comision
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox4);
             this.Name = "Comision";
-            this.Size = new System.Drawing.Size(1078, 572);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.Size = new System.Drawing.Size(1172, 572);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DTG_Muestra)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.CheckBox PRODUCTO;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.ComboBox CBO_IDCOMISION;
+        private System.Windows.Forms.DataGridView DTG_Muestra;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton RD_Linea;
+        private System.Windows.Forms.RadioButton RD_Marca;
+        private System.Windows.Forms.RadioButton RD_Producto;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.ComboBox CMB_Trabajador;
+        private System.Windows.Forms.Button Btn_Eliminar;
+        private System.Windows.Forms.Button Btn_Modificar;
+        private System.Windows.Forms.Button Btn_Guardar;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox CMB_Cargo;
+        private System.Windows.Forms.TextBox Txt_Apellido;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox Txt_Nombre;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

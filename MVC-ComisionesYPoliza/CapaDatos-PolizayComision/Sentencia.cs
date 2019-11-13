@@ -10,116 +10,120 @@ using System.Windows.Forms;
 using System.Data.Odbc;
 using System.Data.SqlClient;
 
-
 namespace CapaDatos_PolizayComision
 {
     public class Sentencia
     {
-        //FUNCION PARA OBTENER POLIZA
-        int id;
-        void obtenerNoPoliza()
+        public string consultarNumPoliza()
         {
             Conexion conexion = new Conexion();
             conexion.Conectar();
-            string numero = "SELECT count(*) from tbl_encabezado_poliza";
-            OdbcDataAdapter sda4 = new OdbcDataAdapter(numero, conexion.Conectar());
-            DataTable tabla = new DataTable();
-            sda4.Fill(tabla);
-            id = Convert.ToInt32(tabla.Rows[0][0]);
-
+            string sConsulta = "SELECT MAX(KidPoliza) from tbl_poliza_encabezado"; //encabezado poliza
+            string nextId = "";
+            OdbcCommand comando = new OdbcCommand(sConsulta, conexion.Conectar());
+            OdbcDataReader data = comando.ExecuteReader();
+            if (data.HasRows) 
+            {
+                if (data.Read())
+                {
+                    if (data.GetValue(0).ToString() == "" || data.GetValue(0).ToString() == null)
+                    {
+                        nextId = "0";
+                    }
+                    else
+                    {
+                        nextId = data.GetValue(0).ToString();
+                    }
+                }
+            }
+            return nextId;
         }
 
-        //FUNCION BUSCAR LAS FECHAS 
-        void buscar(DateTimePicker Dtg_Inicial, DateTimePicker Dtg_Final, DataGridView dataPrueba)
+
+        public OdbcDataAdapter cargardatos(ComboBox cb)
         {
             Conexion conexion = new Conexion();
             conexion.Conectar();
-            string cadenaSQL = "Select *from tbl_facturaencabezado where fecha_facturaencabezado between ' " + Dtg_Inicial.Value.ToString("yyyy-MM-dd") + "' AND '" + Dtg_Final.Value.ToString("yyyy-MM-dd") + "'";
+            string carga = "select nombre from tbl_cuentas";
+            OdbcDataAdapter data = new OdbcDataAdapter(carga, conexion.Conectar());
+            return data;
+        }
+
+        public OdbcDataAdapter busqueda( DateTimePicker Dtg_Inicial,DateTimePicker Dtg_Final,  DataGridView DgvPoliza )
+        {   //VENTAS
+
+            Conexion conexion = new Conexion();
+            conexion.Conectar();
+
+            //string cadenaSQL = "Select KidFacturaEncabezado, fecha_facturaencabezado, KidSerie,  KidCliente,  KidImpuesto, impuesto_facturaencabezado, monto_facturaencabezado from tbl_facturaencabezado where fecha_facturaencabezado between '" + Dtg_Inicial.Value.Date.ToString("yyyy-MM-dd") + "' AND '" + Dtg_Final.Value.Date.ToString("yyyy-MM-dd") + "'";
+            string cadenaSQL = "Select Kidfacturaencabezado, fecha_facturaencabezado, impuesto_facturaencabezado, monto_facturaencabezado from tbl_facturaencabezado";
+            MessageBox.Show("" + Dtg_Final.Value.Date.ToString("yyyy-MM-dd") + "-" + Dtg_Final.Value.Date.ToString("yyyy-MM-dd"));
             OdbcDataAdapter sda = new OdbcDataAdapter(cadenaSQL, conexion.Conectar());
-
-
-            DataSet ds = new DataSet();
-            sda.Fill(ds);
-            dataPrueba.DataSource = ds.Tables[0];
-
-
+            return sda;
         }
 
-        void suma(DataGridView dataPrueba, DataGridView Dgv_Poliza, Label lbl1, Label lbl2, Label lbl3, TextBox Txt_NoPoliza, DateTimePicker Dtp_Creacion)
+        public OdbcCommand insertardatos(string nopoliza,DateTimePicker DtpCreacion,string notipo,string totalventas )
         {
             Conexion conexion = new Conexion();
-            conexion.Conectar();
+            OdbcCommand insertar = new OdbcCommand();
+            insertar.Connection = conexion.Conectar();
+            
+            insertar.CommandText = "INSERT INTO tbl_poliza_encabezado" + "VALUES ("+ nopoliza+ ","+ notipo +"," + DtpCreacion.Value.Date.ToString("yyyy-MM-dd") +"," + totalventas+"')";
 
-            //Suma de facturas
-
-            float sumaFinal = 0; float suma = 0; float suma3 = 0;
-
-            for (int i = 0; i < dataPrueba.Rows.Count; i++)
-            {
-                suma += Convert.ToInt32(dataPrueba.Rows[i].Cells[9].Value);
-            }
-            lbl1.Text = suma.ToString();//SumaAlmacenadaMonto
-
-            int suma2 = 0;
-            for (int i = 0; i < dataPrueba.Rows.Count; i++)
-            {
-                suma2 += Convert.ToInt32(dataPrueba.Rows[i].Cells[11].Value);
-            }
-            suma3 = suma + suma2;
-            lbl2.Text = suma3.ToString();                               //Suma Monto e Iva
-            lbl3.Text = suma2.ToString();
-
-
-
-            OdbcDataAdapter sda3 = new OdbcDataAdapter("select id_cuenta,Nombre_cuenta from tbl_catalogo_cuentas_contables where id_cuenta= 16", conexion.Conectar());
-            DataTable datos3 = new DataTable();
-            sda3.Fill(datos3);
-
-            OdbcDataAdapter sda4 = new OdbcDataAdapter("select id_cuenta,Nombre_cuenta from tbl_catalogo_cuentas_contables where id_cuenta= 5", conexion.Conectar());
-            DataTable datos4 = new DataTable();
-            sda4.Fill(datos4);
-
-            OdbcDataAdapter sda2 = new OdbcDataAdapter("select id_cuenta,Nombre_cuenta from tbl_catalogo_cuentas_contables where id_cuenta=4", conexion.Conectar());
-            DataTable datos2 = new DataTable();
-            sda2.Fill(datos2);
-
-            Dgv_Poliza.Rows.Add(Txt_NoPoliza.Text, datos2.Rows[0][0].ToString(), datos2.Rows[0][1].ToString(), "Cargo", lbl1.Text);
-            Dgv_Poliza.Rows.Add(Txt_NoPoliza.Text, datos3.Rows[0][0].ToString(), datos3.Rows[0][1].ToString(), "Abono", lbl3.Text);
-            Dgv_Poliza.Rows.Add(Txt_NoPoliza.Text, datos4.Rows[0][0].ToString(), datos4.Rows[0][1].ToString(), "Abono", " ", lbl2.Text);
-
-
-
-            OdbcCommand comando = new OdbcCommand("insert into tbl_encabezado_poliza(id_poliza,FechaActual_poliza,Total_poliza,estatus) values ('" + Txt_NoPoliza.Text + "','" + Dtp_Creacion.Value.ToString("yyyy-MM-dd") + "','" + lbl1.Text + "','" + "0" + "')", conexion.Conectar());
-            comando.ExecuteNonQuery();
-
-
-
-            OdbcCommand comando2 = new OdbcCommand("insert into tbl_detalle_poliza(FK_id_poliza,FK_id_cuenta,NombreCuenta_detapoliza,Tipo_cuenta,Cargo_detallepoliza,Abono_detallepoliza) values ('" + Txt_NoPoliza.Text + "','" + datos2.Rows[0][0].ToString() + "','" + datos2.Rows[0][1].ToString() + "','" + "Cargo" + "','" + lbl3.Text + "','" + " 0" + "')", conexion.Conectar());
-            comando2.ExecuteNonQuery();
-
-
-            OdbcCommand comando3 = new OdbcCommand("insert into tbl_detalle_poliza(FK_id_poliza,FK_id_cuenta,NombreCuenta_detapoliza,Tipo_cuenta,Cargo_detallepoliza,Abono_detallepoliza) values ('" + Txt_NoPoliza.Text + "','" + datos3.Rows[0][0].ToString() + "','" + datos3.Rows[0][1].ToString() + "','" + "Abono" + "','" + lbl2.Text + "','" + " 0" + "')", conexion.Conectar());
-            comando3.ExecuteNonQuery();
-
-            OdbcCommand comando4 = new OdbcCommand("insert into tbl_detalle_poliza(FK_id_poliza,FK_id_cuenta,NombreCuenta_detapoliza,Tipo_cuenta,Cargo_detallepoliza,Abono_detallepoliza) values ('" + Txt_NoPoliza.Text + "','" + datos4.Rows[0][0].ToString() + "','" + datos4.Rows[0][1].ToString() + "','" + "Abono" + "','" + "0" + "','" + lbl1.Text + "')", conexion.Conectar());
-            comando4.ExecuteNonQuery();
-
+            return insertar;
         }
+       
 
-        //FUNCION PARA OBTENER COMISION
-        int id1;
-        void obtenerNoComision()
+
+
+        public OdbcCommand insertarCotizacionE(string id, string idCliente, DateTime fechaI, DateTime fechaF)
         {
             Conexion conexion = new Conexion();
-            conexion.Conectar();
-            string numero = "SELECT count(*) from tbl_encabezado_poliza";
-            OdbcDataAdapter sda4 = new OdbcDataAdapter(numero, conexion.Conectar());
-            DataTable tabla = new DataTable();
-            sda4.Fill(tabla);
-            id1 = Convert.ToInt32(tabla.Rows[0][0]);
+            OdbcCommand command = new OdbcCommand();
+            command.Connection = conexion.Conectar();
 
+            command.CommandText = "INSERT INTO tbl_cotizacionencabezado " +
+             "VALUES (" + id +
+             "," + idCliente + ",'" + fechaI.ToString("yyyy-MM-dd") + "','" + fechaF.ToString("yyyy-MM-dd") + "')";
+            return command;
+        }
+
+        public OdbcCommand insertarCotizacionD(string idProducto, string idCotizacion, string cantidad, string monto)
+        {
+            Conexion conexion = new Conexion();
+            OdbcCommand command = new OdbcCommand();
+            command.Connection = conexion.Conectar();
+            command.CommandText = "SELECT COUNT(*)+1 AS id FROM tbl_cotizaciondetalle";
+            command.Connection = conexion.Conectar();
+
+            OdbcDataAdapter mySqlDataAdapter = new OdbcDataAdapter(command);
+            DataTable dataTable = new DataTable();
+            mySqlDataAdapter.Fill(dataTable);
+
+            int iConteo = 0;
+
+            if (dataTable.Rows.Count > 0)
+            {
+                DataRow row = dataTable.Rows[0];
+                iConteo = Convert.ToInt32(row["id"]);
+            }
+
+            command.CommandText = "INSERT INTO tbl_cotizaciondetalle " +
+             "VALUES (" + iConteo +
+             "," + idProducto + "," + idCotizacion + "," + cantidad + "," + monto + ")";
+            return command;
+        }
+
+        public OdbcCommand validarSolicitud(string correlativo)
+        {
+            Conexion conexion = new Conexion();
+            OdbcCommand command = new OdbcCommand();
+            command.Connection = conexion.Conectar();
+            command.CommandText = "UPDATE tbl_devoluciones SET estado = 0 WHERE kidDevoluciones = " + correlativo;
+            return command;
         }
 
 
-}
+
+    }
 }

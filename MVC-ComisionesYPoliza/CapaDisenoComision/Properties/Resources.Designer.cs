@@ -63,6 +63,26 @@ namespace CapaDisenoComision.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap clear {
+            get {
+                object obj = ResourceManager.GetObject("clear", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap edit {
+            get {
+                object obj = ResourceManager.GetObject("edit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap loupe {
             get {
                 object obj = ResourceManager.GetObject("loupe", resourceCulture);
@@ -76,6 +96,16 @@ namespace CapaDisenoComision.Properties {
         internal static System.Drawing.Bitmap paper_plane__1_ {
             get {
                 object obj = ResourceManager.GetObject("paper-plane (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap save {
+            get {
+                object obj = ResourceManager.GetObject("save", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

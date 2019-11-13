@@ -12,28 +12,27 @@ namespace MDI_CuentasPorCobrar
 {
     public partial class Clientes : Form
     {
-        //string usuario = "";
-        public Clientes()
+        string usuario = "";
+        public Clientes(string user)
         {
             InitializeComponent();
-            //usuario = user;
+            usuario = user;
             string[] alias = { "Codigo", "Nombre", "Apellido", "Telefono", "Direccion", "DPI", "NIT", "Nombre Contacto", "Telefono Contacto", "Tipo Cliente", "estado" };
             navegador1.asignarAlias(alias);
             navegador1.asignarSalida(this);
             navegador1.asignarColorFondo(ColorTranslator.FromHtml("#16235A"));
-            navegador1.asignarColorFuente(Color.Black);
-            navegador1.asignarAyuda("13");
+            navegador1.asignarColorFuente(Color.White);
+            navegador1.asignarAyuda("110");
             navegador1.asignarTabla("tbl_clientes");
             navegador1.asignarNombreForm("Clientes");
             navegador1.asignarComboConTabla("tbl_tipocliente", "kidtipocliente", 1);
-            navegador1.asignarAyuda("13");
         }
 
         private void Clientes_Load(object sender, EventArgs e)
         {
             string aplicacionActiva = "1";
-            navegador1.ObtenerIdUsuario("admin");
-            navegador1.botonesYPermisosInicial("admin", aplicacionActiva);
+            navegador1.ObtenerIdUsuario(usuario);
+            navegador1.botonesYPermisosInicial(usuario, aplicacionActiva);
             navegador1.ObtenerIdAplicacion(aplicacionActiva);
         }
     }

@@ -34,8 +34,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CapaDeDiseno">
-      <HintPath>..\..\Datos\DLLS\CapaDeDiseno.dll</HintPath>
+    <Reference Include="CapaDatos, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CapaDatos.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaDeDiseno, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\CapaDeDiseno.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaDiseno">
+      <HintPath>..\..\CapaDiseno.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaLogica">
+      <HintPath>..\..\CapaLogica.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

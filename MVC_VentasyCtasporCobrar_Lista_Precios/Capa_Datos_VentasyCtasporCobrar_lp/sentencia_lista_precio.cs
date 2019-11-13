@@ -105,13 +105,12 @@ namespace Capa_Datos_VentasyCtasporCobrar_lp
             return data;
         }
         //Insertar fecha en encabezado de lista de precios
-        public OdbcCommand Insertarencabezadosentencia1(string fecha_creacion)
+        public OdbcCommand Insertarencabezadosentencia1(string fecha_creacion1)
         {
             conexion conexion = new conexion();
             OdbcCommand command = new OdbcCommand();
             command.CommandText = "SELECT COUNT(*)+1 AS KidEncabezadoListaPrecios FROM tbl_encabezado_lista_precios";
             command.Connection = conexion.Conectar();
-
             OdbcDataAdapter mySqlDataAdapter = new OdbcDataAdapter(command);
             DataTable dataTable = new DataTable();
             mySqlDataAdapter.Fill(dataTable);
@@ -124,11 +123,10 @@ namespace Capa_Datos_VentasyCtasporCobrar_lp
             }
             int comi = 34;
             string comi2 = ((char)(comi)).ToString();
-
+            //sentencia
             command.CommandText = "INSERT INTO tbl_encabezado_lista_precios " +
              "VALUES (" + iConteo +
-             ",'" + fecha_creacion + "' ,'" + fecha_creacion + "')";
-
+             ",'" + fecha_creacion1 + "' ,'" + fecha_creacion1 + "')";
             return command;
         }
 

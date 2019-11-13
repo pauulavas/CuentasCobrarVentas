@@ -152,7 +152,6 @@ namespace Capa_Diseño_VentasyCtasporCobrar_lp
                     log.CargarTipoLista2(TxtTipoLista2, Txt_TipoLista.Text);
                     //cargo el descuento según el tipo de lista
                     log.CargarDescuento(Txt_descuento, Txt_TipoLista.Text);
-
                     //cargar id de la fecha inicio
                     Lbl_fechainicio.Visible = true;
                     Txt_FechaInicio2.Visible = true;
@@ -213,18 +212,7 @@ namespace Capa_Diseño_VentasyCtasporCobrar_lp
             Cbo_tipolista.Items.Clear();
             Btn_CrearLista.Enabled = true;
             Btn_CrearLista.Visible = true;
-
-
             
-
-
-
-
-
-
-
-
-
         }
 
         private void Cbo_NombreLista_SelectedIndexChanged(object sender, EventArgs e)
@@ -311,6 +299,7 @@ namespace Capa_Diseño_VentasyCtasporCobrar_lp
             }
             else
             {
+             
                 MessageBox.Show("Se ha Guardado con exito2");
             }
         }

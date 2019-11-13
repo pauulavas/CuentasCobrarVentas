@@ -17,13 +17,13 @@ namespace MDI_CuentasPorCobrar
         {
             InitializeComponent();
             usuario = user;
-            string[] alias = { "Codigo", "Nombre", "Detalle", "estado" };
+            string[] alias = { "Codigo", "Nombre", "Detalle","Naturaleza", "estado" };
             navegador1.asignarAlias(alias);
             navegador1.asignarSalida(this);
             navegador1.asignarColorFondo(ColorTranslator.FromHtml("#16235A"));
             navegador1.asignarColorFuente(Color.White);
-            navegador1.asignarAyuda("15");
-            navegador1.asignarTabla("tbl_tiposcomprobantes");
+            navegador1.asignarAyuda("112");
+            navegador1.asignarTabla("tbl_tipomovimiento");
             navegador1.asignarNombreForm("Tipos Movimientos");
         }
 

@@ -23,7 +23,7 @@ namespace MDI_Ventas
             navegador1.asignarSalida(this);
             navegador1.asignarColorFondo(ColorTranslator.FromHtml("#16235A"));
             navegador1.asignarColorFuente(Color.White);
-            navegador1.asignarAyuda("11");
+            navegador1.asignarAyuda("108");
             navegador1.asignarTabla("tbl_impuesto");
             navegador1.asignarNombreForm("Tipos de Impuestos");
         }

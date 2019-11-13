@@ -22,7 +22,7 @@ namespace MDI_Ventas
             navegador1.asignarSalida(this);
             navegador1.asignarColorFondo(ColorTranslator.FromHtml("#16235A"));
             navegador1.asignarColorFuente(Color.White);
-            navegador1.asignarAyuda("8");
+            navegador1.asignarAyuda("105");
             navegador1.asignarTabla("tbl_tipo_lista_precios");
             navegador1.asignarNombreForm("Tipo de Listas de Precios");
         }

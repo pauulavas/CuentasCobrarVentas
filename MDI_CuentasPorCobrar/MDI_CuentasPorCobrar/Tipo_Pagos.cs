@@ -22,7 +22,7 @@ namespace MDI_CuentasPorCobrar
             navegador1.asignarSalida(this);
             navegador1.asignarColorFondo(ColorTranslator.FromHtml("#16235A"));
             navegador1.asignarColorFuente(Color.White);
-            navegador1.asignarAyuda("16");
+            navegador1.asignarAyuda("113");
             navegador1.asignarTabla("tbl_tipopago");
             navegador1.asignarNombreForm("Tipos de Pagos");
         }

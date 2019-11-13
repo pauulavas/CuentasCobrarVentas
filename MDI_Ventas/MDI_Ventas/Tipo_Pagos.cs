@@ -22,7 +22,7 @@ namespace MDI_Ventas
             navegador1.asignarSalida(this);
             navegador1.asignarColorFondo(ColorTranslator.FromHtml("#16235A"));
             navegador1.asignarColorFuente(Color.White);
-            navegador1.asignarAyuda("12");
+            navegador1.asignarAyuda("109");
             navegador1.asignarTabla("tbl_tipopago");
             navegador1.asignarNombreForm("Tipos de Pagos");
         }

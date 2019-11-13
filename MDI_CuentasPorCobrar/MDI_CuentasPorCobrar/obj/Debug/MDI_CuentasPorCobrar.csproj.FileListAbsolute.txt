@@ -34,6 +34,7 @@ C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Cue
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_CuentasPorCobrar\MDI_CuentasPorCobrar\bin\Debug\ShockwaveFlashObjects.dll
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_CuentasPorCobrar\MDI_CuentasPorCobrar\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_CuentasPorCobrar\MDI_CuentasPorCobrar\bin\Debug\stdole.dll
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_CuentasPorCobrar\MDI_CuentasPorCobrar\bin\Debug\MDI_CuentasPorCobrar.dll.config
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_CuentasPorCobrar\MDI_CuentasPorCobrar\bin\Debug\MDI_CuentasPorCobrar.dll
-C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_CuentasPorCobrar\MDI_CuentasPorCobrar\obj\Debug\MDI_CuentasPorCobrar.dll
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_CuentasPorCobrar\MDI_CuentasPorCobrar\bin\Debug\MDI_CuentasPorCobrar.exe.config
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_CuentasPorCobrar\MDI_CuentasPorCobrar\bin\Debug\MDI_CuentasPorCobrar.exe
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_CuentasPorCobrar\MDI_CuentasPorCobrar\bin\Debug\CapaDeDiseno.dll
+C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_CuentasPorCobrar\MDI_CuentasPorCobrar\obj\Debug\MDI_CuentasPorCobrar.exe

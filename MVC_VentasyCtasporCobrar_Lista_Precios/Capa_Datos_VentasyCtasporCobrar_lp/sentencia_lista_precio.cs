@@ -115,18 +115,15 @@ namespace Capa_Datos_VentasyCtasporCobrar_lp
             OdbcDataAdapter mySqlDataAdapter = new OdbcDataAdapter(command);
             DataTable dataTable = new DataTable();
             mySqlDataAdapter.Fill(dataTable);
-
+            //crea id
             int iConteo = 0;
-
             if (dataTable.Rows.Count > 0)
             {
                 DataRow row = dataTable.Rows[0];
                 iConteo = Convert.ToInt32(row["KidEncabezadoListaPrecios"]);
             }
-
             int comi = 34;
             string comi2 = ((char)(comi)).ToString();
-
 
             command.CommandText = "INSERT INTO tbl_encabezado_lista_precios " +
              "VALUES (" + iConteo +

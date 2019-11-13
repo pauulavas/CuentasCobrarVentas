@@ -7,11 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+//prueba
 namespace MDI_CuentasPorCobrar
 {
     public partial class Tipo_Movimiento : Form
     {
+        
         string usuario = "";
         public Tipo_Movimiento(string user)
         {

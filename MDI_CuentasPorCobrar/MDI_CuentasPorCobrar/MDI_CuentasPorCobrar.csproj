@@ -33,14 +33,22 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="CapaDatos, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\CapaDatos.dll</HintPath>
     </Reference>
-    <Reference Include="CapaDeDiseno, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\CapaDeDiseno.dll</HintPath>
+    <Reference Include="CapaDeDatos">
+      <HintPath>..\..\CapaDeDatos.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaDeDiseno">
+      <HintPath>..\..\CapaDeDiseno.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaDeLogica">
+      <HintPath>..\..\CapaDeLogica.dll</HintPath>
     </Reference>
     <Reference Include="CapaDiseno">
       <HintPath>..\..\CapaDiseno.dll</HintPath>

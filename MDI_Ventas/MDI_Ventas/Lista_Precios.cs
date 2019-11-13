@@ -16,5 +16,10 @@ namespace MDI_Ventas
         {
             InitializeComponent();
         }
+
+        private void Lista_Precios1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

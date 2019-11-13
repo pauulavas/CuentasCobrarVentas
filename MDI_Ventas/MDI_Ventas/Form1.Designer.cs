@@ -35,11 +35,9 @@
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.impuestoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tipoPagosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tipoFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.serieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tipoDeListaDePreciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.descuentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.folioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listaDePreciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.facturaciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -89,11 +87,9 @@
             this.clientesToolStripMenuItem,
             this.impuestoToolStripMenuItem,
             this.tipoPagosToolStripMenuItem,
-            this.tipoFacturaToolStripMenuItem,
             this.serieToolStripMenuItem,
             this.tipoDeListaDePreciosToolStripMenuItem,
-            this.descuentosToolStripMenuItem,
-            this.folioToolStripMenuItem});
+            this.descuentosToolStripMenuItem});
             this.mantenimientosToolStripMenuItem.Name = "mantenimientosToolStripMenuItem";
             this.mantenimientosToolStripMenuItem.Size = new System.Drawing.Size(130, 24);
             this.mantenimientosToolStripMenuItem.Text = "Mantenimientos";
@@ -126,13 +122,6 @@
             this.tipoPagosToolStripMenuItem.Text = "Tipo Pagos";
             this.tipoPagosToolStripMenuItem.Click += new System.EventHandler(this.TipoPagosToolStripMenuItem_Click);
             // 
-            // tipoFacturaToolStripMenuItem
-            // 
-            this.tipoFacturaToolStripMenuItem.Name = "tipoFacturaToolStripMenuItem";
-            this.tipoFacturaToolStripMenuItem.Size = new System.Drawing.Size(249, 26);
-            this.tipoFacturaToolStripMenuItem.Text = "Tipo Factura";
-            this.tipoFacturaToolStripMenuItem.Click += new System.EventHandler(this.TipoFacturaToolStripMenuItem_Click);
-            // 
             // serieToolStripMenuItem
             // 
             this.serieToolStripMenuItem.Name = "serieToolStripMenuItem";
@@ -153,13 +142,6 @@
             this.descuentosToolStripMenuItem.Size = new System.Drawing.Size(249, 26);
             this.descuentosToolStripMenuItem.Text = "Tipos Descuentos";
             this.descuentosToolStripMenuItem.Click += new System.EventHandler(this.DescuentosToolStripMenuItem_Click);
-            // 
-            // folioToolStripMenuItem
-            // 
-            this.folioToolStripMenuItem.Name = "folioToolStripMenuItem";
-            this.folioToolStripMenuItem.Size = new System.Drawing.Size(249, 26);
-            this.folioToolStripMenuItem.Text = "Folio";
-            this.folioToolStripMenuItem.Click += new System.EventHandler(this.FolioToolStripMenuItem_Click);
             // 
             // procesosToolStripMenuItem
             // 
@@ -326,11 +308,9 @@
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem impuestoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tipoPagosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tipoFacturaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem serieToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tipoDeListaDePreciosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem descuentosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem folioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listaDePreciosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem facturaciónToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem movimientoDeClientesToolStripMenuItem;

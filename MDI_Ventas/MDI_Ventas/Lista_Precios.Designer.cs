@@ -35,10 +35,12 @@
             // 
             this.lista_Precios1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
             this.lista_Precios1.ForeColor = System.Drawing.Color.White;
-            this.lista_Precios1.Location = new System.Drawing.Point(12, 12);
+            this.lista_Precios1.Location = new System.Drawing.Point(12, 11);
+            this.lista_Precios1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lista_Precios1.Name = "lista_Precios1";
             this.lista_Precios1.Size = new System.Drawing.Size(964, 730);
             this.lista_Precios1.TabIndex = 0;
+            this.lista_Precios1.Load += new System.EventHandler(this.Lista_Precios1_Load);
             // 
             // Lista_Precios
             // 

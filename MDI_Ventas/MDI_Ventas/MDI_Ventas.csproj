@@ -100,12 +100,6 @@
     <Compile Include="Facturas.Designer.cs">
       <DependentUpon>Facturas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Folio.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Folio.Designer.cs">
-      <DependentUpon>Folio.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,12 +111,6 @@
     </Compile>
     <Compile Include="IngresoDevoluciones.Designer.cs">
       <DependentUpon>IngresoDevoluciones.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Lista_Precios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Lista_Precios.Designer.cs">
-      <DependentUpon>Lista_Precios.cs</DependentUpon>
     </Compile>
     <Compile Include="Pedidos.cs">
       <SubType>Form</SubType>
@@ -180,17 +168,11 @@
     <EmbeddedResource Include="Facturas.resx">
       <DependentUpon>Facturas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Folio.resx">
-      <DependentUpon>Folio.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IngresoDevoluciones.resx">
       <DependentUpon>IngresoDevoluciones.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Lista_Precios.resx">
-      <DependentUpon>Lista_Precios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pedidos.resx">
       <DependentUpon>Pedidos.cs</DependentUpon>

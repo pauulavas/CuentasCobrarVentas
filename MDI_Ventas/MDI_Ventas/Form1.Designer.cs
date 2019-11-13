@@ -123,16 +123,6 @@
             this.tipoPagosToolStripMenuItem.Text = "Tipo Pagos";
             this.tipoPagosToolStripMenuItem.Click += new System.EventHandler(this.TipoPagosToolStripMenuItem_Click);
             // 
-<<<<<<< HEAD
-            // tipoFacturaToolStripMenuItem
-            // 
-            this.tipoFacturaToolStripMenuItem.Name = "tipoFacturaToolStripMenuItem";
-            this.tipoFacturaToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
-            this.tipoFacturaToolStripMenuItem.Text = "Tipo Factura";
-            this.tipoFacturaToolStripMenuItem.Click += new System.EventHandler(this.TipoFacturaToolStripMenuItem_Click);
-            // 
-=======
->>>>>>> 0a20792f3d3c08f9eac66769f03c6989a4962fd8
             // serieToolStripMenuItem
             // 
             this.serieToolStripMenuItem.Name = "serieToolStripMenuItem";
@@ -154,16 +144,6 @@
             this.descuentosToolStripMenuItem.Text = "Tipos Descuentos";
             this.descuentosToolStripMenuItem.Click += new System.EventHandler(this.DescuentosToolStripMenuItem_Click);
             // 
-<<<<<<< HEAD
-            // folioToolStripMenuItem
-            // 
-            this.folioToolStripMenuItem.Name = "folioToolStripMenuItem";
-            this.folioToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
-            this.folioToolStripMenuItem.Text = "Folio";
-            this.folioToolStripMenuItem.Click += new System.EventHandler(this.FolioToolStripMenuItem_Click);
-            // 
-=======
->>>>>>> 0a20792f3d3c08f9eac66769f03c6989a4962fd8
             // procesosToolStripMenuItem
             // 
             this.procesosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {

@@ -56,9 +56,6 @@ namespace MDI_Ventas
 
         private void TipoFacturaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Tipo_Factura form_tipo_factura = new Tipo_Factura(sIdUsuario);
-            form_tipo_factura.MdiParent = this;
-            form_tipo_factura.Show();
         }
 
         private void SerieToolStripMenuItem_Click(object sender, EventArgs e)
@@ -70,9 +67,7 @@ namespace MDI_Ventas
 
         private void FolioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Folio form_folio = new Folio(sIdUsuario);
-            form_folio.MdiParent = this;
-            form_folio.Show();
+            
         }
 
         private void TipoDeListaDePreciosToolStripMenuItem_Click(object sender, EventArgs e)

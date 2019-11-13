@@ -22,11 +22,10 @@ namespace MDI_CuentasPorCobrar
             navegador1.asignarSalida(this);
             navegador1.asignarColorFondo(ColorTranslator.FromHtml("#16235A"));
             navegador1.asignarColorFuente(Color.White);
-            navegador1.asignarAyuda("13");
+            navegador1.asignarAyuda("110");
             navegador1.asignarTabla("tbl_clientes");
             navegador1.asignarNombreForm("Clientes");
             navegador1.asignarComboConTabla("tbl_tipocliente", "kidtipocliente", 1);
-            navegador1.asignarAyuda("13");
         }
 
         private void Clientes_Load(object sender, EventArgs e)

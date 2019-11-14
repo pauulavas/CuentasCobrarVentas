@@ -31,16 +31,12 @@
             this.Cbo_tipolista = new System.Windows.Forms.ComboBox();
             this.Dtp_fechainicio = new System.Windows.Forms.DateTimePicker();
             this.Dtp_fechamodificacion = new System.Windows.Forms.DateTimePicker();
-            this.Txt_subtotal = new System.Windows.Forms.TextBox();
             this.Txt_descuento = new System.Windows.Forms.TextBox();
-            this.Txt_total = new System.Windows.Forms.TextBox();
             this.Btn_aceptarlista = new System.Windows.Forms.Button();
             this.Btn_cancelarlista = new System.Windows.Forms.Button();
             this.Gpb_producto = new System.Windows.Forms.GroupBox();
-            this.Dgv_producto = new System.Windows.Forms.DataGridView();
             this.Lbl_nombreproducto = new System.Windows.Forms.Label();
             this.Lbl_codigoproducto = new System.Windows.Forms.Label();
-            this.Btn_cancelarproducto = new System.Windows.Forms.Button();
             this.Btn_agregarproducto = new System.Windows.Forms.Button();
             this.Txt_nombreproducto = new System.Windows.Forms.TextBox();
             this.Cbo_codigoproducto = new System.Windows.Forms.ComboBox();
@@ -48,10 +44,11 @@
             this.Lbl_nombrelista = new System.Windows.Forms.Label();
             this.Lbl_fechainicio = new System.Windows.Forms.Label();
             this.Lbl_fechamodificacion = new System.Windows.Forms.Label();
-            this.Lbl_subtotal = new System.Windows.Forms.Label();
             this.Lbl_descuento = new System.Windows.Forms.Label();
-            this.Lbl_total = new System.Windows.Forms.Label();
             this.Gpb_lista = new System.Windows.Forms.GroupBox();
+            this.Lbl_Codigo = new System.Windows.Forms.Label();
+            this.Txt_id = new System.Windows.Forms.TextBox();
+            this.Btn_crear = new System.Windows.Forms.Button();
             this.Txt_FechaInicio2 = new System.Windows.Forms.TextBox();
             this.Txt_FechaInicio = new System.Windows.Forms.TextBox();
             this.TxtTipoLista2 = new System.Windows.Forms.TextBox();
@@ -66,12 +63,17 @@
             this.Btn_Salir = new System.Windows.Forms.Button();
             this.Btn_CrearLista = new System.Windows.Forms.Button();
             this.Btn_ModificarLista = new System.Windows.Forms.Button();
+            this.Lbl_Codigo2 = new System.Windows.Forms.Label();
+            this.Txt_id2 = new System.Windows.Forms.TextBox();
+            this.Lbl_precio = new System.Windows.Forms.Label();
+            this.Txt_precio = new System.Windows.Forms.TextBox();
+            this.Dgv_producto = new System.Windows.Forms.DataGridView();
             this.Gpb_producto.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv_producto)).BeginInit();
             this.Gpb_lista.SuspendLayout();
             this.Gpb_costolista.SuspendLayout();
             this.Gpb_accion2.SuspendLayout();
             this.Gpb_accion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_producto)).BeginInit();
             this.SuspendLayout();
             // 
             // Cbo_tipolista
@@ -104,14 +106,6 @@
             this.Dtp_fechamodificacion.ValueChanged += new System.EventHandler(this.Dtp_fechamodificacion_ValueChanged);
             this.Dtp_fechamodificacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Dtp_fechamodificacion_KeyPress);
             // 
-            // Txt_subtotal
-            // 
-            this.Txt_subtotal.Location = new System.Drawing.Point(160, 30);
-            this.Txt_subtotal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Txt_subtotal.Name = "Txt_subtotal";
-            this.Txt_subtotal.Size = new System.Drawing.Size(219, 22);
-            this.Txt_subtotal.TabIndex = 8;
-            // 
             // Txt_descuento
             // 
             this.Txt_descuento.Location = new System.Drawing.Point(160, 65);
@@ -120,14 +114,6 @@
             this.Txt_descuento.ReadOnly = true;
             this.Txt_descuento.Size = new System.Drawing.Size(219, 22);
             this.Txt_descuento.TabIndex = 9;
-            // 
-            // Txt_total
-            // 
-            this.Txt_total.Location = new System.Drawing.Point(160, 102);
-            this.Txt_total.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Txt_total.Name = "Txt_total";
-            this.Txt_total.Size = new System.Drawing.Size(219, 22);
-            this.Txt_total.TabIndex = 10;
             // 
             // Btn_aceptarlista
             // 
@@ -155,11 +141,12 @@
             // 
             // Gpb_producto
             // 
+            this.Gpb_producto.Controls.Add(this.Txt_precio);
+            this.Gpb_producto.Controls.Add(this.Lbl_precio);
             this.Gpb_producto.Controls.Add(this.Dgv_producto);
             this.Gpb_producto.Controls.Add(this.Lbl_nombreproducto);
+            this.Gpb_producto.Controls.Add(this.Btn_crear);
             this.Gpb_producto.Controls.Add(this.Lbl_codigoproducto);
-            this.Gpb_producto.Controls.Add(this.Btn_cancelarproducto);
-            this.Gpb_producto.Controls.Add(this.Btn_agregarproducto);
             this.Gpb_producto.Controls.Add(this.Txt_nombreproducto);
             this.Gpb_producto.Controls.Add(this.Cbo_codigoproducto);
             this.Gpb_producto.ForeColor = System.Drawing.Color.White;
@@ -172,21 +159,10 @@
             this.Gpb_producto.TabStop = false;
             this.Gpb_producto.Text = "Producto";
             // 
-            // Dgv_producto
-            // 
-            this.Dgv_producto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgv_producto.Location = new System.Drawing.Point(28, 150);
-            this.Dgv_producto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Dgv_producto.Name = "Dgv_producto";
-            this.Dgv_producto.RowHeadersWidth = 51;
-            this.Dgv_producto.RowTemplate.Height = 24;
-            this.Dgv_producto.Size = new System.Drawing.Size(837, 146);
-            this.Dgv_producto.TabIndex = 14;
-            // 
             // Lbl_nombreproducto
             // 
             this.Lbl_nombreproducto.AutoSize = true;
-            this.Lbl_nombreproducto.Location = new System.Drawing.Point(35, 85);
+            this.Lbl_nombreproducto.Location = new System.Drawing.Point(36, 75);
             this.Lbl_nombreproducto.Name = "Lbl_nombreproducto";
             this.Lbl_nombreproducto.Size = new System.Drawing.Size(141, 17);
             this.Lbl_nombreproducto.TabIndex = 13;
@@ -195,37 +171,27 @@
             // Lbl_codigoproducto
             // 
             this.Lbl_codigoproducto.AutoSize = true;
-            this.Lbl_codigoproducto.Location = new System.Drawing.Point(35, 44);
+            this.Lbl_codigoproducto.Location = new System.Drawing.Point(36, 34);
             this.Lbl_codigoproducto.Name = "Lbl_codigoproducto";
             this.Lbl_codigoproducto.Size = new System.Drawing.Size(135, 17);
             this.Lbl_codigoproducto.TabIndex = 12;
             this.Lbl_codigoproducto.Text = "Código del producto";
             // 
-            // Btn_cancelarproducto
-            // 
-            this.Btn_cancelarproducto.ForeColor = System.Drawing.Color.Black;
-            this.Btn_cancelarproducto.Location = new System.Drawing.Point(696, 55);
-            this.Btn_cancelarproducto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Btn_cancelarproducto.Name = "Btn_cancelarproducto";
-            this.Btn_cancelarproducto.Size = new System.Drawing.Size(123, 34);
-            this.Btn_cancelarproducto.TabIndex = 11;
-            this.Btn_cancelarproducto.Text = "Eliminar";
-            this.Btn_cancelarproducto.UseVisualStyleBackColor = true;
-            // 
             // Btn_agregarproducto
             // 
             this.Btn_agregarproducto.ForeColor = System.Drawing.Color.Black;
-            this.Btn_agregarproducto.Location = new System.Drawing.Point(519, 55);
+            this.Btn_agregarproducto.Location = new System.Drawing.Point(495, 149);
             this.Btn_agregarproducto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_agregarproducto.Name = "Btn_agregarproducto";
             this.Btn_agregarproducto.Size = new System.Drawing.Size(123, 34);
             this.Btn_agregarproducto.TabIndex = 10;
-            this.Btn_agregarproducto.Text = "Añadir";
+            this.Btn_agregarproducto.Text = "Crear";
             this.Btn_agregarproducto.UseVisualStyleBackColor = true;
+            this.Btn_agregarproducto.Click += new System.EventHandler(this.Btn_agregarproducto_Click);
             // 
             // Txt_nombreproducto
             // 
-            this.Txt_nombreproducto.Location = new System.Drawing.Point(195, 81);
+            this.Txt_nombreproducto.Location = new System.Drawing.Point(196, 71);
             this.Txt_nombreproducto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Txt_nombreproducto.Name = "Txt_nombreproducto";
             this.Txt_nombreproducto.ReadOnly = true;
@@ -236,7 +202,7 @@
             // Cbo_codigoproducto
             // 
             this.Cbo_codigoproducto.FormattingEnabled = true;
-            this.Cbo_codigoproducto.Location = new System.Drawing.Point(195, 38);
+            this.Cbo_codigoproducto.Location = new System.Drawing.Point(196, 28);
             this.Cbo_codigoproducto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Cbo_codigoproducto.Name = "Cbo_codigoproducto";
             this.Cbo_codigoproducto.Size = new System.Drawing.Size(215, 24);
@@ -280,15 +246,6 @@
             this.Lbl_fechamodificacion.TabIndex = 17;
             this.Lbl_fechamodificacion.Text = "Fecha de Modificación";
             // 
-            // Lbl_subtotal
-            // 
-            this.Lbl_subtotal.AutoSize = true;
-            this.Lbl_subtotal.Location = new System.Drawing.Point(66, 30);
-            this.Lbl_subtotal.Name = "Lbl_subtotal";
-            this.Lbl_subtotal.Size = new System.Drawing.Size(65, 17);
-            this.Lbl_subtotal.TabIndex = 18;
-            this.Lbl_subtotal.Text = "SubTotal";
-            // 
             // Lbl_descuento
             // 
             this.Lbl_descuento.AutoSize = true;
@@ -298,20 +255,16 @@
             this.Lbl_descuento.TabIndex = 19;
             this.Lbl_descuento.Text = "Descuento";
             // 
-            // Lbl_total
-            // 
-            this.Lbl_total.AutoSize = true;
-            this.Lbl_total.Location = new System.Drawing.Point(66, 105);
-            this.Lbl_total.Name = "Lbl_total";
-            this.Lbl_total.Size = new System.Drawing.Size(40, 17);
-            this.Lbl_total.TabIndex = 20;
-            this.Lbl_total.Text = "Total";
-            // 
             // Gpb_lista
             // 
+            this.Gpb_lista.Controls.Add(this.Lbl_Codigo2);
+            this.Gpb_lista.Controls.Add(this.Txt_id2);
+            this.Gpb_lista.Controls.Add(this.Lbl_Codigo);
+            this.Gpb_lista.Controls.Add(this.Txt_id);
             this.Gpb_lista.Controls.Add(this.Txt_FechaInicio2);
             this.Gpb_lista.Controls.Add(this.Txt_FechaInicio);
             this.Gpb_lista.Controls.Add(this.TxtTipoLista2);
+            this.Gpb_lista.Controls.Add(this.Btn_agregarproducto);
             this.Gpb_lista.Controls.Add(this.Txt_TipoLista);
             this.Gpb_lista.Controls.Add(this.Txt_NombreLista);
             this.Gpb_lista.Controls.Add(this.Cbo_NombreLista);
@@ -332,6 +285,35 @@
             this.Gpb_lista.TabIndex = 21;
             this.Gpb_lista.TabStop = false;
             this.Gpb_lista.Text = "Lista";
+            // 
+            // Lbl_Codigo
+            // 
+            this.Lbl_Codigo.AutoSize = true;
+            this.Lbl_Codigo.Location = new System.Drawing.Point(402, 27);
+            this.Lbl_Codigo.Name = "Lbl_Codigo";
+            this.Lbl_Codigo.Size = new System.Drawing.Size(52, 17);
+            this.Lbl_Codigo.TabIndex = 28;
+            this.Lbl_Codigo.Text = "Código";
+            // 
+            // Txt_id
+            // 
+            this.Txt_id.Location = new System.Drawing.Point(466, 26);
+            this.Txt_id.Name = "Txt_id";
+            this.Txt_id.ReadOnly = true;
+            this.Txt_id.Size = new System.Drawing.Size(174, 22);
+            this.Txt_id.TabIndex = 27;
+            // 
+            // Btn_crear
+            // 
+            this.Btn_crear.ForeColor = System.Drawing.Color.Black;
+            this.Btn_crear.Location = new System.Drawing.Point(585, 66);
+            this.Btn_crear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Btn_crear.Name = "Btn_crear";
+            this.Btn_crear.Size = new System.Drawing.Size(173, 34);
+            this.Btn_crear.TabIndex = 26;
+            this.Btn_crear.Text = "Añadir Producto";
+            this.Btn_crear.UseVisualStyleBackColor = true;
+            this.Btn_crear.Click += new System.EventHandler(this.Btn_crear_Click);
             // 
             // Txt_FechaInicio2
             // 
@@ -395,12 +377,8 @@
             // 
             // Gpb_costolista
             // 
-            this.Gpb_costolista.Controls.Add(this.Lbl_total);
             this.Gpb_costolista.Controls.Add(this.Lbl_descuento);
-            this.Gpb_costolista.Controls.Add(this.Lbl_subtotal);
-            this.Gpb_costolista.Controls.Add(this.Txt_total);
             this.Gpb_costolista.Controls.Add(this.Txt_descuento);
-            this.Gpb_costolista.Controls.Add(this.Txt_subtotal);
             this.Gpb_costolista.ForeColor = System.Drawing.Color.White;
             this.Gpb_costolista.Location = new System.Drawing.Point(33, 556);
             this.Gpb_costolista.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -429,7 +407,7 @@
             // Btn_guardar2
             // 
             this.Btn_guardar2.ForeColor = System.Drawing.Color.Black;
-            this.Btn_guardar2.Location = new System.Drawing.Point(61, 25);
+            this.Btn_guardar2.Location = new System.Drawing.Point(61, 98);
             this.Btn_guardar2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_guardar2.Name = "Btn_guardar2";
             this.Btn_guardar2.Size = new System.Drawing.Size(119, 34);
@@ -490,6 +468,52 @@
             this.Btn_ModificarLista.UseVisualStyleBackColor = true;
             this.Btn_ModificarLista.Click += new System.EventHandler(this.Button2_Click);
             // 
+            // Lbl_Codigo2
+            // 
+            this.Lbl_Codigo2.AutoSize = true;
+            this.Lbl_Codigo2.Location = new System.Drawing.Point(402, 72);
+            this.Lbl_Codigo2.Name = "Lbl_Codigo2";
+            this.Lbl_Codigo2.Size = new System.Drawing.Size(52, 17);
+            this.Lbl_Codigo2.TabIndex = 30;
+            this.Lbl_Codigo2.Text = "Código";
+            // 
+            // Txt_id2
+            // 
+            this.Txt_id2.Location = new System.Drawing.Point(466, 71);
+            this.Txt_id2.Name = "Txt_id2";
+            this.Txt_id2.ReadOnly = true;
+            this.Txt_id2.Size = new System.Drawing.Size(174, 22);
+            this.Txt_id2.TabIndex = 29;
+            // 
+            // Lbl_precio
+            // 
+            this.Lbl_precio.AutoSize = true;
+            this.Lbl_precio.Location = new System.Drawing.Point(36, 118);
+            this.Lbl_precio.Name = "Lbl_precio";
+            this.Lbl_precio.Size = new System.Drawing.Size(109, 17);
+            this.Lbl_precio.TabIndex = 15;
+            this.Lbl_precio.Text = "Precio Producto";
+            this.Lbl_precio.Click += new System.EventHandler(this.Lbl_precio_Click);
+            // 
+            // Txt_precio
+            // 
+            this.Txt_precio.Location = new System.Drawing.Point(196, 118);
+            this.Txt_precio.Name = "Txt_precio";
+            this.Txt_precio.Size = new System.Drawing.Size(215, 22);
+            this.Txt_precio.TabIndex = 16;
+            // 
+            // Dgv_producto
+            // 
+            this.Dgv_producto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_producto.Location = new System.Drawing.Point(28, 159);
+            this.Dgv_producto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Dgv_producto.Name = "Dgv_producto";
+            this.Dgv_producto.RowHeadersWidth = 51;
+            this.Dgv_producto.RowTemplate.Height = 24;
+            this.Dgv_producto.Size = new System.Drawing.Size(837, 137);
+            this.Dgv_producto.TabIndex = 14;
+            this.Dgv_producto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_producto_CellContentClick);
+            // 
             // Lista_Precios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -507,13 +531,13 @@
             this.Load += new System.EventHandler(this.Lista_Precios_Load);
             this.Gpb_producto.ResumeLayout(false);
             this.Gpb_producto.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Dgv_producto)).EndInit();
             this.Gpb_lista.ResumeLayout(false);
             this.Gpb_lista.PerformLayout();
             this.Gpb_costolista.ResumeLayout(false);
             this.Gpb_costolista.PerformLayout();
             this.Gpb_accion2.ResumeLayout(false);
             this.Gpb_accion.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_producto)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -523,16 +547,12 @@
         private System.Windows.Forms.ComboBox Cbo_tipolista;
         private System.Windows.Forms.DateTimePicker Dtp_fechainicio;
         private System.Windows.Forms.DateTimePicker Dtp_fechamodificacion;
-        private System.Windows.Forms.TextBox Txt_subtotal;
         private System.Windows.Forms.TextBox Txt_descuento;
-        private System.Windows.Forms.TextBox Txt_total;
         private System.Windows.Forms.Button Btn_aceptarlista;
         private System.Windows.Forms.Button Btn_cancelarlista;
         private System.Windows.Forms.GroupBox Gpb_producto;
-        private System.Windows.Forms.DataGridView Dgv_producto;
         private System.Windows.Forms.Label Lbl_nombreproducto;
         private System.Windows.Forms.Label Lbl_codigoproducto;
-        private System.Windows.Forms.Button Btn_cancelarproducto;
         private System.Windows.Forms.Button Btn_agregarproducto;
         private System.Windows.Forms.TextBox Txt_nombreproducto;
         private System.Windows.Forms.ComboBox Cbo_codigoproducto;
@@ -540,9 +560,7 @@
         private System.Windows.Forms.Label Lbl_nombrelista;
         private System.Windows.Forms.Label Lbl_fechainicio;
         private System.Windows.Forms.Label Lbl_fechamodificacion;
-        private System.Windows.Forms.Label Lbl_subtotal;
         private System.Windows.Forms.Label Lbl_descuento;
-        private System.Windows.Forms.Label Lbl_total;
         private System.Windows.Forms.GroupBox Gpb_lista;
         private System.Windows.Forms.GroupBox Gpb_costolista;
         private System.Windows.Forms.GroupBox Gpb_accion2;
@@ -558,5 +576,13 @@
         private System.Windows.Forms.TextBox Txt_FechaInicio;
         private System.Windows.Forms.TextBox Txt_FechaInicio2;
         private System.Windows.Forms.Button Btn_guardar2;
+        private System.Windows.Forms.Button Btn_crear;
+        private System.Windows.Forms.TextBox Txt_id;
+        private System.Windows.Forms.Label Lbl_Codigo;
+        private System.Windows.Forms.Label Lbl_Codigo2;
+        private System.Windows.Forms.TextBox Txt_id2;
+        private System.Windows.Forms.Label Lbl_precio;
+        private System.Windows.Forms.TextBox Txt_precio;
+        private System.Windows.Forms.DataGridView Dgv_producto;
     }
 }

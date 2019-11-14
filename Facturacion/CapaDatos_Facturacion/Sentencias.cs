@@ -199,7 +199,7 @@ namespace CapaDatos_Facturacion
 
             command.CommandText = "INSERT INTO tbl_detallepedido " +
              "VALUES (" + iConteo +
-             "," + idProducto + "," + idPedido + "," + cantidad + "," + monto + ")";
+             "," + idPedido + "," + idProducto + "," + cantidad + "," + monto + ")";
             return command;
         }
 

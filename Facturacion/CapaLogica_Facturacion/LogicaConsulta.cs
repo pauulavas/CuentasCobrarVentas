@@ -285,7 +285,7 @@ namespace CapaLogica_Facturacion
             return encontrado;
         }
 
-        public void obtenerCotizacionE(string idCotizacion, TextBox idCliente, TextBox fecha)
+        public void obtenerCotizacionE(string idCotizacion, TextBox idCliente, TextBox fecha, bool validado)
         {
             Sentencias sentencias = new Sentencias();
             OdbcDataAdapter datos = sentencias.obtenerCotizacionE(idCotizacion);
@@ -302,7 +302,10 @@ namespace CapaLogica_Facturacion
             }
             else
             {
-                MessageBox.Show("Error al Obtener el Encabezado de Cotizacion", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (validado)
+                {
+                    MessageBox.Show("No existe una cotizacion!", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -409,13 +412,13 @@ namespace CapaLogica_Facturacion
                     else
                     {
                         cotizacion.Text = cot;
-                        obtenerCotizacionE(idCotizacion, aux, fechaC);
+                        obtenerCotizacionE(idCotizacion, aux, fechaC, false);
                     }
                 }
             }
             else
             {
-                MessageBox.Show("Error al Obtener el Encabezado de Cotizacion", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("No existe el pedido", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -443,7 +446,7 @@ namespace CapaLogica_Facturacion
             }
             else
             {
-                MessageBox.Show("Error al Obtener el Encabezado de Cotizacion", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error al Obtener Pedido", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

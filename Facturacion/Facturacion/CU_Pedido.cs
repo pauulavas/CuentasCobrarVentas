@@ -263,8 +263,8 @@ namespace Facturacion
 
         private void Btn_agregar_Click(object sender, EventArgs e)
         {
-            try
-            {
+            //try
+            //{
                 if (Dgv_factura.Rows.Count - 1 > 0 && bcliente == true)
                 {
                     logicaConsulta.agregarPedidoE(Txt_correlativo.Text,
@@ -302,11 +302,11 @@ namespace Facturacion
                     Dgv_factura.Rows.Clear();
                     logicaConsulta.obtenerIdPedido(Txt_correlativo);
                 }
-            }
-            catch
-            {
-                MessageBox.Show("Fallo al Registrar Pedido!", "Pedidos", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            //}
+            //catch
+            //{
+            //    MessageBox.Show("Fallo al Registrar Pedido!", "Pedidos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
             
         }
 
@@ -319,11 +319,13 @@ namespace Facturacion
                 {
                     TextBox textBox = new TextBox();
                     bcliente = true;
-                   
-                    logicaConsulta.obtenerCotizacionE(listaCot.ElementAt(Cbo_codCot.SelectedIndex).ToString(), textBox, Txt_fecha);
+                    
+                    logicaConsulta.obtenerCotizacionE(listaCot.ElementAt(Cbo_codCot.SelectedIndex).ToString(), textBox, Txt_fecha, true);
                     logicaConsulta.consultarCliente(listaClientes.ElementAt(Int32.Parse(textBox.Text) - 1).ToString(), Txt_nombres, Txt_apellidos, Txt_nit, false);
                     logicaConsulta.obtenerCotizacionD(listaCot.ElementAt(Cbo_codCot.SelectedIndex).ToString(), Dgv_factura);
                     Cbo_cliente.SelectedIndex = Int32.Parse(textBox.Text) - 1;
+
+                    iddCotizacion = listaCot.ElementAt(Cbo_codCot.SelectedIndex).ToString();
 
                     double subtotal = 0;
                     int cantidad = 0;
@@ -342,6 +344,11 @@ namespace Facturacion
                         Txt_registros.Text = registros.ToString();
                     }
                 }
+            }
+
+            if (Cbo_opcion.SelectedIndex == 0)
+            {
+                iddCotizacion = "NULL";
             }
         }
 

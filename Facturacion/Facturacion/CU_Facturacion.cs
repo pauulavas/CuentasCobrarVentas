@@ -267,8 +267,8 @@ namespace Facturacion
 
         private void Btn_vender_Click(object sender, EventArgs e)
         {
-            try
-            {
+            //try
+            //{
                 if (Dgv_factura.Rows.Count - 1 > 0 && bcliente == true)
                 {
                     string[] separados;
@@ -323,11 +323,11 @@ namespace Facturacion
                     Dgv_factura.Rows.Clear();
                     logicaConsulta.obtenerIdPedido(Txt_correlativo);
                 }
-            }
-            catch
-            {
-                MessageBox.Show("Fallo al Registrar Factura!", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            //}
+            //catch
+            //{
+            //    MessageBox.Show("Fallo al Registrar Factura!", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
         }
 
         private void Cbo_doc_SelectedIndexChanged(object sender, EventArgs e)
@@ -348,7 +348,7 @@ namespace Facturacion
                         iddCotizacion = listaCotizacion.ElementAt(Cbo_doc.SelectedIndex).ToString();
                         bcliente = true;
 
-                        logicaConsulta.obtenerCotizacionE(iddCotizacion, textBox, Txt_fechaCot);
+                        logicaConsulta.obtenerCotizacionE(iddCotizacion, textBox, Txt_fechaCot, true);
                         logicaConsulta.consultarCliente(listaClientes.ElementAt(Int32.Parse(textBox.Text)-1).ToString(), Txt_nombres, Txt_apellidos, Txt_nit, false);
                         logicaConsulta.obtenerCotizacionD(iddCotizacion, Dgv_factura);
                         Cbo_cliente.SelectedIndex = Int32.Parse(textBox.Text) - 1;

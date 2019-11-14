@@ -137,7 +137,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Image = global::CapaDisenoPoliza.Properties.Resources.loupe;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(662, 44);
+            this.button1.Location = new System.Drawing.Point(659, 53);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(61, 58);
             this.button1.TabIndex = 3;
@@ -215,7 +215,7 @@
             // 
             // Txt_Clientes
             // 
-            this.Txt_Clientes.Location = new System.Drawing.Point(145, 210);
+            this.Txt_Clientes.Location = new System.Drawing.Point(151, 210);
             this.Txt_Clientes.Name = "Txt_Clientes";
             this.Txt_Clientes.Size = new System.Drawing.Size(91, 20);
             this.Txt_Clientes.TabIndex = 16;
@@ -232,7 +232,7 @@
             // 
             // Txt_Totaliva
             // 
-            this.Txt_Totaliva.Location = new System.Drawing.Point(613, 210);
+            this.Txt_Totaliva.Location = new System.Drawing.Point(613, 206);
             this.Txt_Totaliva.Name = "Txt_Totaliva";
             this.Txt_Totaliva.Size = new System.Drawing.Size(93, 20);
             this.Txt_Totaliva.TabIndex = 13;
@@ -241,7 +241,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(504, 210);
+            this.label10.Location = new System.Drawing.Point(504, 211);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(103, 16);
             this.label10.TabIndex = 12;
@@ -269,7 +269,7 @@
             // 
             // Txt_Total
             // 
-            this.Txt_Total.Location = new System.Drawing.Point(363, 209);
+            this.Txt_Total.Location = new System.Drawing.Point(376, 207);
             this.Txt_Total.Name = "Txt_Total";
             this.Txt_Total.Size = new System.Drawing.Size(91, 20);
             this.Txt_Total.TabIndex = 9;

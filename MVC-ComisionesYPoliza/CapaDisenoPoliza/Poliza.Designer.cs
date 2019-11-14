@@ -206,7 +206,7 @@
             this.groupBox1.Controls.Add(this.Dtp_Creacion);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(25, 19);
+            this.groupBox1.Location = new System.Drawing.Point(25, 34);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(744, 249);
             this.groupBox1.TabIndex = 4;

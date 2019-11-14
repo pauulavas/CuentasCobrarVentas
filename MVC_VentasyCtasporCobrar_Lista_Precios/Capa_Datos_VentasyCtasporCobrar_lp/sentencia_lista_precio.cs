@@ -105,7 +105,7 @@ namespace Capa_Datos_VentasyCtasporCobrar_lp
             return data;
         }
         //Insertar fecha en encabezado de lista de precios
-        public OdbcCommand Insertarencabezadosentencia1(string fecha_creacion1)
+        public OdbcCommand Insertarencabezadosentencia1( string fecha_creacion1)
         {
             conexion conexion = new conexion();
             OdbcCommand command = new OdbcCommand();
@@ -127,7 +127,18 @@ namespace Capa_Datos_VentasyCtasporCobrar_lp
             command.CommandText = "INSERT INTO tbl_encabezado_lista_precios " +
              "VALUES (" + iConteo +
              ",'" + fecha_creacion1 + "' ,'" + fecha_creacion1 + "')";
+            
             return command;
+
+        }
+        //obtener id de encabezado lista
+        public OdbcDataAdapter ObtenerTabla11(string fecha_encabezado)
+        {
+            conexion cnccc = new conexion();
+            cnccc.Conectar();
+            string srelleno1 = "SELECT KidEncabezadoListaPrecios  FROM tbl_encabezado_lista_precios WHERE  	Fecha_inicio_listaprecios = '" + fecha_encabezado + "'";
+            OdbcDataAdapter data = new OdbcDataAdapter(srelleno1, cnccc.Conectar());
+            return data;
         }
 
     }

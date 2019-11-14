@@ -224,7 +224,48 @@ namespace Capa_Logica_VentasyCtasporCobrar_lp
             sentencia_lista_precio sc = new sentencia_lista_precio();
             OdbcCommand command = sc.Insertarencabezadosentencia1(fecha_creacion);
             command.ExecuteNonQuery();
-            
+
+        }
+        //devuelve el id de encabezado lista de precio
+        public void buscaridencabezado(TextBox box, string tabla)
+        {
+            sentencia_lista_precio sc = new sentencia_lista_precio();
+            OdbcDataAdapter odbcDataAdapter = sc.ObtenerTabla11(tabla);
+
+            DataTable dataTable = new DataTable();
+            odbcDataAdapter.Fill(dataTable);
+
+            if (dataTable.Rows.Count > 0)
+            {
+                for (int i = 0; i < dataTable.Rows.Count; i++)
+                {
+                    DataRow rows = dataTable.Rows[i];
+                    string cam = rows["KidEncabezadoListaPrecios"].ToString();
+                    box.Text = cam;
+                }
+
+            }
+        }
+        //carga el id del tipo de lista según el nombre de la lista
+        public void CargarTipoLista3(TextBox box, string cam)
+        {
+            sentencia_lista_precio sc = new sentencia_lista_precio();
+            OdbcDataAdapter odbcDataAdapter = sc.ObtenerTabla6(cam);
+
+            DataTable dataTable = new DataTable();
+            odbcDataAdapter.Fill(dataTable);
+
+            if (dataTable.Rows.Count > 0)
+            {
+                for (int i = 0; i < dataTable.Rows.Count; i++)
+                {
+                    DataRow rows = dataTable.Rows[i];
+                    cam = rows["Kidtipo_lista_precios"].ToString();
+                    box.Text = cam;
+
+                }
+
+            }
         }
 
 

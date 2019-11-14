@@ -267,8 +267,8 @@ namespace Facturacion
 
         private void Btn_vender_Click(object sender, EventArgs e)
         {
-            //try
-            //{
+            try
+            {
                 if (Dgv_factura.Rows.Count - 1 > 0 && bcliente == true)
                 {
                     string[] separados;
@@ -323,11 +323,11 @@ namespace Facturacion
                     Dgv_factura.Rows.Clear();
                     logicaConsulta.obtenerIdPedido(Txt_correlativo);
                 }
-            //}
-            //catch
-            //{
-            //    MessageBox.Show("Fallo al Registrar Factura!", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
+            }
+            catch
+            {
+                MessageBox.Show("Fallo al Registrar Factura!", "Facturacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void Cbo_doc_SelectedIndexChanged(object sender, EventArgs e)

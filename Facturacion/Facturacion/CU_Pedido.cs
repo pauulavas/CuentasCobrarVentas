@@ -263,8 +263,8 @@ namespace Facturacion
 
         private void Btn_agregar_Click(object sender, EventArgs e)
         {
-            //try
-            //{
+            try
+            {
                 if (Dgv_factura.Rows.Count - 1 > 0 && bcliente == true)
                 {
                     logicaConsulta.agregarPedidoE(Txt_correlativo.Text,
@@ -302,11 +302,11 @@ namespace Facturacion
                     Dgv_factura.Rows.Clear();
                     logicaConsulta.obtenerIdPedido(Txt_correlativo);
                 }
-            //}
-            //catch
-            //{
-            //    MessageBox.Show("Fallo al Registrar Pedido!", "Pedidos", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
+            }
+            catch
+            {
+                MessageBox.Show("Fallo al Registrar Pedido!", "Pedidos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             
         }
 

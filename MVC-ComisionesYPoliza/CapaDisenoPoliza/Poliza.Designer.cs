@@ -72,7 +72,7 @@
             this.Column2,
             this.Column3,
             this.Column4});
-            this.DgvPoliza.Location = new System.Drawing.Point(86, 494);
+            this.DgvPoliza.Location = new System.Drawing.Point(116, 477);
             this.DgvPoliza.Name = "DgvPoliza";
             this.DgvPoliza.Size = new System.Drawing.Size(553, 190);
             this.DgvPoliza.TabIndex = 6;
@@ -206,7 +206,7 @@
             this.groupBox1.Controls.Add(this.Dtp_Creacion);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(25, 34);
+            this.groupBox1.Location = new System.Drawing.Point(25, 23);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(744, 249);
             this.groupBox1.TabIndex = 4;

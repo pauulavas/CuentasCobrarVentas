@@ -24,6 +24,11 @@ namespace CapaDisenoPoliza
             logica = new Logica();
         }
 
+        ///// <summary>
+        /////  cambioooooooooos
+        ///// </summary>
+        ///// <param name="sender"></param>
+        ///// <param name="e"></param>
 
 
 

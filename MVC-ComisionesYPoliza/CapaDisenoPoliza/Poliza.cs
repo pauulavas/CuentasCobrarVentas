@@ -24,12 +24,6 @@ namespace CapaDisenoPoliza
             logica = new Logica();
         }
 
-        ///// <summary>
-        /////  cambioooooooooos
-        ///// </summary>
-        ///// </summary>
-        ///// <param name="sender"></param>
-        ///// <param name="e"></param>
 
 
 
@@ -37,7 +31,7 @@ namespace CapaDisenoPoliza
         {
             double totaliva = 0;
             double totalventas = 0;
-            double totalclientes = 0;
+           
 
             DgvPoliza.Rows.Clear();
             logica.buscar(Dtg_Final, Dtg_Inicial, DgvPoliza, Txt_NoPoliza.Text,Lbl_ventas.Text );
@@ -93,6 +87,11 @@ namespace CapaDisenoPoliza
         private void GroupBox2_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void Button2_Click_1(object sender, EventArgs e)
+        {
+            logica.insertardatos(Txt_NoPoliza.Text,Dtp_Creacion,Lbl_ventas,Txt_Total.Text);
         }
     }
 }

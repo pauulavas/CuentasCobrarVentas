@@ -39,15 +39,14 @@ namespace CapaDisenoPoliza
             {
                 for (int i = 0; i < DgvPoliza.Rows.Count - 1; i++)
                 {
-                    totaliva += double.Parse(DgvPoliza.Rows[i].Cells[5].Value.ToString());
-                    totalventas += double.Parse(DgvPoliza.Rows[i].Cells[6].Value.ToString());
-                    totalclientes += double.Parse(DgvPoliza.Rows[i].Cells[4].Value.ToString());
+                    totaliva += double.Parse(DgvPoliza.Rows[i].Cells[4].Value.ToString());
+                    totalventas += double.Parse(DgvPoliza.Rows[i].Cells[5].Value.ToString());
                 }
             }
 
             Txt_Total.Text = Convert.ToString(totalventas);
             Txt_Totaliva.Text = Convert.ToString(totaliva);
-            Txt_Clientes.Text = Convert.ToString(totalclientes);
+            Txt_Clientes.Text = Convert.ToString(totalventas-totaliva);
 
 
 

@@ -94,12 +94,43 @@ namespace CapaLogica_PolizaYComision
 
         }
 
-    public void insertardatos()
+
+        //public OdbcCommand insertarCotizacionE(string id, string idCliente, DateTime fechaI, DateTime fechaF)
+        //{
+        //    Conexion conexion = new Conexion();
+        //    OdbcCommand command = new OdbcCommand();
+        //    command.Connection = conexion.Conectar();
+
+        //    command.CommandText = "INSERT INTO tbl_cotizacionencabezado " +
+        //     "VALUES (" + id +
+        //     "," + idCliente + ",'" + fechaI.ToString("yyyy-MM-dd") + "','" + fechaF.ToString("yyyy-MM-dd") + "')";
+        //    return command;
+        //}
+
+        public OdbcCommand insertardatos(string nopoliza, DateTimePicker DtpCreacion, string notipo, string totalventas, string totaliva, string totalclientes, string totalcliente)
         {
+            Conexion conexion = new Conexion();
+            OdbcCommand command = new OdbcCommand();
+            command.Connection = conexion.Conectar();
+
+            command.CommandText = "INSERT INTO tbl_poliza_encabezado" + " VALUES (" + nopoliza + "," + notipo + ",'" + DtpCreacion.Value.Date.ToString("yyyy-MM-dd") + "','" + totalventas + "')";
+            return command;
+
+        }
+
+        public OdbcCommand insertartotalventa(string nopoliza, string idcuenta,  string totalventa)
+        {
+            Conexion conexion = new Conexion();
+            OdbcCommand command = new OdbcCommand();
+            command.Connection = conexion.Conectar();
+
+            command.CommandText = "INSERT INTO tbl_poliza_detalle" + " VALUES ( " + nopoliza + "," + idcuenta + "','" + totalventa + "')";
+            return command;
 
         }
 
 
+
     }
-  }
+}
 

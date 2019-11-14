@@ -215,7 +215,7 @@
             // 
             // Txt_Clientes
             // 
-            this.Txt_Clientes.Location = new System.Drawing.Point(146, 208);
+            this.Txt_Clientes.Location = new System.Drawing.Point(145, 210);
             this.Txt_Clientes.Name = "Txt_Clientes";
             this.Txt_Clientes.Size = new System.Drawing.Size(91, 20);
             this.Txt_Clientes.TabIndex = 16;
@@ -224,7 +224,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(20, 209);
+            this.label9.Location = new System.Drawing.Point(19, 211);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(65, 16);
             this.label9.TabIndex = 15;
@@ -232,7 +232,7 @@
             // 
             // Txt_Totaliva
             // 
-            this.Txt_Totaliva.Location = new System.Drawing.Point(614, 208);
+            this.Txt_Totaliva.Location = new System.Drawing.Point(613, 210);
             this.Txt_Totaliva.Name = "Txt_Totaliva";
             this.Txt_Totaliva.Size = new System.Drawing.Size(93, 20);
             this.Txt_Totaliva.TabIndex = 13;
@@ -241,7 +241,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(505, 208);
+            this.label10.Location = new System.Drawing.Point(504, 210);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(103, 16);
             this.label10.TabIndex = 12;
@@ -250,7 +250,7 @@
             // Cmb_Cuenta
             // 
             this.Cmb_Cuenta.FormattingEnabled = true;
-            this.Cmb_Cuenta.Location = new System.Drawing.Point(152, 158);
+            this.Cmb_Cuenta.Location = new System.Drawing.Point(151, 160);
             this.Cmb_Cuenta.Name = "Cmb_Cuenta";
             this.Cmb_Cuenta.Size = new System.Drawing.Size(191, 21);
             this.Cmb_Cuenta.TabIndex = 11;
@@ -260,7 +260,7 @@
             // 
             this.Lbl_ventas.AutoSize = true;
             this.Lbl_ventas.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_ventas.Location = new System.Drawing.Point(149, 128);
+            this.Lbl_ventas.Location = new System.Drawing.Point(148, 130);
             this.Lbl_ventas.Name = "Lbl_ventas";
             this.Lbl_ventas.Size = new System.Drawing.Size(57, 16);
             this.Lbl_ventas.TabIndex = 10;
@@ -269,7 +269,7 @@
             // 
             // Txt_Total
             // 
-            this.Txt_Total.Location = new System.Drawing.Point(364, 207);
+            this.Txt_Total.Location = new System.Drawing.Point(363, 209);
             this.Txt_Total.Name = "Txt_Total";
             this.Txt_Total.Size = new System.Drawing.Size(91, 20);
             this.Txt_Total.TabIndex = 9;
@@ -278,7 +278,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(282, 208);
+            this.label8.Location = new System.Drawing.Point(281, 210);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(57, 16);
             this.label8.TabIndex = 8;
@@ -288,7 +288,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(26, 29);
+            this.label4.Location = new System.Drawing.Point(25, 31);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 16);
             this.label4.TabIndex = 7;
@@ -296,7 +296,7 @@
             // 
             // Txt_NoPoliza
             // 
-            this.Txt_NoPoliza.Location = new System.Drawing.Point(152, 29);
+            this.Txt_NoPoliza.Location = new System.Drawing.Point(151, 31);
             this.Txt_NoPoliza.Name = "Txt_NoPoliza";
             this.Txt_NoPoliza.Size = new System.Drawing.Size(68, 20);
             this.Txt_NoPoliza.TabIndex = 6;
@@ -305,7 +305,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(25, 83);
+            this.label1.Location = new System.Drawing.Point(24, 85);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 16);
             this.label1.TabIndex = 0;
@@ -315,7 +315,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(25, 128);
+            this.label2.Location = new System.Drawing.Point(24, 130);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 16);
             this.label2.TabIndex = 1;
@@ -323,7 +323,7 @@
             // 
             // Dtp_Creacion
             // 
-            this.Dtp_Creacion.Location = new System.Drawing.Point(152, 83);
+            this.Dtp_Creacion.Location = new System.Drawing.Point(151, 85);
             this.Dtp_Creacion.Name = "Dtp_Creacion";
             this.Dtp_Creacion.Size = new System.Drawing.Size(513, 20);
             this.Dtp_Creacion.TabIndex = 4;
@@ -332,7 +332,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(25, 159);
+            this.label3.Location = new System.Drawing.Point(24, 161);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 16);
             this.label3.TabIndex = 2;

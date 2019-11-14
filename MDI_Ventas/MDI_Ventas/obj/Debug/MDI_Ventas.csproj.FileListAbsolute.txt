@@ -104,6 +104,51 @@ C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ven
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\MDI_Ventas.exe
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\bin\Debug\CapaDeDiseno.dll
 C:\Users\Paula V\Desktop\Ventas y Cuentas por Cobrar\CuentasCobrarVentas\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.exe
+<<<<<<< HEAD
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\MDI_Ventas.exe.config
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\MDI_Ventas.exe
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\MDI_Ventas.pdb
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CapaDatos.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CapaDeDatos.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CapaDeDiseno.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CapaDeLogica.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CapaDiseno.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CapaLogica.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\FlashControlV71.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\stdole.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.csprojAssemblyReference.cache
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Clientes.resources
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Form1.resources
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Properties.Resources.resources
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Serie.resources
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Tipo_Descuentos.resources
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Tipo_Impuesto.resources
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Tipo_Clientes.resources
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Tipo_lista_de_precios.resources
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.Tipo_Pagos.resources
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.csproj.GenerateResource.cache
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.csproj.CoreCompileInputs.cache
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.csproj.CopyComplete
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.exe
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\obj\Debug\MDI_Ventas.pdb
+=======
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CapaDeDiseno.dll
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CrystalDecisions.Windows.Forms.dll
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
@@ -126,3 +171,4 @@ C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hot
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\stdole.dll
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\MDI_Ventas\MDI_Ventas\bin\Debug\Capa_Datos_VentasyCtasporCobrar_lp.pdb
+>>>>>>> master

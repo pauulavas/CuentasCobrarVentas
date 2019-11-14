@@ -1,0 +1,8 @@
+C:\Users\sindy\OneDrive\Documents\ANDERSON\OCTAVO SEMESTRE\ANÁLISIS DE SISTEMAS 2\CUENTAS POR COBRAR\CuentasCobrarVentas-1\CxC_MovClientes\CapaLogiga_CxC_MovClientes\bin\Debug\CapaLogiga_CxC_MovClientes.dll
+C:\Users\sindy\OneDrive\Documents\ANDERSON\OCTAVO SEMESTRE\ANÁLISIS DE SISTEMAS 2\CUENTAS POR COBRAR\CuentasCobrarVentas-1\CxC_MovClientes\CapaLogiga_CxC_MovClientes\bin\Debug\CapaLogiga_CxC_MovClientes.pdb
+C:\Users\sindy\OneDrive\Documents\ANDERSON\OCTAVO SEMESTRE\ANÁLISIS DE SISTEMAS 2\CUENTAS POR COBRAR\CuentasCobrarVentas-1\CxC_MovClientes\CapaLogiga_CxC_MovClientes\bin\Debug\CapaDatos_CxC_MovClientes.dll
+C:\Users\sindy\OneDrive\Documents\ANDERSON\OCTAVO SEMESTRE\ANÁLISIS DE SISTEMAS 2\CUENTAS POR COBRAR\CuentasCobrarVentas-1\CxC_MovClientes\CapaLogiga_CxC_MovClientes\bin\Debug\CapaDatos_CxC_MovClientes.pdb
+C:\Users\sindy\OneDrive\Documents\ANDERSON\OCTAVO SEMESTRE\ANÁLISIS DE SISTEMAS 2\CUENTAS POR COBRAR\CuentasCobrarVentas-1\CxC_MovClientes\CapaLogiga_CxC_MovClientes\obj\Debug\CapaLogica_CxC_MovClientes.csprojAssemblyReference.cache
+C:\Users\sindy\OneDrive\Documents\ANDERSON\OCTAVO SEMESTRE\ANÁLISIS DE SISTEMAS 2\CUENTAS POR COBRAR\CuentasCobrarVentas-1\CxC_MovClientes\CapaLogiga_CxC_MovClientes\obj\Debug\CapaLogica_CxC_MovClientes.csproj.CopyComplete
+C:\Users\sindy\OneDrive\Documents\ANDERSON\OCTAVO SEMESTRE\ANÁLISIS DE SISTEMAS 2\CUENTAS POR COBRAR\CuentasCobrarVentas-1\CxC_MovClientes\CapaLogiga_CxC_MovClientes\obj\Debug\CapaLogiga_CxC_MovClientes.dll
+C:\Users\sindy\OneDrive\Documents\ANDERSON\OCTAVO SEMESTRE\ANÁLISIS DE SISTEMAS 2\CUENTAS POR COBRAR\CuentasCobrarVentas-1\CxC_MovClientes\CapaLogiga_CxC_MovClientes\obj\Debug\CapaLogiga_CxC_MovClientes.pdb

@@ -1,0 +1,27 @@
+C:\Users\ISIS\Desktop\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaLogica-PolizaYComision\bin\Debug\CapaLogica-PolizaYComision.dll
+C:\Users\ISIS\Desktop\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaLogica-PolizaYComision\bin\Debug\CapaLogica-PolizaYComision.pdb
+C:\Users\ISIS\Desktop\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaLogica-PolizaYComision\obj\Debug\CapaLogica-PolizaYComision.csproj.CoreCompileInputs.cache
+C:\Users\ISIS\Desktop\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaLogica-PolizaYComision\obj\Debug\CapaLogica-PolizaYComision.dll
+C:\Users\ISIS\Desktop\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaLogica-PolizaYComision\obj\Debug\CapaLogica-PolizaYComision.pdb
+C:\Users\ISIS\Desktop\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaLogica-PolizaYComision\bin\Debug\CapaDatos-PolizayComision.dll
+C:\Users\ISIS\Desktop\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaLogica-PolizaYComision\bin\Debug\CapaDatos-PolizayComision.pdb
+C:\Users\ISIS\Desktop\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaLogica-PolizaYComision\obj\Debug\CapaLogica-PolizaYComision.csprojAssemblyReference.cache
+C:\Users\ISIS\Desktop\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaLogica-PolizaYComision\obj\Debug\CapaLogica-PolizaYComision.csproj.CopyComplete
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\MVC-ComisionesYPoliza\CapaLogica-PolizaYComision\bin\Debug\CapaLogica-PolizaYComision.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\MVC-ComisionesYPoliza\CapaLogica-PolizaYComision\bin\Debug\CapaLogica-PolizaYComision.pdb
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\MVC-ComisionesYPoliza\CapaLogica-PolizaYComision\bin\Debug\CapaDatos-PolizayComision.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\MVC-ComisionesYPoliza\CapaLogica-PolizaYComision\bin\Debug\CapaDatos-PolizayComision.pdb
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\MVC-ComisionesYPoliza\CapaLogica-PolizaYComision\obj\Debug\CapaLogica-PolizaYComision.csprojAssemblyReference.cache
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\MVC-ComisionesYPoliza\CapaLogica-PolizaYComision\obj\Debug\CapaLogica-PolizaYComision.csproj.CoreCompileInputs.cache
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\MVC-ComisionesYPoliza\CapaLogica-PolizaYComision\obj\Debug\CapaLogica-PolizaYComision.csproj.CopyComplete
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\MVC-ComisionesYPoliza\CapaLogica-PolizaYComision\obj\Debug\CapaLogica-PolizaYComision.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\MVC-ComisionesYPoliza\CapaLogica-PolizaYComision\obj\Debug\CapaLogica-PolizaYComision.pdb
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaLogica-PolizaYComision\bin\Debug\CapaLogica-PolizaYComision.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaLogica-PolizaYComision\bin\Debug\CapaLogica-PolizaYComision.pdb
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaLogica-PolizaYComision\bin\Debug\CapaDatos-PolizayComision.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaLogica-PolizaYComision\bin\Debug\CapaDatos-PolizayComision.pdb
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaLogica-PolizaYComision\obj\Debug\CapaLogica-PolizaYComision.csprojAssemblyReference.cache
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaLogica-PolizaYComision\obj\Debug\CapaLogica-PolizaYComision.csproj.CoreCompileInputs.cache
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaLogica-PolizaYComision\obj\Debug\CapaLogica-PolizaYComision.csproj.CopyComplete
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaLogica-PolizaYComision\obj\Debug\CapaLogica-PolizaYComision.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaLogica-PolizaYComision\obj\Debug\CapaLogica-PolizaYComision.pdb

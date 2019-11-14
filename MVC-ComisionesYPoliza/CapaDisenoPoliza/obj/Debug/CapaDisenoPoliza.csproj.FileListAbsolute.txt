@@ -1,0 +1,45 @@
+C:\Users\ISIS\source\repos\CapaDiseno\CapaDisenoPoliza\bin\Debug\CapaDisenoPoliza.dll
+C:\Users\ISIS\source\repos\CapaDiseno\CapaDisenoPoliza\bin\Debug\CapaDisenoPoliza.pdb
+C:\Users\ISIS\source\repos\CapaDiseno\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.csprojAssemblyReference.cache
+C:\Users\ISIS\source\repos\CapaDiseno\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.Poliza.resources
+C:\Users\ISIS\source\repos\CapaDiseno\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.csproj.GenerateResource.cache
+C:\Users\ISIS\source\repos\CapaDiseno\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.csproj.CoreCompileInputs.cache
+C:\Users\ISIS\source\repos\CapaDiseno\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.dll
+C:\Users\ISIS\source\repos\CapaDiseno\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.pdb
+C:\Users\ISIS\Desktop\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaDisenoPoliza\bin\Debug\CapaDisenoPoliza.dll
+C:\Users\ISIS\Desktop\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaDisenoPoliza\bin\Debug\CapaDisenoPoliza.pdb
+C:\Users\ISIS\Desktop\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.csprojAssemblyReference.cache
+C:\Users\ISIS\Desktop\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.Poliza.resources
+C:\Users\ISIS\Desktop\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.Properties.Resources.resources
+C:\Users\ISIS\Desktop\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.csproj.GenerateResource.cache
+C:\Users\ISIS\Desktop\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.csproj.CoreCompileInputs.cache
+C:\Users\ISIS\Desktop\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.dll
+C:\Users\ISIS\Desktop\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.pdb
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\MVC-ComisionesYPoliza\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.csprojAssemblyReference.cache
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\MVC-ComisionesYPoliza\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.Poliza.resources
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\MVC-ComisionesYPoliza\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.Properties.Resources.resources
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\MVC-ComisionesYPoliza\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.csproj.GenerateResource.cache
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\MVC-ComisionesYPoliza\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.csproj.CoreCompileInputs.cache
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\MVC-ComisionesYPoliza\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\MVC-ComisionesYPoliza\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.pdb
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\MVC-ComisionesYPoliza\CapaDisenoPoliza\bin\Debug\CapaDisenoPoliza.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\MVC-ComisionesYPoliza\CapaDisenoPoliza\bin\Debug\CapaDisenoPoliza.pdb
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\MVC-ComisionesYPoliza\CapaDisenoPoliza\bin\Debug\CapaLogica-PolizaYComision.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\MVC-ComisionesYPoliza\CapaDisenoPoliza\bin\Debug\CapaDatos-PolizayComision.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\MVC-ComisionesYPoliza\CapaDisenoPoliza\bin\Debug\CapaLogica-PolizaYComision.pdb
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\MVC-ComisionesYPoliza\CapaDisenoPoliza\bin\Debug\CapaDatos-PolizayComision.pdb
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\MVC-ComisionesYPoliza\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.csproj.CopyComplete
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaDisenoPoliza\bin\Debug\CapaDisenoPoliza.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaDisenoPoliza\bin\Debug\CapaDisenoPoliza.pdb
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaDisenoPoliza\bin\Debug\CapaLogica-PolizaYComision.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaDisenoPoliza\bin\Debug\CapaDatos-PolizayComision.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaDisenoPoliza\bin\Debug\CapaLogica-PolizaYComision.pdb
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaDisenoPoliza\bin\Debug\CapaDatos-PolizayComision.pdb
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.csprojAssemblyReference.cache
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.Poliza.resources
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.Properties.Resources.resources
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.csproj.GenerateResource.cache
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.csproj.CoreCompileInputs.cache
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.csproj.CopyComplete
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.dll
+C:\Users\ISIS\Desktop\PROYECTOS FINALES ANALISIS\Comisiones y Poliza\CuentasCobrarVentas-1\MVC-ComisionesYPoliza\CapaDisenoPoliza\obj\Debug\CapaDisenoPoliza.pdb

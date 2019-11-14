@@ -15,7 +15,7 @@ namespace Capa_Datos_VentasyCtasporCobrar_lp
 
         public OdbcConnection Conectar()
         {
-            OdbcConnection = new OdbcConnection("Dsn=ProyectoGeneral");
+            OdbcConnection = new OdbcConnection("Dsn=HSC");
 
             try
             {

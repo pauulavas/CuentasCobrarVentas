@@ -4,3 +4,12 @@ C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hot
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas\Facturacion\CapaLogica_Facturacion\obj\Debug\CapaLogica_Facturacion.csproj.CoreCompileInputs.cache
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas\Facturacion\CapaLogica_Facturacion\obj\Debug\CapaLogica_Facturacion.dll
 C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas\Facturacion\CapaLogica_Facturacion\obj\Debug\CapaLogica_Facturacion.pdb
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\CapaLogica_Facturacion\bin\Debug\CapaLogica_Facturacion.dll
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\CapaLogica_Facturacion\bin\Debug\CapaLogica_Facturacion.pdb
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\CapaLogica_Facturacion\bin\Debug\CapaDatos_Facturacion.dll
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\CapaLogica_Facturacion\bin\Debug\CapaDatos_Facturacion.pdb
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\CapaLogica_Facturacion\obj\Debug\CapaLogica_Facturacion.csprojAssemblyReference.cache
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\CapaLogica_Facturacion\obj\Debug\CapaLogica_Facturacion.csproj.CoreCompileInputs.cache
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\CapaLogica_Facturacion\obj\Debug\CapaLogica_Facturacion.csproj.CopyComplete
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\CapaLogica_Facturacion\obj\Debug\CapaLogica_Facturacion.dll
+C:\Users\diego\Documents\Universidad\Octavo Semestre\Analisis de Sistemas II\Hotel\Modulo\CuentasCobrarVentas-1\Facturacion\CapaLogica_Facturacion\obj\Debug\CapaLogica_Facturacion.pdb

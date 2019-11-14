@@ -129,6 +129,60 @@ namespace Capa_Datos_VentasyCtasporCobrar_lp
              ",'" + fecha_creacion1 + "' ,'" + fecha_creacion1 + "')";
             return command;
         }
+        //obtener id según fecha
+        public OdbcDataAdapter ObtenerTabla11(string sfechainicio)
+        {
+            conexion cnccc = new conexion();
+            cnccc.Conectar();
+            string srelleno1 = "SELECT KidEncabezadoListaPrecios  FROM tbl_encabezado_lista_precios WHERE Fecha_inicio_listaprecios = '" + sfechainicio + "'";
+            OdbcDataAdapter data = new OdbcDataAdapter(srelleno1, cnccc.Conectar());
+            return data;
+        }
+        //obtener id tipo de lista
+        public OdbcDataAdapter ObtenerTabla12(string snombreLista)
+        {
+            conexion cnccc = new conexion();
+            cnccc.Conectar();
+            string srelleno1 = "SELECT Kidtipo_lista_precios  FROM tbl_tipo_lista_precios WHERE nombre_lista_precios_detalle = '" + snombreLista + "'";
+            OdbcDataAdapter data = new OdbcDataAdapter(srelleno1, cnccc.Conectar());
+            return data;
+        }
+        //Insertar fecha en encabezado de lista de precios
+        public OdbcCommand InsertarDetalle1( string nombrelista,string idencabezado, string idtipolista, string producto, string precio)
+        {
+            conexion conexion = new conexion();
+            OdbcCommand command = new OdbcCommand();
+            command.CommandText = "SELECT COUNT(*)+1 AS KidDetalleListaPrecios FROM tbl_detalle_lista_precios";
+            command.Connection = conexion.Conectar();
+            OdbcDataAdapter mySqlDataAdapter = new OdbcDataAdapter(command);
+            DataTable dataTable = new DataTable();
+            mySqlDataAdapter.Fill(dataTable);
+            //crea id
+            int iConteo = 0;
+            if (dataTable.Rows.Count > 0)
+            {
+                DataRow row = dataTable.Rows[0];
+                iConteo = Convert.ToInt32(row["KidDetalleListaPrecios"]);
+            }
+            int comi = 34;
+            string comi2 = ((char)(comi)).ToString();
+            //sentencia
+            command.CommandText = "INSERT INTO tbl_detalle_lista_precios  " +
+             "VALUES (" + idencabezado +
+             ",'" + iConteo + "' ,'" + producto + "','" + idtipolista + "','" + nombrelista+ "','" + precio + "')";
+            return command;
+        }
+        //llenar tabla
+        public OdbcDataAdapter consultarQuery()
+        {
+
+            conexion cn = new conexion();
+            cn.Conectar();
+            string sConsulta = "SELECT * FROM tbl_detalle_lista_precios ";
+            OdbcDataAdapter data = new OdbcDataAdapter(sConsulta, cn.Conectar());
+            return data;
+        }
 
     }
+
 }

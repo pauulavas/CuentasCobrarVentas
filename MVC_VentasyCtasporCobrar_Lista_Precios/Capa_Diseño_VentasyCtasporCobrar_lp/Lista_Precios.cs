@@ -21,6 +21,7 @@ namespace Capa_Diseño_VentasyCtasporCobrar_lp
         List<int> tipolistaprecios = new List<int>();
         List<int> listaproducto = new List<int>();
         string fecha_inicio;
+        string fecha_modificacion;
         //string sTipolista;
 
         public Lista_Precios()
@@ -31,7 +32,7 @@ namespace Capa_Diseño_VentasyCtasporCobrar_lp
 
         private void Lista_Precios_Load(object sender, EventArgs e)
         {
-            
+            Btn_ModificarLista.Enabled = false;
             //VISIBLES
             Gpb_producto.Visible = false;
             Gpb_accion2.Visible = false;
@@ -46,6 +47,8 @@ namespace Capa_Diseño_VentasyCtasporCobrar_lp
             Txt_FechaInicio2.Visible = false;
             Btn_guardar2.Visible = false;
             Btn_guardar2.Enabled = false;
+            Txt_id.Visible = false;
+            Lbl_Codigo.Visible = false;
         }
 
         private void Button3_Click(object sender, EventArgs e)
@@ -77,7 +80,11 @@ namespace Capa_Diseño_VentasyCtasporCobrar_lp
             Btn_aceptarlista.Visible = true;
             Btn_guardar2.Visible = false;
             Btn_guardar2.Enabled = false;
-
+            Txt_id.Visible = false;
+            Lbl_Codigo.Visible = false;
+            Txt_id2.Visible = false;
+            Lbl_Codigo2.Visible = false;
+            Btn_agregarproducto.Enabled = true;
             //Carga Tabla tipo de listas
             Cbo_tipolista.Items.Clear();
             Cbo_tipolista.Text = "";
@@ -110,7 +117,8 @@ namespace Capa_Diseño_VentasyCtasporCobrar_lp
             Cbo_NombreLista.Enabled = true;
             Btn_ConsultarLista.Visible = true;
             Btn_ConsultarLista.Enabled = true;
-            
+            Txt_id2.Visible = false;
+            Lbl_Codigo2.Visible = false;
             Btn_aceptarlista.Visible = false;
             Btn_aceptarlista.Enabled = false;
 
@@ -173,12 +181,18 @@ namespace Capa_Diseño_VentasyCtasporCobrar_lp
                     //visible aceptar lista
                     Btn_guardar2.Visible = true;
                     Btn_guardar2.Enabled = true;
+                    //busca id de encabezado
+                    log.BuscarId(Txt_id, fecha_inicio);
+                    //buscar id de tipo de lista
+                    string tipolista_1 = Cbo_tipolista.Text;
+                    log.BuscarIdTipoLista(Txt_id2, tipolista_1);
                 }
             }
         }
 
         private void Btn_cancelarlista_Click(object sender, EventArgs e)
         {
+            Btn_ModificarLista.Enabled = false;
             //Aparezca el primer submenu
             Gpb_accion.Visible = true;
             Gpb_accion.Enabled = true;
@@ -204,14 +218,16 @@ namespace Capa_Diseño_VentasyCtasporCobrar_lp
             TxtTipoLista2.Clear();
             Txt_FechaInicio2.Clear();
             Txt_nombreproducto.Clear();
-            Txt_subtotal.Clear();
+            Txt_precio.Clear();
             Txt_TipoLista.Clear();
-            Txt_total.Clear();
+            
             Cbo_codigoproducto.Items.Clear();
             Cbo_NombreLista.Items.Clear();
             Cbo_tipolista.Items.Clear();
             Btn_CrearLista.Enabled = true;
             Btn_CrearLista.Visible = true;
+            Txt_id.Clear();
+            Txt_id2.Clear();
             
         }
 
@@ -271,42 +287,148 @@ namespace Capa_Diseño_VentasyCtasporCobrar_lp
 
         private void Btn_aceptarlista_Click(object sender, EventArgs e)
         {
-            if(Cbo_tipolista.Text == "" | Dtp_fechainicio.Checked == false| Txt_NombreLista.Text == "")
+            //Aparezca el primer submenu
+            Gpb_accion.Visible = true;
+            Gpb_accion.Enabled = true;
+            Btn_ModificarLista.Visible = true;
+            Btn_ModificarLista.Enabled = true;
+            Gpb_producto.Visible = false;
+            Gpb_accion2.Visible = false;
+            Gpb_costolista.Visible = false;
+            Gpb_lista.Visible = false;
+            Txt_nombreproducto.Text = "";
+            Txt_descuento.Text = "";
+            Dtp_fechainicio.ResetText();
+            TxtTipoLista2.Visible = false;
+            Txt_FechaInicio2.Enabled = false;
+            TxtTipoLista2.Enabled = false;
+            Txt_FechaInicio2.Visible = false;
+            Dtp_fechamodificacion.ResetText();
+            Cbo_NombreLista.Items.Clear();
+            Txt_NombreLista.Text = "";
+            Txt_NombreLista.Clear();
+            Txt_descuento.Clear();
+            Txt_FechaInicio.Clear();
+            TxtTipoLista2.Clear();
+            Txt_FechaInicio2.Clear();
+            Txt_nombreproducto.Clear();
+
+            Txt_TipoLista.Clear();
+
+            Cbo_codigoproducto.Items.Clear();
+            Cbo_NombreLista.Items.Clear();
+            Cbo_tipolista.Items.Clear();
+            Btn_CrearLista.Enabled = true;
+            Btn_CrearLista.Visible = true;
+            Txt_id.Clear();
+            Txt_id2.Clear();
+            Txt_precio.Clear();
+            MessageBox.Show("Lista Creada Con Exito");
+        }
+
+        private void Btn_guardar2_Click(object sender, EventArgs e)
+        {
+            //Aparezca el primer submenu
+            Gpb_accion.Visible = true;
+            Gpb_accion.Enabled = true;
+            Btn_ModificarLista.Visible = true;
+            Btn_ModificarLista.Enabled = true;
+            Gpb_producto.Visible = false;
+            Gpb_accion2.Visible = false;
+            Gpb_costolista.Visible = false;
+            Gpb_lista.Visible = false;
+            Txt_nombreproducto.Text = "";
+            Txt_descuento.Text = "";
+            Dtp_fechainicio.ResetText();
+            TxtTipoLista2.Visible = false;
+            Txt_FechaInicio2.Enabled = false;
+            TxtTipoLista2.Enabled = false;
+            Txt_FechaInicio2.Visible = false;
+            Dtp_fechamodificacion.ResetText();
+            Cbo_NombreLista.Items.Clear();
+            Txt_NombreLista.Text = "";
+            Txt_NombreLista.Clear();
+            Txt_descuento.Clear();
+            Txt_FechaInicio.Clear();
+            TxtTipoLista2.Clear();
+            Txt_FechaInicio2.Clear();
+            Txt_nombreproducto.Clear();
+
+            Txt_TipoLista.Clear();
+
+            Cbo_codigoproducto.Items.Clear();
+            Cbo_NombreLista.Items.Clear();
+            Cbo_tipolista.Items.Clear();
+            Btn_CrearLista.Enabled = true;
+            Btn_CrearLista.Visible = true;
+            Txt_id.Clear();
+            Txt_id2.Clear();
+            Txt_precio.Clear();
+
+        }
+
+        private void Dtp_fechamodificacion_ValueChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void Btn_agregarproducto_Click(object sender, EventArgs e)
+        {
+            if (Cbo_tipolista.Text == "" | Dtp_fechainicio.Checked == false | Txt_NombreLista.Text == "")
+            {
+                MessageBox.Show("Existen Campos Vacíos");
+            }
+            else
+            {
+                MessageBox.Show("Lista Creada con Exito");
+                Txt_NombreLista.Enabled = false;
+                Cbo_tipolista.Enabled = false;
+                Dtp_fechainicio.Enabled = false;
+                Btn_agregarproducto.Enabled = false;
+            }
+        }
+
+        private void Btn_crear_Click(object sender, EventArgs e)
+        {
+            if (Cbo_tipolista.Text == "" | Dtp_fechainicio.Checked == false | Txt_NombreLista.Text == "")
             {
                 MessageBox.Show("Existen Campos Vacíos");
             }
             else
             {
                 //guardar datos al encabezado de la lista de precios
-                 ;
-                
                 fecha_inicio = Dtp_fechainicio.Text;
-                MessageBox.Show(fecha_inicio);
                 fecha_inicio = Dtp_fechainicio.Value.Date.ToString("yyyy/MM/dd");
-                MessageBox.Show(fecha_inicio);
                 log.insertarencabezado1(fecha_inicio);
-
-                MessageBox.Show("Se ha Guardado con exito");
+                MessageBox.Show("Se ha Creado con exito");
+                //busca id de encabezado
+                log.BuscarId(Txt_id, fecha_inicio);
+                //buscar id de tipo de lista
+                string tipolista_1 = Cbo_tipolista.Text;
+                log.BuscarIdTipoLista(Txt_id2, tipolista_1);
+                //crear lista detalle con nombre
+                string nombrelista = Txt_NombreLista.Text;
+                string txt1 = Txt_id.Text;
+                string txt2 = Txt_id2.Text;
+                string codigoproducto = Cbo_codigoproducto.Text;
+                string precio = Txt_precio.Text;
+                log.InsertarDetalle1(nombrelista, txt1, txt2,codigoproducto,precio);
+                //Data
+                
+                DataTable dtDatosDiseno = log.consultaId();
+                Dgv_producto.DataSource = dtDatosDiseno;
             }
 
         }
 
-        private void Btn_guardar2_Click(object sender, EventArgs e)
+        private void Lbl_precio_Click(object sender, EventArgs e)
         {
-            if(Cbo_NombreLista.Text == "" | Dtp_fechamodificacion.Checked == false)
-            {
-                MessageBox.Show("Existen Campos Vacíos");
-            }
-            else
-            {
-             
-                MessageBox.Show("Se ha Guardado con exito2");
-            }
+
         }
 
-        private void Dtp_fechamodificacion_ValueChanged(object sender, EventArgs e)
+        private void Dgv_producto_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+
         }
     }
 }

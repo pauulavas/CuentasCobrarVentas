@@ -226,6 +226,66 @@ namespace Capa_Logica_VentasyCtasporCobrar_lp
             command.ExecuteNonQuery();
             
         }
+        //buscar id de encabezado
+        public void BuscarId(TextBox box, string tabla)
+        {
+            sentencia_lista_precio sc = new sentencia_lista_precio();
+            OdbcDataAdapter odbcDataAdapter = sc.ObtenerTabla11(tabla);
+
+            DataTable dataTable = new DataTable();
+            odbcDataAdapter.Fill(dataTable);
+
+            if (dataTable.Rows.Count > 0)
+            {
+                for (int i = 0; i < dataTable.Rows.Count; i++)
+                {
+                    DataRow rows = dataTable.Rows[i];
+                    tabla = rows["KidEncabezadoListaPrecios"].ToString();
+                    box.Text = tabla;
+
+                }
+
+            }
+        }
+        //id de tipo lista
+        public void BuscarIdTipoLista(TextBox box, string tabla)
+        {
+            sentencia_lista_precio sc = new sentencia_lista_precio();
+            OdbcDataAdapter odbcDataAdapter = sc.ObtenerTabla12(tabla);
+
+            DataTable dataTable = new DataTable();
+            odbcDataAdapter.Fill(dataTable);
+
+            if (dataTable.Rows.Count > 0)
+            {
+                for (int i = 0; i < dataTable.Rows.Count; i++)
+                {
+                    DataRow rows = dataTable.Rows[i];
+                    tabla = rows["Kidtipo_lista_precios"].ToString();
+                    box.Text = tabla;
+
+                }
+
+            }
+        }
+        //Insertar campos en tabla detalle lista de precios
+        public void InsertarDetalle1(string nombrelista , string box1, string box2, string box3, string precio)
+        {
+            sentencia_lista_precio sc = new sentencia_lista_precio();
+            OdbcCommand command = sc.InsertarDetalle1(nombrelista,box1,box2,box3,precio);
+            command.ExecuteNonQuery();
+
+        }
+        //llenar data
+        public DataTable consultaId()
+        {
+            sentencia_lista_precio sn = new sentencia_lista_precio();
+            OdbcDataAdapter datos = sn.consultarQuery();
+            DataTable dtDatos = new DataTable();
+            datos.Fill(dtDatos);
+            return dtDatos;
+        }
+        
 
 
 

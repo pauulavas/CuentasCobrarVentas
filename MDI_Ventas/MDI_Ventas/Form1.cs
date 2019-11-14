@@ -100,27 +100,42 @@ namespace MDI_Ventas
 
         private void CotizaciónToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Cotizaciones cotizaciones = new Cotizaciones();
+            cotizaciones.StartPosition = FormStartPosition.CenterScreen;
+            cotizaciones.MdiParent = this;
+            cotizaciones.Show();
         }
 
         private void PedidoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Pedidos pedidos = new Pedidos();
+            pedidos.StartPosition = FormStartPosition.CenterScreen;
+            pedidos.MdiParent = this;
+            pedidos.Show();
         }
 
         private void FacturaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Facturas facturas = new Facturas();
+            facturas.StartPosition = FormStartPosition.CenterScreen;
+            facturas.MdiParent = this;
+            facturas.Show();
         }
 
         private void IngresoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            IngresoDevoluciones ingresoDevoluciones = new IngresoDevoluciones();
+            ingresoDevoluciones.StartPosition = FormStartPosition.CenterScreen;
+            ingresoDevoluciones.MdiParent = this;
+            ingresoDevoluciones.Show();
         }
 
         private void ConsultaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            ConsultaDevoluciones consultaDevoluciones = new ConsultaDevoluciones();
+            consultaDevoluciones.StartPosition = FormStartPosition.CenterScreen;
+            consultaDevoluciones.MdiParent = this;
+            consultaDevoluciones.Show();
         }
 
         private void MovimientoDeClientesToolStripMenuItem_Click(object sender, EventArgs e)

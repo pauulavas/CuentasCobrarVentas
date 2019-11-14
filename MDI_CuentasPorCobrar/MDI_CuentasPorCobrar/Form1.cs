@@ -51,7 +51,9 @@ namespace MDI_CuentasPorCobrar
 
         private void MovimientoDeClientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frm_Movimientos fmMovimientos = new frm_Movimientos();
+            fmMovimientos.MdiParent = this;
+            fmMovimientos.Show();
         }
 
         private void CuentasPorCobrarToolStripMenuItem_Click(object sender, EventArgs e)

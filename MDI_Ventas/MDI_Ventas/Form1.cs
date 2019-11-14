@@ -125,7 +125,9 @@ namespace MDI_Ventas
 
         private void MovimientoDeClientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frm_Movimientos fmMov = new frm_Movimientos();
+            fmMov.MdiParent = this;
+            fmMov.Show();
         }
 
         private void ComisionesToolStripMenuItem1_Click(object sender, EventArgs e)

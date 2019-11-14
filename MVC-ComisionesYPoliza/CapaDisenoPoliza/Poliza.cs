@@ -31,6 +31,7 @@ namespace CapaDisenoPoliza
         {
             double totaliva = 0;
             double totalventas = 0;
+            double totalclientes = 0;
 
             DgvPoliza.Rows.Clear();
             logica.buscar(Dtg_Final, Dtg_Inicial, DgvPoliza, Txt_NoPoliza.Text,Lbl_ventas.Text );
@@ -38,13 +39,16 @@ namespace CapaDisenoPoliza
             {
                 for (int i = 0; i < DgvPoliza.Rows.Count - 1; i++)
                 {
-                    totaliva += double.Parse(DgvPoliza.Rows[i].Cells[4].Value.ToString());
-                    totalventas += double.Parse(DgvPoliza.Rows[i].Cells[5].Value.ToString());
+                    totaliva += double.Parse(DgvPoliza.Rows[i].Cells[5].Value.ToString());
+                    totalventas += double.Parse(DgvPoliza.Rows[i].Cells[6].Value.ToString());
+                    totalclientes += double.Parse(DgvPoliza.Rows[i].Cells[4].Value.ToString());
                 }
             }
 
             Txt_Total.Text = Convert.ToString(totalventas);
             Txt_Totaliva.Text = Convert.ToString(totaliva);
+            Txt_Clientes.Text = Convert.ToString(totalclientes);
+
 
 
 

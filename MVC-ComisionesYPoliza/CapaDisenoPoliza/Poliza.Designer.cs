@@ -30,12 +30,16 @@
         {
             this.DgvPoliza = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.Dtg_Final = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.Dtg_Inicial = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Txt_Clientes = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.Btn_Ayuda = new System.Windows.Forms.Button();
             this.Txt_Totaliva = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.Cmb_Cuenta = new System.Windows.Forms.ComboBox();
@@ -48,23 +52,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Dtp_Creacion = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.lbl3 = new System.Windows.Forms.Label();
-            this.lbl2 = new System.Windows.Forms.Label();
-            this.lbl1 = new System.Windows.Forms.Label();
-            this.dataPrueba = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.Btn_Ayuda = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DgvPoliza)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataPrueba)).BeginInit();
             this.SuspendLayout();
             // 
             // DgvPoliza
@@ -75,11 +73,12 @@
             this.Column5,
             this.Column6,
             this.Column2,
+            this.Column7,
             this.Column3,
             this.Column4});
-            this.DgvPoliza.Location = new System.Drawing.Point(37, 454);
+            this.DgvPoliza.Location = new System.Drawing.Point(53, 494);
             this.DgvPoliza.Name = "DgvPoliza";
-            this.DgvPoliza.Size = new System.Drawing.Size(646, 190);
+            this.DgvPoliza.Size = new System.Drawing.Size(631, 190);
             this.DgvPoliza.TabIndex = 6;
             // 
             // groupBox2
@@ -91,13 +90,27 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.Dtg_Inicial);
             this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(25, 287);
+            this.groupBox2.Location = new System.Drawing.Point(25, 323);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(744, 138);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Fechas de Ventas";
             this.groupBox2.Enter += new System.EventHandler(this.GroupBox2_Enter);
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Image = global::CapaDisenoPoliza.Properties.Resources.loupe;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(668, 53);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(61, 58);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "BUSCAR";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // label7
             // 
@@ -144,6 +157,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.Txt_Clientes);
+            this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.Btn_Ayuda);
             this.groupBox1.Controls.Add(this.Txt_Totaliva);
             this.groupBox1.Controls.Add(this.label10);
@@ -160,32 +175,62 @@
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(25, 19);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(744, 245);
+            this.groupBox1.Size = new System.Drawing.Size(744, 249);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Poliza";
             // 
+            // Txt_Clientes
+            // 
+            this.Txt_Clientes.Location = new System.Drawing.Point(152, 208);
+            this.Txt_Clientes.Name = "Txt_Clientes";
+            this.Txt_Clientes.Size = new System.Drawing.Size(91, 20);
+            this.Txt_Clientes.TabIndex = 16;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(26, 209);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(65, 16);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "CLIENTES";
+            // 
+            // Btn_Ayuda
+            // 
+            this.Btn_Ayuda.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Btn_Ayuda.Image = global::CapaDisenoPoliza.Properties.Resources.question;
+            this.Btn_Ayuda.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Btn_Ayuda.Location = new System.Drawing.Point(677, 19);
+            this.Btn_Ayuda.Name = "Btn_Ayuda";
+            this.Btn_Ayuda.Size = new System.Drawing.Size(61, 58);
+            this.Btn_Ayuda.TabIndex = 14;
+            this.Btn_Ayuda.Text = "AYUDAS";
+            this.Btn_Ayuda.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Btn_Ayuda.UseVisualStyleBackColor = true;
+            // 
             // Txt_Totaliva
             // 
-            this.Txt_Totaliva.Location = new System.Drawing.Point(468, 204);
+            this.Txt_Totaliva.Location = new System.Drawing.Point(620, 208);
             this.Txt_Totaliva.Name = "Txt_Totaliva";
-            this.Txt_Totaliva.Size = new System.Drawing.Size(190, 20);
+            this.Txt_Totaliva.Size = new System.Drawing.Size(93, 20);
             this.Txt_Totaliva.TabIndex = 13;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(388, 206);
+            this.label10.Location = new System.Drawing.Point(511, 208);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(74, 16);
+            this.label10.Size = new System.Drawing.Size(103, 16);
             this.label10.TabIndex = 12;
-            this.label10.Text = "TOTAL IVA";
+            this.label10.Text = "IVA X COBRAR";
             // 
             // Cmb_Cuenta
             // 
             this.Cmb_Cuenta.FormattingEnabled = true;
-            this.Cmb_Cuenta.Location = new System.Drawing.Point(152, 169);
+            this.Cmb_Cuenta.Location = new System.Drawing.Point(152, 158);
             this.Cmb_Cuenta.Name = "Cmb_Cuenta";
             this.Cmb_Cuenta.Size = new System.Drawing.Size(191, 21);
             this.Cmb_Cuenta.TabIndex = 11;
@@ -204,20 +249,20 @@
             // 
             // Txt_Total
             // 
-            this.Txt_Total.Location = new System.Drawing.Point(152, 204);
+            this.Txt_Total.Location = new System.Drawing.Point(370, 207);
             this.Txt_Total.Name = "Txt_Total";
-            this.Txt_Total.Size = new System.Drawing.Size(190, 20);
+            this.Txt_Total.Size = new System.Drawing.Size(91, 20);
             this.Txt_Total.TabIndex = 9;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(26, 205);
+            this.label8.Location = new System.Drawing.Point(288, 208);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(100, 16);
+            this.label8.Size = new System.Drawing.Size(57, 16);
             this.label8.TabIndex = 8;
-            this.label8.Text = "TOTAL VENTAS";
+            this.label8.Text = "VENTAS";
             // 
             // label4
             // 
@@ -267,46 +312,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(25, 170);
+            this.label3.Location = new System.Drawing.Point(25, 159);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "CUENTA";
-            // 
-            // lbl3
-            // 
-            this.lbl3.AutoSize = true;
-            this.lbl3.Location = new System.Drawing.Point(94, 676);
-            this.lbl3.Name = "lbl3";
-            this.lbl3.Size = new System.Drawing.Size(0, 13);
-            this.lbl3.TabIndex = 9;
-            this.lbl3.Click += new System.EventHandler(this.Label10_Click);
-            // 
-            // lbl2
-            // 
-            this.lbl2.AutoSize = true;
-            this.lbl2.Location = new System.Drawing.Point(128, 676);
-            this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(0, 13);
-            this.lbl2.TabIndex = 10;
-            // 
-            // lbl1
-            // 
-            this.lbl1.AutoSize = true;
-            this.lbl1.Location = new System.Drawing.Point(158, 672);
-            this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(0, 13);
-            this.lbl1.TabIndex = 11;
-            // 
-            // dataPrueba
-            // 
-            this.dataPrueba.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.dataPrueba.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataPrueba.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.dataPrueba.Location = new System.Drawing.Point(32, 670);
-            this.dataPrueba.Name = "dataPrueba";
-            this.dataPrueba.Size = new System.Drawing.Size(49, 18);
-            this.dataPrueba.TabIndex = 12;
             // 
             // button2
             // 
@@ -314,7 +324,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::CapaDisenoPoliza.Properties.Resources.paper_plane__1_;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(693, 586);
+            this.button2.Location = new System.Drawing.Point(693, 626);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(61, 58);
             this.button2.TabIndex = 7;
@@ -322,33 +332,6 @@
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Image = global::CapaDisenoPoliza.Properties.Resources.loupe;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(668, 53);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(61, 58);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "BUSCAR";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
-            // 
-            // Btn_Ayuda
-            // 
-            this.Btn_Ayuda.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Btn_Ayuda.Image = global::CapaDisenoPoliza.Properties.Resources.question;
-            this.Btn_Ayuda.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Btn_Ayuda.Location = new System.Drawing.Point(677, 19);
-            this.Btn_Ayuda.Name = "Btn_Ayuda";
-            this.Btn_Ayuda.Size = new System.Drawing.Size(61, 58);
-            this.Btn_Ayuda.TabIndex = 14;
-            this.Btn_Ayuda.Text = "AYUDAS";
-            this.Btn_Ayuda.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Btn_Ayuda.UseVisualStyleBackColor = true;
             // 
             // Column1
             // 
@@ -375,28 +358,30 @@
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "CLIENTES";
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 80;
+            // 
             // Column3
             // 
             this.Column3.HeaderText = "IVA";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
-            this.Column3.Width = 130;
+            this.Column3.Width = 80;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "VENTAS";
             this.Column4.Name = "Column4";
-            this.Column4.Width = 130;
+            this.Column4.Width = 80;
             // 
             // Poliza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(35)))), ((int)(((byte)(90)))));
-            this.Controls.Add(this.dataPrueba);
-            this.Controls.Add(this.lbl1);
-            this.Controls.Add(this.lbl2);
-            this.Controls.Add(this.lbl3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.DgvPoliza);
             this.Controls.Add(this.groupBox2);
@@ -409,9 +394,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataPrueba)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -435,19 +418,18 @@
         private System.Windows.Forms.DateTimePicker Dtp_Creacion;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label lbl3;
-        private System.Windows.Forms.Label lbl2;
-        private System.Windows.Forms.Label lbl1;
-        private System.Windows.Forms.DataGridView dataPrueba;
         private System.Windows.Forms.Label Lbl_ventas;
         private System.Windows.Forms.ComboBox Cmb_Cuenta;
         private System.Windows.Forms.TextBox Txt_Totaliva;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button Btn_Ayuda;
+        private System.Windows.Forms.TextBox Txt_Clientes;
+        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }

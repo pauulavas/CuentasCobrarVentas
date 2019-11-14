@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.DgvPoliza = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
@@ -51,12 +57,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Dtp_Creacion = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DgvPoliza)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -76,6 +76,44 @@
             this.DgvPoliza.Name = "DgvPoliza";
             this.DgvPoliza.Size = new System.Drawing.Size(553, 190);
             this.DgvPoliza.TabIndex = 6;
+            // 
+            // Column1
+            // 
+            this.Column1.FillWeight = 150F;
+            this.Column1.HeaderText = "No. Poliza";
+            this.Column1.MaxInputLength = 25;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 50;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "TIPO POLIZA";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "DOCUMENTO ASOCIADO";
+            this.Column6.Name = "Column6";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "FECHA";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "IVA";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 80;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "VENTAS";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 80;
             // 
             // groupBox2
             // 
@@ -99,7 +137,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Image = global::CapaDisenoPoliza.Properties.Resources.loupe;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(668, 53);
+            this.button1.Location = new System.Drawing.Point(662, 44);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(61, 58);
             this.button1.TabIndex = 3;
@@ -177,7 +215,7 @@
             // 
             // Txt_Clientes
             // 
-            this.Txt_Clientes.Location = new System.Drawing.Point(152, 208);
+            this.Txt_Clientes.Location = new System.Drawing.Point(146, 208);
             this.Txt_Clientes.Name = "Txt_Clientes";
             this.Txt_Clientes.Size = new System.Drawing.Size(91, 20);
             this.Txt_Clientes.TabIndex = 16;
@@ -186,7 +224,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(26, 209);
+            this.label9.Location = new System.Drawing.Point(20, 209);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(65, 16);
             this.label9.TabIndex = 15;
@@ -194,7 +232,7 @@
             // 
             // Txt_Totaliva
             // 
-            this.Txt_Totaliva.Location = new System.Drawing.Point(620, 208);
+            this.Txt_Totaliva.Location = new System.Drawing.Point(614, 208);
             this.Txt_Totaliva.Name = "Txt_Totaliva";
             this.Txt_Totaliva.Size = new System.Drawing.Size(93, 20);
             this.Txt_Totaliva.TabIndex = 13;
@@ -203,7 +241,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(511, 208);
+            this.label10.Location = new System.Drawing.Point(505, 208);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(103, 16);
             this.label10.TabIndex = 12;
@@ -231,7 +269,7 @@
             // 
             // Txt_Total
             // 
-            this.Txt_Total.Location = new System.Drawing.Point(370, 207);
+            this.Txt_Total.Location = new System.Drawing.Point(364, 207);
             this.Txt_Total.Name = "Txt_Total";
             this.Txt_Total.Size = new System.Drawing.Size(91, 20);
             this.Txt_Total.TabIndex = 9;
@@ -240,7 +278,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(288, 208);
+            this.label8.Location = new System.Drawing.Point(282, 208);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(57, 16);
             this.label8.TabIndex = 8;
@@ -299,44 +337,6 @@
             this.label3.Size = new System.Drawing.Size(59, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "CUENTA";
-            // 
-            // Column1
-            // 
-            this.Column1.FillWeight = 150F;
-            this.Column1.HeaderText = "No. Poliza";
-            this.Column1.MaxInputLength = 25;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 50;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "TIPO POLIZA";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "DOCUMENTO ASOCIADO";
-            this.Column6.Name = "Column6";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "FECHA";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "IVA";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 80;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "VENTAS";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 80;
             // 
             // Poliza
             // 
